@@ -19,13 +19,14 @@ clone and reproduce the CPU work without asking the user to run commands.
 | Check | Result | Evidence |
 |---|---|---|
 | Existing synthetic tests on Engaging | 54/54 passed | `reports/tests_engaging.json` |
-| New adapter/runner/analysis tests on Engaging | 35/35 passed | same |
-| Windows tests | 53 legacy + 35 new passed; 1 symlink-privilege skip | `reports/tests_windows.json` |
+| New adapter/runner/analysis tests on Engaging | 40/40 passed | same |
+| Windows tests | 53 legacy + 40 new passed; 1 symlink-privilege skip | `reports/tests_windows.json` |
 | Exact unseen split and source identity | 70 unseen, exact 30 excluded, 100 unique positional IDs per history source | `reports/audit.json` |
 | Raw projection comparison | 280/280 passed | `reports/second_path_audit.json` |
 | Scorer differential cases | 1,005/1,005 passed; all 200 historical scores replayed | second-path and primary audits |
 | Cross-platform regeneration | Identical manifest SHA-256 on Windows and Engaging | below |
-| Independent review | Two P2 issues fixed and independently rechecked; no unresolved code blockers | `REVIEW.md` |
+| Independent review | Three P2 issues fixed and independently rechecked; no unresolved code blockers | `REVIEW.md` |
+| Installed runtime and cache CPU preflight | Passed; all 11 model files match external hashes; 280/280 frozen input-token counts match | `reports/runtime_preflight.json` |
 | New Slurm scheduling check | `sbatch --test-only` succeeded, L40S/account/partition accepted | `reports/engaging_cpu_validation.json` |
 
 Manifest SHA-256 (external integrity anchor):
@@ -51,9 +52,11 @@ trace/scoring information, and source labels never enter the wire payload.
 - Existing-layout inference environment: `~/code/ar_harness/conda_env`.
 - Pinned Qwen cache: `~/orcd/pool/ar_harness/hf_cache`.
 
-The last two locations were absent initially. Runtime installation/cache
-verification status is recorded below when completed. No GPU startup has been
-attempted; `--test-only` predicts scheduling and does not validate CUDA or serving.
+The last two locations were absent initially and are now populated. CPU runtime
+preflight passed: dependency consistency, Python/compiler/CUDA header presence,
+all 11 model-file hashes, and all 280 runtime-tokenizer counts. See
+`reports/runtime_preflight.json` and [RUNTIME.md](RUNTIME.md). No GPU startup has
+been attempted; `--test-only` predicts scheduling and does not validate CUDA or serving.
 
 ## Concrete pilot budget and interpretation
 
@@ -109,7 +112,6 @@ OnDemand session after that approval. The user need not manually execute command
 The job checks served-model identity and all pilot token counts before its first
 completion, records its environment/commit/journal, and writes offline analysis.
 
-Remaining work: finish the recorded runtime CPU preflight; obtain explicit pilot
-authorization; validate driver/CUDA/JIT and served tokenization on the allocated
+Remaining work: obtain explicit pilot authorization; validate driver/CUDA/JIT and served tokenization on the allocated
 L40S; execute and analyze the 20 calls; inspect failures and outputs before any
 larger experiment. No C2 real-model effect estimate exists yet.

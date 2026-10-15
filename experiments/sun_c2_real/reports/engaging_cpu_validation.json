@@ -1,9 +1,10 @@
 {
   "authorization_granted": false,
   "cpu_code_commit": "9c18cb762f0de527c5ba2bda50166dbc039dfe64",
-  "cpu_tests_passed": 89,
+  "cpu_tests_passed": 94,
   "cpu_tests_skipped": 0,
   "date": "2026-10-15",
+  "final_test_code_commit": "9186fcb974bac151862eb14a7b68cabb9725c512",
   "gpu_calls": 0,
   "gpu_jobs_submitted": 0,
   "independent_source_projection_comparisons": 280,

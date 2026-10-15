@@ -1,1 +1,20 @@
-{"platform":"Linux-5.14.0-687.39.1.el9_8.x86_64-x86_64-with-glibc2.28","python":"3.12.14","suites":{"legacy_synthetic":{"errors":0,"failures":0,"passed":54,"run":54,"skipped":[]},"real_adapter":{"errors":0,"failures":0,"passed":35,"run":35,"skipped":[]}}}
+{
+  "platform": "Linux-5.14.0-687.39.1.el9_8.x86_64-x86_64-with-glibc2.28",
+  "python": "3.12.14",
+  "suites": {
+    "legacy_synthetic": {
+      "errors": 0,
+      "failures": 0,
+      "passed": 54,
+      "run": 54,
+      "skipped": []
+    },
+    "real_adapter": {
+      "errors": 0,
+      "failures": 0,
+      "passed": 40,
+      "run": 40,
+      "skipped": []
+    }
+  }
+}

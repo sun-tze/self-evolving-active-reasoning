@@ -197,10 +197,26 @@ an existing run, use `analyze.py --bundle BUNDLE --manifest-sha256 SHA --run RUN
 --out REPORT.json`. Inference does not require the private target files; analysis does.
 
 The authenticated OnDemand shell is accessible. Initial inspection found no
-`conda_env` or Qwen weights in the expected cache for this account. CPU preparation
-and Slurm scheduling checks are tracked in `DELIVERY.md`; an actual GPU-node
-vLLM startup remains untested. No GPU jobs or real-model calls have been launched.
+`conda_env` or Qwen weights in the expected cache for this account; both are now
+prepared and pass CPU preflight. CPU preparation and Slurm scheduling checks are
+tracked in `DELIVERY.md`; an actual GPU-node vLLM startup remains untested. No GPU jobs or real-model calls have been launched.
 
 The vLLM interface was checked against the [official CLI reference](https://docs.vllm.ai/en/latest/cli/serve/)
 and [tokenization request/response source](https://github.com/vllm-project/vllm/blob/main/vllm/entrypoints/serve/tokenize/protocol.py).
 Actual installed cluster-version compatibility remains an explicit deployment check.
+
+## Installed runtime and cache preflight
+
+After installing the existing-layout vLLM environment and downloading the fixed
+model snapshot, run the following with its Python. This hashes all 11 model files
+against `weights_lock.json`, checks tools/headers/dependency consistency, and
+recounts all 280 requests using the runtime's supported Transformers version:
+
+```bash
+~/code/ar_harness/conda_env/bin/python experiments/sun_c2_real/runtime_preflight.py --bundle ~/orcd/pool/ar_harness/c2/pilot-v1 --manifest-sha256 1bfb5608ba6740f4d6024c00cffb25cc7cca347e8826b452be46a14207dea548 --cache ~/orcd/pool/ar_harness/hf_cache --out ~/orcd/pool/ar_harness/c2/runtime_preflight.json
+```
+
+It performs no GPU allocation, weight loading, or inference. Driver, CUDA/JIT
+startup, and the served tokenizer still need checking inside the authorized
+pilot job. Full local environment installation details and results are in
+`DELIVERY.md`; do not use the CPU requirements to modify the serving environment.

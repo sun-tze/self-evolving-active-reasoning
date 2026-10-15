@@ -12,11 +12,12 @@ authorization are still required.** This is not a claim that a real pilot ran.
 | Finding | Resolution and independent evidence |
 |---|---|
 | P2: socket inactivity timeout did not bound total HTTP time | Replaced urllib I/O with a local HTTP connection and absolute timer that shuts down socket I/O. Body-dribble regression passes; independent slow-header probe aborted after 188 ms for a 150 ms deadline. |
+| P2: model-cache inventory could accept a nonempty truncated shard | Added external `weights_lock.json`: all four official LFS SHA-256 values and seven small-file Git blob/SHA-256 values independently cross-checked at the fixed revision. Five corruption/completeness regressions pass. |
 | P2: port collision could accept an old service's health response | Select a free port, check launched child before/after health, add an unpredictable per-job served-model alias, and require the marker in `/models` before tokenization or generation. Old-service rejection regression passes. |
 
 Reviewer verification:
 
-- 35/35 new CPU tests pass, including local HTTP integration tests.
+- 40/40 new CPU tests pass, including local HTTP integration tests.
 - All 12 legacy synthetic files are byte-identical to `e16ccf7`.
 - Independently loaded and hashed raw inputs without using the adapter's
   validation helper: both sources contain 100 unique positional IDs; the exact
@@ -36,8 +37,18 @@ Reviewed runtime file hashes:
 | `../../engaging/c2_pilot.sbatch` | `b2e71c64327a6d7c6fdd12d933b7d23eca994775473fd065e18ba719c1b1d97d` |
 
 The reviewer did not authenticate to Engaging, run Slurm validation, load model
-weights, or perform real inference. The same applies to the implementing agent
-at this review point. Hash consistency is not signed historical authenticity.
+weights, or perform real inference. The implementing agent subsequently completed
+Engaging CPU validation and `sbatch --test-only`; see `DELIVERY.md`. Hash consistency is not signed historical authenticity.
 Structural field isolation does not establish semantic decontamination of the
 recorded dialogue. The review also corrected readiness documentation to account
 for the approximately seven-minute worst-case polling period.
+
+Additional reviewed SHA-256 values:
+
+- `runtime_preflight.py`: `e6f0aafbe6f6cb0f21b58b7d5ac4eb9122b6b9e01f9f172fa682dbd5b6c9af7a`
+- `weights_lock.json`: `5e3d9ed5ee5aac087019211d83eadc76dc26e3f9366e2f1637ec10977b8a3f75`
+
+The reviewer also verified vLLM 0.31.0 tokenizer API compatibility and identified
+the Transformers version boundary and llguidance glibc wheel mismatch during
+deployment. CPU staging and GPU-serving dependencies remain isolated. This
+review does not claim a GPU driver/JIT/startup test.
