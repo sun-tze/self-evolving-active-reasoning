@@ -53,5 +53,15 @@ class RuntimeIntegrityTests(unittest.TestCase):
             verify_snapshot(self.root, self.lock, weights)
 
 
+class RuntimeLauncherCompatibilityTests(unittest.TestCase):
+    def test_vllm_031_selects_attention_via_cli_not_legacy_env(self):
+        # Regression for pilot job 25934600's unsupported env-variable warning.
+        script = (Path(__file__).resolve().parents[3] / "engaging" / "c2_pilot.sbatch").read_text()
+        self.assertNotIn("export VLLM_ATTENTION_BACKEND", script)
+        self.assertIn("unset VLLM_ATTENTION_BACKEND", script)
+        self.assertIn("--attention-backend FLASH_ATTN", script)
+        self.assertIn("--max-calls 20", script)
+
+
 if __name__ == "__main__":
     unittest.main()
