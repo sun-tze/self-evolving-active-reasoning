@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-15",
+  "reason": "Two independent-review findings required new regression checks and one affected validator test.",
+  "command": "python -m unittest experiments.sun_c2_semantic.test_audit.AuditTests.test_valid_review_and_reject_corruption experiments.sun_c2_semantic.test_audit.AuditTests.test_issue_cannot_coexist_with_inflated_scores experiments.sun_c2_semantic.test_audit.AuditTests.test_target_binding_rejects_self_consistent_forgery -v",
+  "tests_run": 3,
+  "passed": 3,
+  "failed": 0,
+  "elapsed_seconds": 0.010,
+  "distinct_tests_across_initial_and_fix_runs": 7,
+  "total_test_executions": 8,
+  "old_C2_suites_rerun": false,
+  "actual_review_validation": "Both completed 20-item raw reviews passed the strengthened validator without any score correction."
+}

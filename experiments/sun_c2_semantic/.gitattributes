@@ -1,0 +1,3 @@
+* text eol=lf
+# Preserve raw reviewer bytes exactly as hashed, including original line endings.
+reviews/*.json -text

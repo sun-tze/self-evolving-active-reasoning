@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "manifest_sha256": "1bfb5608ba6740f4d6024c00cffb25cc7cca347e8826b452be46a14207dea548",
+  "targets_file_sha256": "ee86128b43acedcdddbf53bb5c11671a992debeb5ea7a8e4fcec248a02a2f161",
+  "source_selected_sha256": "7f1677c70e3c290895cae995204867833bbbecd5402b2111a354d6129930af83",
+  "selected_reference_count": 5,
+  "selected_answer_count": 20,
+  "checked": [
+    "full targets file hash against pinned manifest",
+    "selected target text hashes",
+    "selected dataset record identity against both historical source bindings",
+    "all frozen reference texts and target identities match original bundle"
+  ],
+  "remaining_case_outcomes_read": false,
+  "note": "Supplemental check after independent code review. Original frozen packets/rubric unchanged. Full original targets file remains in private bundle; this committed report records the performed verification."
+}

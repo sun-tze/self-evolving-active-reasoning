@@ -1,0 +1,619 @@
+{
+  "reviewer_id": "r1",
+  "rubric_sha256": "499afd318f67ea8cea6e34932d924e13b39b64c6eb69bbaa245d6b9bc621cdc1",
+  "packet_sha256": "81fee6d2f4a7915cf9483969b87b7e6e527bcd22bf4ee018c4443557d8b2c2b5",
+  "independence_statement": "Independent model-review execution, not human annotation. I used only rubric_v1.json and assigned frozen/packet_r1.json as review inputs, grouping duplicate contexts for reading. I did not access conditions, original IDs, F1, source selections, repository history, another review, external sources, or run new model/API/GPU/browser inference. The shared filesystem permits only procedural blinding; this review does not claim human or different-model expertise.",
+  "ratings": [
+    {
+      "item_id": "item-4ee55b23ad78",
+      "semantic_correctness": 0,
+      "referee_consistency": 1,
+      "unsupported_severity": 1,
+      "evidence_faithfulness": 1,
+      "rationale": "Neither mistaken burial/escape nor the prearranged safety code is identified. H19-H21, H23 and H25 support instructions, a trusted sender and secrecy. The postal-box suggestion is explicitly withdrawn, so it is not scored as asserted. The added concern motive and supernatural belief are peripheral.",
+      "issues": [
+        {
+          "kind": "contradicted",
+          "role": "peripheral",
+          "answer_quote": "This trusted individual did not act out of malice or for attention but may have had a personal reason, such as concern or a belief in supernatural phenomena, to send the letter.",
+          "evidence_refs": [
+            "H11"
+          ],
+          "reason": "The answer later identifies the sender as a friend or relative and offers concern as the motive. H11 denies a friend/relative sending from concern or attention; hedging does not support that proposed motive."
+        },
+        {
+          "kind": "unsupported",
+          "role": "peripheral",
+          "answer_quote": "Given Emily's known interest in and belief in supernatural activities",
+          "evidence_refs": [
+            "H15"
+          ],
+          "reason": "The reply is Unknown, not evidence of this asserted known interest or belief."
+        }
+      ]
+    },
+    {
+      "item_id": "item-16618b3b0775",
+      "semantic_correctness": 0,
+      "referee_consistency": 0,
+      "unsupported_severity": 2,
+      "evidence_faithfulness": 0,
+      "rationale": "A physical furniture compartment is incompatible with the VR pause/exit mechanism. H03 supports an electronic activation only; H22 explicitly rejects the exact furniture-compartment explanation.",
+      "issues": [
+        {
+          "kind": "contradicted",
+          "role": "central",
+          "answer_quote": "opened a hidden compartment within the room's furniture, such as a cushion or armrest, which contained the coffee",
+          "evidence_refs": [
+            "H22"
+          ],
+          "reason": "H22 directly denies this full proposed mechanism, making it unsupported as well."
+        }
+      ]
+    },
+    {
+      "item_id": "item-d5c0982a4e2e",
+      "semantic_correctness": 0,
+      "referee_consistency": 2,
+      "unsupported_severity": 1,
+      "evidence_faithfulness": 1,
+      "rationale": "A trusted intermediary following instructions identifies neither core mechanism. H19-H21, H23 and H25 support the main instructions/secrecy account. The postal-box option is withdrawn. The unspecified sender is not explicitly a friend/relative, so H11 is not expanded into a blanket denial of every possible sender motive.",
+      "issues": [
+        {
+          "kind": "unsupported",
+          "role": "peripheral",
+          "answer_quote": "may have had a personal reason, such as concern or a belief in supernatural phenomena",
+          "evidence_refs": [
+            "H11",
+            "H15",
+            "H24"
+          ],
+          "reason": "These possible motives are not established. H15 concerns Emily and is Unknown; H24 rules out the queried conspiracy/prank/confusion proposition, not all possible motives."
+        }
+      ]
+    },
+    {
+      "item_id": "item-807e306ca4e7",
+      "semantic_correctness": 2,
+      "referee_consistency": 2,
+      "unsupported_severity": 0,
+      "evidence_faithfulness": 2,
+      "rationale": "The specialized fire-resistant suit supplies the complete required survival mechanism. H21-H22 support the protective material/gear and H25 supports additional equipment; protection from the fire is the necessary explanation of the unharmed emergence.",
+      "issues": []
+    },
+    {
+      "item_id": "item-c6e493d901ba",
+      "semantic_correctness": 0,
+      "referee_consistency": 0,
+      "unsupported_severity": 2,
+      "evidence_faithfulness": 0,
+      "rationale": "The answer gives a secret memorial plan, not an explicit mistaken death declaration or hospital record mix-up. H13 supports the memorial purpose and H23 supports husband planning, but H21 denies Jane being unaware of the plans. The surface shock supports surprise as an outcome; H07 denies selecting the event for that purpose, not every surprising outcome.",
+      "issues": [
+        {
+          "kind": "contradicted",
+          "role": "central",
+          "answer_quote": "keeping it a secret from her",
+          "evidence_refs": [
+            "H21"
+          ],
+          "reason": "A wholly secret memorial plan conflicts with H21, which denies Jane being unaware of the plans."
+        },
+        {
+          "kind": "ambiguous",
+          "role": "central",
+          "answer_quote": "Jane's husband planned the memorial service while she was still alive",
+          "evidence_refs": [
+            "H06",
+            "H23",
+            "H19",
+            "H13"
+          ],
+          "reason": "H23 directly supports husband planning while H06 denies spouse orchestration. H19 also denies deliberate planning despite H13 affirming planning. These internal tensions are retained, not used as unambiguous contradictions of the supported husband claim."
+        }
+      ]
+    },
+    {
+      "item_id": "item-56500e7e76ce",
+      "semantic_correctness": 0,
+      "referee_consistency": 0,
+      "unsupported_severity": 2,
+      "evidence_faithfulness": 0,
+      "rationale": "A safe room is an incompatible alternative to the protective suit. H13 denies a safe room built into her home and H05 denies fire containment preventing harm. H24 supports only something protective in the ashes, not the invented room mechanism.",
+      "issues": [
+        {
+          "kind": "contradicted",
+          "role": "central",
+          "answer_quote": "a pre-existing, undiscovered safe room within her home",
+          "evidence_refs": [
+            "H13"
+          ],
+          "reason": "H13 denies the safe room being built into her home; no evidence establishes this home-based refuge."
+        },
+        {
+          "kind": "contradicted",
+          "role": "central",
+          "answer_quote": "The fire was contained in this room, which is why the ashes outside contained only remnants of the fire and did not harm her.",
+          "evidence_refs": [
+            "H05"
+          ],
+          "reason": "The asserted containment-based prevention of harm is denied by H05."
+        },
+        {
+          "kind": "unsupported",
+          "role": "peripheral",
+          "answer_quote": "without any planned or demonstrative intent",
+          "evidence_refs": [
+            "H15",
+            "H21"
+          ],
+          "reason": "H15 supports unplanned survival, but H21 is Unknown about a demonstration; it cannot support the added absence of demonstrative intent."
+        }
+      ]
+    },
+    {
+      "item_id": "item-2290420f1515",
+      "semantic_correctness": 0,
+      "referee_consistency": 0,
+      "unsupported_severity": 2,
+      "evidence_faithfulness": 0,
+      "rationale": "The answer replaces a simulated room and exit/pause with a physical opening. H07 explicitly says the room was completely sealed; none of the denials of particular routes establish another passage.",
+      "issues": [
+        {
+          "kind": "contradicted",
+          "role": "central",
+          "answer_quote": "the room was not completely sealed off from the outside",
+          "evidence_refs": [
+            "H07"
+          ],
+          "reason": "H07 affirms exactly the opposite."
+        },
+        {
+          "kind": "unsupported",
+          "role": "central",
+          "answer_quote": "There must have been a small, undetected opening or passage that was not mentioned in the dialogue",
+          "evidence_refs": [
+            "H07"
+          ],
+          "reason": "No reply establishes this opening; the answer explicitly introduces it despite the sealed-room evidence."
+        }
+      ]
+    },
+    {
+      "item_id": "item-4a25eba94afa",
+      "semantic_correctness": 0,
+      "referee_consistency": 2,
+      "unsupported_severity": 1,
+      "evidence_faithfulness": 1,
+      "rationale": "Protection of carried possessions identifies none of the required protection of people from airborne ash/debris. H09-H10 and H13 nevertheless support the central possessions/multiple-uses explanation. Special-feature absence is unsupported. H11 denies valuable/fragile goods needing extra care, not all ordinary care; H12 denies the occasional-rain scenario, not all possible dryness.",
+      "issues": [
+        {
+          "kind": "unsupported",
+          "role": "peripheral",
+          "answer_quote": "they do not have special features such as storage compartments or hooks",
+          "evidence_refs": [
+            "H16"
+          ],
+          "reason": "H16 is Unknown, not No."
+        },
+        {
+          "kind": "unsupported",
+          "role": "peripheral",
+          "answer_quote": "a practical solution to keep these items dry and secure",
+          "evidence_refs": [
+            "H09",
+            "H10",
+            "H12"
+          ],
+          "reason": "Covering items is supported, but moisture prevention and security are not established; H12 provides no affirmative support for drying-related use."
+        },
+        {
+          "kind": "ambiguous",
+          "role": "peripheral",
+          "answer_quote": "The umbrellas serve multiple functions beyond just protection from the rain",
+          "evidence_refs": [
+            "SURFACE",
+            "H12",
+            "H13"
+          ],
+          "reason": "This may describe ordinary umbrella functionality rather than actual rainfall in this town. No actual rain is asserted unambiguously, so the wording is not scored as a contradiction."
+        }
+      ]
+    },
+    {
+      "item_id": "item-42dd7c021084",
+      "semantic_correctness": 0,
+      "referee_consistency": 2,
+      "unsupported_severity": 2,
+      "evidence_faithfulness": 0,
+      "rationale": "A deliberate prank is incompatible with the required hospital mistake. H03 and H19-H20 support time knowledge and observations, but no answer supplies a prank or deceptive organizers. Knowing a memorial is scheduled can coexist with not knowing a supposed prank, so the nature-of-event wording is not treated as an unambiguous knowledge contradiction.",
+      "issues": [
+        {
+          "kind": "unsupported",
+          "role": "central",
+          "answer_quote": "The situation is a prank or elaborate joke orchestrated by Jane's friends and family.",
+          "evidence_refs": [
+            "H01",
+            "H02",
+            "H04"
+          ],
+          "reason": "Surprise plus prior knowledge does not establish a prank, the organizers, or their deceptive intent."
+        },
+        {
+          "kind": "ambiguous",
+          "role": "central",
+          "answer_quote": "ensuring she was aware of the date and time but not the true nature of the event",
+          "evidence_refs": [
+            "H01",
+            "H02",
+            "H03",
+            "H04"
+          ],
+          "reason": "H01 records surprise while H02-H04 affirm advance knowledge. True nature could mean the alleged prank rather than the existence of the memorial; the narrower reading is unsupported but not explicitly denied."
+        }
+      ]
+    },
+    {
+      "item_id": "item-6f082795d434",
+      "semantic_correctness": 0,
+      "referee_consistency": 1,
+      "unsupported_severity": 1,
+      "evidence_faithfulness": 1,
+      "rationale": "The answer protects possessions, not people from ash/debris, so it earns no semantic anchor credit. Item protection and additional uses are supported by H09-H10/H13. The valuable/fragile transport-care rationale conflicts with H11, while dust/dirt is an unsupported peripheral specification of what the covers protect against.",
+      "issues": [
+        {
+          "kind": "contradicted",
+          "role": "peripheral",
+          "answer_quote": "likely due to the umbrellas serving as practical covers to protect valuable or fragile items that they carry",
+          "evidence_refs": [
+            "H11"
+          ],
+          "reason": "H11 rejects the combined rationale of protected goods being valuable/fragile and requiring extra care during transport; the answer uses those qualities to explain protective carrying. This is not a claim that every good is valueless."
+        },
+        {
+          "kind": "unsupported",
+          "role": "peripheral",
+          "answer_quote": "from dust, dirt, or other environmental factors",
+          "evidence_refs": [
+            "H09",
+            "H10"
+          ],
+          "reason": "The record supports covering carried items but never identifies these hazards."
+        }
+      ]
+    },
+    {
+      "item_id": "item-237f1bb6f7b4",
+      "semantic_correctness": 0,
+      "referee_consistency": 0,
+      "unsupported_severity": 2,
+      "evidence_faithfulness": 0,
+      "rationale": "The staged deception replaces the hospital clerical error, and no core mistaken-declaration mechanism is supplied. H02-H04 explicitly establish prior knowledge. H01 affirms surprise, which need not mean complete ignorance and cannot erase those answers.",
+      "issues": [
+        {
+          "kind": "unsupported",
+          "role": "central",
+          "answer_quote": "The memorial service for Jane was a elaborate deception orchestrated by her friends and family.",
+          "evidence_refs": [
+            "H01"
+          ],
+          "reason": "The record supplies surprise but no staged deception or organizers with that intent."
+        },
+        {
+          "kind": "contradicted",
+          "role": "central",
+          "answer_quote": "They planned and executed the entire event without Jane's knowledge",
+          "evidence_refs": [
+            "H02",
+            "H03",
+            "H04"
+          ],
+          "reason": "Jane explicitly knew beforehand that the memorial was planned, knew its date/time, and had knowledge of why it was organized."
+        },
+        {
+          "kind": "contradicted",
+          "role": "central",
+          "answer_quote": "she was completely unaware of the plan until it was in full swing",
+          "evidence_refs": [
+            "H02",
+            "H03",
+            "H04"
+          ],
+          "reason": "This repeats the same denied total-ignorance explanation; recorded surprise is compatible with knowledge."
+        }
+      ]
+    },
+    {
+      "item_id": "item-6aefdab6cf04",
+      "semantic_correctness": 2,
+      "referee_consistency": 2,
+      "unsupported_severity": 0,
+      "evidence_faithfulness": 2,
+      "rationale": "The specialized fire-resistant suit or gear explicitly supplies the required fire-protection mechanism. H21-H22 support it, and H25 affirms additional equipment such as the examples given. Gloves/boots are examples rather than a claim that both were definitely present.",
+      "issues": []
+    },
+    {
+      "item_id": "item-ba0d4cd80952",
+      "semantic_correctness": 0,
+      "referee_consistency": 0,
+      "unsupported_severity": 2,
+      "evidence_faithfulness": 0,
+      "rationale": "Deliberately faking death replaces mistaken premature burial; no escape mechanism or coded safety signal appears. H10 and H12 support control of a place and secret communication, but H16 denies faking death and H08 denies using forwarding for the letter. H15 supports setting up a service only.",
+      "issues": [
+        {
+          "kind": "contradicted",
+          "role": "central",
+          "answer_quote": "after faking her death",
+          "evidence_refs": [
+            "H16"
+          ],
+          "reason": "H16 explicitly denies Emily arranging to fake her death."
+        },
+        {
+          "kind": "contradicted",
+          "role": "central",
+          "answer_quote": "used it to forward the letter to her family",
+          "evidence_refs": [
+            "H08"
+          ],
+          "reason": "H08 explicitly denies using a mail-forwarding service for this letter."
+        },
+        {
+          "kind": "ambiguous",
+          "role": "central",
+          "answer_quote": "Emily set up a mail-forwarding service for herself and used it to forward the letter to her family",
+          "evidence_refs": [
+            "H07",
+            "H08",
+            "H15",
+            "H21"
+          ],
+          "reason": "The forwarding record is mixed: H15 affirms setup, while H08 denies use for the letter and H21 denies arranging control after death. Setup is not penalized or treated as proof of actual use."
+        },
+        {
+          "kind": "unsupported",
+          "role": "peripheral",
+          "answer_quote": "The non-existent address was likely created using available technology",
+          "evidence_refs": [
+            "H18"
+          ],
+          "reason": "H18 is Unknown and does not establish a technological address-creation mechanism."
+        }
+      ]
+    },
+    {
+      "item_id": "item-b41ab652d21a",
+      "semantic_correctness": 0,
+      "referee_consistency": 0,
+      "unsupported_severity": 2,
+      "evidence_faithfulness": 0,
+      "rationale": "Being alive at a genuine memorial restates the puzzle without identifying mistaken declaration or the hospital mix-up. The central explanation relies on Jane learning of the plan only on arrival, denied by H21. General purpose and family involvement are supported by H01/H13.",
+      "issues": [
+        {
+          "kind": "contradicted",
+          "role": "central",
+          "answer_quote": "Jane was unaware of the plans until she attended the memorial service",
+          "evidence_refs": [
+            "H21"
+          ],
+          "reason": "H21 explicitly denies unawareness; withholding some details would not justify this broader assertion."
+        },
+        {
+          "kind": "ambiguous",
+          "role": "central",
+          "answer_quote": "Jane's husband planned the memorial service while she was still alive",
+          "evidence_refs": [
+            "H06",
+            "H23",
+            "H19",
+            "H13"
+          ],
+          "reason": "H23 supports husband planning but H06 denies spouse orchestration; H19 denies deliberate planning despite other planning affirmations. The record is internally tense, so the supported husband claim is not itself penalized as a contradiction."
+        }
+      ]
+    },
+    {
+      "item_id": "item-a081253c98f0",
+      "semantic_correctness": 0,
+      "referee_consistency": 2,
+      "unsupported_severity": 2,
+      "evidence_faithfulness": 0,
+      "rationale": "Fashion identifies neither volcanic ash nor protection of people from airborne debris. H01/H07/H10/H19-H22 support the principal exclusions, but elimination of those alternatives does not establish fashion. H12 denies fashion despite a UV mandate as a compound proposition; without a mandate, it is not an independent explicit denial of fashion.",
+      "issues": [
+        {
+          "kind": "unsupported",
+          "role": "central",
+          "answer_quote": "the umbrellas are being used as fashion accessories",
+          "evidence_refs": [
+            "H03",
+            "H12"
+          ],
+          "reason": "A non-rain purpose is supported, but no affirmative answer establishes fashion."
+        },
+        {
+          "kind": "ambiguous",
+          "role": "central",
+          "answer_quote": "the umbrellas are being used as fashion accessories",
+          "evidence_refs": [
+            "H07",
+            "H12",
+            "H17"
+          ],
+          "reason": "The No in H12 includes a UV-mandate premise, while H07/H17 deny compulsion/mayoral mandate. Its narrow scope does not justify an unambiguous fashion contradiction."
+        }
+      ]
+    },
+    {
+      "item_id": "item-aaefa8cc8be0",
+      "semantic_correctness": 0,
+      "referee_consistency": 0,
+      "unsupported_severity": 2,
+      "evidence_faithfulness": 0,
+      "rationale": "A physical structural compartment identifies none of the VR mechanism. The device in H03 does not support the compartment claim, which is expressly denied by H15.",
+      "issues": [
+        {
+          "kind": "contradicted",
+          "role": "central",
+          "answer_quote": "opened a hidden compartment within the room's structure, such as a support beam or ventilation duct, which contained the coffee",
+          "evidence_refs": [
+            "H15"
+          ],
+          "reason": "H15 directly denies the stated structural-compartment mechanism."
+        }
+      ]
+    },
+    {
+      "item_id": "item-1601ee223832",
+      "semantic_correctness": 0,
+      "referee_consistency": 2,
+      "unsupported_severity": 2,
+      "evidence_faithfulness": 0,
+      "rationale": "A hidden compartment does not identify the suit mechanism. H24 supports unidentified protection in the ashes, not a compartment or hiding. H20 denies the compound build-and-use proposition, not use alone; H23 specifically concerns choosing a safe room instead of normal evacuation, so it is not stretched into a blanket denial of all compartment use.",
+      "issues": [
+        {
+          "kind": "unsupported",
+          "role": "central",
+          "answer_quote": "she had a hidden compartment within the ashes that provided protection",
+          "evidence_refs": [
+            "H24"
+          ],
+          "reason": "The affirmative answer identifies something protective, with no evidence that it was a compartment."
+        },
+        {
+          "kind": "unsupported",
+          "role": "central",
+          "answer_quote": "ensured her own survival by hiding in this hidden compartment during the fire",
+          "evidence_refs": [
+            "H07",
+            "H20",
+            "H23",
+            "H24"
+          ],
+          "reason": "Her involvement and unspecified protection do not establish the proposed hiding mechanism; a denied compound question is not affirmative evidence for its remaining clauses."
+        },
+        {
+          "kind": "unsupported",
+          "role": "peripheral",
+          "answer_quote": "nor used for any planned demonstration",
+          "evidence_refs": [
+            "H15",
+            "H21"
+          ],
+          "reason": "Unplanned survival is supported, but demonstrative intent is Unknown, not explicitly absent."
+        }
+      ]
+    },
+    {
+      "item_id": "item-6ccd1d864bfa",
+      "semantic_correctness": 0,
+      "referee_consistency": 0,
+      "unsupported_severity": 2,
+      "evidence_faithfulness": 0,
+      "rationale": "A construction gap carrying coffee is incompatible with the required VR exit/pause. H07 affirms complete sealing, and the surface says Sarah left and returned. H12 only denies intentional creation of a passage behind the mirror; it does not establish a natural gap elsewhere.",
+      "issues": [
+        {
+          "kind": "contradicted",
+          "role": "central",
+          "answer_quote": "the coffee was brought to her through a hidden, undetected passage",
+          "evidence_refs": [
+            "H07",
+            "SURFACE"
+          ],
+          "reason": "The asserted passage conflicts with complete sealing and substitutes delivery for the surface event of leaving and returning."
+        },
+        {
+          "kind": "unsupported",
+          "role": "central",
+          "answer_quote": "This passage could be a naturally occurring gap or flaw in the room's construction that Sarah discovered and used to her advantage.",
+          "evidence_refs": [
+            "H11",
+            "H12"
+          ],
+          "reason": "H11 is Unknown and H12 concerns intentional creation behind the mirror; neither supports a discovered natural construction gap."
+        }
+      ]
+    },
+    {
+      "item_id": "item-e8471967ae97",
+      "semantic_correctness": 0,
+      "referee_consistency": 0,
+      "unsupported_severity": 2,
+      "evidence_faithfulness": 0,
+      "rationale": "The answer proposes faked death and forwarding, not accidental burial/escape or a prearranged safety code. H16 denies the first central claim and H08 denies forwarding this letter. A safe house is supported by H12; uncertainty about its management is correctly retained.",
+      "issues": [
+        {
+          "kind": "contradicted",
+          "role": "central",
+          "answer_quote": "after faking her death",
+          "evidence_refs": [
+            "H16"
+          ],
+          "reason": "The final explanation directly asserts the deliberately faked death denied in H16."
+        },
+        {
+          "kind": "contradicted",
+          "role": "central",
+          "answer_quote": "The letter was sent to a non-existent address through a mail-forwarding service that she set up for herself",
+          "evidence_refs": [
+            "H08"
+          ],
+          "reason": "H08 denies using a mail-forwarding service for the letter; H15 supports setup but not this use."
+        },
+        {
+          "kind": "ambiguous",
+          "role": "central",
+          "answer_quote": "a mail-forwarding service that she set up for herself",
+          "evidence_refs": [
+            "H07",
+            "H08",
+            "H15",
+            "H21"
+          ],
+          "reason": "The record contains an affirmative setup answer amid forwarding-use/control denials. These have different scopes; the explicit setup support is retained."
+        }
+      ]
+    },
+    {
+      "item_id": "item-e453047f50fd",
+      "semantic_correctness": 0,
+      "referee_consistency": 2,
+      "unsupported_severity": 2,
+      "evidence_faithfulness": 0,
+      "rationale": "Fashion is incompatible with the required ash-protection mechanism and lacks affirmative evidence. H04/H16 support persistence and no stranger influence; H10/H13 deny UV use. H12 is a compound fashion-despite-mandate question, not a standalone fashion denial.",
+      "issues": [
+        {
+          "kind": "unsupported",
+          "role": "central",
+          "answer_quote": "the umbrellas are being used as fashion accessories",
+          "evidence_refs": [
+            "H03",
+            "H12"
+          ],
+          "reason": "No affirmative reply establishes the proposed central reason for carrying umbrellas."
+        },
+        {
+          "kind": "unsupported",
+          "role": "peripheral",
+          "answer_quote": "no mandate or rumor exists regarding a UV threat",
+          "evidence_refs": [
+            "H05",
+            "H07",
+            "H09",
+            "H17"
+          ],
+          "reason": "The mandate exclusions are supported, but no warning and no mayor-installed lights do not establish that no UV rumor exists."
+        },
+        {
+          "kind": "ambiguous",
+          "role": "central",
+          "answer_quote": "the umbrellas are being used as fashion accessories",
+          "evidence_refs": [
+            "H07",
+            "H12",
+            "H17"
+          ],
+          "reason": "H12 denies the combined fashion-with-UV-mandate proposition. The record also denies a mandate, so its reply is not expanded to rule out fashion independently."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-15",
+  "command": "python -m unittest experiments.sun_c2_semantic.test_audit -v",
+  "python": "3.11",
+  "tests_run": 5,
+  "passed": 5,
+  "failed": 0,
+  "corruption_variants_in_validation_test": 7,
+  "elapsed_seconds": 0.008,
+  "scope": "New offline semantic audit only; prior passing C2 suites not rerun.",
+  "coverage": ["frozen source hashes and historical answer/score preservation", "packet fields and disjoint opaque IDs", "reject wrong hash, duplicate rating, boolean ordinal, formula mismatch, fabricated quote, invalid evidence reference, missing issue", "paired contrast signs and interaction", "ranking reversals exclude ties", "weighted kappa degeneracy"]
+}

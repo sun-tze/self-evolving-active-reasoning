@@ -1,0 +1,1448 @@
+{
+  "format": "c2_semantic_audit_v1",
+  "n_cases": 5,
+  "n_answers": 20,
+  "n_reviewers": 2,
+  "score_scale": "Semantic/faithfulness means 0..2; contrasts divide these by 2; historical F1 unchanged 0..1.",
+  "freeze_sha256": "3a7bf64cdb9a1da0227f773cea6efd6cdf8dcad7107cd59082154adc225c08a0",
+  "raw_review_sha256": {
+    "r1": "6abfb941e6ac0196400035149f7f412a6d12c944a1cae1d79a1625e2e7e022be",
+    "r2": "3e2ba6b24b10c32ff371441b61d71e4493183057f03783d9e8a6700a3c933c41"
+  },
+  "original_analysis_sha256": "cf049d5853ec73473f324b88a1f5164e52e39310ad999d3c06c4f3a73f920664",
+  "new_inference_calls": 0,
+  "cell_means": {
+    "A": {
+      "character_f1": 0.7454150910912819,
+      "semantic_correctness": 0.4,
+      "evidence_faithfulness": 0.8
+    },
+    "B": {
+      "character_f1": 0.6940759763150283,
+      "semantic_correctness": 0.4,
+      "evidence_faithfulness": 0.8
+    },
+    "C": {
+      "character_f1": 0.6970081386869066,
+      "semantic_correctness": 0.0,
+      "evidence_faithfulness": 0.0
+    },
+    "D": {
+      "character_f1": 0.7165839076630037,
+      "semantic_correctness": 0.0,
+      "evidence_faithfulness": 0.0
+    }
+  },
+  "rows": [
+    {
+      "index": 7,
+      "cell": "A",
+      "character_f1": 0.8984198645598195,
+      "semantic_correctness": 0.0,
+      "evidence_faithfulness": 0.0,
+      "reviewer_item_ids": {
+        "r1": "item-42dd7c021084",
+        "r2": "item-d1a34dd8e595"
+      },
+      "raw_scores": {
+        "r1": {
+          "semantic_correctness": 0,
+          "referee_consistency": 2,
+          "unsupported_severity": 2,
+          "evidence_faithfulness": 0
+        },
+        "r2": {
+          "semantic_correctness": 0,
+          "referee_consistency": 0,
+          "unsupported_severity": 2,
+          "evidence_faithfulness": 0
+        }
+      }
+    },
+    {
+      "index": 7,
+      "cell": "B",
+      "character_f1": 0.9287790697674418,
+      "semantic_correctness": 0.0,
+      "evidence_faithfulness": 0.0,
+      "reviewer_item_ids": {
+        "r1": "item-237f1bb6f7b4",
+        "r2": "item-25fffb4f2a93"
+      },
+      "raw_scores": {
+        "r1": {
+          "semantic_correctness": 0,
+          "referee_consistency": 0,
+          "unsupported_severity": 2,
+          "evidence_faithfulness": 0
+        },
+        "r2": {
+          "semantic_correctness": 0,
+          "referee_consistency": 0,
+          "unsupported_severity": 2,
+          "evidence_faithfulness": 0
+        }
+      }
+    },
+    {
+      "index": 7,
+      "cell": "C",
+      "character_f1": 0.7495621716287216,
+      "semantic_correctness": 0.0,
+      "evidence_faithfulness": 0.0,
+      "reviewer_item_ids": {
+        "r1": "item-c6e493d901ba",
+        "r2": "item-89e867d4b8e9"
+      },
+      "raw_scores": {
+        "r1": {
+          "semantic_correctness": 0,
+          "referee_consistency": 0,
+          "unsupported_severity": 2,
+          "evidence_faithfulness": 0
+        },
+        "r2": {
+          "semantic_correctness": 0,
+          "referee_consistency": 0,
+          "unsupported_severity": 2,
+          "evidence_faithfulness": 0
+        }
+      }
+    },
+    {
+      "index": 7,
+      "cell": "D",
+      "character_f1": 0.8700389105058365,
+      "semantic_correctness": 0.0,
+      "evidence_faithfulness": 0.0,
+      "reviewer_item_ids": {
+        "r1": "item-b41ab652d21a",
+        "r2": "item-0124be695fc7"
+      },
+      "raw_scores": {
+        "r1": {
+          "semantic_correctness": 0,
+          "referee_consistency": 0,
+          "unsupported_severity": 2,
+          "evidence_faithfulness": 0
+        },
+        "r2": {
+          "semantic_correctness": 0,
+          "referee_consistency": 0,
+          "unsupported_severity": 2,
+          "evidence_faithfulness": 0
+        }
+      }
+    },
+    {
+      "index": 29,
+      "cell": "A",
+      "character_f1": 0.6622296173044925,
+      "semantic_correctness": 2.0,
+      "evidence_faithfulness": 2.0,
+      "reviewer_item_ids": {
+        "r1": "item-6aefdab6cf04",
+        "r2": "item-b782e8f9ddcd"
+      },
+      "raw_scores": {
+        "r1": {
+          "semantic_correctness": 2,
+          "referee_consistency": 2,
+          "unsupported_severity": 0,
+          "evidence_faithfulness": 2
+        },
+        "r2": {
+          "semantic_correctness": 2,
+          "referee_consistency": 2,
+          "unsupported_severity": 0,
+          "evidence_faithfulness": 2
+        }
+      }
+    },
+    {
+      "index": 29,
+      "cell": "B",
+      "character_f1": 0.4839319470699433,
+      "semantic_correctness": 2.0,
+      "evidence_faithfulness": 2.0,
+      "reviewer_item_ids": {
+        "r1": "item-807e306ca4e7",
+        "r2": "item-333adc276e36"
+      },
+      "raw_scores": {
+        "r1": {
+          "semantic_correctness": 2,
+          "referee_consistency": 2,
+          "unsupported_severity": 0,
+          "evidence_faithfulness": 2
+        },
+        "r2": {
+          "semantic_correctness": 2,
+          "referee_consistency": 2,
+          "unsupported_severity": 0,
+          "evidence_faithfulness": 2
+        }
+      }
+    },
+    {
+      "index": 29,
+      "cell": "C",
+      "character_f1": 0.6894865525672372,
+      "semantic_correctness": 0.0,
+      "evidence_faithfulness": 0.0,
+      "reviewer_item_ids": {
+        "r1": "item-56500e7e76ce",
+        "r2": "item-11f5d0647180"
+      },
+      "raw_scores": {
+        "r1": {
+          "semantic_correctness": 0,
+          "referee_consistency": 0,
+          "unsupported_severity": 2,
+          "evidence_faithfulness": 0
+        },
+        "r2": {
+          "semantic_correctness": 0,
+          "referee_consistency": 0,
+          "unsupported_severity": 2,
+          "evidence_faithfulness": 0
+        }
+      }
+    },
+    {
+      "index": 29,
+      "cell": "D",
+      "character_f1": 0.6661129568106312,
+      "semantic_correctness": 0.0,
+      "evidence_faithfulness": 0.0,
+      "reviewer_item_ids": {
+        "r1": "item-1601ee223832",
+        "r2": "item-1afb92a87941"
+      },
+      "raw_scores": {
+        "r1": {
+          "semantic_correctness": 0,
+          "referee_consistency": 2,
+          "unsupported_severity": 2,
+          "evidence_faithfulness": 0
+        },
+        "r2": {
+          "semantic_correctness": 0,
+          "referee_consistency": 2,
+          "unsupported_severity": 2,
+          "evidence_faithfulness": 0
+        }
+      }
+    },
+    {
+      "index": 40,
+      "cell": "A",
+      "character_f1": 0.9207383279044516,
+      "semantic_correctness": 0.0,
+      "evidence_faithfulness": 1.0,
+      "reviewer_item_ids": {
+        "r1": "item-4ee55b23ad78",
+        "r2": "item-04f5131c2935"
+      },
+      "raw_scores": {
+        "r1": {
+          "semantic_correctness": 0,
+          "referee_consistency": 1,
+          "unsupported_severity": 1,
+          "evidence_faithfulness": 1
+        },
+        "r2": {
+          "semantic_correctness": 0,
+          "referee_consistency": 2,
+          "unsupported_severity": 1,
+          "evidence_faithfulness": 1
+        }
+      }
+    },
+    {
+      "index": 40,
+      "cell": "B",
+      "character_f1": 0.9161437535653166,
+      "semantic_correctness": 0.0,
+      "evidence_faithfulness": 1.0,
+      "reviewer_item_ids": {
+        "r1": "item-d5c0982a4e2e",
+        "r2": "item-85b255d07cb0"
+      },
+      "raw_scores": {
+        "r1": {
+          "semantic_correctness": 0,
+          "referee_consistency": 2,
+          "unsupported_severity": 1,
+          "evidence_faithfulness": 1
+        },
+        "r2": {
+          "semantic_correctness": 0,
+          "referee_consistency": 2,
+          "unsupported_severity": 1,
+          "evidence_faithfulness": 1
+        }
+      }
+    },
+    {
+      "index": 40,
+      "cell": "C",
+      "character_f1": 0.7493188010899182,
+      "semantic_correctness": 0.0,
+      "evidence_faithfulness": 0.0,
+      "reviewer_item_ids": {
+        "r1": "item-ba0d4cd80952",
+        "r2": "item-923bce85e58d"
+      },
+      "raw_scores": {
+        "r1": {
+          "semantic_correctness": 0,
+          "referee_consistency": 0,
+          "unsupported_severity": 2,
+          "evidence_faithfulness": 0
+        },
+        "r2": {
+          "semantic_correctness": 0,
+          "referee_consistency": 0,
+          "unsupported_severity": 2,
+          "evidence_faithfulness": 0
+        }
+      }
+    },
+    {
+      "index": 40,
+      "cell": "D",
+      "character_f1": 0.6637490882567469,
+      "semantic_correctness": 0.0,
+      "evidence_faithfulness": 0.0,
+      "reviewer_item_ids": {
+        "r1": "item-e8471967ae97",
+        "r2": "item-ac097f0d081c"
+      },
+      "raw_scores": {
+        "r1": {
+          "semantic_correctness": 0,
+          "referee_consistency": 0,
+          "unsupported_severity": 2,
+          "evidence_faithfulness": 0
+        },
+        "r2": {
+          "semantic_correctness": 0,
+          "referee_consistency": 0,
+          "unsupported_severity": 2,
+          "evidence_faithfulness": 0
+        }
+      }
+    },
+    {
+      "index": 58,
+      "cell": "A",
+      "character_f1": 0.7487179487179487,
+      "semantic_correctness": 0.0,
+      "evidence_faithfulness": 1.0,
+      "reviewer_item_ids": {
+        "r1": "item-4a25eba94afa",
+        "r2": "item-bf4eaa9c134a"
+      },
+      "raw_scores": {
+        "r1": {
+          "semantic_correctness": 0,
+          "referee_consistency": 2,
+          "unsupported_severity": 1,
+          "evidence_faithfulness": 1
+        },
+        "r2": {
+          "semantic_correctness": 0,
+          "referee_consistency": 2,
+          "unsupported_severity": 1,
+          "evidence_faithfulness": 1
+        }
+      }
+    },
+    {
+      "index": 58,
+      "cell": "B",
+      "character_f1": 0.6680355920602327,
+      "semantic_correctness": 0.0,
+      "evidence_faithfulness": 1.0,
+      "reviewer_item_ids": {
+        "r1": "item-6f082795d434",
+        "r2": "item-35b0fd27b4cc"
+      },
+      "raw_scores": {
+        "r1": {
+          "semantic_correctness": 0,
+          "referee_consistency": 1,
+          "unsupported_severity": 1,
+          "evidence_faithfulness": 1
+        },
+        "r2": {
+          "semantic_correctness": 0,
+          "referee_consistency": 2,
+          "unsupported_severity": 1,
+          "evidence_faithfulness": 1
+        }
+      }
+    },
+    {
+      "index": 58,
+      "cell": "C",
+      "character_f1": 0.6033117350611952,
+      "semantic_correctness": 0.0,
+      "evidence_faithfulness": 0.0,
+      "reviewer_item_ids": {
+        "r1": "item-a081253c98f0",
+        "r2": "item-c39f7c59efcc"
+      },
+      "raw_scores": {
+        "r1": {
+          "semantic_correctness": 0,
+          "referee_consistency": 2,
+          "unsupported_severity": 2,
+          "evidence_faithfulness": 0
+        },
+        "r2": {
+          "semantic_correctness": 0,
+          "referee_consistency": 2,
+          "unsupported_severity": 2,
+          "evidence_faithfulness": 0
+        }
+      }
+    },
+    {
+      "index": 58,
+      "cell": "D",
+      "character_f1": 0.5401350337584396,
+      "semantic_correctness": 0.0,
+      "evidence_faithfulness": 0.0,
+      "reviewer_item_ids": {
+        "r1": "item-e453047f50fd",
+        "r2": "item-03bcda5d00c8"
+      },
+      "raw_scores": {
+        "r1": {
+          "semantic_correctness": 0,
+          "referee_consistency": 2,
+          "unsupported_severity": 2,
+          "evidence_faithfulness": 0
+        },
+        "r2": {
+          "semantic_correctness": 0,
+          "referee_consistency": 2,
+          "unsupported_severity": 2,
+          "evidence_faithfulness": 0
+        }
+      }
+    },
+    {
+      "index": 70,
+      "cell": "A",
+      "character_f1": 0.496969696969697,
+      "semantic_correctness": 0.0,
+      "evidence_faithfulness": 0.0,
+      "reviewer_item_ids": {
+        "r1": "item-aaefa8cc8be0",
+        "r2": "item-69e8e731313b"
+      },
+      "raw_scores": {
+        "r1": {
+          "semantic_correctness": 0,
+          "referee_consistency": 0,
+          "unsupported_severity": 2,
+          "evidence_faithfulness": 0
+        },
+        "r2": {
+          "semantic_correctness": 0,
+          "referee_consistency": 0,
+          "unsupported_severity": 2,
+          "evidence_faithfulness": 0
+        }
+      }
+    },
+    {
+      "index": 70,
+      "cell": "B",
+      "character_f1": 0.4734895191122071,
+      "semantic_correctness": 0.0,
+      "evidence_faithfulness": 0.0,
+      "reviewer_item_ids": {
+        "r1": "item-16618b3b0775",
+        "r2": "item-d46de0bc9c08"
+      },
+      "raw_scores": {
+        "r1": {
+          "semantic_correctness": 0,
+          "referee_consistency": 0,
+          "unsupported_severity": 2,
+          "evidence_faithfulness": 0
+        },
+        "r2": {
+          "semantic_correctness": 0,
+          "referee_consistency": 0,
+          "unsupported_severity": 2,
+          "evidence_faithfulness": 0
+        }
+      }
+    },
+    {
+      "index": 70,
+      "cell": "C",
+      "character_f1": 0.6933614330874605,
+      "semantic_correctness": 0.0,
+      "evidence_faithfulness": 0.0,
+      "reviewer_item_ids": {
+        "r1": "item-2290420f1515",
+        "r2": "item-201f62abe82d"
+      },
+      "raw_scores": {
+        "r1": {
+          "semantic_correctness": 0,
+          "referee_consistency": 0,
+          "unsupported_severity": 2,
+          "evidence_faithfulness": 0
+        },
+        "r2": {
+          "semantic_correctness": 0,
+          "referee_consistency": 0,
+          "unsupported_severity": 2,
+          "evidence_faithfulness": 0
+        }
+      }
+    },
+    {
+      "index": 70,
+      "cell": "D",
+      "character_f1": 0.8428835489833642,
+      "semantic_correctness": 0.0,
+      "evidence_faithfulness": 0.0,
+      "reviewer_item_ids": {
+        "r1": "item-6ccd1d864bfa",
+        "r2": "item-548218c3b8c5"
+      },
+      "raw_scores": {
+        "r1": {
+          "semantic_correctness": 0,
+          "referee_consistency": 0,
+          "unsupported_severity": 2,
+          "evidence_faithfulness": 0
+        },
+        "r2": {
+          "semantic_correctness": 0,
+          "referee_consistency": 0,
+          "unsupported_severity": 2,
+          "evidence_faithfulness": 0
+        }
+      }
+    }
+  ],
+  "per_case": [
+    {
+      "index": 7,
+      "scores": {
+        "character_f1": {
+          "A": 0.8984198645598195,
+          "B": 0.9287790697674418,
+          "C": 0.7495621716287216,
+          "D": 0.8700389105058365
+        },
+        "semantic_correctness": {
+          "A": 0.0,
+          "B": 0.0,
+          "C": 0.0,
+          "D": 0.0
+        },
+        "evidence_faithfulness": {
+          "A": 0.0,
+          "B": 0.0,
+          "C": 0.0,
+          "D": 0.0
+        }
+      },
+      "contrasts_normalized": {
+        "character_f1": {
+          "writer_marginal": 0.07541797204236861,
+          "dialogue_marginal": -0.10379892609635161,
+          "interaction": 0.09011753366949249,
+          "writer_bare_B-A": 0.030359205207622364,
+          "writer_first_D-C": 0.12047673887711485,
+          "dialogue_plain_C-A": -0.14885769293109785,
+          "dialogue_evidence_D-B": -0.05874015926160536
+        },
+        "semantic_correctness": {
+          "writer_marginal": 0.0,
+          "dialogue_marginal": 0.0,
+          "interaction": 0.0,
+          "writer_bare_B-A": 0.0,
+          "writer_first_D-C": 0.0,
+          "dialogue_plain_C-A": 0.0,
+          "dialogue_evidence_D-B": 0.0
+        },
+        "evidence_faithfulness": {
+          "writer_marginal": 0.0,
+          "dialogue_marginal": 0.0,
+          "interaction": 0.0,
+          "writer_bare_B-A": 0.0,
+          "writer_first_D-C": 0.0,
+          "dialogue_plain_C-A": 0.0,
+          "dialogue_evidence_D-B": 0.0
+        }
+      },
+      "ranking_pairs": {
+        "semantic_correctness": [
+          {
+            "pair": "AB",
+            "f1_difference": -0.030359205207622364,
+            "metric_difference": 0.0,
+            "classification": "metric_tie"
+          },
+          {
+            "pair": "AC",
+            "f1_difference": 0.14885769293109785,
+            "metric_difference": 0.0,
+            "classification": "metric_tie"
+          },
+          {
+            "pair": "AD",
+            "f1_difference": 0.028380954053983,
+            "metric_difference": 0.0,
+            "classification": "metric_tie"
+          },
+          {
+            "pair": "BC",
+            "f1_difference": 0.17921689813872022,
+            "metric_difference": 0.0,
+            "classification": "metric_tie"
+          },
+          {
+            "pair": "BD",
+            "f1_difference": 0.05874015926160536,
+            "metric_difference": 0.0,
+            "classification": "metric_tie"
+          },
+          {
+            "pair": "CD",
+            "f1_difference": -0.12047673887711485,
+            "metric_difference": 0.0,
+            "classification": "metric_tie"
+          }
+        ],
+        "evidence_faithfulness": [
+          {
+            "pair": "AB",
+            "f1_difference": -0.030359205207622364,
+            "metric_difference": 0.0,
+            "classification": "metric_tie"
+          },
+          {
+            "pair": "AC",
+            "f1_difference": 0.14885769293109785,
+            "metric_difference": 0.0,
+            "classification": "metric_tie"
+          },
+          {
+            "pair": "AD",
+            "f1_difference": 0.028380954053983,
+            "metric_difference": 0.0,
+            "classification": "metric_tie"
+          },
+          {
+            "pair": "BC",
+            "f1_difference": 0.17921689813872022,
+            "metric_difference": 0.0,
+            "classification": "metric_tie"
+          },
+          {
+            "pair": "BD",
+            "f1_difference": 0.05874015926160536,
+            "metric_difference": 0.0,
+            "classification": "metric_tie"
+          },
+          {
+            "pair": "CD",
+            "f1_difference": -0.12047673887711485,
+            "metric_difference": 0.0,
+            "classification": "metric_tie"
+          }
+        ]
+      }
+    },
+    {
+      "index": 29,
+      "scores": {
+        "character_f1": {
+          "A": 0.6622296173044925,
+          "B": 0.4839319470699433,
+          "C": 0.6894865525672372,
+          "D": 0.6661129568106312
+        },
+        "semantic_correctness": {
+          "A": 2.0,
+          "B": 2.0,
+          "C": 0.0,
+          "D": 0.0
+        },
+        "evidence_faithfulness": {
+          "A": 2.0,
+          "B": 2.0,
+          "C": 0.0,
+          "D": 0.0
+        }
+      },
+      "contrasts_normalized": {
+        "character_f1": {
+          "writer_marginal": -0.1008356329955776,
+          "dialogue_marginal": 0.10471897250171633,
+          "interaction": 0.15492407447794315,
+          "writer_bare_B-A": -0.17829767023454918,
+          "writer_first_D-C": -0.023373595756606025,
+          "dialogue_plain_C-A": 0.027256935262744753,
+          "dialogue_evidence_D-B": 0.1821810097406879
+        },
+        "semantic_correctness": {
+          "writer_marginal": 0.0,
+          "dialogue_marginal": -1.0,
+          "interaction": 0.0,
+          "writer_bare_B-A": 0.0,
+          "writer_first_D-C": 0.0,
+          "dialogue_plain_C-A": -1.0,
+          "dialogue_evidence_D-B": -1.0
+        },
+        "evidence_faithfulness": {
+          "writer_marginal": 0.0,
+          "dialogue_marginal": -1.0,
+          "interaction": 0.0,
+          "writer_bare_B-A": 0.0,
+          "writer_first_D-C": 0.0,
+          "dialogue_plain_C-A": -1.0,
+          "dialogue_evidence_D-B": -1.0
+        }
+      },
+      "ranking_pairs": {
+        "semantic_correctness": [
+          {
+            "pair": "AB",
+            "f1_difference": 0.17829767023454918,
+            "metric_difference": 0.0,
+            "classification": "metric_tie"
+          },
+          {
+            "pair": "AC",
+            "f1_difference": -0.027256935262744753,
+            "metric_difference": 2.0,
+            "classification": "reversal"
+          },
+          {
+            "pair": "AD",
+            "f1_difference": -0.0038833395061387277,
+            "metric_difference": 2.0,
+            "classification": "reversal"
+          },
+          {
+            "pair": "BC",
+            "f1_difference": -0.20555460549729393,
+            "metric_difference": 2.0,
+            "classification": "reversal"
+          },
+          {
+            "pair": "BD",
+            "f1_difference": -0.1821810097406879,
+            "metric_difference": 2.0,
+            "classification": "reversal"
+          },
+          {
+            "pair": "CD",
+            "f1_difference": 0.023373595756606025,
+            "metric_difference": 0.0,
+            "classification": "metric_tie"
+          }
+        ],
+        "evidence_faithfulness": [
+          {
+            "pair": "AB",
+            "f1_difference": 0.17829767023454918,
+            "metric_difference": 0.0,
+            "classification": "metric_tie"
+          },
+          {
+            "pair": "AC",
+            "f1_difference": -0.027256935262744753,
+            "metric_difference": 2.0,
+            "classification": "reversal"
+          },
+          {
+            "pair": "AD",
+            "f1_difference": -0.0038833395061387277,
+            "metric_difference": 2.0,
+            "classification": "reversal"
+          },
+          {
+            "pair": "BC",
+            "f1_difference": -0.20555460549729393,
+            "metric_difference": 2.0,
+            "classification": "reversal"
+          },
+          {
+            "pair": "BD",
+            "f1_difference": -0.1821810097406879,
+            "metric_difference": 2.0,
+            "classification": "reversal"
+          },
+          {
+            "pair": "CD",
+            "f1_difference": 0.023373595756606025,
+            "metric_difference": 0.0,
+            "classification": "metric_tie"
+          }
+        ]
+      }
+    },
+    {
+      "index": 40,
+      "scores": {
+        "character_f1": {
+          "A": 0.9207383279044516,
+          "B": 0.9161437535653166,
+          "C": 0.7493188010899182,
+          "D": 0.6637490882567469
+        },
+        "semantic_correctness": {
+          "A": 0.0,
+          "B": 0.0,
+          "C": 0.0,
+          "D": 0.0
+        },
+        "evidence_faithfulness": {
+          "A": 1.0,
+          "B": 1.0,
+          "C": 0.0,
+          "D": 0.0
+        }
+      },
+      "contrasts_normalized": {
+        "character_f1": {
+          "writer_marginal": -0.045082143586153145,
+          "dialogue_marginal": -0.21190709606155156,
+          "interaction": -0.08097513849403626,
+          "writer_bare_B-A": -0.004594574339135016,
+          "writer_first_D-C": -0.08556971283317127,
+          "dialogue_plain_C-A": -0.17141952681453343,
+          "dialogue_evidence_D-B": -0.2523946653085697
+        },
+        "semantic_correctness": {
+          "writer_marginal": 0.0,
+          "dialogue_marginal": 0.0,
+          "interaction": 0.0,
+          "writer_bare_B-A": 0.0,
+          "writer_first_D-C": 0.0,
+          "dialogue_plain_C-A": 0.0,
+          "dialogue_evidence_D-B": 0.0
+        },
+        "evidence_faithfulness": {
+          "writer_marginal": 0.0,
+          "dialogue_marginal": -0.5,
+          "interaction": 0.0,
+          "writer_bare_B-A": 0.0,
+          "writer_first_D-C": 0.0,
+          "dialogue_plain_C-A": -0.5,
+          "dialogue_evidence_D-B": -0.5
+        }
+      },
+      "ranking_pairs": {
+        "semantic_correctness": [
+          {
+            "pair": "AB",
+            "f1_difference": 0.004594574339135016,
+            "metric_difference": 0.0,
+            "classification": "metric_tie"
+          },
+          {
+            "pair": "AC",
+            "f1_difference": 0.17141952681453343,
+            "metric_difference": 0.0,
+            "classification": "metric_tie"
+          },
+          {
+            "pair": "AD",
+            "f1_difference": 0.2569892396477047,
+            "metric_difference": 0.0,
+            "classification": "metric_tie"
+          },
+          {
+            "pair": "BC",
+            "f1_difference": 0.1668249524753984,
+            "metric_difference": 0.0,
+            "classification": "metric_tie"
+          },
+          {
+            "pair": "BD",
+            "f1_difference": 0.2523946653085697,
+            "metric_difference": 0.0,
+            "classification": "metric_tie"
+          },
+          {
+            "pair": "CD",
+            "f1_difference": 0.08556971283317127,
+            "metric_difference": 0.0,
+            "classification": "metric_tie"
+          }
+        ],
+        "evidence_faithfulness": [
+          {
+            "pair": "AB",
+            "f1_difference": 0.004594574339135016,
+            "metric_difference": 0.0,
+            "classification": "metric_tie"
+          },
+          {
+            "pair": "AC",
+            "f1_difference": 0.17141952681453343,
+            "metric_difference": 1.0,
+            "classification": "same"
+          },
+          {
+            "pair": "AD",
+            "f1_difference": 0.2569892396477047,
+            "metric_difference": 1.0,
+            "classification": "same"
+          },
+          {
+            "pair": "BC",
+            "f1_difference": 0.1668249524753984,
+            "metric_difference": 1.0,
+            "classification": "same"
+          },
+          {
+            "pair": "BD",
+            "f1_difference": 0.2523946653085697,
+            "metric_difference": 1.0,
+            "classification": "same"
+          },
+          {
+            "pair": "CD",
+            "f1_difference": 0.08556971283317127,
+            "metric_difference": 0.0,
+            "classification": "metric_tie"
+          }
+        ]
+      }
+    },
+    {
+      "index": 58,
+      "scores": {
+        "character_f1": {
+          "A": 0.7487179487179487,
+          "B": 0.6680355920602327,
+          "C": 0.6033117350611952,
+          "D": 0.5401350337584396
+        },
+        "semantic_correctness": {
+          "A": 0.0,
+          "B": 0.0,
+          "C": 0.0,
+          "D": 0.0
+        },
+        "evidence_faithfulness": {
+          "A": 1.0,
+          "B": 1.0,
+          "C": 0.0,
+          "D": 0.0
+        }
+      },
+      "contrasts_normalized": {
+        "character_f1": {
+          "writer_marginal": -0.0719295289802358,
+          "dialogue_marginal": -0.1366533859792733,
+          "interaction": 0.017505655354960514,
+          "writer_bare_B-A": -0.08068235665771606,
+          "writer_first_D-C": -0.06317670130275554,
+          "dialogue_plain_C-A": -0.14540621365675355,
+          "dialogue_evidence_D-B": -0.12790055830179303
+        },
+        "semantic_correctness": {
+          "writer_marginal": 0.0,
+          "dialogue_marginal": 0.0,
+          "interaction": 0.0,
+          "writer_bare_B-A": 0.0,
+          "writer_first_D-C": 0.0,
+          "dialogue_plain_C-A": 0.0,
+          "dialogue_evidence_D-B": 0.0
+        },
+        "evidence_faithfulness": {
+          "writer_marginal": 0.0,
+          "dialogue_marginal": -0.5,
+          "interaction": 0.0,
+          "writer_bare_B-A": 0.0,
+          "writer_first_D-C": 0.0,
+          "dialogue_plain_C-A": -0.5,
+          "dialogue_evidence_D-B": -0.5
+        }
+      },
+      "ranking_pairs": {
+        "semantic_correctness": [
+          {
+            "pair": "AB",
+            "f1_difference": 0.08068235665771606,
+            "metric_difference": 0.0,
+            "classification": "metric_tie"
+          },
+          {
+            "pair": "AC",
+            "f1_difference": 0.14540621365675355,
+            "metric_difference": 0.0,
+            "classification": "metric_tie"
+          },
+          {
+            "pair": "AD",
+            "f1_difference": 0.2085829149595091,
+            "metric_difference": 0.0,
+            "classification": "metric_tie"
+          },
+          {
+            "pair": "BC",
+            "f1_difference": 0.06472385699903749,
+            "metric_difference": 0.0,
+            "classification": "metric_tie"
+          },
+          {
+            "pair": "BD",
+            "f1_difference": 0.12790055830179303,
+            "metric_difference": 0.0,
+            "classification": "metric_tie"
+          },
+          {
+            "pair": "CD",
+            "f1_difference": 0.06317670130275554,
+            "metric_difference": 0.0,
+            "classification": "metric_tie"
+          }
+        ],
+        "evidence_faithfulness": [
+          {
+            "pair": "AB",
+            "f1_difference": 0.08068235665771606,
+            "metric_difference": 0.0,
+            "classification": "metric_tie"
+          },
+          {
+            "pair": "AC",
+            "f1_difference": 0.14540621365675355,
+            "metric_difference": 1.0,
+            "classification": "same"
+          },
+          {
+            "pair": "AD",
+            "f1_difference": 0.2085829149595091,
+            "metric_difference": 1.0,
+            "classification": "same"
+          },
+          {
+            "pair": "BC",
+            "f1_difference": 0.06472385699903749,
+            "metric_difference": 1.0,
+            "classification": "same"
+          },
+          {
+            "pair": "BD",
+            "f1_difference": 0.12790055830179303,
+            "metric_difference": 1.0,
+            "classification": "same"
+          },
+          {
+            "pair": "CD",
+            "f1_difference": 0.06317670130275554,
+            "metric_difference": 0.0,
+            "classification": "metric_tie"
+          }
+        ]
+      }
+    },
+    {
+      "index": 70,
+      "scores": {
+        "character_f1": {
+          "A": 0.496969696969697,
+          "B": 0.4734895191122071,
+          "C": 0.6933614330874605,
+          "D": 0.8428835489833642
+        },
+        "semantic_correctness": {
+          "A": 0.0,
+          "B": 0.0,
+          "C": 0.0,
+          "D": 0.0
+        },
+        "evidence_faithfulness": {
+          "A": 0.0,
+          "B": 0.0,
+          "C": 0.0,
+          "D": 0.0
+        }
+      },
+      "contrasts_normalized": {
+        "character_f1": {
+          "writer_marginal": 0.0630209690192069,
+          "dialogue_marginal": 0.28289288299446025,
+          "interaction": 0.1730022937533936,
+          "writer_bare_B-A": -0.023480177857489903,
+          "writer_first_D-C": 0.1495221158959037,
+          "dialogue_plain_C-A": 0.19639173611776345,
+          "dialogue_evidence_D-B": 0.36939402987115705
+        },
+        "semantic_correctness": {
+          "writer_marginal": 0.0,
+          "dialogue_marginal": 0.0,
+          "interaction": 0.0,
+          "writer_bare_B-A": 0.0,
+          "writer_first_D-C": 0.0,
+          "dialogue_plain_C-A": 0.0,
+          "dialogue_evidence_D-B": 0.0
+        },
+        "evidence_faithfulness": {
+          "writer_marginal": 0.0,
+          "dialogue_marginal": 0.0,
+          "interaction": 0.0,
+          "writer_bare_B-A": 0.0,
+          "writer_first_D-C": 0.0,
+          "dialogue_plain_C-A": 0.0,
+          "dialogue_evidence_D-B": 0.0
+        }
+      },
+      "ranking_pairs": {
+        "semantic_correctness": [
+          {
+            "pair": "AB",
+            "f1_difference": 0.023480177857489903,
+            "metric_difference": 0.0,
+            "classification": "metric_tie"
+          },
+          {
+            "pair": "AC",
+            "f1_difference": -0.19639173611776345,
+            "metric_difference": 0.0,
+            "classification": "metric_tie"
+          },
+          {
+            "pair": "AD",
+            "f1_difference": -0.34591385201366714,
+            "metric_difference": 0.0,
+            "classification": "metric_tie"
+          },
+          {
+            "pair": "BC",
+            "f1_difference": -0.21987191397525335,
+            "metric_difference": 0.0,
+            "classification": "metric_tie"
+          },
+          {
+            "pair": "BD",
+            "f1_difference": -0.36939402987115705,
+            "metric_difference": 0.0,
+            "classification": "metric_tie"
+          },
+          {
+            "pair": "CD",
+            "f1_difference": -0.1495221158959037,
+            "metric_difference": 0.0,
+            "classification": "metric_tie"
+          }
+        ],
+        "evidence_faithfulness": [
+          {
+            "pair": "AB",
+            "f1_difference": 0.023480177857489903,
+            "metric_difference": 0.0,
+            "classification": "metric_tie"
+          },
+          {
+            "pair": "AC",
+            "f1_difference": -0.19639173611776345,
+            "metric_difference": 0.0,
+            "classification": "metric_tie"
+          },
+          {
+            "pair": "AD",
+            "f1_difference": -0.34591385201366714,
+            "metric_difference": 0.0,
+            "classification": "metric_tie"
+          },
+          {
+            "pair": "BC",
+            "f1_difference": -0.21987191397525335,
+            "metric_difference": 0.0,
+            "classification": "metric_tie"
+          },
+          {
+            "pair": "BD",
+            "f1_difference": -0.36939402987115705,
+            "metric_difference": 0.0,
+            "classification": "metric_tie"
+          },
+          {
+            "pair": "CD",
+            "f1_difference": -0.1495221158959037,
+            "metric_difference": 0.0,
+            "classification": "metric_tie"
+          }
+        ]
+      }
+    }
+  ],
+  "contrasts_normalized": {
+    "character_f1": {
+      "writer_marginal": -0.01588167290007821,
+      "dialogue_marginal": -0.012949510528199976,
+      "interaction": 0.0709148837523507,
+      "writer_bare_B-A": -0.05133911477625356,
+      "writer_first_D-C": 0.01957576897609714,
+      "dialogue_plain_C-A": -0.04840695240437533,
+      "dialogue_evidence_D-B": 0.022507931347975373
+    },
+    "semantic_correctness": {
+      "writer_marginal": 0.0,
+      "dialogue_marginal": -0.2,
+      "interaction": 0.0,
+      "writer_bare_B-A": 0.0,
+      "writer_first_D-C": 0.0,
+      "dialogue_plain_C-A": -0.2,
+      "dialogue_evidence_D-B": -0.2
+    },
+    "evidence_faithfulness": {
+      "writer_marginal": 0.0,
+      "dialogue_marginal": -0.4,
+      "interaction": 0.0,
+      "writer_bare_B-A": 0.0,
+      "writer_first_D-C": 0.0,
+      "dialogue_plain_C-A": -0.4,
+      "dialogue_evidence_D-B": -0.4
+    }
+  },
+  "agreement": {
+    "semantic_correctness": {
+      "n": 20,
+      "exact_count": 20,
+      "exact_fraction": 1.0,
+      "quadratic_weighted_kappa": 1.0
+    },
+    "referee_consistency": {
+      "n": 20,
+      "exact_count": 17,
+      "exact_fraction": 0.85,
+      "quadratic_weighted_kappa": 0.8404255319148937
+    },
+    "unsupported_severity": {
+      "n": 20,
+      "exact_count": 20,
+      "exact_fraction": 1.0,
+      "quadratic_weighted_kappa": 1.0
+    },
+    "evidence_faithfulness": {
+      "n": 20,
+      "exact_count": 20,
+      "exact_fraction": 1.0,
+      "quadratic_weighted_kappa": 1.0
+    }
+  },
+  "disagreements": [
+    {
+      "index": 7,
+      "cell": "A",
+      "differences": {
+        "referee_consistency": [
+          2,
+          0
+        ]
+      },
+      "rationales": {
+        "r1": "A deliberate prank is incompatible with the required hospital mistake. H03 and H19-H20 support time knowledge and observations, but no answer supplies a prank or deceptive organizers. Knowing a memorial is scheduled can coexist with not knowing a supposed prank, so the nature-of-event wording is not treated as an unambiguous knowledge contradiction.",
+        "r2": "The prank replaces the required mistaken administrative death declaration. H02-H04 establish advance knowledge of her memorial and its purpose, contradicting the proposed central concealment. Preparation and attendance evidence does not support a prank."
+      }
+    },
+    {
+      "index": 40,
+      "cell": "A",
+      "differences": {
+        "referee_consistency": [
+          1,
+          2
+        ]
+      },
+      "rationales": {
+        "r1": "Neither mistaken burial/escape nor the prearranged safety code is identified. H19-H21, H23 and H25 support instructions, a trusted sender and secrecy. The postal-box suggestion is explicitly withdrawn, so it is not scored as asserted. The added concern motive and supernatural belief are peripheral.",
+        "r2": "Instructions and a trusted intermediary are supported by H19-H21/H23/H25 but are neither required semantic mechanism. Claimed supernatural belief and speculative motives lack support. The expressly rejected forwarding possibility is not a contradiction, and Unknown at H15 is not No."
+      }
+    },
+    {
+      "index": 58,
+      "cell": "B",
+      "differences": {
+        "referee_consistency": [
+          1,
+          2
+        ]
+      },
+      "rationales": {
+        "r1": "The answer protects possessions, not people from ash/debris, so it earns no semantic anchor credit. Item protection and additional uses are supported by H09-H10/H13. The valuable/fragile transport-care rationale conflicts with H11, while dust/dirt is an unsupported peripheral specification of what the covers protect against.",
+        "r2": "Protecting carried objects does not identify protection of residents from ash/debris. H09-H10/H13 support covers and additional uses. Value/fragility and the specific dust/dirt hazard are unsupported peripheral detail; H11's combined extra-care characterization is conservatively not split into separate denials."
+      }
+    }
+  ],
+  "ranking_reversals": {
+    "semantic_correctness": {
+      "within_case_counts": {
+        "reversal": 4,
+        "same": 0,
+        "metric_tie": 26,
+        "f1_tie": 0,
+        "both_tie": 0
+      },
+      "total_pairs": 30,
+      "condition_mean_pairs": [
+        {
+          "pair": "AB",
+          "f1_difference": 0.051339114776253636,
+          "metric_difference": 0.0,
+          "classification": "metric_tie"
+        },
+        {
+          "pair": "AC",
+          "f1_difference": 0.048406952404375314,
+          "metric_difference": 0.4,
+          "classification": "same"
+        },
+        {
+          "pair": "AD",
+          "f1_difference": 0.028831183428278173,
+          "metric_difference": 0.4,
+          "classification": "same"
+        },
+        {
+          "pair": "BC",
+          "f1_difference": -0.002932162371878322,
+          "metric_difference": 0.4,
+          "classification": "reversal"
+        },
+        {
+          "pair": "BD",
+          "f1_difference": -0.022507931347975463,
+          "metric_difference": 0.4,
+          "classification": "reversal"
+        },
+        {
+          "pair": "CD",
+          "f1_difference": -0.01957576897609714,
+          "metric_difference": 0.0,
+          "classification": "metric_tie"
+        }
+      ]
+    },
+    "evidence_faithfulness": {
+      "within_case_counts": {
+        "reversal": 4,
+        "same": 8,
+        "metric_tie": 18,
+        "f1_tie": 0,
+        "both_tie": 0
+      },
+      "total_pairs": 30,
+      "condition_mean_pairs": [
+        {
+          "pair": "AB",
+          "f1_difference": 0.051339114776253636,
+          "metric_difference": 0.0,
+          "classification": "metric_tie"
+        },
+        {
+          "pair": "AC",
+          "f1_difference": 0.048406952404375314,
+          "metric_difference": 0.8,
+          "classification": "same"
+        },
+        {
+          "pair": "AD",
+          "f1_difference": 0.028831183428278173,
+          "metric_difference": 0.8,
+          "classification": "same"
+        },
+        {
+          "pair": "BC",
+          "f1_difference": -0.002932162371878322,
+          "metric_difference": 0.8,
+          "classification": "reversal"
+        },
+        {
+          "pair": "BD",
+          "f1_difference": -0.022507931347975463,
+          "metric_difference": 0.8,
+          "classification": "reversal"
+        },
+        {
+          "pair": "CD",
+          "f1_difference": -0.01957576897609714,
+          "metric_difference": 0.0,
+          "classification": "metric_tie"
+        }
+      ]
+    }
+  },
+  "answer_level_indicators": {
+    "r1": {
+      "A": {
+        "fully_semantically_correct": 1,
+        "central_contradiction": 1,
+        "central_unsupported": 2,
+        "denominator": 5
+      },
+      "B": {
+        "fully_semantically_correct": 1,
+        "central_contradiction": 2,
+        "central_unsupported": 2,
+        "denominator": 5
+      },
+      "C": {
+        "fully_semantically_correct": 0,
+        "central_contradiction": 4,
+        "central_unsupported": 5,
+        "denominator": 5
+      },
+      "D": {
+        "fully_semantically_correct": 0,
+        "central_contradiction": 3,
+        "central_unsupported": 5,
+        "denominator": 5
+      }
+    },
+    "r2": {
+      "A": {
+        "fully_semantically_correct": 1,
+        "central_contradiction": 2,
+        "central_unsupported": 2,
+        "denominator": 5
+      },
+      "B": {
+        "fully_semantically_correct": 1,
+        "central_contradiction": 2,
+        "central_unsupported": 2,
+        "denominator": 5
+      },
+      "C": {
+        "fully_semantically_correct": 0,
+        "central_contradiction": 4,
+        "central_unsupported": 5,
+        "denominator": 5
+      },
+      "D": {
+        "fully_semantically_correct": 0,
+        "central_contradiction": 3,
+        "central_unsupported": 5,
+        "denominator": 5
+      }
+    }
+  },
+  "limitations": [
+    "Post-hoc pilot rubric; frozen before these ratings and remaining 65 outcomes.",
+    "Independent same-model executions, not independent human experts.",
+    "Procedural blinding; four answers share case context.",
+    "No adjudication replaces original ratings; primary is the mean of two.",
+    "Five cases, descriptive only; no new inference or significance claims."
+  ]
+}
