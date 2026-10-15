@@ -1,8 +1,8 @@
 # C2 confirmatory evaluation: remaining 65 cases
 
-Status: design and implementation prepared; GPU execution requires explicit authorization. No outcomes from these 65 cases have been generated or inspected during preparation.
+Status: complete. All 260 original requests and 520 blind ratings are available. Read the [research report](REPORT.md) and [numerical summary](results/summary.json).
 
-Current executable checkpoint: [CPU preflight amendment](AMENDMENT.md). The active integrity binding is `freeze_v2.json`; the original `freeze.json` remains unchanged. Use the V2 hash for all current verification, planning and authorization commands. Earlier approval is not valid for this amended code.
+Execution used approved commit `67883c8bd7f9f7aacc270c0bcf91375e292bd10e` and the unchanged V2 freeze. The [CPU preflight amendment](AMENDMENT.md) and original `freeze.json` remain preserved. The protocol below records the frozen design and original execution procedure; the single authorization has been consumed. Do not submit another job.
 
 ## Design
 
@@ -41,7 +41,7 @@ The original manifest SHA256 is `1bfb5608ba6740f4d6024c00cffb25cc7cca347e8826b45
 
 The submission controller checks the pinned code and freeze, requires a clean checkout, and validates the exact runtime and cache used by the launcher. It runs CPU runtime/cache/tokenizer checks, verifies the vLLM CLI, and performs Slurm `--test-only` before submission. A canonical approval ledger permits one submission attempt; the scheduler receipt binds launch and inference to one job ID. Unknown submission outcomes must be inspected, never retried. True startup/tokenizer/inference errors stop execution; warnings alone do not. Length-capped answers remain in the analysis.
 
-Fresh cluster preflight and Slurm validation were not available at preparation time because the remote browser connection failed. They are enforced prerequisites to submission, not assumed successes.
+Fresh cluster preflight and Slurm validation were unavailable at preparation time. All required checks subsequently passed before the authorized run; the completed execution is documented in the research report.
 
 Operational approval records, model outputs, journals, environment inventories, review packets and original annotations belong in private storage outside the checkout. The launcher preserves these under the existing pool's C2 run directory. The semantic pipeline replays the raw journal and requires exact agreement with lexical analysis before constructing packets or aggregating reviews.
 
@@ -81,3 +81,4 @@ No command resumes generation or replaces missing answers. Incomplete generation
 ## Interpretation limits
 
 The rubric was developed after observing the exploratory pilot, then frozen before these remaining outcomes. Reference anchors are outcome-blind but depend on imperfect canonical solutions. The finite set is not a random sample from all puzzles, and its bootstrap intervals do not establish broad benchmark generalization. A single greedy generation does not estimate generation variance. Dialogue contrasts measure the utility of these fixed histories with unequal acquisition costs; writer contrasts concern two standardized instructions. No guaranteed statistical power is claimed.
+
