@@ -1,0 +1,2746 @@
+[
+  {
+    "index": 29,
+    "cell": "D",
+    "request_id": "926c9d2ff244195c413597f396154e8bd0223af937c8350b0a3813113de7b689",
+    "observation": {
+      "history": [
+        {
+          "question": "Q: Was a man involved in this event?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did the fire result in a death?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did the ashes contain only remnants of the fire?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Did the event involving the woman occur in the present?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Was the fire contained in a way that prevented harm to living beings?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was the theater production involved in this event?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was the woman involved in her survival?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Was the woman an actress?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was the fire part of a theatrical performance?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did the woman have a pet dog?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Was the woman's survival from the fire real?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Did the woman know about the safe room beforehand?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was the safe room built into her home's structure?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was the woman involved in creating the safe room?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was the woman's survival planned?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was the woman involved in creating the hidden compartment?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Did the woman ensure the fire was fully contained before emerging?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Was a family member responsible for the safe exit?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did the woman build the safe room herself?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did the woman build and use a hidden safe room?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was the woman's survival meant to demonstrate something?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Did the safe room have a secret entrance that allowed the woman to enter and exit undetected?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did the woman choose to hide in the safe room instead of evacuating normally?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was the woman protected by something in the ashes?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Did the woman create the hidden chamber?",
+          "reply": "No"
+        }
+      ],
+      "surface": "In a town known for strange events, a woman believed to have died in a massive fire was later seen walking out of the ashes, unharmed. How could this be possible?"
+    },
+    "source_identity": {
+      "dataset_record_sha256": "dddde5526d5e80f48eb11518de66877472e35dde605a5d738130dc17b294c206",
+      "harness": "cand_sp_strict1_b10g3r2_b0r1g2",
+      "line_number": 30,
+      "line_sha256": "f94e78a588b15f08b4da6f9ad3b5ee94848f7ba9b9fb9556a5f4d815cb13ae3e",
+      "member": {
+        "path": "logs/eval_sp100/results/cand_sp_strict1_b10g3r2_b0r1g2.jsonl",
+        "sha256": "302194791d8fcd1e95805e132883cfc766a1c2b9cafbb8dd33346355920d8d8e"
+      },
+      "observation_sha256": "9fc6d4e6547902b8dd7571a8508a5f2a0949746f3fde61a6bc6779d811086cb8",
+      "position": 29,
+      "record_sha256": "d54fdcf227d804be8e64f6ba0f5db06597e6713f6e72e6bf97144d5548dc6483",
+      "source": "first",
+      "surface_sha256": "2faad5eaa0a008666a3b7e48a995556586d2f413529ee530c68b679b705caee9"
+    },
+    "payload_sha256": "d3472f16c621b4958d8d637e84cf91edb6d226141b3db7dd5dd79f3002f53445",
+    "target_sha256": "badfcb2f57f7dd5ba67bcda53e5b215e9e64905577c1b5bdd7c4e0e091eee8c0",
+    "reference_solution": "In a small town known for its mysterious occurrences, a firefighter named Sarah was caught in a massive blaze while attempting to rescue trapped residents. Equipped with an experimental, military-grade fire-resistant suit, she was able to withstand the intense heat and flames. As the fire raged on, Sarah's communication device malfunctioned, leading her team to believe she had perished in the inferno. News of her presumed death spread quickly, and a memorial was planned in her honor. However, as the flames subsided, Sarah emerged from the ashes, completely unharmed, thanks to the advanced suit. Her unexpected survival and the sight of her walking out of the ruins left the townspeople in awe and disbelief, questioning the nature of her demise and the supernatural aura surrounding the event.",
+    "semantic_anchors": {
+      "necessary": [
+        "A specialized fire-resistant protective suit allowed survival in the blaze."
+      ],
+      "partial": "Explicitly protective fireproof clothing without specifying a suit can earn 1. A safe room or compartment is an incompatible mechanism.",
+      "incidental": "Military/experimental provenance, radio malfunction, names and memorial are optional."
+    },
+    "answer": "The woman survived the fire because she had a hidden compartment within the ashes that provided protection. This compartment was neither created nor used for any planned demonstration, and it did not have a secret entrance that allowed her to enter and exit undetected. The ashes contained remnants of the fire, and the woman ensured her own survival by hiding in this hidden compartment during the fire.",
+    "character_f1": 0.6661129568106312
+  },
+  {
+    "index": 29,
+    "cell": "C",
+    "request_id": "bc859a37bf825984a5f9b979266f1b2173c4c2a481ebe70669006ef517ac26cf",
+    "observation": {
+      "history": [
+        {
+          "question": "Q: Was a man involved in this event?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did the fire result in a death?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did the ashes contain only remnants of the fire?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Did the event involving the woman occur in the present?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Was the fire contained in a way that prevented harm to living beings?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was the theater production involved in this event?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was the woman involved in her survival?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Was the woman an actress?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was the fire part of a theatrical performance?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did the woman have a pet dog?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Was the woman's survival from the fire real?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Did the woman know about the safe room beforehand?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was the safe room built into her home's structure?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was the woman involved in creating the safe room?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was the woman's survival planned?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was the woman involved in creating the hidden compartment?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Did the woman ensure the fire was fully contained before emerging?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Was a family member responsible for the safe exit?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did the woman build the safe room herself?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did the woman build and use a hidden safe room?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was the woman's survival meant to demonstrate something?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Did the safe room have a secret entrance that allowed the woman to enter and exit undetected?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did the woman choose to hide in the safe room instead of evacuating normally?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was the woman protected by something in the ashes?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Did the woman create the hidden chamber?",
+          "reply": "No"
+        }
+      ],
+      "surface": "In a town known for strange events, a woman believed to have died in a massive fire was later seen walking out of the ashes, unharmed. How could this be possible?"
+    },
+    "source_identity": {
+      "dataset_record_sha256": "dddde5526d5e80f48eb11518de66877472e35dde605a5d738130dc17b294c206",
+      "harness": "cand_sp_strict1_b10g3r2_b0r1g2",
+      "line_number": 30,
+      "line_sha256": "f94e78a588b15f08b4da6f9ad3b5ee94848f7ba9b9fb9556a5f4d815cb13ae3e",
+      "member": {
+        "path": "logs/eval_sp100/results/cand_sp_strict1_b10g3r2_b0r1g2.jsonl",
+        "sha256": "302194791d8fcd1e95805e132883cfc766a1c2b9cafbb8dd33346355920d8d8e"
+      },
+      "observation_sha256": "9fc6d4e6547902b8dd7571a8508a5f2a0949746f3fde61a6bc6779d811086cb8",
+      "position": 29,
+      "record_sha256": "d54fdcf227d804be8e64f6ba0f5db06597e6713f6e72e6bf97144d5548dc6483",
+      "source": "first",
+      "surface_sha256": "2faad5eaa0a008666a3b7e48a995556586d2f413529ee530c68b679b705caee9"
+    },
+    "payload_sha256": "13bfab294ef0204a2c1c66ef59a277851d5a211a88653a130c177fb74ba0fb58",
+    "target_sha256": "badfcb2f57f7dd5ba67bcda53e5b215e9e64905577c1b5bdd7c4e0e091eee8c0",
+    "reference_solution": "In a small town known for its mysterious occurrences, a firefighter named Sarah was caught in a massive blaze while attempting to rescue trapped residents. Equipped with an experimental, military-grade fire-resistant suit, she was able to withstand the intense heat and flames. As the fire raged on, Sarah's communication device malfunctioned, leading her team to believe she had perished in the inferno. News of her presumed death spread quickly, and a memorial was planned in her honor. However, as the flames subsided, Sarah emerged from the ashes, completely unharmed, thanks to the advanced suit. Her unexpected survival and the sight of her walking out of the ruins left the townspeople in awe and disbelief, questioning the nature of her demise and the supernatural aura surrounding the event.",
+    "semantic_anchors": {
+      "necessary": [
+        "A specialized fire-resistant protective suit allowed survival in the blaze."
+      ],
+      "partial": "Explicitly protective fireproof clothing without specifying a suit can earn 1. A safe room or compartment is an incompatible mechanism.",
+      "incidental": "Military/experimental provenance, radio malfunction, names and memorial are optional."
+    },
+    "answer": "The woman survived the fire by hiding in a pre-existing, undiscovered safe room within her home. This safe room was neither created nor built by her, nor did she know about it beforehand. The fire was contained in this room, which is why the ashes outside contained only remnants of the fire and did not harm her. She emerged from the safe room after the fire, ensuring her survival without any planned or demonstrative intent.",
+    "character_f1": 0.6894865525672372
+  },
+  {
+    "index": 29,
+    "cell": "A",
+    "request_id": "799df30d958050c7e675b6f82ef53d3ce9404a82024c110dadd7aca773cc5258",
+    "observation": {
+      "history": [
+        {
+          "question": "Q: Was the woman seen wearing any unusual clothing or carrying something peculiar when she walked out of the ashes?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Did the woman appear to be wearing a cloak or robe that seemed to shield her from the flames?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was there any evidence of the woman being affected by smoke or heat, such as soot on her face or singed hair?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did anyone report seeing the woman inside a container, like a metal box or a sealed vehicle, during or after the fire?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Were there any reports of the woman being near water, such as a pond or a stream, before or after the fire?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did any witnesses report seeing the woman in a state of levitation or floating above the ground when she emerged from the ashes?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Were there any reports of the woman being surrounded by a protective barrier of some kind, like a glowing aura or a cloud of mist, when she walked out of the ashes?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did any witnesses report seeing the woman covered in a reflective material, such as aluminum foil or a similar substance, that might have protected her from the fire?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Were there any reports of the woman being inside a structure made of non-flammable materials, such as stone or brick, that remained intact during the fire?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did any witnesses report seeing the woman being carried or supported by others when she emerged from the ashes?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Were there any reports of the woman being in a state of deep sleep or unconsciousness before the fire, and waking up after it?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did any witnesses report seeing the woman using a device or tool that could create an illusion or alter perception, such as a mirror or a hologram generator?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Were there any reports of the woman being in a controlled environment, such as a studio or a stage, where special effects could have been used to create the appearance of her surviving the fire?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did any witnesses report seeing the woman being in a location with a high concentration of fire retardant substances, which might have protected her from the fire?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Were there any reports of the woman being in a location with a high altitude, such as on a hill or a mountain, where the intensity of the fire might have been less severe?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did any witnesses report seeing the woman being in a location with a strong wind that could have carried away the flames and protected her?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Were there any reports of the woman being in a location with a large body of water nearby, such as a lake or a reservoir, that could have reflected the fire and protected her from its direct heat?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did any witnesses report seeing the woman being in a location with a dense forest or vegetation that could have acted as a natural barrier against the fire?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Were there any reports of the woman being in a location with a significant amount of sand or dirt that could have been used to smother the fire and protect her?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did any witnesses report seeing the woman being in a location with a strong chemical presence, such as a factory or a laboratory, that could have provided her with protective gear or substances to survive the fire?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Were there any reports of the woman being in a location with a specialized fire-resistant material, such as those used in firefighting suits or similar protective gear, that could have protected her from the fire?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Did any witnesses report seeing the woman wearing a specialized fire-resistant suit or protective gear when she emerged from the ashes?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Was the fire-resistant suit or protective gear worn by the woman visibly marked or branded in any way, such as with a company logo or a specific color scheme?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Did any witnesses report seeing the woman wearing a helmet or other headgear as part of her fire-resistant suit or protective gear?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Did any witnesses report seeing the woman carrying or wearing any additional protective equipment, such as gloves or boots, as part of her fire-resistant gear?",
+          "reply": "Yes"
+        }
+      ],
+      "surface": "In a town known for strange events, a woman believed to have died in a massive fire was later seen walking out of the ashes, unharmed. How could this be possible?"
+    },
+    "source_identity": {
+      "dataset_record_sha256": "dddde5526d5e80f48eb11518de66877472e35dde605a5d738130dc17b294c206",
+      "harness": "bare",
+      "line_number": 30,
+      "line_sha256": "ea780d7f3676568012691b56355027661682035bcd68452980179e4497e57f03",
+      "member": {
+        "path": "logs/eval_sp100/results/bare.jsonl",
+        "sha256": "2cd2ebc8ec99fe56e19925ee727b95cfe17a0c30a15dcba67189a1c9db78686d"
+      },
+      "observation_sha256": "c833d9277a2afb913b2dfbff71046c09a2166ed37199f5bf19471b25a4aecdc1",
+      "position": 29,
+      "record_sha256": "170579be84054fb2abdb8113d0eadff160e1928a887f4c979ca4e0e8d16d06bb",
+      "source": "bare",
+      "surface_sha256": "2faad5eaa0a008666a3b7e48a995556586d2f413529ee530c68b679b705caee9"
+    },
+    "payload_sha256": "c537d459004987933c836ae6fbf1a28496ba6ca5411054e3cc77788b5956e290",
+    "target_sha256": "badfcb2f57f7dd5ba67bcda53e5b215e9e64905577c1b5bdd7c4e0e091eee8c0",
+    "reference_solution": "In a small town known for its mysterious occurrences, a firefighter named Sarah was caught in a massive blaze while attempting to rescue trapped residents. Equipped with an experimental, military-grade fire-resistant suit, she was able to withstand the intense heat and flames. As the fire raged on, Sarah's communication device malfunctioned, leading her team to believe she had perished in the inferno. News of her presumed death spread quickly, and a memorial was planned in her honor. However, as the flames subsided, Sarah emerged from the ashes, completely unharmed, thanks to the advanced suit. Her unexpected survival and the sight of her walking out of the ruins left the townspeople in awe and disbelief, questioning the nature of her demise and the supernatural aura surrounding the event.",
+    "semantic_anchors": {
+      "necessary": [
+        "A specialized fire-resistant protective suit allowed survival in the blaze."
+      ],
+      "partial": "Explicitly protective fireproof clothing without specifying a suit can earn 1. A safe room or compartment is an incompatible mechanism.",
+      "incidental": "Military/experimental provenance, radio malfunction, names and memorial are optional."
+    },
+    "answer": "The woman was able to walk out of the ashes unharmed because she was wearing specialized fire-resistant suit or protective gear. This gear likely provided her with the necessary protection against the intense heat and flames of the fire. Additionally, she was carrying or wearing additional protective equipment such as gloves or boots, further enhancing her safety and ability to survive the incident.",
+    "character_f1": 0.6622296173044925
+  },
+  {
+    "index": 29,
+    "cell": "B",
+    "request_id": "6c4541981ea58fe0766ec44e6a04be49a57b62779a0fd3dc09bee6abcb4233c7",
+    "observation": {
+      "history": [
+        {
+          "question": "Q: Was the woman seen wearing any unusual clothing or carrying something peculiar when she walked out of the ashes?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Did the woman appear to be wearing a cloak or robe that seemed to shield her from the flames?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was there any evidence of the woman being affected by smoke or heat, such as soot on her face or singed hair?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did anyone report seeing the woman inside a container, like a metal box or a sealed vehicle, during or after the fire?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Were there any reports of the woman being near water, such as a pond or a stream, before or after the fire?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did any witnesses report seeing the woman in a state of levitation or floating above the ground when she emerged from the ashes?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Were there any reports of the woman being surrounded by a protective barrier of some kind, like a glowing aura or a cloud of mist, when she walked out of the ashes?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did any witnesses report seeing the woman covered in a reflective material, such as aluminum foil or a similar substance, that might have protected her from the fire?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Were there any reports of the woman being inside a structure made of non-flammable materials, such as stone or brick, that remained intact during the fire?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did any witnesses report seeing the woman being carried or supported by others when she emerged from the ashes?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Were there any reports of the woman being in a state of deep sleep or unconsciousness before the fire, and waking up after it?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did any witnesses report seeing the woman using a device or tool that could create an illusion or alter perception, such as a mirror or a hologram generator?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Were there any reports of the woman being in a controlled environment, such as a studio or a stage, where special effects could have been used to create the appearance of her surviving the fire?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did any witnesses report seeing the woman being in a location with a high concentration of fire retardant substances, which might have protected her from the fire?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Were there any reports of the woman being in a location with a high altitude, such as on a hill or a mountain, where the intensity of the fire might have been less severe?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did any witnesses report seeing the woman being in a location with a strong wind that could have carried away the flames and protected her?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Were there any reports of the woman being in a location with a large body of water nearby, such as a lake or a reservoir, that could have reflected the fire and protected her from its direct heat?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did any witnesses report seeing the woman being in a location with a dense forest or vegetation that could have acted as a natural barrier against the fire?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Were there any reports of the woman being in a location with a significant amount of sand or dirt that could have been used to smother the fire and protect her?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did any witnesses report seeing the woman being in a location with a strong chemical presence, such as a factory or a laboratory, that could have provided her with protective gear or substances to survive the fire?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Were there any reports of the woman being in a location with a specialized fire-resistant material, such as those used in firefighting suits or similar protective gear, that could have protected her from the fire?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Did any witnesses report seeing the woman wearing a specialized fire-resistant suit or protective gear when she emerged from the ashes?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Was the fire-resistant suit or protective gear worn by the woman visibly marked or branded in any way, such as with a company logo or a specific color scheme?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Did any witnesses report seeing the woman wearing a helmet or other headgear as part of her fire-resistant suit or protective gear?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Did any witnesses report seeing the woman carrying or wearing any additional protective equipment, such as gloves or boots, as part of her fire-resistant gear?",
+          "reply": "Yes"
+        }
+      ],
+      "surface": "In a town known for strange events, a woman believed to have died in a massive fire was later seen walking out of the ashes, unharmed. How could this be possible?"
+    },
+    "source_identity": {
+      "dataset_record_sha256": "dddde5526d5e80f48eb11518de66877472e35dde605a5d738130dc17b294c206",
+      "harness": "bare",
+      "line_number": 30,
+      "line_sha256": "ea780d7f3676568012691b56355027661682035bcd68452980179e4497e57f03",
+      "member": {
+        "path": "logs/eval_sp100/results/bare.jsonl",
+        "sha256": "2cd2ebc8ec99fe56e19925ee727b95cfe17a0c30a15dcba67189a1c9db78686d"
+      },
+      "observation_sha256": "c833d9277a2afb913b2dfbff71046c09a2166ed37199f5bf19471b25a4aecdc1",
+      "position": 29,
+      "record_sha256": "170579be84054fb2abdb8113d0eadff160e1928a887f4c979ca4e0e8d16d06bb",
+      "source": "bare",
+      "surface_sha256": "2faad5eaa0a008666a3b7e48a995556586d2f413529ee530c68b679b705caee9"
+    },
+    "payload_sha256": "22661c3694e73846cb4e2e1439d592b59f9ae43e4fb2f7f0d9d8eb7648c23d06",
+    "target_sha256": "badfcb2f57f7dd5ba67bcda53e5b215e9e64905577c1b5bdd7c4e0e091eee8c0",
+    "reference_solution": "In a small town known for its mysterious occurrences, a firefighter named Sarah was caught in a massive blaze while attempting to rescue trapped residents. Equipped with an experimental, military-grade fire-resistant suit, she was able to withstand the intense heat and flames. As the fire raged on, Sarah's communication device malfunctioned, leading her team to believe she had perished in the inferno. News of her presumed death spread quickly, and a memorial was planned in her honor. However, as the flames subsided, Sarah emerged from the ashes, completely unharmed, thanks to the advanced suit. Her unexpected survival and the sight of her walking out of the ruins left the townspeople in awe and disbelief, questioning the nature of her demise and the supernatural aura surrounding the event.",
+    "semantic_anchors": {
+      "necessary": [
+        "A specialized fire-resistant protective suit allowed survival in the blaze."
+      ],
+      "partial": "Explicitly protective fireproof clothing without specifying a suit can earn 1. A safe room or compartment is an incompatible mechanism.",
+      "incidental": "Military/experimental provenance, radio malfunction, names and memorial are optional."
+    },
+    "answer": "The woman was able to walk out of the ashes unharmed because she was wearing a specialized fire-resistant suit and additional protective equipment. This suit and gear provided her with the necessary protection against the intense heat and flames of the fire.",
+    "character_f1": 0.4839319470699433
+  },
+  {
+    "index": 58,
+    "cell": "D",
+    "request_id": "0c319790339c512bf034e60a0e7725a236d44cf81f491353ad2d71695c6f802f",
+    "observation": {
+      "history": [
+        {
+          "question": "Q: Are the residents carrying umbrellas for protection from rain?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Has it rained in this town recently?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Are the umbrellas being used for something other than protection from rain?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Did the behavior of carrying umbrellas start today?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Has the mayor installed UV lights to prevent a rumored virus outbreak?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Do the umbrellas provide sufficient UV protection?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Is someone in charge making everyone carry umbrellas?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was the mayor responsible for spreading awareness about the UV threat?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did the town receive a warning about increased UV radiation?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Are the umbrellas protecting from UV radiation?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was there a dermatologist in the town?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Are the umbrellas primarily used as fashion accessories despite the mandate for UV protection?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was the umbrella usage intended for UV protection?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Is the mayor known to be concerned about public health and safety?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Is the increase in solar activity related to the current year?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Was the behavior influenced by a stranger?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Is the mayor behind the mandate for residents to carry umbrellas?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was a new regulation introduced for sun protection?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Are the umbrellas used for sun protection?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Has there been a recent increase in solar activity?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Are the umbrellas specifically designed to block UV radiation?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Are the umbrellas reflecting sunlight?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Were the town's buildings recently repainted?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Are the buildings in the town recently painted with a highly reflective surface?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was the mandate for umbrellas announced before the puzzle began?",
+          "reply": "No"
+        }
+      ],
+      "surface": "In a peculiar town where rain is unheard of, every single resident is seen carrying an umbrella every day. What could be the reason for this unusual behavior?"
+    },
+    "source_identity": {
+      "dataset_record_sha256": "b43395f8933755a473a7aec54d1ad527eda49be0d1d643966ef509119ddd906e",
+      "harness": "cand_sp_strict1_b10g3r2_b0r1g2",
+      "line_number": 59,
+      "line_sha256": "0245ce114b07eb7ea24ce8d2a50525a141f8cc58249188d4eb2b368fdbc49fbc",
+      "member": {
+        "path": "logs/eval_sp100/results/cand_sp_strict1_b10g3r2_b0r1g2.jsonl",
+        "sha256": "302194791d8fcd1e95805e132883cfc766a1c2b9cafbb8dd33346355920d8d8e"
+      },
+      "observation_sha256": "90b061cfcf07a53517ac37b895713be30958d8ea6a71df583221cb7b7210398e",
+      "position": 58,
+      "record_sha256": "6651acce9e249cf84b6eb98461f2be9fdd1cd10c34a84c59bbd21e1f544be734",
+      "source": "first",
+      "surface_sha256": "96a62bb387bfadfcb3677e65b0e825fb8901c25d935e9910da1fd0f66898c361"
+    },
+    "payload_sha256": "b87157b7c35682e4f1e639d76ef232dc7dc16b83752564d45f861a6d732048d0",
+    "target_sha256": "1f65b6a2a31d9a7660f267496e376daafce02791c35bcf32f3d6773f6c2c5dd9",
+    "reference_solution": "In a town where it never rains, every resident carries an umbrella every day due to the unique environmental challenges they face. The town is situated near an active volcano that frequently emits ash clouds. Although the town experiences clear skies and no rainfall, the ash fall from the volcano poses a significant threat to the residents' health and daily activities. To combat this, the townspeople have adopted the practice of carrying umbrellas to shield themselves from the falling ash, which can be both irritating and harmful. Additionally, the town's high altitude contributes to strong and unpredictable wind conditions, which can cause debris to become airborne. This further necessitates the use of umbrellas as a protective measure against potential hazards. The combination of volcanic ash and high-altitude winds has made the umbrella an essential item for daily life, ensuring the safety and comfort of the residents as they go about their routines.",
+    "semantic_anchors": {
+      "necessary": [
+        "Umbrellas shield residents from falling volcanic ash despite no rain."
+      ],
+      "partial": "Explicit protection of people from airborne environmental ash/debris without its volcanic origin earns 1. Protecting possessions, fashion, UV, or generic unspecified environmental factors does not identify the core mechanism.",
+      "incidental": "Wind strength and exact volcano distance are optional."
+    },
+    "answer": "The residents of the town are carrying umbrellas not for protection from rain, which does not occur, nor for UV protection, as no mandate or rumor exists regarding a UV threat. Since the behavior did not start today and there is no indication of a stranger influencing them, the most plausible explanation is that the umbrellas are being used as fashion accessories.",
+    "character_f1": 0.5401350337584396
+  },
+  {
+    "index": 58,
+    "cell": "A",
+    "request_id": "156a3f8eab9a09f632b74c42263fd98dd0894ff00423ccb1de6d9495786e4b27",
+    "observation": {
+      "history": [
+        {
+          "question": "Q: Are the umbrellas being used primarily for protection against sun exposure?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Could it be that the umbrellas are used as a status symbol or fashion accessory in this town?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Is it possible that the umbrellas serve a functional purpose other than protection from the rain, such as shading from heat or as a tool for some activity?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Do the umbrellas provide shade to protect residents from the sun's heat?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Could the umbrellas be used as a form of personal space or privacy shield in crowded areas?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Are the umbrellas utilized as a means of signaling or communication between the residents?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Could the umbrellas have a ceremonial or ritualistic significance in this town?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Are the umbrellas used in some kind of artistic or performance-related activities by the residents?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Could the umbrellas serve as a protective cover for items carried by the residents, such as baskets or tools?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Do the umbrellas protect items like baskets, tools, or goods that the residents carry daily?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Are the items protected by the umbrellas valuable or fragile, requiring extra care during transportation?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Do the umbrellas also function as a way to keep items dry when it occasionally rains, even though it doesn't happen in this town?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Are the umbrellas multi-functional, serving additional purposes beyond protecting carried items?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Do the umbrellas also serve as a form of decoration or personal expression for the residents?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Are the umbrellas used in any traditional or modern sports or games practiced by the residents?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Do the umbrellas have any special features, such as storage compartments or hooks, that enhance their functionality for carrying items?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Are the umbrellas used in any local customs, traditions, or festivals specific to this town?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Do the umbrellas come in various colors or designs that the residents might use to identify or group certain items together?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Are the umbrellas used in any kind of communal or shared activities, such as carrying collective goods or tools?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Do the umbrellas have any technological features, such as being foldable or having handles, that make them easier to carry items with?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Are the umbrellas used in any form of trade or bartering among the residents?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Do the umbrellas have any special materials or coatings that make them suitable for protecting various types of items?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Are the umbrellas used in any kind of ceremonial processions or parades within the town?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Do the umbrellas have any magnetic or metallic components that might serve a practical purpose for carrying certain items?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Are the umbrellas used in any kind of agricultural or farming activities by the residents?",
+          "reply": "No"
+        }
+      ],
+      "surface": "In a peculiar town where rain is unheard of, every single resident is seen carrying an umbrella every day. What could be the reason for this unusual behavior?"
+    },
+    "source_identity": {
+      "dataset_record_sha256": "b43395f8933755a473a7aec54d1ad527eda49be0d1d643966ef509119ddd906e",
+      "harness": "bare",
+      "line_number": 59,
+      "line_sha256": "f6c7f19fd311faad28cfa51256e408fcb7e60b2b759e640206ebf29016a213bf",
+      "member": {
+        "path": "logs/eval_sp100/results/bare.jsonl",
+        "sha256": "2cd2ebc8ec99fe56e19925ee727b95cfe17a0c30a15dcba67189a1c9db78686d"
+      },
+      "observation_sha256": "61b529716c03ba20895cf0733739694a3e8d8cc168428497cb4ba742223a1346",
+      "position": 58,
+      "record_sha256": "f57a80fbe30afbd2aab69c8494d43bb0f0eef2b7b8430425221c5b64271eb114",
+      "source": "bare",
+      "surface_sha256": "96a62bb387bfadfcb3677e65b0e825fb8901c25d935e9910da1fd0f66898c361"
+    },
+    "payload_sha256": "193b16e7edc2fabd5dd8fa8640f325d09c658d31d902c718aa1df0f5f0e1b054",
+    "target_sha256": "1f65b6a2a31d9a7660f267496e376daafce02791c35bcf32f3d6773f6c2c5dd9",
+    "reference_solution": "In a town where it never rains, every resident carries an umbrella every day due to the unique environmental challenges they face. The town is situated near an active volcano that frequently emits ash clouds. Although the town experiences clear skies and no rainfall, the ash fall from the volcano poses a significant threat to the residents' health and daily activities. To combat this, the townspeople have adopted the practice of carrying umbrellas to shield themselves from the falling ash, which can be both irritating and harmful. Additionally, the town's high altitude contributes to strong and unpredictable wind conditions, which can cause debris to become airborne. This further necessitates the use of umbrellas as a protective measure against potential hazards. The combination of volcanic ash and high-altitude winds has made the umbrella an essential item for daily life, ensuring the safety and comfort of the residents as they go about their routines.",
+    "semantic_anchors": {
+      "necessary": [
+        "Umbrellas shield residents from falling volcanic ash despite no rain."
+      ],
+      "partial": "Explicit protection of people from airborne environmental ash/debris without its volcanic origin earns 1. Protecting possessions, fashion, UV, or generic unspecified environmental factors does not identify the core mechanism.",
+      "incidental": "Wind strength and exact volcano distance are optional."
+    },
+    "answer": "In the peculiar town where rain is unknown, every resident carries an umbrella daily primarily to protect items like baskets, tools, or goods that require care during transportation. The umbrellas serve multiple functions beyond just protection from the rain, acting as a practical solution to keep these items dry and secure. While they do not have special features such as storage compartments or hooks, nor are they used in any ceremonial, artistic, or communal activities, the umbrellas are indeed multi-functional, enhancing the residents' ability to manage their daily needs effectively.",
+    "character_f1": 0.7487179487179487
+  },
+  {
+    "index": 58,
+    "cell": "C",
+    "request_id": "07d8220ef3cdf5e76408aa6ff5dd07f38daf6faa649bd287be97d751b017d441",
+    "observation": {
+      "history": [
+        {
+          "question": "Q: Are the residents carrying umbrellas for protection from rain?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Has it rained in this town recently?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Are the umbrellas being used for something other than protection from rain?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Did the behavior of carrying umbrellas start today?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Has the mayor installed UV lights to prevent a rumored virus outbreak?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Do the umbrellas provide sufficient UV protection?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Is someone in charge making everyone carry umbrellas?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was the mayor responsible for spreading awareness about the UV threat?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did the town receive a warning about increased UV radiation?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Are the umbrellas protecting from UV radiation?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was there a dermatologist in the town?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Are the umbrellas primarily used as fashion accessories despite the mandate for UV protection?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was the umbrella usage intended for UV protection?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Is the mayor known to be concerned about public health and safety?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Is the increase in solar activity related to the current year?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Was the behavior influenced by a stranger?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Is the mayor behind the mandate for residents to carry umbrellas?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was a new regulation introduced for sun protection?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Are the umbrellas used for sun protection?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Has there been a recent increase in solar activity?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Are the umbrellas specifically designed to block UV radiation?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Are the umbrellas reflecting sunlight?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Were the town's buildings recently repainted?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Are the buildings in the town recently painted with a highly reflective surface?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was the mandate for umbrellas announced before the puzzle began?",
+          "reply": "No"
+        }
+      ],
+      "surface": "In a peculiar town where rain is unheard of, every single resident is seen carrying an umbrella every day. What could be the reason for this unusual behavior?"
+    },
+    "source_identity": {
+      "dataset_record_sha256": "b43395f8933755a473a7aec54d1ad527eda49be0d1d643966ef509119ddd906e",
+      "harness": "cand_sp_strict1_b10g3r2_b0r1g2",
+      "line_number": 59,
+      "line_sha256": "0245ce114b07eb7ea24ce8d2a50525a141f8cc58249188d4eb2b368fdbc49fbc",
+      "member": {
+        "path": "logs/eval_sp100/results/cand_sp_strict1_b10g3r2_b0r1g2.jsonl",
+        "sha256": "302194791d8fcd1e95805e132883cfc766a1c2b9cafbb8dd33346355920d8d8e"
+      },
+      "observation_sha256": "90b061cfcf07a53517ac37b895713be30958d8ea6a71df583221cb7b7210398e",
+      "position": 58,
+      "record_sha256": "6651acce9e249cf84b6eb98461f2be9fdd1cd10c34a84c59bbd21e1f544be734",
+      "source": "first",
+      "surface_sha256": "96a62bb387bfadfcb3677e65b0e825fb8901c25d935e9910da1fd0f66898c361"
+    },
+    "payload_sha256": "d4163b30e294203aba41d2d887c671098e0ce44450ee0383b13a440903d8e55b",
+    "target_sha256": "1f65b6a2a31d9a7660f267496e376daafce02791c35bcf32f3d6773f6c2c5dd9",
+    "reference_solution": "In a town where it never rains, every resident carries an umbrella every day due to the unique environmental challenges they face. The town is situated near an active volcano that frequently emits ash clouds. Although the town experiences clear skies and no rainfall, the ash fall from the volcano poses a significant threat to the residents' health and daily activities. To combat this, the townspeople have adopted the practice of carrying umbrellas to shield themselves from the falling ash, which can be both irritating and harmful. Additionally, the town's high altitude contributes to strong and unpredictable wind conditions, which can cause debris to become airborne. This further necessitates the use of umbrellas as a protective measure against potential hazards. The combination of volcanic ash and high-altitude winds has made the umbrella an essential item for daily life, ensuring the safety and comfort of the residents as they go about their routines.",
+    "semantic_anchors": {
+      "necessary": [
+        "Umbrellas shield residents from falling volcanic ash despite no rain."
+      ],
+      "partial": "Explicit protection of people from airborne environmental ash/debris without its volcanic origin earns 1. Protecting possessions, fashion, UV, or generic unspecified environmental factors does not identify the core mechanism.",
+      "incidental": "Wind strength and exact volcano distance are optional."
+    },
+    "answer": "The residents of the town are carrying umbrellas not for protection from rain or UV radiation, nor due to any recent mandate or awareness campaign. Since the umbrellas are not being used for sun protection, reflecting sunlight, or due to a recent increase in solar activity, and no one is in charge of making them carry umbrellas, the most plausible explanation is that the umbrellas are being used as fashion accessories.",
+    "character_f1": 0.6033117350611952
+  },
+  {
+    "index": 58,
+    "cell": "B",
+    "request_id": "66c04b5272fd7d3add44c64b2cb20f613f3e3b46a394bac12224f1ab173d9164",
+    "observation": {
+      "history": [
+        {
+          "question": "Q: Are the umbrellas being used primarily for protection against sun exposure?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Could it be that the umbrellas are used as a status symbol or fashion accessory in this town?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Is it possible that the umbrellas serve a functional purpose other than protection from the rain, such as shading from heat or as a tool for some activity?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Do the umbrellas provide shade to protect residents from the sun's heat?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Could the umbrellas be used as a form of personal space or privacy shield in crowded areas?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Are the umbrellas utilized as a means of signaling or communication between the residents?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Could the umbrellas have a ceremonial or ritualistic significance in this town?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Are the umbrellas used in some kind of artistic or performance-related activities by the residents?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Could the umbrellas serve as a protective cover for items carried by the residents, such as baskets or tools?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Do the umbrellas protect items like baskets, tools, or goods that the residents carry daily?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Are the items protected by the umbrellas valuable or fragile, requiring extra care during transportation?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Do the umbrellas also function as a way to keep items dry when it occasionally rains, even though it doesn't happen in this town?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Are the umbrellas multi-functional, serving additional purposes beyond protecting carried items?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Do the umbrellas also serve as a form of decoration or personal expression for the residents?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Are the umbrellas used in any traditional or modern sports or games practiced by the residents?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Do the umbrellas have any special features, such as storage compartments or hooks, that enhance their functionality for carrying items?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Are the umbrellas used in any local customs, traditions, or festivals specific to this town?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Do the umbrellas come in various colors or designs that the residents might use to identify or group certain items together?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Are the umbrellas used in any kind of communal or shared activities, such as carrying collective goods or tools?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Do the umbrellas have any technological features, such as being foldable or having handles, that make them easier to carry items with?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Are the umbrellas used in any form of trade or bartering among the residents?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Do the umbrellas have any special materials or coatings that make them suitable for protecting various types of items?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Are the umbrellas used in any kind of ceremonial processions or parades within the town?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Do the umbrellas have any magnetic or metallic components that might serve a practical purpose for carrying certain items?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Are the umbrellas used in any kind of agricultural or farming activities by the residents?",
+          "reply": "No"
+        }
+      ],
+      "surface": "In a peculiar town where rain is unheard of, every single resident is seen carrying an umbrella every day. What could be the reason for this unusual behavior?"
+    },
+    "source_identity": {
+      "dataset_record_sha256": "b43395f8933755a473a7aec54d1ad527eda49be0d1d643966ef509119ddd906e",
+      "harness": "bare",
+      "line_number": 59,
+      "line_sha256": "f6c7f19fd311faad28cfa51256e408fcb7e60b2b759e640206ebf29016a213bf",
+      "member": {
+        "path": "logs/eval_sp100/results/bare.jsonl",
+        "sha256": "2cd2ebc8ec99fe56e19925ee727b95cfe17a0c30a15dcba67189a1c9db78686d"
+      },
+      "observation_sha256": "61b529716c03ba20895cf0733739694a3e8d8cc168428497cb4ba742223a1346",
+      "position": 58,
+      "record_sha256": "f57a80fbe30afbd2aab69c8494d43bb0f0eef2b7b8430425221c5b64271eb114",
+      "source": "bare",
+      "surface_sha256": "96a62bb387bfadfcb3677e65b0e825fb8901c25d935e9910da1fd0f66898c361"
+    },
+    "payload_sha256": "d2f334d2f967452ae57e19749cca11b798e27f372f7248f7f86d03bbbc90b054",
+    "target_sha256": "1f65b6a2a31d9a7660f267496e376daafce02791c35bcf32f3d6773f6c2c5dd9",
+    "reference_solution": "In a town where it never rains, every resident carries an umbrella every day due to the unique environmental challenges they face. The town is situated near an active volcano that frequently emits ash clouds. Although the town experiences clear skies and no rainfall, the ash fall from the volcano poses a significant threat to the residents' health and daily activities. To combat this, the townspeople have adopted the practice of carrying umbrellas to shield themselves from the falling ash, which can be both irritating and harmful. Additionally, the town's high altitude contributes to strong and unpredictable wind conditions, which can cause debris to become airborne. This further necessitates the use of umbrellas as a protective measure against potential hazards. The combination of volcanic ash and high-altitude winds has made the umbrella an essential item for daily life, ensuring the safety and comfort of the residents as they go about their routines.",
+    "semantic_anchors": {
+      "necessary": [
+        "Umbrellas shield residents from falling volcanic ash despite no rain."
+      ],
+      "partial": "Explicit protection of people from airborne environmental ash/debris without its volcanic origin earns 1. Protecting possessions, fashion, UV, or generic unspecified environmental factors does not identify the core mechanism.",
+      "incidental": "Wind strength and exact volcano distance are optional."
+    },
+    "answer": "In the peculiar town where rain is unknown, every resident carries an umbrella daily, likely due to the umbrellas serving as practical covers to protect valuable or fragile items that they carry, such as baskets or tools, from dust, dirt, or other environmental factors. The umbrellas also appear to have additional multi-functional uses beyond just carrying items, but details about whether they are used for decoration, personal expression, or in any other specific activities remain unknown.",
+    "character_f1": 0.6680355920602327
+  },
+  {
+    "index": 7,
+    "cell": "A",
+    "request_id": "acc3a396c3b1992a1cd25f660365a23bb18e0e0b9485b29eaf0e0cd4cc398238",
+    "observation": {
+      "history": [
+        {
+          "question": "Q: Was Jane's memorial service a surprise to her?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Did Jane know beforehand that the memorial service was planned for her?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Was Jane aware of the date and time of the memorial service?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Did Jane have any knowledge about why the memorial service was being organized?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Was Jane informed by someone about the memorial service before it happened?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Did Jane receive any invitations or notifications related to the memorial service?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Was Jane in a different location when the memorial service was being prepared?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Did Jane return to the location where the memorial service was held after the preparations were made?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Was Jane able to enter the venue where the memorial service was taking place?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Did Jane find out about the memorial service from someone who attended it?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Jane discover the memorial service through social media or news reports?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Did Jane learn about the memorial service from a person who was involved in organizing it but did not attend?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Did Jane find out about the memorial service from a message left at her home or workplace?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Did Jane come across a notice or announcement about the memorial service while she was out and about on the day of the event?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Did Jane encounter someone at the memorial service who mentioned it to her?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Jane see any of the attendees or participants of the memorial service before it started?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Did Jane recognize anyone at the memorial service as someone who would be attending such an event if she were actually deceased?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Did Jane have a conversation with any of the attendees at the memorial service before she arrived?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Jane witness any preparations for the memorial service before it began?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Did Jane see any of the attendees arriving at the memorial service venue before it officially started?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Did Jane observe any activities or events happening at the memorial service venue before it officially began?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Did Jane notice any signs or decorations indicating the memorial service was about to take place before it started?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Did Jane hear any conversations or discussions about the memorial service among the attendees before it began?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Did Jane see any of the attendees looking nervous or anxious before the memorial service started?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Did Jane observe any unusual behavior or preparations that might suggest something was amiss with the memorial service before it began?",
+          "reply": "Unknown"
+        }
+      ],
+      "surface": "Jane was shocked to see her own memorial service being held, with friends and family mourning her supposed death. Yet, she was very much alive and present at the event. How could this happen?"
+    },
+    "source_identity": {
+      "dataset_record_sha256": "da8e11775b3025e5f706446617b31c0326540e40dc4593d3057f41f3a1580214",
+      "harness": "bare",
+      "line_number": 8,
+      "line_sha256": "9e7dac22e7454e80c811841027cffc8a4e7c83ea97bba732bc91bf27d54b19e3",
+      "member": {
+        "path": "logs/eval_sp100/results/bare.jsonl",
+        "sha256": "2cd2ebc8ec99fe56e19925ee727b95cfe17a0c30a15dcba67189a1c9db78686d"
+      },
+      "observation_sha256": "657797ceaae451e71f76abdeeb257873263bb202fd8fa5af5bd31c039b4df99f",
+      "position": 7,
+      "record_sha256": "5eb56204c6add668711f2f9ca7d8701723537a971dc09fdd9b12d122d081a0b0",
+      "source": "bare",
+      "surface_sha256": "12f5d89f631a7b8c18c9da5e88f8afd30a66405a42b5a34e3297a5564ed05664"
+    },
+    "payload_sha256": "414e649043486d2a1cb9a1dce2cb1c8439f4658ae9b55562b74aee156b280887",
+    "target_sha256": "7de23b0c19e50f3e3e32d5d798c0f69b53072777c4b46689015554012c5eede0",
+    "reference_solution": "Jane, a lively and healthy woman, was mistakenly declared dead due to a clerical error at the hospital. Her medical records were accidentally swapped with those of another patient who had recently passed away. As a result, a death certificate was issued in her name, and plans for her burial were set in motion. However, before the burial could take place, a diligent hospital staff member noticed the discrepancy while reviewing paperwork and discovered the error. This revelation came just in time to prevent Jane from being buried. Despite the initial shock and confusion, Jane was able to attend her own memorial service the following week, much to the astonishment and relief of her family and friends.",
+    "semantic_anchors": {
+      "necessary": [
+        "Mistaken death declaration caused by a hospital clerical/record mix-up with a deceased patient; Jane was alive."
+      ],
+      "partial": "Explicit premature/mistaken death declaration without the administrative mechanism can earn 1; a deliberate prank, staged death or surprise party cannot.",
+      "incidental": "Names, date, funeral arrangements and exactly when staff corrected the mistake are optional."
+    },
+    "answer": "The situation is a prank or elaborate joke orchestrated by Jane's friends and family. They planned and executed a memorial service for Jane, making all necessary preparations and ensuring she was aware of the date and time but not the true nature of the event. Jane was present at the venue and saw the preparations and attendees arriving, which is why she recognized people who would typically attend such an event if she were deceased. The shock and confusion she felt upon seeing the memorial service were part of the prank's success, designed to fool her into believing the event was real until she realized the truth.",
+    "character_f1": 0.8984198645598195
+  },
+  {
+    "index": 7,
+    "cell": "D",
+    "request_id": "38416443c457ee4412f991447297fd671086fa353f6306acfd7621cdd61db388",
+    "observation": {
+      "history": [
+        {
+          "question": "Q: Were Jane's friends and family involved in organizing the memorial service?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Did Jane die before the memorial service?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was the memorial service organized before Jane's death?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Was the memorial service organized while Jane was still alive?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Was Jane's death part of the memorial service's premise?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Was a spouse involved in orchestrating the plan?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was the memorial service chosen because it would create a dramatic and impactful surprise for Jane?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Jane's close friends and family know she was alive during the planning of the memorial service?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Jane organize the memorial service herself?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was a brother involved in orchestrating the plan for the memorial service?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was the memorial service planned to test Jane's emotional resilience and strengthen her bond with her loved ones?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was the memorial service a fake event?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Jane's friends and family plan the memorial service to provide comfort to the community and honor Jane?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Did Jane's friends and family plan to hide her presence during the memorial service?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Were all details of the memorial service prepared beforehand?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Was Jane's sister-in-law involved in orchestrating the plan for the memorial service?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Was a false identity created for Jane during the planning of the memorial service?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was the idea for the memorial service conceived by someone in particular within Jane's circle?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Was the memorial service planned deliberately?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Jane's husband plan the entire memorial service in secret?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was Jane unaware of the memorial service plans?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was the plan orchestrated by a friend?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Jane's husband plan the memorial service while Jane was still alive?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Was Jane's husband the primary planner of the memorial service's details?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Did Jane's husband and friends and family plan the memorial service to reveal Jane's survival to her at the last moment?",
+          "reply": "No"
+        }
+      ],
+      "surface": "Jane was shocked to see her own memorial service being held, with friends and family mourning her supposed death. Yet, she was very much alive and present at the event. How could this happen?"
+    },
+    "source_identity": {
+      "dataset_record_sha256": "da8e11775b3025e5f706446617b31c0326540e40dc4593d3057f41f3a1580214",
+      "harness": "cand_sp_strict1_b10g3r2_b0r1g2",
+      "line_number": 8,
+      "line_sha256": "2f8e709f28d2eefa8526d8fb31beef37a11780fcd8fc46b70c3d284ca12f9aaf",
+      "member": {
+        "path": "logs/eval_sp100/results/cand_sp_strict1_b10g3r2_b0r1g2.jsonl",
+        "sha256": "302194791d8fcd1e95805e132883cfc766a1c2b9cafbb8dd33346355920d8d8e"
+      },
+      "observation_sha256": "a97be5ae19d6eef320555dcda47dfabd0dee8b5eb9386d546d2841642fde45ea",
+      "position": 7,
+      "record_sha256": "33f04a798a2052e573bccf89d991ed290a448b0c33cc273bc7df8b2c184a1fd4",
+      "source": "first",
+      "surface_sha256": "12f5d89f631a7b8c18c9da5e88f8afd30a66405a42b5a34e3297a5564ed05664"
+    },
+    "payload_sha256": "abdb9b94701c4dcf8de9054fb391e97f03b149f009bac4c996a8ac858ba840ee",
+    "target_sha256": "7de23b0c19e50f3e3e32d5d798c0f69b53072777c4b46689015554012c5eede0",
+    "reference_solution": "Jane, a lively and healthy woman, was mistakenly declared dead due to a clerical error at the hospital. Her medical records were accidentally swapped with those of another patient who had recently passed away. As a result, a death certificate was issued in her name, and plans for her burial were set in motion. However, before the burial could take place, a diligent hospital staff member noticed the discrepancy while reviewing paperwork and discovered the error. This revelation came just in time to prevent Jane from being buried. Despite the initial shock and confusion, Jane was able to attend her own memorial service the following week, much to the astonishment and relief of her family and friends.",
+    "semantic_anchors": {
+      "necessary": [
+        "Mistaken death declaration caused by a hospital clerical/record mix-up with a deceased patient; Jane was alive."
+      ],
+      "partial": "Explicit premature/mistaken death declaration without the administrative mechanism can earn 1; a deliberate prank, staged death or surprise party cannot.",
+      "incidental": "Names, date, funeral arrangements and exactly when staff corrected the mistake are optional."
+    },
+    "answer": "Jane's husband planned the memorial service while she was still alive, keeping the details a secret from her. Friends and family were involved in organizing the service, which was both before and while Jane was alive, to provide comfort to the community and honor her, without creating a dramatic surprise or testing her emotional resilience. The service was a genuine event, not a fake one, and no false identity or hidden presence was involved. Jane was unaware of the plans until she attended the memorial service, where she was present and alive, shocking everyone involved.",
+    "character_f1": 0.8700389105058365
+  },
+  {
+    "index": 7,
+    "cell": "B",
+    "request_id": "95349d0a95f37dc9017acb639d9c75312baf1c5daa043a7e03cb861ce0c8071e",
+    "observation": {
+      "history": [
+        {
+          "question": "Q: Was Jane's memorial service a surprise to her?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Did Jane know beforehand that the memorial service was planned for her?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Was Jane aware of the date and time of the memorial service?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Did Jane have any knowledge about why the memorial service was being organized?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Was Jane informed by someone about the memorial service before it happened?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Did Jane receive any invitations or notifications related to the memorial service?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Was Jane in a different location when the memorial service was being prepared?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Did Jane return to the location where the memorial service was held after the preparations were made?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Was Jane able to enter the venue where the memorial service was taking place?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Did Jane find out about the memorial service from someone who attended it?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Jane discover the memorial service through social media or news reports?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Did Jane learn about the memorial service from a person who was involved in organizing it but did not attend?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Did Jane find out about the memorial service from a message left at her home or workplace?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Did Jane come across a notice or announcement about the memorial service while she was out and about on the day of the event?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Did Jane encounter someone at the memorial service who mentioned it to her?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Jane see any of the attendees or participants of the memorial service before it started?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Did Jane recognize anyone at the memorial service as someone who would be attending such an event if she were actually deceased?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Did Jane have a conversation with any of the attendees at the memorial service before she arrived?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Jane witness any preparations for the memorial service before it began?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Did Jane see any of the attendees arriving at the memorial service venue before it officially started?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Did Jane observe any activities or events happening at the memorial service venue before it officially began?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Did Jane notice any signs or decorations indicating the memorial service was about to take place before it started?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Did Jane hear any conversations or discussions about the memorial service among the attendees before it began?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Did Jane see any of the attendees looking nervous or anxious before the memorial service started?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Did Jane observe any unusual behavior or preparations that might suggest something was amiss with the memorial service before it began?",
+          "reply": "Unknown"
+        }
+      ],
+      "surface": "Jane was shocked to see her own memorial service being held, with friends and family mourning her supposed death. Yet, she was very much alive and present at the event. How could this happen?"
+    },
+    "source_identity": {
+      "dataset_record_sha256": "da8e11775b3025e5f706446617b31c0326540e40dc4593d3057f41f3a1580214",
+      "harness": "bare",
+      "line_number": 8,
+      "line_sha256": "9e7dac22e7454e80c811841027cffc8a4e7c83ea97bba732bc91bf27d54b19e3",
+      "member": {
+        "path": "logs/eval_sp100/results/bare.jsonl",
+        "sha256": "2cd2ebc8ec99fe56e19925ee727b95cfe17a0c30a15dcba67189a1c9db78686d"
+      },
+      "observation_sha256": "657797ceaae451e71f76abdeeb257873263bb202fd8fa5af5bd31c039b4df99f",
+      "position": 7,
+      "record_sha256": "5eb56204c6add668711f2f9ca7d8701723537a971dc09fdd9b12d122d081a0b0",
+      "source": "bare",
+      "surface_sha256": "12f5d89f631a7b8c18c9da5e88f8afd30a66405a42b5a34e3297a5564ed05664"
+    },
+    "payload_sha256": "084c50515d6f97bfbf86f4547df755cc6279358b92c048e34c4d6091ad8493da",
+    "target_sha256": "7de23b0c19e50f3e3e32d5d798c0f69b53072777c4b46689015554012c5eede0",
+    "reference_solution": "Jane, a lively and healthy woman, was mistakenly declared dead due to a clerical error at the hospital. Her medical records were accidentally swapped with those of another patient who had recently passed away. As a result, a death certificate was issued in her name, and plans for her burial were set in motion. However, before the burial could take place, a diligent hospital staff member noticed the discrepancy while reviewing paperwork and discovered the error. This revelation came just in time to prevent Jane from being buried. Despite the initial shock and confusion, Jane was able to attend her own memorial service the following week, much to the astonishment and relief of her family and friends.",
+    "semantic_anchors": {
+      "necessary": [
+        "Mistaken death declaration caused by a hospital clerical/record mix-up with a deceased patient; Jane was alive."
+      ],
+      "partial": "Explicit premature/mistaken death declaration without the administrative mechanism can earn 1; a deliberate prank, staged death or surprise party cannot.",
+      "incidental": "Names, date, funeral arrangements and exactly when staff corrected the mistake are optional."
+    },
+    "answer": "The memorial service for Jane was a elaborate deception orchestrated by her friends and family. They planned and executed the entire event without Jane's knowledge, creating a convincing scenario to make it appear as though she had died. This was likely done for various reasons, such as to test her reaction, to surprise her, or to celebrate her life in a unique way. The fact that Jane saw preparations, attendees arriving, and recognized people who would attend such an event if she were deceased, all point to the authenticity of the setup. Her shock upon seeing the memorial service indicates that she was completely unaware of the plan until it was in full swing.",
+    "character_f1": 0.9287790697674418
+  },
+  {
+    "index": 7,
+    "cell": "C",
+    "request_id": "e867ffb7c426020d46442d9f05bf9f14c07fb8875fde875c27dabb33cdb007aa",
+    "observation": {
+      "history": [
+        {
+          "question": "Q: Were Jane's friends and family involved in organizing the memorial service?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Did Jane die before the memorial service?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was the memorial service organized before Jane's death?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Was the memorial service organized while Jane was still alive?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Was Jane's death part of the memorial service's premise?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Was a spouse involved in orchestrating the plan?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was the memorial service chosen because it would create a dramatic and impactful surprise for Jane?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Jane's close friends and family know she was alive during the planning of the memorial service?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Jane organize the memorial service herself?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was a brother involved in orchestrating the plan for the memorial service?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was the memorial service planned to test Jane's emotional resilience and strengthen her bond with her loved ones?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was the memorial service a fake event?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Jane's friends and family plan the memorial service to provide comfort to the community and honor Jane?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Did Jane's friends and family plan to hide her presence during the memorial service?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Were all details of the memorial service prepared beforehand?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Was Jane's sister-in-law involved in orchestrating the plan for the memorial service?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Was a false identity created for Jane during the planning of the memorial service?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was the idea for the memorial service conceived by someone in particular within Jane's circle?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Was the memorial service planned deliberately?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Jane's husband plan the entire memorial service in secret?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was Jane unaware of the memorial service plans?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was the plan orchestrated by a friend?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Jane's husband plan the memorial service while Jane was still alive?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Was Jane's husband the primary planner of the memorial service's details?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Did Jane's husband and friends and family plan the memorial service to reveal Jane's survival to her at the last moment?",
+          "reply": "No"
+        }
+      ],
+      "surface": "Jane was shocked to see her own memorial service being held, with friends and family mourning her supposed death. Yet, she was very much alive and present at the event. How could this happen?"
+    },
+    "source_identity": {
+      "dataset_record_sha256": "da8e11775b3025e5f706446617b31c0326540e40dc4593d3057f41f3a1580214",
+      "harness": "cand_sp_strict1_b10g3r2_b0r1g2",
+      "line_number": 8,
+      "line_sha256": "2f8e709f28d2eefa8526d8fb31beef37a11780fcd8fc46b70c3d284ca12f9aaf",
+      "member": {
+        "path": "logs/eval_sp100/results/cand_sp_strict1_b10g3r2_b0r1g2.jsonl",
+        "sha256": "302194791d8fcd1e95805e132883cfc766a1c2b9cafbb8dd33346355920d8d8e"
+      },
+      "observation_sha256": "a97be5ae19d6eef320555dcda47dfabd0dee8b5eb9386d546d2841642fde45ea",
+      "position": 7,
+      "record_sha256": "33f04a798a2052e573bccf89d991ed290a448b0c33cc273bc7df8b2c184a1fd4",
+      "source": "first",
+      "surface_sha256": "12f5d89f631a7b8c18c9da5e88f8afd30a66405a42b5a34e3297a5564ed05664"
+    },
+    "payload_sha256": "c42097aaee175637aef304cc70451ac05750d97978591b32ce192f60b1b5d804",
+    "target_sha256": "7de23b0c19e50f3e3e32d5d798c0f69b53072777c4b46689015554012c5eede0",
+    "reference_solution": "Jane, a lively and healthy woman, was mistakenly declared dead due to a clerical error at the hospital. Her medical records were accidentally swapped with those of another patient who had recently passed away. As a result, a death certificate was issued in her name, and plans for her burial were set in motion. However, before the burial could take place, a diligent hospital staff member noticed the discrepancy while reviewing paperwork and discovered the error. This revelation came just in time to prevent Jane from being buried. Despite the initial shock and confusion, Jane was able to attend her own memorial service the following week, much to the astonishment and relief of her family and friends.",
+    "semantic_anchors": {
+      "necessary": [
+        "Mistaken death declaration caused by a hospital clerical/record mix-up with a deceased patient; Jane was alive."
+      ],
+      "partial": "Explicit premature/mistaken death declaration without the administrative mechanism can earn 1; a deliberate prank, staged death or surprise party cannot.",
+      "incidental": "Names, date, funeral arrangements and exactly when staff corrected the mistake are optional."
+    },
+    "answer": "Jane's husband planned the memorial service while she was still alive, keeping it a secret from her. The service was organized to provide comfort to the community and honor Jane, but without revealing her presence during the planning. This created a dramatic and unexpected surprise for Jane when she attended her own memorial service, shocking her to see friends and family mourning her supposed death while she was alive and present.",
+    "character_f1": 0.7495621716287216
+  },
+  {
+    "index": 40,
+    "cell": "C",
+    "request_id": "788d8edb54e7bb4780260fa4f42f2449b22326f3ec431311ada974e3cb801836",
+    "observation": {
+      "history": [
+        {
+          "question": "Q: Did someone else write the letter instead of Emily?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was Emily truly dead when the letter was sent?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was the address where the letter was sent a real location?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was the letter sent before Emily was declared dead and buried?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was the letter sent to a location that resembled Emily's last known address but was actually non-existent?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Emily arrange to send the letter herself?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Was the mail-forwarding service operated by someone other than Emily?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Emily use a mail-forwarding service for the letter?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Emily fake her death and set up a mail-forwarding service?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was the letter sent from a place Emily controlled after her death?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Did Emily use a secret safe house to control the mail-forwarding service after faking her death?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Emily arrange to use a secret safe house to maintain privacy and communicate secretly?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Did Emily manage the safe house herself?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Was Emily alive when she arranged to send the letter?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Did Emily set up the mail-forwarding service for herself?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Did Emily arrange to fake her own death to maintain privacy and control the situation?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was the safe house located in a remote area to ensure secrecy?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Was Emily aware of the technology used to create the non-existent address?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Was the letter sent on purpose?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Did Emily operate the secret safe house herself?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Did Emily arrange to have control over the mail-forwarding service after her death?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was Emily kept alive in a secret safe house?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was the letter sent by someone Emily trusted?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was Emily behind the safe house operations?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Did Emily program a robot to manage the mail-forwarding service after her death?",
+          "reply": "No"
+        }
+      ],
+      "surface": "Emily's family received a letter from her, despite her being declared dead and buried. The letter came from an address that doesn't exist. How could this be possible?"
+    },
+    "source_identity": {
+      "dataset_record_sha256": "d077d888e2f4aebfef86e1b10e05c485972b9aea167902d4d1272955bd1a1095",
+      "harness": "cand_sp_strict1_b10g3r2_b0r1g2",
+      "line_number": 41,
+      "line_sha256": "89c11d93afb3262c4edfcd5716752ca6ab4fe555a4c3753c5f7adb3e6b441b6d",
+      "member": {
+        "path": "logs/eval_sp100/results/cand_sp_strict1_b10g3r2_b0r1g2.jsonl",
+        "sha256": "302194791d8fcd1e95805e132883cfc766a1c2b9cafbb8dd33346355920d8d8e"
+      },
+      "observation_sha256": "f3ff1d8e4f8ed07fcc5f469a4dfd64e5711a6173d8471722ac12ee337979f0d5",
+      "position": 40,
+      "record_sha256": "cc01cf35eefcd40b4d4fc348fa8d941682a4df2c81ef7e794bedffeed6de37dd",
+      "source": "first",
+      "surface_sha256": "48b842cce9c0a6cd9ce27b3b3a73c26f4a76d7f87a8623beba8c708e30683657"
+    },
+    "payload_sha256": "ef0f322a7503fa5a31924614a1d643db0f74801465e44476d7936ba2f1f0ae05",
+    "target_sha256": "51e5204a1d60502006caf7a9d433c554d777a1dfb3fd65553b44e252484710bf",
+    "reference_solution": "Emily, a woman entangled in a web of dangerous secrets, is mistakenly declared dead after a tragic accident. Unknown to everyone, she was alive and had been buried in a coffin designed with a hidden escape mechanism, a precaution she had arranged due to threats from a powerful criminal organization she once worked for. After escaping her premature burial, Emily goes into hiding to evade her pursuers. To communicate with her family and assure them of her safety, she sends a letter from a non-existent address. This address serves as a coded message, a signal they had pre-arranged, indicating she is safe but cannot reveal her true location for their protection and her own. The supernatural aspect is subtly woven in, as Emily's survival and escape seem almost miraculous, leaving her family and the authorities bewildered by the inexplicable events surrounding her supposed death and mysterious communication.",
+    "semantic_anchors": {
+      "necessary": [
+        "Emily was mistakenly declared dead and escaped premature burial using a prepared coffin escape mechanism.",
+        "The fictitious return address was a prearranged code signalling to her family that she was safe while concealing her actual location."
+      ],
+      "partial": "One correct core component, or explicit mistaken burial plus escape without its prepared mechanism, earns 1. Generic secrecy alone is not the coded signal. Deliberately faking death is not mistaken burial. A trusted intermediary alone is not either mechanism.",
+      "incidental": "Criminal threats, identity of helpers and travel details are optional."
+    },
+    "answer": "Emily arranged to send the letter herself from a place she controlled after faking her death. She used a secret safe house to maintain privacy and communicate secretly, though it is unknown if she managed the safe house herself. The non-existent address was likely created using available technology, and the letter was sent with the help of someone she trusted initially, but not after her death. Emily set up a mail-forwarding service for herself and used it to forward the letter to her family, making it appear as though it came from a real address.",
+    "character_f1": 0.7493188010899182
+  },
+  {
+    "index": 40,
+    "cell": "B",
+    "request_id": "d84f765ac34a62d0d0f6c59ee8f5c0b792e25dc4edf960b36abeb857f9143cae",
+    "observation": {
+      "history": [
+        {
+          "question": "Q: Could Emily still be alive?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Did Emily write the letter herself?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Could the letter have been written by someone else pretending to be Emily?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was the letter written before Emily was declared dead?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Emily use an alias or a fake name when writing the letter?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Could the address on the letter be a fake or misleading address?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Was the letter sent from a location related to Emily's past or something she was familiar with?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Could the letter have been a prank or a joke?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Emily have any enemies or people who might want to cause her harm before she was declared dead?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Could the person who might want to cause Emily harm have sent the letter pretending to be her?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Emily have any relatives or friends who might have sent the letter out of concern or to seek attention?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Could the letter have been sent by someone impersonating Emily to test if anyone was still interested in her?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Emily leave any clues or hints about the possibility of such a letter being sent before her death?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Were there any mentions or discussions about the possibility of sending a message from beyond in any of Emily's writings or conversations?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Did Emily express any interest in or belief in supernatural phenomena or paranormal activities?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Could Emily have left behind any writings or statements suggesting she might send a message even after her death?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Did Emily mention any specific method or medium through which she might communicate after her death?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Could the method or medium mentioned by Emily involve writing a letter?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Did Emily leave any instructions or notes about how the letter should be sent or where it should come from?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Could the instructions left by Emily include details that made the letter appear to come from an address that doesn't exist?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Did Emily leave any clues that the sender was following her instructions closely?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Could the sender have used a post office box or a forwarding address to make the letter appear to come from a non-existent address?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Emily leave any clues that the sender was someone she trusted or knew well?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Could the trusted person have been involved in a conspiracy or had a motive to send the letter as a prank or to cause confusion?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Emily leave any clues that the sender was trying to maintain the secrecy of the true source of the letter?",
+          "reply": "Yes"
+        }
+      ],
+      "surface": "Emily's family received a letter from her, despite her being declared dead and buried. The letter came from an address that doesn't exist. How could this be possible?"
+    },
+    "source_identity": {
+      "dataset_record_sha256": "d077d888e2f4aebfef86e1b10e05c485972b9aea167902d4d1272955bd1a1095",
+      "harness": "bare",
+      "line_number": 41,
+      "line_sha256": "061b92454bda3119579d1ba25306b601d6a067455cd726633196df8f96ddba18",
+      "member": {
+        "path": "logs/eval_sp100/results/bare.jsonl",
+        "sha256": "2cd2ebc8ec99fe56e19925ee727b95cfe17a0c30a15dcba67189a1c9db78686d"
+      },
+      "observation_sha256": "cdbe859774a61e8149690ed3b2680d390433879bd296e8f84a9a2f362be6bc67",
+      "position": 40,
+      "record_sha256": "fe9e6a59fed6dc83cb8d1422609a51baa4b57dcd0f61e3a0173f8336273285f7",
+      "source": "bare",
+      "surface_sha256": "48b842cce9c0a6cd9ce27b3b3a73c26f4a76d7f87a8623beba8c708e30683657"
+    },
+    "payload_sha256": "2f76e0696463c0d2a8a67e7a883e309c2603204292cb2ad663d1e73cc9909a51",
+    "target_sha256": "51e5204a1d60502006caf7a9d433c554d777a1dfb3fd65553b44e252484710bf",
+    "reference_solution": "Emily, a woman entangled in a web of dangerous secrets, is mistakenly declared dead after a tragic accident. Unknown to everyone, she was alive and had been buried in a coffin designed with a hidden escape mechanism, a precaution she had arranged due to threats from a powerful criminal organization she once worked for. After escaping her premature burial, Emily goes into hiding to evade her pursuers. To communicate with her family and assure them of her safety, she sends a letter from a non-existent address. This address serves as a coded message, a signal they had pre-arranged, indicating she is safe but cannot reveal her true location for their protection and her own. The supernatural aspect is subtly woven in, as Emily's survival and escape seem almost miraculous, leaving her family and the authorities bewildered by the inexplicable events surrounding her supposed death and mysterious communication.",
+    "semantic_anchors": {
+      "necessary": [
+        "Emily was mistakenly declared dead and escaped premature burial using a prepared coffin escape mechanism.",
+        "The fictitious return address was a prearranged code signalling to her family that she was safe while concealing her actual location."
+      ],
+      "partial": "One correct core component, or explicit mistaken burial plus escape without its prepared mechanism, earns 1. Generic secrecy alone is not the coded signal. Deliberately faking death is not mistaken burial. A trusted intermediary alone is not either mechanism.",
+      "incidental": "Criminal threats, identity of helpers and travel details are optional."
+    },
+    "answer": "The letter from Emily could have been sent by someone she trusted and knew well, who followed her detailed instructions closely. These instructions likely included making the letter appear to come from a non-existent address, possibly through the use of a post office box or forwarding address, but in this case, the evidence suggests otherwise. The sender maintained the secrecy of the true source of the letter and adhered strictly to Emily’s methods, which included leaving clues that the sender was someone she trusted. This trusted individual did not act out of malice or for attention but may have had a personal reason, such as concern or a belief in supernatural phenomena, to ensure the letter appeared genuine and came from an address that doesn’t exist, thus creating a mystery and maintaining the secrecy of their involvement.",
+    "character_f1": 0.9161437535653166
+  },
+  {
+    "index": 40,
+    "cell": "D",
+    "request_id": "d3131d0ea1c68c77a5321396e284fd83fa0a188130fba9e3b85d067fb1f2e021",
+    "observation": {
+      "history": [
+        {
+          "question": "Q: Did someone else write the letter instead of Emily?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was Emily truly dead when the letter was sent?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was the address where the letter was sent a real location?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was the letter sent before Emily was declared dead and buried?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was the letter sent to a location that resembled Emily's last known address but was actually non-existent?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Emily arrange to send the letter herself?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Was the mail-forwarding service operated by someone other than Emily?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Emily use a mail-forwarding service for the letter?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Emily fake her death and set up a mail-forwarding service?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was the letter sent from a place Emily controlled after her death?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Did Emily use a secret safe house to control the mail-forwarding service after faking her death?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Emily arrange to use a secret safe house to maintain privacy and communicate secretly?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Did Emily manage the safe house herself?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Was Emily alive when she arranged to send the letter?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Did Emily set up the mail-forwarding service for herself?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Did Emily arrange to fake her own death to maintain privacy and control the situation?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was the safe house located in a remote area to ensure secrecy?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Was Emily aware of the technology used to create the non-existent address?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Was the letter sent on purpose?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Did Emily operate the secret safe house herself?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Did Emily arrange to have control over the mail-forwarding service after her death?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was Emily kept alive in a secret safe house?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was the letter sent by someone Emily trusted?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was Emily behind the safe house operations?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Did Emily program a robot to manage the mail-forwarding service after her death?",
+          "reply": "No"
+        }
+      ],
+      "surface": "Emily's family received a letter from her, despite her being declared dead and buried. The letter came from an address that doesn't exist. How could this be possible?"
+    },
+    "source_identity": {
+      "dataset_record_sha256": "d077d888e2f4aebfef86e1b10e05c485972b9aea167902d4d1272955bd1a1095",
+      "harness": "cand_sp_strict1_b10g3r2_b0r1g2",
+      "line_number": 41,
+      "line_sha256": "89c11d93afb3262c4edfcd5716752ca6ab4fe555a4c3753c5f7adb3e6b441b6d",
+      "member": {
+        "path": "logs/eval_sp100/results/cand_sp_strict1_b10g3r2_b0r1g2.jsonl",
+        "sha256": "302194791d8fcd1e95805e132883cfc766a1c2b9cafbb8dd33346355920d8d8e"
+      },
+      "observation_sha256": "f3ff1d8e4f8ed07fcc5f469a4dfd64e5711a6173d8471722ac12ee337979f0d5",
+      "position": 40,
+      "record_sha256": "cc01cf35eefcd40b4d4fc348fa8d941682a4df2c81ef7e794bedffeed6de37dd",
+      "source": "first",
+      "surface_sha256": "48b842cce9c0a6cd9ce27b3b3a73c26f4a76d7f87a8623beba8c708e30683657"
+    },
+    "payload_sha256": "5df32ea9143057a1f307d9c40bbad3560fe3d77e331777f75bb88b065bed1e60",
+    "target_sha256": "51e5204a1d60502006caf7a9d433c554d777a1dfb3fd65553b44e252484710bf",
+    "reference_solution": "Emily, a woman entangled in a web of dangerous secrets, is mistakenly declared dead after a tragic accident. Unknown to everyone, she was alive and had been buried in a coffin designed with a hidden escape mechanism, a precaution she had arranged due to threats from a powerful criminal organization she once worked for. After escaping her premature burial, Emily goes into hiding to evade her pursuers. To communicate with her family and assure them of her safety, she sends a letter from a non-existent address. This address serves as a coded message, a signal they had pre-arranged, indicating she is safe but cannot reveal her true location for their protection and her own. The supernatural aspect is subtly woven in, as Emily's survival and escape seem almost miraculous, leaving her family and the authorities bewildered by the inexplicable events surrounding her supposed death and mysterious communication.",
+    "semantic_anchors": {
+      "necessary": [
+        "Emily was mistakenly declared dead and escaped premature burial using a prepared coffin escape mechanism.",
+        "The fictitious return address was a prearranged code signalling to her family that she was safe while concealing her actual location."
+      ],
+      "partial": "One correct core component, or explicit mistaken burial plus escape without its prepared mechanism, earns 1. Generic secrecy alone is not the coded signal. Deliberately faking death is not mistaken burial. A trusted intermediary alone is not either mechanism.",
+      "incidental": "Criminal threats, identity of helpers and travel details are optional."
+    },
+    "answer": "Emily arranged to send the letter herself from a place she controlled after faking her death. She used a secret safe house to maintain privacy and communicate secretly, though it is unknown if she managed the safe house herself. The letter was sent to a non-existent address through a mail-forwarding service that she set up for herself, ensuring that the letter appeared to come from a valid address while actually being sent from her controlled location.",
+    "character_f1": 0.6637490882567469
+  },
+  {
+    "index": 40,
+    "cell": "A",
+    "request_id": "c290b96b5e61d2ecc702ff24a72e6865d8a7ff9dddc90c7b240e0b1b9ae51912",
+    "observation": {
+      "history": [
+        {
+          "question": "Q: Could Emily still be alive?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Did Emily write the letter herself?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Could the letter have been written by someone else pretending to be Emily?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was the letter written before Emily was declared dead?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Emily use an alias or a fake name when writing the letter?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Could the address on the letter be a fake or misleading address?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Was the letter sent from a location related to Emily's past or something she was familiar with?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Could the letter have been a prank or a joke?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Emily have any enemies or people who might want to cause her harm before she was declared dead?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Could the person who might want to cause Emily harm have sent the letter pretending to be her?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Emily have any relatives or friends who might have sent the letter out of concern or to seek attention?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Could the letter have been sent by someone impersonating Emily to test if anyone was still interested in her?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Emily leave any clues or hints about the possibility of such a letter being sent before her death?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Were there any mentions or discussions about the possibility of sending a message from beyond in any of Emily's writings or conversations?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Did Emily express any interest in or belief in supernatural phenomena or paranormal activities?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Could Emily have left behind any writings or statements suggesting she might send a message even after her death?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Did Emily mention any specific method or medium through which she might communicate after her death?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Could the method or medium mentioned by Emily involve writing a letter?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Did Emily leave any instructions or notes about how the letter should be sent or where it should come from?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Could the instructions left by Emily include details that made the letter appear to come from an address that doesn't exist?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Did Emily leave any clues that the sender was following her instructions closely?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Could the sender have used a post office box or a forwarding address to make the letter appear to come from a non-existent address?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Emily leave any clues that the sender was someone she trusted or knew well?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Could the trusted person have been involved in a conspiracy or had a motive to send the letter as a prank or to cause confusion?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Emily leave any clues that the sender was trying to maintain the secrecy of the true source of the letter?",
+          "reply": "Yes"
+        }
+      ],
+      "surface": "Emily's family received a letter from her, despite her being declared dead and buried. The letter came from an address that doesn't exist. How could this be possible?"
+    },
+    "source_identity": {
+      "dataset_record_sha256": "d077d888e2f4aebfef86e1b10e05c485972b9aea167902d4d1272955bd1a1095",
+      "harness": "bare",
+      "line_number": 41,
+      "line_sha256": "061b92454bda3119579d1ba25306b601d6a067455cd726633196df8f96ddba18",
+      "member": {
+        "path": "logs/eval_sp100/results/bare.jsonl",
+        "sha256": "2cd2ebc8ec99fe56e19925ee727b95cfe17a0c30a15dcba67189a1c9db78686d"
+      },
+      "observation_sha256": "cdbe859774a61e8149690ed3b2680d390433879bd296e8f84a9a2f362be6bc67",
+      "position": 40,
+      "record_sha256": "fe9e6a59fed6dc83cb8d1422609a51baa4b57dcd0f61e3a0173f8336273285f7",
+      "source": "bare",
+      "surface_sha256": "48b842cce9c0a6cd9ce27b3b3a73c26f4a76d7f87a8623beba8c708e30683657"
+    },
+    "payload_sha256": "469f11d5b085c44efeb7e05fc13518ac3a733ffa2596e81f9c745cdc5ba8e169",
+    "target_sha256": "51e5204a1d60502006caf7a9d433c554d777a1dfb3fd65553b44e252484710bf",
+    "reference_solution": "Emily, a woman entangled in a web of dangerous secrets, is mistakenly declared dead after a tragic accident. Unknown to everyone, she was alive and had been buried in a coffin designed with a hidden escape mechanism, a precaution she had arranged due to threats from a powerful criminal organization she once worked for. After escaping her premature burial, Emily goes into hiding to evade her pursuers. To communicate with her family and assure them of her safety, she sends a letter from a non-existent address. This address serves as a coded message, a signal they had pre-arranged, indicating she is safe but cannot reveal her true location for their protection and her own. The supernatural aspect is subtly woven in, as Emily's survival and escape seem almost miraculous, leaving her family and the authorities bewildered by the inexplicable events surrounding her supposed death and mysterious communication.",
+    "semantic_anchors": {
+      "necessary": [
+        "Emily was mistakenly declared dead and escaped premature burial using a prepared coffin escape mechanism.",
+        "The fictitious return address was a prearranged code signalling to her family that she was safe while concealing her actual location."
+      ],
+      "partial": "One correct core component, or explicit mistaken burial plus escape without its prepared mechanism, earns 1. Generic secrecy alone is not the coded signal. Deliberately faking death is not mistaken burial. A trusted intermediary alone is not either mechanism.",
+      "incidental": "Criminal threats, identity of helpers and travel details are optional."
+    },
+    "answer": "The letter from Emily could have been sent by someone she trusted and knew well, who followed her detailed instructions closely. These instructions likely included making the letter appear to come from a non-existent address, possibly through the use of a post office box or forwarding address, but in this case, the evidence suggests otherwise. The sender maintained the secrecy of the true source of the letter and adhered strictly to Emily's methods, which included leaving clues that the sender was someone she trusted. This trusted individual did not act out of malice or for attention but may have had a personal reason, such as concern or a belief in supernatural phenomena, to send the letter. Given Emily's known interest in and belief in supernatural activities, it is plausible that she left instructions for communication beyond the grave, and her trusted friend or relative honored these instructions meticulously.",
+    "character_f1": 0.9207383279044516
+  },
+  {
+    "index": 70,
+    "cell": "C",
+    "request_id": "9edf45059d514d6b3ed54160faa5012ad857fb8d217568d19e2838c6c1ebce76",
+    "observation": {
+      "history": [
+        {
+          "question": "Q: Was there someone else in the room with Sarah?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was the cup of coffee in the room initially?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Sarah use a staircase or elevator to leave and re-enter the room?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was the hallway accessible through the mirror reflection?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was the mirror just a regular mirror without any special properties?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Was there someone outside the room who provided the coffee?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was the room completely sealed off from the outside?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Did someone install a hidden compartment in the mirror for Sarah to use?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was the room designed for isolation purposes?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was a family member involved in installing the two-way mirror with an undetected passage?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was the passage installed on purpose?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Was the hidden passage behind the mirror intentionally created?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Sarah find the hidden passage by noticing something unusual about the mirror?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was a stranger involved in installing the passage?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Sarah use a small object to open a hidden passage in the mirror?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was a family member involved in installing the hidden passage behind the mirror?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was the mirror used for surveillance?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Did Sarah use a small tool to discover the hidden passage behind the mirror?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was there a father involved in installing the passage in the sealed room?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was the mirror physically modified?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Sarah notice the unevenness in a specific area of the mirror?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did the passage require significant effort to discover?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was a father involved in modifying the mirror?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Sarah use a common household item to open the passage?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was the mirror modified to have a hidden passage behind it?",
+          "reply": "No"
+        }
+      ],
+      "surface": "Sarah found herself in a room with no windows or doors, yet she somehow managed to leave and return with a cup of coffee. How did she do it?"
+    },
+    "source_identity": {
+      "dataset_record_sha256": "fa83491f94071525c22600a770f8b51112e04dabf06cde6d378e2f1ba542ad9d",
+      "harness": "cand_sp_strict1_b10g3r2_b0r1g2",
+      "line_number": 71,
+      "line_sha256": "277ea6c06724133acce3cae292d89866e4585746a5e8d8073646524c6fd294c1",
+      "member": {
+        "path": "logs/eval_sp100/results/cand_sp_strict1_b10g3r2_b0r1g2.jsonl",
+        "sha256": "302194791d8fcd1e95805e132883cfc766a1c2b9cafbb8dd33346355920d8d8e"
+      },
+      "observation_sha256": "a66d76f1a2656beb632c85f17874fe8db8c4180c1137089daed2897a3657cfc9",
+      "position": 70,
+      "record_sha256": "a1c87fa461754e588e4be5e9c5043d56ad27ee01c402ac677e9d7db9e0e5af58",
+      "source": "first",
+      "surface_sha256": "42b98f7d6320b300e7c394a896458a6763887671ab830d4227b7fc49c55f9035"
+    },
+    "payload_sha256": "6323405a92acad82638ea99c3953cb4556ec40522d2bdf7ca2065f4b202923dc",
+    "target_sha256": "8a3019482fbb153109f1fa1a9b1026191e7aafd52604cda28eb12f3e4c5a5aaa",
+    "reference_solution": "Sarah was participating in an advanced virtual reality simulation designed to test problem-solving skills under extreme conditions. The simulation created a hyper-realistic environment where she felt entirely immersed in a room with no windows or doors. However, the simulation had a pause feature that allowed her to temporarily exit the virtual environment. During one of these pauses, Sarah left the simulation, got herself a cup of coffee, and then resumed the virtual experience. This allowed her to seemingly 'leave' and 'return' to the locked room with a cup of coffee, despite the room having no physical exits.",
+    "semantic_anchors": {
+      "necessary": [
+        "The room is a virtual reality simulation; pausing or exiting it allows Sarah to get physical coffee and return."
+      ],
+      "partial": "Explicit recognition of a VR/simulated room without explaining pause/exit earns 1. Physical hidden passages, openings or coffee compartments are incompatible.",
+      "incidental": "Names, device brand and exact coffee location are optional."
+    },
+    "answer": "Sarah found a way to leave and re-enter the room with a cup of coffee because the room was not completely sealed off from the outside. There must have been a small, undetected opening or passage that was not mentioned in the dialogue, allowing her to exit and return to the room without using a staircase, elevator, or the mirror.",
+    "character_f1": 0.6933614330874605
+  },
+  {
+    "index": 70,
+    "cell": "A",
+    "request_id": "9e647eff51bce8494209b69e8e26969cdbe970c11a5bd2fe8de292463ebce3df",
+    "observation": {
+      "history": [
+        {
+          "question": "Q: Did Sarah use a telephone to call someone who then came to bring her coffee?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Sarah use a key or some kind of tool to open a hidden exit in the room?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Sarah use a remote control or electronic device to activate a mechanism that allowed her to leave and return with the coffee?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Did Sarah use a remote control or electronic device to activate a hidden door or elevator in the room?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Sarah use a remote control or electronic device to activate a mechanism that teleported her to another location and brought the coffee back to her?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Sarah use a remote control or electronic device to activate a robot or automated system that brought her the coffee?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Sarah use a remote control or electronic device to activate a virtual reality system that made it seem like she left the room but was actually still inside?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Sarah use a remote control or electronic device to activate a mechanism that opened a hidden passageway within the walls of the room?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Sarah use a remote control or electronic device to activate a mechanism that opened a window or skylight from the inside, allowing her to leave and return with the coffee?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Sarah use a remote control or electronic device to activate a mechanism that opened a secret compartment or drawer within the room, which contained the coffee?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Sarah use a remote control or electronic device to activate a mechanism that opened a hidden chute or slide from the room, allowing her to retrieve the coffee?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Sarah use a remote control or electronic device to activate a mechanism that opened a hidden compartment in the floor or ceiling of the room, which contained the coffee?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Sarah use a remote control or electronic device to activate a mechanism that opened a hidden compartment within a bookshelf or wall panel in the room, which contained the coffee?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Sarah use a remote control or electronic device to activate a mechanism that opened a hidden compartment within a piece of furniture in the room, such as a table or chair, which contained the coffee?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Sarah use a remote control or electronic device to activate a mechanism that opened a hidden compartment within the room's structure, such as a support beam or ventilation duct, which contained the coffee?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Sarah use a remote control or electronic device to activate a mechanism that opened a hidden compartment within the room's heating, ventilation, and air conditioning (HVAC) system, which contained the coffee?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Sarah use a remote control or electronic device to activate a mechanism that opened a hidden compartment within the room's lighting fixtures, which contained the coffee?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Sarah use a remote control or electronic device to activate a mechanism that opened a hidden compartment within the room's walls, which contained the coffee?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Sarah use a remote control or electronic device to activate a mechanism that opened a hidden compartment within the room's floor tiles, which contained the coffee?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Sarah use a remote control or electronic device to activate a mechanism that opened a hidden compartment within the room's ceiling tiles, which contained the coffee?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Sarah use a remote control or electronic device to activate a mechanism that opened a hidden compartment within the room's decorative elements, such as paintings or sculptures, which contained the coffee?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Sarah use a remote control or electronic device to activate a mechanism that opened a hidden compartment within the room's furniture, such as a cushion or armrest, which contained the coffee?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Sarah use a remote control or electronic device to activate a mechanism that opened a hidden compartment within the room's appliances, such as a microwave or refrigerator, which contained the coffee?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Sarah use a remote control or electronic device to activate a mechanism that opened a hidden compartment within the room's security system, which contained the coffee?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Sarah use a remote control or electronic device to activate a mechanism that opened a hidden compartment within the room's architectural features, such as columns or moldings, which contained the coffee?",
+          "reply": "No"
+        }
+      ],
+      "surface": "Sarah found herself in a room with no windows or doors, yet she somehow managed to leave and return with a cup of coffee. How did she do it?"
+    },
+    "source_identity": {
+      "dataset_record_sha256": "fa83491f94071525c22600a770f8b51112e04dabf06cde6d378e2f1ba542ad9d",
+      "harness": "bare",
+      "line_number": 71,
+      "line_sha256": "e447aae679346fa08bf7e36339c8f8b5340dbfe4d9456c0a6a267b0bcd328dd9",
+      "member": {
+        "path": "logs/eval_sp100/results/bare.jsonl",
+        "sha256": "2cd2ebc8ec99fe56e19925ee727b95cfe17a0c30a15dcba67189a1c9db78686d"
+      },
+      "observation_sha256": "1c01ae1207900b5081013678ebfc591b3832c10f64acaedeee30c91ac83d6f1e",
+      "position": 70,
+      "record_sha256": "128dbcc23d3be12b6c5c98e11939681a85b0a838940652a54e0796bc62ab31ba",
+      "source": "bare",
+      "surface_sha256": "42b98f7d6320b300e7c394a896458a6763887671ab830d4227b7fc49c55f9035"
+    },
+    "payload_sha256": "e7d93a3b1e3573a07b51d7cdb11489a81bfbfb3576ccff788ff9306847c535fe",
+    "target_sha256": "8a3019482fbb153109f1fa1a9b1026191e7aafd52604cda28eb12f3e4c5a5aaa",
+    "reference_solution": "Sarah was participating in an advanced virtual reality simulation designed to test problem-solving skills under extreme conditions. The simulation created a hyper-realistic environment where she felt entirely immersed in a room with no windows or doors. However, the simulation had a pause feature that allowed her to temporarily exit the virtual environment. During one of these pauses, Sarah left the simulation, got herself a cup of coffee, and then resumed the virtual experience. This allowed her to seemingly 'leave' and 'return' to the locked room with a cup of coffee, despite the room having no physical exits.",
+    "semantic_anchors": {
+      "necessary": [
+        "The room is a virtual reality simulation; pausing or exiting it allows Sarah to get physical coffee and return."
+      ],
+      "partial": "Explicit recognition of a VR/simulated room without explaining pause/exit earns 1. Physical hidden passages, openings or coffee compartments are incompatible.",
+      "incidental": "Names, device brand and exact coffee location are optional."
+    },
+    "answer": "Sarah used a remote control or electronic device to activate a mechanism that opened a hidden compartment within the room's structure, such as a support beam or ventilation duct, which contained the coffee.",
+    "character_f1": 0.496969696969697
+  },
+  {
+    "index": 70,
+    "cell": "D",
+    "request_id": "31d21bea58b2421375d6c01673ff44315b7e52733c9eede9d97357350cc1da15",
+    "observation": {
+      "history": [
+        {
+          "question": "Q: Was there someone else in the room with Sarah?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was the cup of coffee in the room initially?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Sarah use a staircase or elevator to leave and re-enter the room?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was the hallway accessible through the mirror reflection?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was the mirror just a regular mirror without any special properties?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Was there someone outside the room who provided the coffee?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was the room completely sealed off from the outside?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Did someone install a hidden compartment in the mirror for Sarah to use?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was the room designed for isolation purposes?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was a family member involved in installing the two-way mirror with an undetected passage?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was the passage installed on purpose?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Was the hidden passage behind the mirror intentionally created?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Sarah find the hidden passage by noticing something unusual about the mirror?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was a stranger involved in installing the passage?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Sarah use a small object to open a hidden passage in the mirror?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was a family member involved in installing the hidden passage behind the mirror?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was the mirror used for surveillance?",
+          "reply": "Unknown"
+        },
+        {
+          "question": "Q: Did Sarah use a small tool to discover the hidden passage behind the mirror?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was there a father involved in installing the passage in the sealed room?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was the mirror physically modified?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Sarah notice the unevenness in a specific area of the mirror?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did the passage require significant effort to discover?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was a father involved in modifying the mirror?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Sarah use a common household item to open the passage?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Was the mirror modified to have a hidden passage behind it?",
+          "reply": "No"
+        }
+      ],
+      "surface": "Sarah found herself in a room with no windows or doors, yet she somehow managed to leave and return with a cup of coffee. How did she do it?"
+    },
+    "source_identity": {
+      "dataset_record_sha256": "fa83491f94071525c22600a770f8b51112e04dabf06cde6d378e2f1ba542ad9d",
+      "harness": "cand_sp_strict1_b10g3r2_b0r1g2",
+      "line_number": 71,
+      "line_sha256": "277ea6c06724133acce3cae292d89866e4585746a5e8d8073646524c6fd294c1",
+      "member": {
+        "path": "logs/eval_sp100/results/cand_sp_strict1_b10g3r2_b0r1g2.jsonl",
+        "sha256": "302194791d8fcd1e95805e132883cfc766a1c2b9cafbb8dd33346355920d8d8e"
+      },
+      "observation_sha256": "a66d76f1a2656beb632c85f17874fe8db8c4180c1137089daed2897a3657cfc9",
+      "position": 70,
+      "record_sha256": "a1c87fa461754e588e4be5e9c5043d56ad27ee01c402ac677e9d7db9e0e5af58",
+      "source": "first",
+      "surface_sha256": "42b98f7d6320b300e7c394a896458a6763887671ab830d4227b7fc49c55f9035"
+    },
+    "payload_sha256": "2b236b47b86324a1b0fe8ff6abc71835f454077f433d6714daf1719ca3cbbee0",
+    "target_sha256": "8a3019482fbb153109f1fa1a9b1026191e7aafd52604cda28eb12f3e4c5a5aaa",
+    "reference_solution": "Sarah was participating in an advanced virtual reality simulation designed to test problem-solving skills under extreme conditions. The simulation created a hyper-realistic environment where she felt entirely immersed in a room with no windows or doors. However, the simulation had a pause feature that allowed her to temporarily exit the virtual environment. During one of these pauses, Sarah left the simulation, got herself a cup of coffee, and then resumed the virtual experience. This allowed her to seemingly 'leave' and 'return' to the locked room with a cup of coffee, despite the room having no physical exits.",
+    "semantic_anchors": {
+      "necessary": [
+        "The room is a virtual reality simulation; pausing or exiting it allows Sarah to get physical coffee and return."
+      ],
+      "partial": "Explicit recognition of a VR/simulated room without explaining pause/exit earns 1. Physical hidden passages, openings or coffee compartments are incompatible.",
+      "incidental": "Names, device brand and exact coffee location are optional."
+    },
+    "answer": "Sarah found herself in a sealed room with no windows or doors, but she managed to leave and return with a cup of coffee. Given the constraints and the information provided, the most plausible explanation is that the coffee was brought to her through a hidden, undetected passage that was not intentionally created for this purpose. This passage could be a naturally occurring gap or flaw in the room's construction that Sarah discovered and used to her advantage.",
+    "character_f1": 0.8428835489833642
+  },
+  {
+    "index": 70,
+    "cell": "B",
+    "request_id": "5e1c7607eee5a4060244833a1891f01a68edd93ac61cf5664383da11a66941fe",
+    "observation": {
+      "history": [
+        {
+          "question": "Q: Did Sarah use a telephone to call someone who then came to bring her coffee?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Sarah use a key or some kind of tool to open a hidden exit in the room?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Sarah use a remote control or electronic device to activate a mechanism that allowed her to leave and return with the coffee?",
+          "reply": "Yes"
+        },
+        {
+          "question": "Q: Did Sarah use a remote control or electronic device to activate a hidden door or elevator in the room?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Sarah use a remote control or electronic device to activate a mechanism that teleported her to another location and brought the coffee back to her?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Sarah use a remote control or electronic device to activate a robot or automated system that brought her the coffee?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Sarah use a remote control or electronic device to activate a virtual reality system that made it seem like she left the room but was actually still inside?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Sarah use a remote control or electronic device to activate a mechanism that opened a hidden passageway within the walls of the room?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Sarah use a remote control or electronic device to activate a mechanism that opened a window or skylight from the inside, allowing her to leave and return with the coffee?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Sarah use a remote control or electronic device to activate a mechanism that opened a secret compartment or drawer within the room, which contained the coffee?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Sarah use a remote control or electronic device to activate a mechanism that opened a hidden chute or slide from the room, allowing her to retrieve the coffee?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Sarah use a remote control or electronic device to activate a mechanism that opened a hidden compartment in the floor or ceiling of the room, which contained the coffee?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Sarah use a remote control or electronic device to activate a mechanism that opened a hidden compartment within a bookshelf or wall panel in the room, which contained the coffee?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Sarah use a remote control or electronic device to activate a mechanism that opened a hidden compartment within a piece of furniture in the room, such as a table or chair, which contained the coffee?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Sarah use a remote control or electronic device to activate a mechanism that opened a hidden compartment within the room's structure, such as a support beam or ventilation duct, which contained the coffee?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Sarah use a remote control or electronic device to activate a mechanism that opened a hidden compartment within the room's heating, ventilation, and air conditioning (HVAC) system, which contained the coffee?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Sarah use a remote control or electronic device to activate a mechanism that opened a hidden compartment within the room's lighting fixtures, which contained the coffee?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Sarah use a remote control or electronic device to activate a mechanism that opened a hidden compartment within the room's walls, which contained the coffee?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Sarah use a remote control or electronic device to activate a mechanism that opened a hidden compartment within the room's floor tiles, which contained the coffee?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Sarah use a remote control or electronic device to activate a mechanism that opened a hidden compartment within the room's ceiling tiles, which contained the coffee?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Sarah use a remote control or electronic device to activate a mechanism that opened a hidden compartment within the room's decorative elements, such as paintings or sculptures, which contained the coffee?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Sarah use a remote control or electronic device to activate a mechanism that opened a hidden compartment within the room's furniture, such as a cushion or armrest, which contained the coffee?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Sarah use a remote control or electronic device to activate a mechanism that opened a hidden compartment within the room's appliances, such as a microwave or refrigerator, which contained the coffee?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Sarah use a remote control or electronic device to activate a mechanism that opened a hidden compartment within the room's security system, which contained the coffee?",
+          "reply": "No"
+        },
+        {
+          "question": "Q: Did Sarah use a remote control or electronic device to activate a mechanism that opened a hidden compartment within the room's architectural features, such as columns or moldings, which contained the coffee?",
+          "reply": "No"
+        }
+      ],
+      "surface": "Sarah found herself in a room with no windows or doors, yet she somehow managed to leave and return with a cup of coffee. How did she do it?"
+    },
+    "source_identity": {
+      "dataset_record_sha256": "fa83491f94071525c22600a770f8b51112e04dabf06cde6d378e2f1ba542ad9d",
+      "harness": "bare",
+      "line_number": 71,
+      "line_sha256": "e447aae679346fa08bf7e36339c8f8b5340dbfe4d9456c0a6a267b0bcd328dd9",
+      "member": {
+        "path": "logs/eval_sp100/results/bare.jsonl",
+        "sha256": "2cd2ebc8ec99fe56e19925ee727b95cfe17a0c30a15dcba67189a1c9db78686d"
+      },
+      "observation_sha256": "1c01ae1207900b5081013678ebfc591b3832c10f64acaedeee30c91ac83d6f1e",
+      "position": 70,
+      "record_sha256": "128dbcc23d3be12b6c5c98e11939681a85b0a838940652a54e0796bc62ab31ba",
+      "source": "bare",
+      "surface_sha256": "42b98f7d6320b300e7c394a896458a6763887671ab830d4227b7fc49c55f9035"
+    },
+    "payload_sha256": "9967dd6aa3d031fda57eaf5718a9916f4784c5870d1555ab24d5b2d3fe82b303",
+    "target_sha256": "8a3019482fbb153109f1fa1a9b1026191e7aafd52604cda28eb12f3e4c5a5aaa",
+    "reference_solution": "Sarah was participating in an advanced virtual reality simulation designed to test problem-solving skills under extreme conditions. The simulation created a hyper-realistic environment where she felt entirely immersed in a room with no windows or doors. However, the simulation had a pause feature that allowed her to temporarily exit the virtual environment. During one of these pauses, Sarah left the simulation, got herself a cup of coffee, and then resumed the virtual experience. This allowed her to seemingly 'leave' and 'return' to the locked room with a cup of coffee, despite the room having no physical exits.",
+    "semantic_anchors": {
+      "necessary": [
+        "The room is a virtual reality simulation; pausing or exiting it allows Sarah to get physical coffee and return."
+      ],
+      "partial": "Explicit recognition of a VR/simulated room without explaining pause/exit earns 1. Physical hidden passages, openings or coffee compartments are incompatible.",
+      "incidental": "Names, device brand and exact coffee location are optional."
+    },
+    "answer": "Sarah used a remote control or electronic device to activate a mechanism that opened a hidden compartment within the room's furniture, such as a cushion or armrest, which contained the coffee.",
+    "character_f1": 0.4734895191122071
+  }
+]

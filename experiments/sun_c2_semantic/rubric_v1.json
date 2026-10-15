@@ -1,0 +1,44 @@
+{
+  "version": "c2-semantic-v1",
+  "unit": "One final answer, judged against its own surface and exact recorded referee dialogue. Judge semantic correctness against reference solution and frozen core anchors separately.",
+  "semantic_correctness": {
+    "2": "All necessary core causal mechanisms correct, without a competing incompatible mechanism. Incidental names, chronology and decorative details need not match; unsupported incidental detail affects faithfulness separately.",
+    "1": "At least one explicit core causal component is correct but another required component is absent or wrong. Shared words, restating the surface, generic secrecy/protection, and a merely compatible alternative do not count.",
+    "0": "No required core mechanism is identified, or the proposed explanation replaces it with an incompatible mechanism. A correct conclusion alone is insufficient."
+  },
+  "referee_consistency": {
+    "2": "No material claim contradicts the surface or explicit referee answers. Unmentioned claims may still be unsupported.",
+    "1": "A peripheral material claim contradicts recorded evidence, while the central explanation does not.",
+    "0": "A central causal claim contradicts recorded evidence."
+  },
+  "unsupported_severity": {
+    "0": "Every material claim is supported by surface or explicit referee answers, or is a necessary inference from them.",
+    "1": "Only peripheral material claims lack support.",
+    "2": "A central causal mechanism lacks support. Plausibility or compatibility alone is not support."
+  },
+  "evidence_faithfulness": "min(referee_consistency, 2 - unsupported_severity), range 0..2; retain both components. A denied claim is also unsupported.",
+  "evidence_rules": [
+    "A question is not itself evidence. Use its referee reply with the question's scope. Yes supports that proposition; No denies that proposition, not every subclause separately; Unknown supplies no support or denial.",
+    "For ambiguous or compound replies use a conservative narrow reading. Flag internally inconsistent records as ambiguous; do not repair them with the reference solution. Do not penalize a claim supported by one explicit answer and denied by another as an unambiguous contradiction; explain the conflict.",
+    "The reference solution supplies semantic truth only. A fact found only in the reference is unsupported for evidence faithfulness.",
+    "Hedging (possibly, likely, must have) does not make an unsupported proposed final explanation supported. Record hedging if relevant. An explicit statement that something is unknown is not an assertion that it happened.",
+    "Core/central means necessary to explain the puzzle's surprising event; peripheral means optional elaboration. Do not reward length or style. Do not guess source condition.",
+    "Each issue must quote an exact substring of the model answer. Contradictions must cite applicable Hxx evidence or SURFACE. Unsupported issues cite relevant evidence if any; absence of support does not require a fabricated citation."
+  ],
+  "review_procedure": "Two separate fresh-context agents read only this rubric and their assigned packet, no conditions, F1, original IDs, source labels, other review, or repository search. Assess all 20 independently. Same-model agents are independent executions, not diverse human experts. Shared filesystem means blinding is procedural.",
+  "output_schema": {
+    "reviewer_id": "r1 or r2",
+    "rubric_sha256": "from packet",
+    "packet_sha256": "SHA256 of assigned packet bytes",
+    "independence_statement": "Describe actually used inputs and limitations truthfully.",
+    "ratings": [{"item_id": "opaque id", "semantic_correctness": 0, "referee_consistency": 0, "unsupported_severity": 2, "evidence_faithfulness": 0, "rationale": "Explain semantic anchor coverage and evidence basis; use Hxx references.", "issues": [{"kind": "contradicted or unsupported or ambiguous", "role": "central or peripheral", "answer_quote": "exact substring", "evidence_refs": ["H01"], "reason": "specific explanation"}]}]
+  },
+  "aggregation": "Primary: arithmetic mean of the two independent scores per answer; no silent adjudication or replacement. All raw reviews retained. Disagreement table lists every axis difference with both rationales. Any later adjudication is a separate sensitivity analysis, never the primary result.",
+  "analysis": {
+    "metrics": "Semantic Correctness and Evidence Faithfulness reported 0..2; normalize by 2 for contrasts. Character F1 retains historical 0..1 scores unchanged. No overall composite.",
+    "contrasts": "writer=((B-A)+(D-C))/2; dialogue=((C-A)+(D-B))/2; interaction=(D-C)-(B-A), paired within each case then average.",
+    "ranking_reversal": "For each of 6 unordered condition pairs in each case, strict opposite signs of F1 difference and semantic/faithfulness difference. Numeric tie tolerance 1e-12. Ties reported separately and never reversals. Also compare 6 condition-mean pairs.",
+    "agreement": "Exact agreement and quadratic-weighted Cohen kappa on each raw ordinal axis. Return null when expected disagreement is zero. No independence assumption across 20 answers for inferential claims.",
+    "inference": "Five cases only; descriptive results and case examples. No new significance testing or bootstrap needed for this pilot audit."
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "version": "semantic-audit-v1",
+  "frozen_utc": "2026-10-15T16:13:16.255834+00:00",
+  "status": "frozen_before_independent_ratings; pilot_outcomes_already_known_to_designer",
+  "manifest_sha256": "1bfb5608ba6740f4d6024c00cffb25cc7cca347e8826b452be46a14207dea548",
+  "analysis_sha256": "cf049d5853ec73473f324b88a1f5164e52e39310ad999d3c06c4f3a73f920664",
+  "source_requests_sha256": "3c27c6af6887881cea7de60c1ca972d6b86663c00f55edc4af4359a8c39dcaef",
+  "selected_positions": [
+    7,
+    29,
+    40,
+    58,
+    70
+  ],
+  "new_inference_calls": 0,
+  "sha256": {
+    "packet_r1.json": "81fee6d2f4a7915cf9483969b87b7e6e527bcd22bf4ee018c4443557d8b2c2b5",
+    "packet_r2.json": "2a05f604be3e77e8e9f73385b8c23862879276b1164201866127aed643df5d9b",
+    "source_selected.json": "7f1677c70e3c290895cae995204867833bbbecd5402b2111a354d6129930af83",
+    "unblind_map.json": "770ca30e2c47124c9a5ab9a8af78e003affab39100e96c25663804d90e058842",
+    "../rubric_v1.json": "499afd318f67ea8cea6e34932d924e13b39b64c6eb69bbaa245d6b9bc621cdc1",
+    "../anchors_v1.json": "0e7a2b5e3bdade6af82f5f59920389fbd653bbcc7f79bca7f3ccb2f02850a86a",
+    "../confirmatory_v1.json": "74e1a0fe8c7698d48a6bc91efd9ac5e6f97fbb258ac2f270ef70818b855059ae",
+    "../prepare.py": "24235d1def62714de13b3d6fa0ffa03f07462fee9cf7205e1e2d702e15eddf1b"
+  },
+  "scope": "Only existing 20 responses. Remaining 65 cases have no generated outcomes and were not evaluated.",
+  "limitations": "Post-hoc exploratory pilot rubric; not a preregistration before pilot results. Procedural blinding, shared filesystem, same-model judges."
+}
