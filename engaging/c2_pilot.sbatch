@@ -24,7 +24,8 @@ export HF_HOME=$POOL/hf_cache
 export HF_HUB_OFFLINE=1
 export VLLM_LOGGING_LEVEL=WARNING
 export VLLM_USE_FLASHINFER_SAMPLER=0
-export VLLM_ATTENTION_BACKEND=FLASH_ATTN
+# vLLM 0.31.0 no longer accepts VLLM_ATTENTION_BACKEND; use the serve CLI.
+unset VLLM_ATTENTION_BACKEND
 export CUDA_HOME=$ENV_CODE/conda_env/lib/python3.12/site-packages/nvidia/cu13
 export PATH=$ENV_CODE/conda_env/bin:$CUDA_HOME/bin:$PATH
 export LD_LIBRARY_PATH=$CUDA_HOME/lib:${LD_LIBRARY_PATH:-}
@@ -55,6 +56,7 @@ trap 'exit 130' INT TERM
 "$VLLM" serve Qwen/Qwen2.5-7B-Instruct --served-model-name Qwen/Qwen2.5-7B-Instruct "$SERVER_MARKER" \
   --revision "$REVISION" --tokenizer-revision "$REVISION" --host 127.0.0.1 \
   --dtype bfloat16 --max-model-len 16384 --max-num-seqs 48 \
+  --attention-backend FLASH_ATTN \
   --gpu-memory-utilization 0.88 --enable-prefix-caching \
   --port "$PORT" > "$RUN_ROOT/vllm.log" 2>&1 &
 PID=$!
