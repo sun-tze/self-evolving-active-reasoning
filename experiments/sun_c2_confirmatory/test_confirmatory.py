@@ -111,9 +111,9 @@ class ConfirmatoryTests(unittest.TestCase):
     def test_authorization_binds_freeze_commit_and_limits(self):
         here=self.root/'design'
         here.mkdir()
-        S.C.write_json(here/'freeze.json',{'fixed':True})
+        S.C.write_json(here/S.FREEZE_NAME,{'fixed':True})
         S.C.write_json(here/'protocol.json',{'gpu_limits':{'jobs':1,'completion_calls':260}})
-        freeze=S.file_sha(here/'freeze.json')
+        freeze=S.file_sha(here/S.FREEZE_NAME)
         record={'approved':True,'freeze_sha256':freeze,'limits':{'jobs':1,'completion_calls':260},
                 'authorization_id':'test','code_commit':'a'*40}
         path=self.root/'approval.json'

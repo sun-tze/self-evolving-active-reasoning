@@ -2,6 +2,8 @@
 
 Status: design and implementation prepared; GPU execution requires explicit authorization. No outcomes from these 65 cases have been generated or inspected during preparation.
 
+Current executable checkpoint: [CPU preflight amendment](AMENDMENT.md). The active integrity binding is `freeze_v2.json`; the original `freeze.json` remains unchanged. Use the V2 hash for all current verification, planning and authorization commands. Earlier approval is not valid for this amended code.
+
 ## Design
 
 The population is the original 70-case unseen set minus pilot positions 7, 29, 40, 58 and 70. Each of the remaining 65 cases retains its four original requests: A = bare dialogue/plain writer, B = bare dialogue/evidence writer, C = first-selected dialogue/plain writer, D = first-selected dialogue/evidence writer. Neither histories nor generation payloads are rebuilt.
@@ -35,7 +37,7 @@ The successful pilot generated 1,817 output tokens in 37.306 seconds of request 
 
 ## Integrity and execution
 
-The original manifest SHA256 is `1bfb5608ba6740f4d6024c00cffb25cc7cca347e8826b452be46a14207dea548`. `freeze.json` binds the rubric, anchors, reference identities, assignments, exact request selection, token budget and executable files. The published commit plus the byte hash of `freeze.json` identifies the approved design. Any amendment requires a new version and invalidates an earlier approval.
+The original manifest SHA256 is `1bfb5608ba6740f4d6024c00cffb25cc7cca347e8826b452be46a14207dea548`. The immutable `freeze.json` records the original design. `freeze_v2.json` preserves that lineage and binds the rubric, anchors, reference identities, assignments, exact request selection, token budget and amended executable files. The published commit plus the byte hash of `freeze_v2.json` identifies the current checkpoint. Any further amendment requires a new version and invalidates an earlier approval.
 
 The submission controller checks the pinned code and freeze, requires a clean checkout, and validates the exact runtime and cache used by the launcher. It runs CPU runtime/cache/tokenizer checks, verifies the vLLM CLI, and performs Slurm `--test-only` before submission. A canonical approval ledger permits one submission attempt; the scheduler receipt binds launch and inference to one job ID. Unknown submission outcomes must be inspected, never retried. True startup/tokenizer/inference errors stop execution; warnings alone do not. Length-capped answers remain in the analysis.
 

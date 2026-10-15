@@ -35,9 +35,10 @@ def main():
     checked([str(a.runtime_python), str(REAL/'runtime_preflight.py'), '--bundle',str(a.bundle),
              '--manifest-sha256',MANIFEST_SHA,'--cache',str(a.cache),'--out',str(out/'runtime_preflight.json')],
              'runtime_preflight.log', 600)
-    # Confirm CLI availability without starting a service or allocating a GPU.
-    checked([str(a.runtime_python.parent/'vllm'),'serve','--help=all'], 'vllm_cli.log', 120)
-    C.require('--attention-backend' in (out/'vllm_cli.log').read_text(errors='replace'), 'required vLLM CLI option unavailable')
+    # Inspect installed metadata and registration without importing GPU packages.
+    checked([str(a.runtime_python), '-I', str(HERE/'cli_preflight.py'),
+             '--executable', str(a.runtime_python.parent/'vllm'),
+             '--out', str(out/'vllm_cli.json')], 'vllm_cli.log', 30)
     args = ['--no-requeue','--account=mit_general','--partition=mit_normal_gpu','--gres=gpu:l40s:1',
             '--cpus-per-task=8','--mem=32G','--time=01:00:00',
             '--job-name=c2-confirm65-'+C.sha(approved['authorization_id'].encode())[:8],

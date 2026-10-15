@@ -22,6 +22,10 @@ FILES += [REAL / n for n in ('common.py', 'runner.py', 'analyze.py', 'budget.py'
           'runtime_preflight.py', 'model_lock.json', 'weights_lock.json')]
 FILES += [RUBRIC, HERE.parent / 'sun_c2_semantic/audit.py', HERE.parent / 'sun_c2_semantic/prepare.py',
           ROOT / 'engaging/c2_confirmatory.sbatch']
+FREEZE_NAME = 'freeze_v2.json'
+PARENT_SHA = '732f6a7f71df04757016b265a71ea3549286305baffc4f7325e4af5e000dca9b'
+AMENDED_FILES = {'experiments/sun_c2_confirmatory/' + n for n in ('study.py', 'submit_once.py')}
+ACTIVE_FILES = FILES + [HERE/'freeze.json', HERE/'cli_preflight.py']
 
 
 def file_sha(path):
@@ -90,13 +94,41 @@ def freeze(bundle):
     return output
 
 
+def check_amendment(frozen):
+    """Bind the execution-only amendment to the immutable original design."""
+    C.require(file_sha(HERE/'freeze.json') == PARENT_SHA, 'original freeze changed')
+    original = C.read_json(HERE/'freeze.json')
+    C.require(frozen.get('parent_freeze_sha256') == PARENT_SHA, 'wrong parent freeze')
+    C.require(frozen.get('format') == 'c2_confirmatory_freeze_v2', 'wrong amended freeze')
+    preserved = set(original) - {'files', 'format', 'recorded_utc'}
+    C.require(all(frozen.get(k) == original[k] for k in preserved), 'amendment changed design metadata')
+    C.require(all(frozen['files'].get(p) == h for p, h in original['files'].items()
+                  if p not in AMENDED_FILES), 'amendment changed protected file')
+
+
+def amend_preflight():
+    """Explicit one-time versioning; never rebuild requests, anchors or assignments."""
+    path = HERE/FREEZE_NAME
+    C.require(not path.exists(), 'amended freeze already exists')
+    original = C.read_json(HERE/'freeze.json')
+    frozen = dict(original, format='c2_confirmatory_freeze_v2',
+                  recorded_utc=datetime.now(timezone.utc).isoformat(),
+                  parent_freeze_sha256=PARENT_SHA,
+                  amendment='Replace CLI-help execution with bounded static installed-CLI verification.',
+                  files={p.relative_to(ROOT).as_posix(): file_sha(p) for p in ACTIVE_FILES})
+    check_amendment(frozen)
+    C.write_json(path, frozen)
+    return frozen
+
+
 def verify(bundle, expected_freeze_sha=None):
-    path = HERE / 'freeze.json'
+    path = HERE / FREEZE_NAME
     if expected_freeze_sha is not None:
         C.require(file_sha(path) == expected_freeze_sha, 'freeze identity mismatch')
     frozen = C.read_json(path)
-    C.require(frozen['format'] == 'c2_confirmatory_freeze_v1' and frozen['manifest_sha256'] == MANIFEST_SHA, 'wrong freeze')
-    C.require(set(frozen['files']) == {str(p.relative_to(ROOT)).replace('\\','/') for p in FILES}, 'incomplete code freeze')
+    check_amendment(frozen)
+    C.require(frozen['manifest_sha256'] == MANIFEST_SHA, 'wrong freeze')
+    C.require(set(frozen['files']) == {p.relative_to(ROOT).as_posix() for p in ACTIVE_FILES}, 'incomplete code freeze')
     for rel, digest in frozen['files'].items():
         candidate = (ROOT / rel).resolve()
         C.require(candidate.is_relative_to(ROOT), 'invalid frozen path')
@@ -116,7 +148,7 @@ def verify(bundle, expected_freeze_sha=None):
 def authorization(path, expected_freeze_sha):
     record = C.read_json(path)
     C.require(record.get('approved') is True, 'explicit authorization required')
-    C.require(record.get('freeze_sha256') == expected_freeze_sha == file_sha(HERE/'freeze.json'), 'authorization belongs to another freeze')
+    C.require(record.get('freeze_sha256') == expected_freeze_sha == file_sha(HERE/FREEZE_NAME), 'authorization belongs to another freeze')
     C.require(record.get('limits') == C.read_json(HERE/'protocol.json')['gpu_limits'], 'authorization limits differ')
     C.require(isinstance(record.get('authorization_id'), str) and bool(record['authorization_id'].strip()), 'missing authorization reference')
     C.require(re.fullmatch('[0-9a-f]{40}', record.get('code_commit','')) is not None, 'missing pinned code commit')
@@ -127,8 +159,13 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--bundle', type=Path, required=True)
     parser.add_argument('--freeze', action='store_true')
+    parser.add_argument('--amend-preflight', action='store_true')
     args = parser.parse_args()
-    if args.freeze:
+    if args.amend_preflight:
+        C.require(not args.freeze, 'choose only one freeze action')
+        amend_preflight()
+        verify(args.bundle)
+    elif args.freeze:
         freeze(args.bundle)
     else:
         verify(args.bundle)
