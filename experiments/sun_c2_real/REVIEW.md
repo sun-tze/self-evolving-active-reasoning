@@ -1,5 +1,96 @@
 # Independent code review — 2026-10-15
 
+## Follow-up: vLLM 0.31 attention selection
+
+Reviewed execution commit: `58f7e7bb68bf4caf1b36826073685f3ceafb5fdc`,
+branch `sun/c2-vllm-attention-fix`, compared with
+`6d685a617ca4a14710c9c727f5e0dd53f4f50294`. The later documentation commit
+does not replace this execution pin. The user explicitly requested another
+read-only review by the independent reviewer.
+
+**Code review: approved for another bounded pilot, with no blocking findings.
+No second GPU job has been submitted. New human authorization is required.**
+This is a CPU/code-level readiness conclusion, not proof that the explicitly
+selected attention backend has started on an L40S.
+
+Exactly two runtime/test files differ from the previous execution commit:
+
+| File | Change | SHA-256 of canonical Git LF bytes |
+|---|---|---|
+| `engaging/c2_pilot.sbatch` | Unset the obsolete environment variable and pass `--attention-backend FLASH_ATTN` on the actual serve command | `9bbc341fb49fc368ec3434019666449bb77d377523a190e5e96be8f3b60d4daf` |
+| `experiments/sun_c2_real/tests/test_runtime.py` | Add a launcher compatibility regression | `a7a541d42ec17d94a5de13315c78796425a2b16663ca8f5079c3ae1103506cc7` |
+
+The independent reviewer parsed the continued serve command, checked the unique
+backend flag, and reconstructed the new launcher from the old one using only
+the intended substitutions. The new regression passes at this commit and fails
+against the old launcher. This static test does not itself execute vLLM.
+
+Deployment and validation:
+
+- Engaging checkout `~/code/ar_harness_c2_real` is clean at the execution pin.
+  The original checkout and the first pilot's detached worktree are preserved.
+- `bash -n` passed on Engaging and independently under local Git Bash.
+- Engaging CPU tests: **95/95 passed**, comprising 54 legacy and 41 real-data tests.
+- Windows CPU tests: **94 passed, one unchanged symlink-privilege skip**;
+  the corresponding test passes on Engaging. No failures or errors.
+- Installed vLLM **0.31.0** source confirms the serve parser entry point,
+  `--attention-backend` registration, and `FLASH_ATTN` backend choice. File
+  hashes and the registration excerpt are retained. Full CLI help exceeded a
+  120-second CPU limit; a corrected direct parser probe exceeded a 300-second
+  limit while importing dependencies (exit 124, observed I/O wait). It did not
+  reach argument parsing, so **complete installed-parser execution is not
+  marked passed**. An earlier probe also used an obsolete module path; that was
+  a validation-helper error, not a failure of the project code. All probe logs
+  are retained. No further environment changes were made to chase this check.
+- No dependency changes, model generation, paid API calls, or GPU submissions
+  were made during this repair validation.
+
+The manifest remains
+`1bfb5608ba6740f4d6024c00cffb25cc7cca347e8826b452be46a14207dea548`.
+Both the local and Engaging dry plans select positions **7, 29, 40, 58, 70**,
+with **20 calls, 15,210 input tokens, at most 8,000 output tokens**.
+The runner hash remains
+`38cc557744d83c4adba3112ec17a9335f92303e0c82c5cd4f53f763c20c14519`.
+The model/tokenizer revision, sampling inputs, payloads, scorer, pairing,
+loopback restriction, unique server identity, per-call limits, no-retry policy,
+1 L40S allocation and 30-minute Slurm cap are unchanged.
+
+### Correction to the first pilot's failure interpretation
+
+The complete retained logs for **Job 25934600** do not demonstrate a fatal vLLM
+startup failure. The unknown `VLLM_ATTENTION_BACKEND` warning was nonfatal;
+weights loaded and CUDA graph capture completed. The later warning about
+model-supplied generation defaults was also nonfatal. The log records
+`Application startup complete.` during cancellation cleanup.
+
+The assistant cancelled the job after interpreting the environment-variable
+warning too conservatively. Slurm records `CANCELLED`; the batch was eventually
+killed during cancellation. This is an operator cancellation, not evidence of
+an OOM, CUDA exception or fatal startup traceback. No writer calls or scored
+outputs were produced. Application startup alone does not establish that the
+health, server identity, tokenizer or inference checks passed.
+
+The complete old `vllm.log` SHA-256 is
+`e173413640ca21e624833f9c5783875a94993a81a6b90d5269bf17ef748b8fbe`;
+the same bytes were verified on Engaging and in the local evidence archive.
+The prior run, submit receipt, cancellation record and Slurm logs are retained.
+
+For the next authorized run, known nonfatal warnings are retained as evidence
+and do not by themselves establish failure. Stop on process exit, readiness
+timeout, a fatal CUDA/OOM/traceback, failed identity/tokenizer/budget checks, or
+a failed/ambiguous inference request. Do not retry or submit a replacement job.
+The existing `generation_config=auto` behavior is preserved: explicit request
+temperature/top-p override corresponding model defaults; other pinned model
+defaults remain in force. Changing those defaults would exceed this repair's
+two-file scope.
+
+Version-specific reference: [vLLM 0.31 serve CLI](https://docs.vllm.ai/en/v0.31.0/cli/serve/).
+Machine-readable follow-up evidence is in `reports/attention_fix_validation.json`.
+Full CPU and CLI logs remain under `~/orcd/pool/ar_harness/c2/attention_fix_58f7e7b`
+and in the local `.c2-local/attention-fix-58f7e7b` archive.
+
+## Original adapter review (before Job 25934600)
+
 The user explicitly authorized a separate read-only review agent. The reviewer
 inspected the adapter, source/config bindings, runner, scoring/statistics, costs,
 Slurm script, tests, original C2 protocol, and historical Experiment 10 sources.

@@ -1,0 +1,312 @@
+{
+  "format": "c2_attention_fix_validation_v1",
+  "date_utc": "2026-10-15T15:33:07.487211+00:00",
+  "execution_commit": "58f7e7bb68bf4caf1b36826073685f3ceafb5fdc",
+  "baseline_commit": "6d685a617ca4a14710c9c727f5e0dd53f4f50294",
+  "branch": "sun/c2-vllm-attention-fix",
+  "readiness": "code_review_approved_for_one_bounded_pilot_pending_new_human_authorization",
+  "new_gpu_jobs_submitted": 0,
+  "new_inference_calls": 0,
+  "paid_api_calls": 0,
+  "deployment": {
+    "commit": "58f7e7bb68bf4caf1b36826073685f3ceafb5fdc",
+    "baseline": "6d685a617ca4a14710c9c727f5e0dd53f4f50294",
+    "changed_runtime_and_test_files": [
+      "engaging/c2_pilot.sbatch",
+      "experiments/sun_c2_real/tests/test_runtime.py"
+    ],
+    "clean_checkout": true,
+    "bash_syntax_passed": true,
+    "manifest_sha256": "1bfb5608ba6740f4d6024c00cffb25cc7cca347e8826b452be46a14207dea548",
+    "plan": {
+      "budget_sha256": "240189cb6e3c9c95a25a9e10ab2eae3e0fce32ec9083edbe2380e51325e34f1d",
+      "common_sha256": "891c4536ecf6b1e7e4efc80125c80d76b069bc7788b127daac7c99ad4bdc0d42",
+      "endpoint": "http://127.0.0.1:18000/v1",
+      "format": "c2_run_plan_v1",
+      "indices": [
+        7,
+        29,
+        40,
+        58,
+        70
+      ],
+      "manifest_sha256": "1bfb5608ba6740f4d6024c00cffb25cc7cca347e8826b452be46a14207dea548",
+      "model_lock": {
+        "files": {
+          "merges.txt": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3",
+          "tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+          "tokenizer_config.json": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583",
+          "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+        },
+        "model": "Qwen/Qwen2.5-7B-Instruct",
+        "revision": "a09a35458c702b33eeacc393d103063234e8bc28"
+      },
+      "retries": 0,
+      "runner_sha256": "38cc557744d83c4adba3112ec17a9335f92303e0c82c5cd4f53f763c20c14519",
+      "schedule": [
+        "926c9d2ff244195c413597f396154e8bd0223af937c8350b0a3813113de7b689",
+        "bc859a37bf825984a5f9b979266f1b2173c4c2a481ebe70669006ef517ac26cf",
+        "799df30d958050c7e675b6f82ef53d3ce9404a82024c110dadd7aca773cc5258",
+        "6c4541981ea58fe0766ec44e6a04be49a57b62779a0fd3dc09bee6abcb4233c7",
+        "0c319790339c512bf034e60a0e7725a236d44cf81f491353ad2d71695c6f802f",
+        "156a3f8eab9a09f632b74c42263fd98dd0894ff00423ccb1de6d9495786e4b27",
+        "07d8220ef3cdf5e76408aa6ff5dd07f38daf6faa649bd287be97d751b017d441",
+        "66c04b5272fd7d3add44c64b2cb20f613f3e3b46a394bac12224f1ab173d9164",
+        "acc3a396c3b1992a1cd25f660365a23bb18e0e0b9485b29eaf0e0cd4cc398238",
+        "38416443c457ee4412f991447297fd671086fa353f6306acfd7621cdd61db388",
+        "95349d0a95f37dc9017acb639d9c75312baf1c5daa043a7e03cb861ce0c8071e",
+        "e867ffb7c426020d46442d9f05bf9f14c07fb8875fde875c27dabb33cdb007aa",
+        "788d8edb54e7bb4780260fa4f42f2449b22326f3ec431311ada974e3cb801836",
+        "d84f765ac34a62d0d0f6c59ee8f5c0b792e25dc4edf960b36abeb857f9143cae",
+        "d3131d0ea1c68c77a5321396e284fd83fa0a188130fba9e3b85d067fb1f2e021",
+        "c290b96b5e61d2ecc702ff24a72e6865d8a7ff9dddc90c7b240e0b1b9ae51912",
+        "9edf45059d514d6b3ed54160faa5012ad857fb8d217568d19e2838c6c1ebce76",
+        "9e647eff51bce8494209b69e8e26969cdbe970c11a5bd2fe8de292463ebce3df",
+        "31d21bea58b2421375d6c01673ff44315b7e52733c9eede9d97357350cc1da15",
+        "5e1c7607eee5a4060244833a1891f01a68edd93ac61cf5664383da11a66941fe"
+      ],
+      "scope": "pilot",
+      "server_marker": null,
+      "totals": {
+        "calls": 20,
+        "input_tokens": 15210,
+        "max_output_tokens": 8000
+      }
+    },
+    "file_sha256": {
+      "engaging/c2_pilot.sbatch": "9bbc341fb49fc368ec3434019666449bb77d377523a190e5e96be8f3b60d4daf",
+      "experiments/sun_c2_real/tests/test_runtime.py": "a7a541d42ec17d94a5de13315c78796425a2b16663ca8f5079c3ae1103506cc7"
+    },
+    "old_vllm_log_sha256": "e173413640ca21e624833f9c5783875a94993a81a6b90d5269bf17ef748b8fbe",
+    "previous_run_final_classification": "operator_cancelled_after_nonfatal_warnings_no_demonstrated_fatal_startup_failure",
+    "cpu_tests": {
+      "platform": "Linux-5.14.0-687.39.1.el9_8.x86_64-x86_64-with-glibc2.28",
+      "python": "3.12.14",
+      "suites": {
+        "legacy_synthetic": {
+          "errors": 0,
+          "failures": 0,
+          "passed": 54,
+          "run": 54,
+          "skipped": []
+        },
+        "real_adapter": {
+          "errors": 0,
+          "failures": 0,
+          "passed": 41,
+          "run": 41,
+          "skipped": []
+        }
+      }
+    },
+    "runtime_safety_unchanged_except_backend_selection": true,
+    "new_gpu_jobs_submitted": 0,
+    "new_inference_calls": 0,
+    "new_authorization_required": true
+  },
+  "windows_tests": {
+    "platform": "Windows-10-10.0.26200-SP0",
+    "python": "3.11.9",
+    "suites": {
+      "legacy_synthetic": {
+        "errors": 0,
+        "failures": 0,
+        "passed": 53,
+        "run": 54,
+        "skipped": [
+          {
+            "reason": "Windows lacks symlink privilege (WinError 1314); run this unchanged test on Linux.",
+            "test": "test_symlink_escaping_manifest_directory_is_rejected (legacy_test_probe.ProbeTests.test_symlink_escaping_manifest_directory_is_rejected)"
+          }
+        ]
+      },
+      "real_adapter": {
+        "errors": 0,
+        "failures": 0,
+        "passed": 41,
+        "run": 41,
+        "skipped": []
+      }
+    }
+  },
+  "cli_validation": {
+    "vllm_version": "0.31.0",
+    "installed_source_check": "passed",
+    "cli_parser_module": "vllm.entrypoints.launchers.cli_args",
+    "attention_backend_registered": "FLASH_ATTN",
+    "full_launch_arguments_parsed": false,
+    "full_cli_help": {
+      "status": "timeout",
+      "seconds": 120
+    },
+    "first_direct_probe": {
+      "status": "validation_helper_import_error",
+      "wrong_module": "vllm.entrypoints.openai.cli_args",
+      "project_code_failure": false
+    },
+    "corrected_direct_probe": {
+      "status": "timeout_during_dependency_import",
+      "seconds": 300,
+      "exit_code": 124,
+      "process_observed_state": "D",
+      "diagnostic_traceback_source": "faulthandler 30-second stack dumps; not fatal exception tracebacks"
+    },
+    "serving_engine_started": false,
+    "gpu_job_submitted": false,
+    "dependency_changes": false,
+    "limitation": "CLI spelling and backend choice verified against installed source and official 0.31 source; complete parser execution and forced backend GPU startup remain unverified."
+  },
+  "installed_cli_source": {
+    "installed_source_files": {
+      "entrypoints/cli/serve.py": {
+        "sha256": "c182c88347f1eb3440a816986f1c2025a2ab2a13236cd68b0ad0146250d031ff"
+      },
+      "entrypoints/launchers/cli_args.py": {
+        "sha256": "c26330deb1bffb27b4ddbdc508a02ffd06efd5b201dba7d077d288e3b6ec2a8e"
+      },
+      "engine/arg_utils.py": {
+        "sha256": "95be1adb96f55933f6a52260c8cb2181d04707401ca21d97c33108c5ab58f3ac",
+        "registration_excerpt": "   description=AttentionConfig.__doc__,\n        )\n        attention_group.add_argument(\n            \"--attention-backend\", **attention_kwargs[\"backend\"]\n        )\n\n        # Mamba arguments\n        mamba_kwargs = get_kwargs(MambaConfig)\n        mamba_group = p"
+      },
+      "v1/attention/backends/registry.py": {
+        "sha256": "74375cf729d2504159285b8fd920e00ddd7af2778c806dbf3e78a9b74b96b731"
+      }
+    },
+    "cli_parser_module": "vllm.entrypoints.launchers.cli_args",
+    "backend_choice_present": "FLASH_ATTN"
+  },
+  "independent_review": {
+    "reviewer": "independent_c2_review",
+    "scope": "Two changed runtime/test files and follow-up evidence; read-only",
+    "conclusion": "No blocking code findings; eligible for one original-budget pilot only after new explicit human authorization.",
+    "regression_negative_control": "New test passes the fixed launcher and fails the baseline launcher.",
+    "limitations": [
+      "Complete installed CLI parsing was not reached before CPU timeout.",
+      "Forced FLASH_ATTN GPU startup, service tokenization and inference remain unverified.",
+      "Review is not execution authorization or a guarantee of startup."
+    ]
+  },
+  "safety": {
+    "manifest_unchanged": true,
+    "pilot_positions": [
+      7,
+      29,
+      40,
+      58,
+      70
+    ],
+    "conditions": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "max_calls": 20,
+    "input_tokens": 15210,
+    "max_output_tokens": 8000,
+    "max_output_tokens_per_call": 400,
+    "gpus": 1,
+    "gpu_type": "L40S",
+    "slurm_minutes": 30,
+    "runner_seconds": 1200,
+    "inference_retries": 0,
+    "replacement_jobs": 0,
+    "full_70_case_run_authorized": false,
+    "new_single_job_authorization_received": false,
+    "model": "Qwen/Qwen2.5-7B-Instruct",
+    "model_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+    "runner_sha256": "38cc557744d83c4adba3112ec17a9335f92303e0c82c5cd4f53f763c20c14519",
+    "generation_config_behavior_unchanged": true,
+    "wire_payload_and_scoring_unchanged": true,
+    "server_identity_and_tokenizer_checks_unchanged": true
+  },
+  "prior_job": {
+    "job_id": "25934600",
+    "slurm_state": "CANCELLED",
+    "classification": "operator_cancelled_after_nonfatal_warnings_no_demonstrated_fatal_startup_failure",
+    "operator": "assistant",
+    "observed_application_startup_complete": true,
+    "new_writer_calls": 0,
+    "fatal_startup_failure_demonstrated": false,
+    "health_identity_tokenization_or_inference_success_established": false,
+    "warnings": [
+      "Unrecognized legacy VLLM_ATTENTION_BACKEND environment variable",
+      "Model generation defaults override server defaults"
+    ],
+    "vllm_log_sha256": "e173413640ca21e624833f9c5783875a94993a81a6b90d5269bf17ef748b8fbe"
+  },
+  "evidence": {
+    "remote_directory": "~/orcd/pool/ar_harness/c2/attention_fix_58f7e7b",
+    "archive_name": "attention_fix_58f7e7b_evidence.tar.gz",
+    "archive_bytes": 13168,
+    "archive_sha256": "8932bd83970bc2337989a91c60e51a9e32f64dc36ef0e9f9905f03d6dccba4cd",
+    "local_archive_and_all_members_verified": true,
+    "archive_members": {
+      "audit_fix.py": {
+        "bytes": 2590,
+        "sha256": "c29473be8315163f901a4f408eadbefc295706c78c51d2f4783f77c05aba20f9"
+      },
+      "cli_parser.log": {
+        "bytes": 19371,
+        "sha256": "90e735b0f1dbb93d16d1f523e92952bc0c88122e77a796c006e53823e42f2cff"
+      },
+      "cli_parser_v2.log": {
+        "bytes": 70852,
+        "sha256": "596a4b62b89ea75d5c7a574ccf530cc3dff21482976d0d6e90bd1d48ad0a2a1b"
+      },
+      "cli_validation.json": {
+        "bytes": 1008,
+        "sha256": "455202a0ef3790f24cdda1979ec67045b4d2afe34c4e6aa01614b169978c22c5"
+      },
+      "cli_validation.log": {
+        "bytes": 1490,
+        "sha256": "4e7caaef7b7b7e888b731114e953477bef7d472874694f9236100920d75ed43e"
+      },
+      "deployment_validation.json": {
+        "bytes": 4163,
+        "sha256": "2fd65e0fa90f5a36671ded729c5b61d37e092a05f885ccf4f558535b2dc62c2c"
+      },
+      "installed_cli_source.json": {
+        "bytes": 956,
+        "sha256": "2a9b0a0fc83ab2153ed73222ac824111fe907da23a02d8ca0f8b88726b6ddd0d"
+      },
+      "plan_engaging.json": {
+        "bytes": 2609,
+        "sha256": "e62ee43343a98f5af6d5aac52435fd6b732d2ab170218bb68e22d71529307513"
+      },
+      "slurm_jobs_after_cpu_validation.psv": {
+        "bytes": 84,
+        "sha256": "57514984b160e038e5e2d64dac0e149cecb7ff81004ea9bcfa6cfb9b1badc929"
+      },
+      "tests_engaging.json": {
+        "bytes": 256,
+        "sha256": "73e17b2d5cdf7629488d35a38ab8bbaff4289e9739638ae29b9d0e2a472fa560"
+      },
+      "tests_engaging.log": {
+        "bytes": 13008,
+        "sha256": "75dda97d7abae3eb7d10af564f1604e231aad70e3dea91d696d3087a20c6ebd5"
+      },
+      "validate_cli.py": {
+        "bytes": 2631,
+        "sha256": "ad4b2f077a23b0cb6770463f29a0bee2c6351ecb3420d42b703c03c815c8094b"
+      },
+      "validate_cli_parser.py": {
+        "bytes": 2490,
+        "sha256": "fce40b5700a33bebbd0c16b3407177736fa249e363a41f972f781946585ddf59"
+      },
+      "validate_cli_parser_v2.py": {
+        "bytes": 2518,
+        "sha256": "3803cbaa47465868572a3fa311a4eb0fba26cabd9537c313473adfaf81ee4136"
+      },
+      "vllm_serve_help.txt": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    "slurm_allocations_snapshot": [
+      "JobID|State|Start|Elapsed",
+      "25934600|CANCELLED by 238514|2026-10-15T10:24:56|00:02:44"
+    ]
+  },
+  "official_reference": "https://docs.vllm.ai/en/v0.31.0/cli/serve/"
+}

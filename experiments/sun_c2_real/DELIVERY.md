@@ -1,5 +1,17 @@
 # C2 real-data pilot delivery — 2026-10-15
 
+**Current update:** the first authorized attempt, Job **25934600**, was cancelled
+by the assistant after a nonfatal warning; it produced no writer results. The
+complete log reached application startup during cancellation cleanup. The
+attention-selection fix at **`58f7e7b`**, branch `sun/c2-vllm-attention-fix`, is
+deployed on Engaging and passed **95/95 CPU tests** and independent code review.
+The fixed manifest and 20-call budget are unchanged. No second GPU job has
+been submitted; new single-job authorization is required. See the current
+[review and failure reclassification](REVIEW.md) and
+[validation evidence](reports/attention_fix_validation.json).
+
+The original delivery record below describes the state before Job 25934600.
+
 ## Scope and current result
 
 Fork branch: `sun-tze/self-evolving-active-reasoning: sun/c2-real-data-adapter`.
