@@ -1,5 +1,7 @@
 # C2 evaluation checkpoint
 
+Execution update (2026-10-15): the authorized attempt at `72e97fd` stopped before GPU submission when the vLLM CLI preflight exceeded its fixed 120-second timeout. Runtime, model integrity and token-count checks passed. No job, new output or semantic rating was produced. No retry was attempted. See [execution status](experiments/sun_c2_confirmatory/RUN_STATUS.md). Frozen code and evaluation inputs remain unchanged; do not resume automatically.
+
 ## Current study
 
 The remaining 65-case confirmatory evaluation is prepared on `sun/c2-confirmatory-65`. Read [the study documentation](experiments/sun_c2_confirmatory/README.md), [protocol](experiments/sun_c2_confirmatory/protocol.json), [freeze inventory](experiments/sun_c2_confirmatory/freeze.json) and [validation record](experiments/sun_c2_confirmatory/VALIDATION.md).
