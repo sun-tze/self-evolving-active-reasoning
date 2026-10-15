@@ -1,5 +1,45 @@
 # Independent code review — 2026-10-15
 
+## Completed real pilot: independent results verification
+
+Following a new explicit user authorization, **Job 25941208** executed the
+reviewed `58f7e7b` code and original manifest. The read-only independent reviewer
+verified all 20 started/result pairs, request/payload/target hashes, scheduled
+order, five-case four-condition pairing, budget limits and Slurm accounting.
+Without calling the project's analysis function, the reviewer recomputed all
+20 character F1 scores, all case contrasts, seven overall contrasts and the
+10,000-draw paired-bootstrap intervals. All results match.
+
+**Conclusion: results verification passed; no pairing, scoring, statistics or
+budget inconsistency found.** Slurm completed with exit 0:0 after 178 seconds;
+20/20 requests succeeded, using 15,210 input and 1,817 output tokens. Maximum
+single-response length was 168 tokens; no response was truncated. Logs confirm
+20 successful tokenization requests and 20 successful completion requests.
+
+All contrast intervals include zero. A positive interaction estimate does not
+establish a reliable gain, semantic success, or absence of other effects.
+Case 29 illustrates a lower-scoring answer retaining the correct fire-resistant
+suit mechanism while a higher-scoring answer invents a safe room; case 70's
+high-scoring D answer proposes a hidden passage rather than the target's VR
+pause mechanism. The reviewer also checked the histories and found examples
+where generated answers repeat denied claims. Character F1 and the evidence
+instruction do not establish semantic correctness or faithfulness.
+
+The model generation-default warning is nonfatal. Engine-process/semaphore
+cleanup warnings occur after all completion responses, during shutdown; there
+is no evidence of corruption of the returned records. They remain in the logs.
+
+Verified SHA-256 values:
+
+- `analysis.json`: `cf049d5853ec73473f324b88a1f5164e52e39310ad999d3c06c4f3a73f920664`
+- `inference/journal.jsonl`: `1d4a58a09e4d3d20feb865308e5312063f085666b8e17408754d88d953fe011a`
+- `vllm.log`: `49664aca962183b190637720cb6faaf8fee5e9dc9acbf96f2692b69cd2e17d5c`
+
+See [the pilot report](Research_Pilot_Report_25941208.txt) and
+[machine-readable evidence](reports/pilot_25941208_result.json). No additional
+inference was performed for review. The earlier review stages below are retained
+as historical records of what was known before this completed pilot.
+
 ## Follow-up: vLLM 0.31 attention selection
 
 Reviewed execution commit: `58f7e7bb68bf4caf1b36826073685f3ceafb5fdc`,

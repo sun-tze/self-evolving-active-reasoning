@@ -1,14 +1,23 @@
 # C2 real-data pilot delivery — 2026-10-15
 
-**Current update:** the first authorized attempt, Job **25934600**, was cancelled
-by the assistant after a nonfatal warning; it produced no writer results. The
-complete log reached application startup during cancellation cleanup. The
-attention-selection fix at **`58f7e7b`**, branch `sun/c2-vllm-attention-fix`, is
-deployed on Engaging and passed **95/95 CPU tests** and independent code review.
-The fixed manifest and 20-call budget are unchanged. No second GPU job has
-been submitted; new single-job authorization is required. See the current
-[review and failure reclassification](REVIEW.md) and
-[validation evidence](reports/attention_fix_validation.json).
+**Current result:** after a new explicit single-job authorization, Job
+**25941208** completed **20/20 real writer requests**, with Slurm **COMPLETED,
+exit 0:0**, using execution commit **`58f7e7b`** and the original fixed manifest.
+A/B/C/D mean character F1: **0.7454 / 0.6941 / 0.6970 / 0.7166**.
+Usage: **15,210 input + 1,817 output tokens**, **178 seconds** on one L40S.
+No inference failures, truncations, retries, requeues or extra jobs occurred.
+All seven descriptive contrast intervals include zero; high lexical scores
+sometimes correspond to incorrect mechanisms, so no semantic superiority claim
+is supported. See the [Research Pilot Report](Research_Pilot_Report_25941208.txt),
+[complete scored outputs](reports/pilot_25941208_analysis.json), and
+[cost/safety evidence](reports/pilot_25941208_result.json).
+
+The independent reviewer reproduced all 20 scores and all paired contrasts and
+bootstrap intervals. The earlier attempt, Job **25934600**, remains classified
+as an operator cancellation after nonfatal warnings, with no writer results;
+see [review history](REVIEW.md) and [repair validation](reports/attention_fix_validation.json).
+The 70-case experiment remains unrun and unauthorized. Any further GPU run
+requires new authorization. No PR was merged or upstream repository modified.
 
 The original delivery record below describes the state before Job 25934600.
 

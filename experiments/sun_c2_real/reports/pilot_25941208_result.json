@@ -1,0 +1,338 @@
+{
+  "format": "c2_completed_pilot_report_v1",
+  "date": "2026-10-15",
+  "job_id": "25941208",
+  "outcome": "completed_20_of_20",
+  "slurm_state": "COMPLETED",
+  "exit_code": "0:0",
+  "execution_commit": "58f7e7bb68bf4caf1b36826073685f3ceafb5fdc",
+  "review_commit": "94556466298af12a8d5c1bd207c92a542420e46a",
+  "manifest_sha256": "1bfb5608ba6740f4d6024c00cffb25cc7cca347e8826b452be46a14207dea548",
+  "case_positions": [
+    7,
+    29,
+    40,
+    58,
+    70
+  ],
+  "condition_definition": {
+    "A": "bare dialogue / plain writer",
+    "B": "bare dialogue / evidence writer",
+    "C": "first-selected dialogue / plain writer",
+    "D": "first-selected dialogue / evidence writer"
+  },
+  "metric": "AR-Bench character-multiset F1; lexical overlap, not semantic accuracy",
+  "cell_means": {
+    "A": {
+      "available": 5,
+      "expected": 5,
+      "mean": 0.7454150910912818
+    },
+    "B": {
+      "available": 5,
+      "expected": 5,
+      "mean": 0.6940759763150284
+    },
+    "C": {
+      "available": 5,
+      "expected": 5,
+      "mean": 0.6970081386869065
+    },
+    "D": {
+      "available": 5,
+      "expected": 5,
+      "mean": 0.7165839076630036
+    }
+  },
+  "contrasts": {
+    "dialogue_given_evidence_D-B": {
+      "available": 5,
+      "ci95": [
+        -0.16386612129646616,
+        0.23249250821047324
+      ],
+      "expected": 5,
+      "mean": 0.022507931347975373,
+      "missing": 0
+    },
+    "dialogue_given_plain_C-A": {
+      "available": 5,
+      "ci95": [
+        -0.15719213062960322,
+        0.09351489013698745
+      ],
+      "expected": 5,
+      "mean": -0.04840695240437533,
+      "missing": 0
+    },
+    "dialogue_marginal": {
+      "available": 5,
+      "ci95": [
+        -0.16018397803560025,
+        0.16334884710116476
+      ],
+      "expected": 5,
+      "mean": -0.012949510528199976,
+      "missing": 0
+    },
+    "interaction_(D-C)-(B-A)": {
+      "available": 5,
+      "ci95": [
+        -0.014099137129841021,
+        0.1491940540264332
+      ],
+      "expected": 5,
+      "mean": 0.0709148837523507,
+      "missing": 0
+    },
+    "writer_given_bare_B-A": {
+      "available": 5,
+      "ci95": [
+        -0.1197284820884493,
+        0.005609816775896959
+      ],
+      "expected": 5,
+      "mean": -0.05133911477625356,
+      "missing": 0
+    },
+    "writer_given_first_D-C": {
+      "available": 5,
+      "ci95": [
+        -0.06417328480569193,
+        0.10332482275788621
+      ],
+      "expected": 5,
+      "mean": 0.01957576897609714,
+      "missing": 0
+    },
+    "writer_marginal": {
+      "available": 5,
+      "ci95": [
+        -0.07812249350755598,
+        0.045948471837847726
+      ],
+      "expected": 5,
+      "mean": -0.01588167290007821,
+      "missing": 0
+    }
+  },
+  "per_case": [
+    {
+      "contrasts": {
+        "dialogue_given_evidence_D-B": -0.05874015926160536,
+        "dialogue_given_plain_C-A": -0.14885769293109785,
+        "dialogue_marginal": -0.10379892609635161,
+        "interaction_(D-C)-(B-A)": 0.09011753366949249,
+        "writer_given_bare_B-A": 0.030359205207622364,
+        "writer_given_first_D-C": 0.12047673887711485,
+        "writer_marginal": 0.07541797204236861
+      },
+      "index": 7,
+      "scores": {
+        "A": 0.8984198645598195,
+        "B": 0.9287790697674418,
+        "C": 0.7495621716287216,
+        "D": 0.8700389105058365
+      }
+    },
+    {
+      "contrasts": {
+        "dialogue_given_evidence_D-B": 0.1821810097406879,
+        "dialogue_given_plain_C-A": 0.027256935262744753,
+        "dialogue_marginal": 0.10471897250171633,
+        "interaction_(D-C)-(B-A)": 0.15492407447794315,
+        "writer_given_bare_B-A": -0.17829767023454918,
+        "writer_given_first_D-C": -0.023373595756606025,
+        "writer_marginal": -0.1008356329955776
+      },
+      "index": 29,
+      "scores": {
+        "A": 0.6622296173044925,
+        "B": 0.4839319470699433,
+        "C": 0.6894865525672372,
+        "D": 0.6661129568106312
+      }
+    },
+    {
+      "contrasts": {
+        "dialogue_given_evidence_D-B": -0.2523946653085697,
+        "dialogue_given_plain_C-A": -0.17141952681453343,
+        "dialogue_marginal": -0.21190709606155156,
+        "interaction_(D-C)-(B-A)": -0.08097513849403626,
+        "writer_given_bare_B-A": -0.004594574339135016,
+        "writer_given_first_D-C": -0.08556971283317127,
+        "writer_marginal": -0.045082143586153145
+      },
+      "index": 40,
+      "scores": {
+        "A": 0.9207383279044516,
+        "B": 0.9161437535653166,
+        "C": 0.7493188010899182,
+        "D": 0.6637490882567469
+      }
+    },
+    {
+      "contrasts": {
+        "dialogue_given_evidence_D-B": -0.12790055830179303,
+        "dialogue_given_plain_C-A": -0.14540621365675355,
+        "dialogue_marginal": -0.1366533859792733,
+        "interaction_(D-C)-(B-A)": 0.017505655354960514,
+        "writer_given_bare_B-A": -0.08068235665771606,
+        "writer_given_first_D-C": -0.06317670130275554,
+        "writer_marginal": -0.0719295289802358
+      },
+      "index": 58,
+      "scores": {
+        "A": 0.7487179487179487,
+        "B": 0.6680355920602327,
+        "C": 0.6033117350611952,
+        "D": 0.5401350337584396
+      }
+    },
+    {
+      "contrasts": {
+        "dialogue_given_evidence_D-B": 0.36939402987115705,
+        "dialogue_given_plain_C-A": 0.19639173611776345,
+        "dialogue_marginal": 0.28289288299446025,
+        "interaction_(D-C)-(B-A)": 0.1730022937533936,
+        "writer_given_bare_B-A": -0.023480177857489903,
+        "writer_given_first_D-C": 0.1495221158959037,
+        "writer_marginal": 0.0630209690192069
+      },
+      "index": 70,
+      "scores": {
+        "A": 0.496969696969697,
+        "B": 0.4734895191122071,
+        "C": 0.6933614330874605,
+        "D": 0.8428835489833642
+      }
+    }
+  ],
+  "cost": {
+    "new_writer": {
+      "ambiguous_calls": 0,
+      "attempted_calls": 20,
+      "returned_calls": 20,
+      "returned_elapsed_s": 37.3064657622017,
+      "token_usage": {
+        "input_tokens": {
+          "known": 20,
+          "known_subtotal": 15210,
+          "total_if_complete": 15210,
+          "unknown": 0
+        },
+        "output_tokens": {
+          "known": 20,
+          "known_subtotal": 1817,
+          "total_if_complete": 1817,
+          "unknown": 0
+        },
+        "total_tokens": {
+          "known": 20,
+          "known_subtotal": 17027,
+          "total_if_complete": 17027,
+          "unknown": 0
+        }
+      }
+    },
+    "by_cell_tokens": {
+      "A": {
+        "input_tokens": 4451,
+        "output_tokens": 502
+      },
+      "B": {
+        "input_tokens": 4541,
+        "output_tokens": 459
+      },
+      "C": {
+        "input_tokens": 3064,
+        "output_tokens": 427
+      },
+      "D": {
+        "input_tokens": 3154,
+        "output_tokens": 429
+      }
+    },
+    "gpu": "1 x NVIDIA L40S",
+    "node": "node3205",
+    "gpu_driver": "590.48.01",
+    "job_elapsed_seconds": 178,
+    "gpu_hours": 0.049444444444444444,
+    "api_cost_usd": 0,
+    "institutional_gpu_charge": null,
+    "historical_cost": {
+      "bare": {
+        "episodes": 5,
+        "meaning": "Sunk whole historical episodes, including original finalizers; acquisition-only cost unavailable.",
+        "questioner_calls": 130,
+        "questioner_input_tokens": 104369,
+        "questioner_output_tokens": 3535,
+        "referee_and_keypoint_judge_calls": 250,
+        "referee_tokens": null
+      },
+      "first": {
+        "episodes": 5,
+        "meaning": "Sunk whole historical episodes, including original finalizers; acquisition-only cost unavailable.",
+        "questioner_calls": 382,
+        "questioner_input_tokens": 249356,
+        "questioner_output_tokens": 18923,
+        "referee_and_keypoint_judge_calls": 250,
+        "referee_tokens": null
+      }
+    },
+    "cost_note": "GPU elapsed includes initialization and teardown. Do not sum parent/batch/extern durations. Historical whole-episode costs are separate sunk costs, not acquisition-only costs."
+  },
+  "failures": {
+    "startup": 0,
+    "tokenizer": 0,
+    "inference": 0,
+    "ambiguous_calls": 0,
+    "truncated_completions": 0
+  },
+  "warnings": [
+    "Pinned model generation_config defaults loaded; explicit temperature=0 and top_p=1 retained.",
+    "After all results were scored, normal launcher cleanup force-killed the remaining engine child; a semaphore cleanup warning followed. Slurm completed with exit 0:0."
+  ],
+  "safety": {
+    "authorized_jobs_this_turn": 1,
+    "submitted_jobs_this_turn": 1,
+    "requeues": 0,
+    "restarts": 0,
+    "inference_retries": 0,
+    "additional_jobs": 0,
+    "paid_api_calls": 0,
+    "full_70_case_run": false,
+    "manifest_unchanged": true,
+    "clean_execution_checkout": true,
+    "max_calls": 20,
+    "max_input_tokens": 15210,
+    "max_output_tokens": 8000,
+    "slurm_minutes_cap": 30,
+    "runtime_code_changed": false
+  },
+  "verification": {
+    "http_counts": {
+      "completions_200": 20,
+      "tokenize_200": 20,
+      "health_200": 1,
+      "models_200": 1
+    },
+    "local_analysis_exactly_matches_cluster": true,
+    "archive_bytes": 76375,
+    "archive_sha256": "8bf08541c5a8ac16e79747afdfde4fbd7d034f63144f1a7956584e343c7b8a39",
+    "inventory_files_verified": 34,
+    "all_twenty_response_scores_replayed": true
+  },
+  "independent_review": {
+    "reviewer": "independent_c2_review",
+    "status": "passed",
+    "method": "Independently recomputed all 20 character F1 scores, case pairing, seven contrasts and 10000 paired-bootstrap draws without calling the project analyzer.",
+    "result": "All recomputed values match; no scoring, pairing, statistics or budget inconsistency.",
+    "analysis_sha256": "cf049d5853ec73473f324b88a1f5164e52e39310ad999d3c06c4f3a73f920664",
+    "journal_sha256": "1d4a58a09e4d3d20feb865308e5312063f085666b8e17408754d88d953fe011a",
+    "vllm_log_sha256": "49664aca962183b190637720cb6faaf8fee5e9dc9acbf96f2692b69cd2e17d5c"
+  },
+  "research_interpretation": "This pilot demonstrates end-to-end feasibility. All seven descriptive paired-bootstrap intervals include zero. Positive interaction is an exploratory direction, not demonstrated synergy. High character F1 can coexist with an incorrect story mechanism; no semantic superiority claim is supported.",
+  "raw_analysis_file": "pilot_25941208_analysis.json",
+  "additional_gpu_work_requires_new_authorization": true
+}
