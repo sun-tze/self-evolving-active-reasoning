@@ -94,6 +94,17 @@ def pilot_indices(indices):
     return sorted(indices, key=lambda i: sha(("c2-pilot-v1:" + str(i)).encode()))[:5]
 
 
+def scope_indices(manifest, scope):
+    require(scope in ("pilot", "all", "confirmatory"), "invalid run scope")
+    if scope == "pilot":
+        return manifest["pilot_indices"]
+    if scope == "all":
+        return manifest["unseen_indices"]
+    remaining = sorted(set(manifest["unseen_indices"]) - set(manifest["pilot_indices"]))
+    require(len(remaining) == 65, "confirmatory scope must contain exactly 65 non-pilot cases")
+    return remaining
+
+
 def payload(obs, writer, index):
     return {"model": MODEL, "temperature": 0.0, "max_tokens": 400, "top_p": 1.0,
             "seed": seed_for(index), "messages": [

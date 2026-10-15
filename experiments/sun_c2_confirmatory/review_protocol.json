@@ -1,0 +1,9 @@
+{
+  "version": "c2-blind-review-65-v1",
+  "scope": "Rate only the answers in your assigned packet; batch size at most 20. Do not infer conditions or inspect other files.",
+  "rubric": "Use the unchanged ordinal scoring rules and evidence policy in the accompanying rubric. Pilot-specific analysis/count metadata does not change these rules.",
+  "reference": "Use the reference and outcome-blind anchors for semantic correctness. Use only surface and recorded referee replies for evidence faithfulness. Reference-only truth does not establish dialogue support. Preserve ambiguity and reference-quality flags.",
+  "output": "Use the rubric output schema. Reviewer ID equals the packet reviewer_id; bind the rubric and packet SHA256. Supply concise evidence-linked annotations and exact cited spans, not a reasoning transcript. Include every assigned item exactly once.",
+  "independence": "Separate fresh contexts. No other reviewer ratings, source labels, original IDs, scores, condition mappings, repository search or model/API calls. Record only the actually accessed inputs in the independence statement.",
+  "aggregation": "Both original ratings are retained. The primary score is their arithmetic mean; reviewers must not negotiate a consensus."
+}

@@ -3,7 +3,7 @@ import argparse
 import math
 from pathlib import Path
 import random
-from common import (char_f1, digest, load_bundle, read_json, read_jsonl, require, sha, write_json)
+from common import (char_f1, digest, load_bundle, read_json, read_jsonl, require, sha, write_json, scope_indices)
 from runner import journal_state, parse_completion, schedule
 
 CONTRASTS = {
@@ -64,8 +64,7 @@ def analyze(bundle, manifest_sha, run_dir, out):
     run = read_json(run_dir / "run.json")
     plan = run["plan"]
     require(run["plan_sha256"] == digest(plan) and plan["manifest_sha256"] == manifest_sha, "run binding mismatch")
-    require(plan["scope"] in ("pilot", "all"), "invalid scope")
-    indices = manifest["pilot_indices"] if plan["scope"] == "pilot" else manifest["unseen_indices"]
+    indices = scope_indices(manifest, plan["scope"])
     selected = schedule(requests, indices)
     require(plan["indices"] == sorted(indices) and plan["schedule"] == [r["request_id"] for r in selected], "run design/schedule mismatch")
     events = read_jsonl(run_dir / "journal.jsonl") if (run_dir / "journal.jsonl").exists() else []
@@ -135,7 +134,9 @@ def analyze(bundle, manifest_sha, run_dir, out):
                   "One greedy generation per cell; matching seeds do not guarantee bitwise GPU reproducibility.",
                   "Paired case bootstrap: 10000 draws, seed 62026. Descriptive intervals, no multiple-comparison-adjusted tests.",
                   "Missing/failed cases suppress affected means and intervals. Length-capped outputs retained and flagged.",
-                  "Pilot is exploratory. If used for development, reserve remaining 65 for later confirmation.",
+                  ("Confirmatory population excludes all five pilot cases; F1 remains a secondary lexical metric."
+                   if plan["scope"] == "confirmatory" else
+                   "Pilot is exploratory. If used for development, reserve remaining 65 for later confirmation."),
                   "No monetary rate assumed; Slurm allocation cost requires institutional accounting."]}
     write_json(out, report)
     print(f"Scored {sum(r['score'] is not None for r in result_rows)}/{len(selected)} planned responses.")

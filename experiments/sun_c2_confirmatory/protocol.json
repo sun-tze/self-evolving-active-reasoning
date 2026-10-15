@@ -1,0 +1,112 @@
+{
+  "version": "c2-confirmatory-65-v1",
+  "population": "65 original unseen cases, excluding pilot positions 7,29,40,58,70. No substitutions, adaptive selection or pilot pooling.",
+  "original_manifest_sha256": "1bfb5608ba6740f4d6024c00cffb25cc7cca347e8826b452be46a14207dea548",
+  "generation": {
+    "model": "Qwen/Qwen2.5-7B-Instruct",
+    "revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 400,
+    "seed_policy": "unchanged per-request seed",
+    "request_policy": "Original allowlisted payloads byte-for-byte under canonical JSON; no new messages, no reference targets or evaluation anchors in model input."
+  },
+  "conditions": {
+    "A": "bare dialogue / plain writer",
+    "B": "bare dialogue / evidence writer",
+    "C": "first-selected dialogue / plain writer",
+    "D": "first-selected dialogue / evidence writer"
+  },
+  "primary": {
+    "metric": "Semantic Correctness / 2",
+    "estimand": "mean over cases of ((B-A)+(D-C))/2",
+    "answer_score": "Arithmetic mean of two independent ordinal ratings, divided by 2",
+    "hypothesis": "Positive writer marginal effect",
+    "confirmation_rule": "All 65 cases have complete generation and both reviews for all four conditions, and the primary paired-case 95% bootstrap interval lower endpoint is greater than zero."
+  },
+  "secondary": [
+    "Evidence Faithfulness / 2",
+    "Character F1 using the unchanged official scorer",
+    "Writer simple effects, dialogue simple and marginal effects, and interaction for each metric",
+    "Per-condition score means and fully correct counts",
+    "Strict ranking reversals and ordinal inter-reviewer agreement"
+  ],
+  "statistics": {
+    "unit": "case",
+    "bootstrap_draws": 10000,
+    "bootstrap_seed": 62026,
+    "interval": "Two-sided percentile 95%; sorted bootstrap means at zero-based indices floor(0.025*B) and floor(0.975*B), matching the existing analyzer",
+    "resampling": "Resample case indices; retain all four paired conditions and both review scores within a selected case",
+    "secondary_inference": "Descriptive estimates and intervals only; no unadjusted confirmatory claims or claim of guaranteed power",
+    "ranking_reversals": "Opposite nonzero signs of F1 and semantic differences; tolerance 1e-12; report ties separately"
+  },
+  "rubric": {
+    "path": "../sun_c2_semantic/rubric_v1.json",
+    "scoring_changes": "None. Existing ordinal axes, evidence rules and mean-of-two aggregation are unchanged.",
+    "scope_clarification": "The rubric file retains pilot-specific counts and descriptive-only wording as historical metadata. This protocol explicitly replaces those operational clauses with 65 cases, 260 answers, the frozen review batches, and the predefined primary bootstrap analysis; no scoring thresholds change."
+  },
+  "reference_policy": {
+    "source": "Pinned original targets and surfaces; outcome-blind anchors in anchors.json",
+    "canonical_truth": "The fictional reference solution determines semantic correctness, including speculative/supernatural mechanisms. It does not establish real-world scientific or medical truth.",
+    "quality_flags": "Reference inconsistencies are flagged before generation. All 65 remain in the primary analysis; no outcome-driven exclusions or repairs. Report flag-specific descriptive results as a prespecified sensitivity summary.",
+    "sufficient_alternatives": "When anchors explicitly use OR, either specified mechanism suffices. Otherwise all required components are needed for score 2."
+  },
+  "blind_review": {
+    "streams": [
+      "r1",
+      "r2"
+    ],
+    "case_batches_per_stream": 13,
+    "cases_per_batch": 5,
+    "answers_per_batch": 20,
+    "total_answer_ratings": 520,
+    "assignment": "Deterministic independent case orders, seeds 62101 and 62102; opaque item IDs and within-batch answer order frozen before generation",
+    "reviewers": "Two independent fresh-context model reviewers per batch using the available Work environment; no paid external API. Each reviewer may access only the unchanged rubric, review_protocol.json and its assigned packet. Separate fresh contexts for the two streams; no shared prior evaluations or communication.",
+    "hidden": [
+      "A/B/C/D labels",
+      "writer instruction",
+      "historical source label",
+      "original request ID",
+      "original case position",
+      "F1",
+      "other reviewer ratings"
+    ],
+    "allowed": [
+      "surface",
+      "exact recorded questions and referee replies",
+      "reference solution",
+      "case-specific scoring anchors",
+      "one final model answer"
+    ],
+    "record": "Ordinal scores, concise evidence-linked annotation, exact cited answer span and Hxx references. No internal reasoning transcripts. Preserve both original annotation files privately; publish numerical results and necessary evidence excerpts.",
+    "disagreement": "Retain both scores; primary aggregation is their mean. No replacement by consensus. Any later adjudication is separately labelled and secondary.",
+    "limitations": "Same-family model reviewers may share bias. Procedural blinding is not filesystem isolation; recognizable case content may remain."
+  },
+  "failure_policy": {
+    "generation": "Stop on the first startup, tokenizer, inference, malformed-response or budget error. No automatic retry, resume, requeue or extra GPU job. Preserve every started/result record, including ambiguous calls.",
+    "warnings": "Warnings alone do not constitute failure. Require process exit, failed readiness/deadline, failed invariant, HTTP or completion error.",
+    "truncation": "Retain and score length-capped outputs; report counts and limitations, never regenerate them.",
+    "missing": "Report all failures and missing review cells. No imputation or replacement. Complete-case estimates may be descriptive; withhold the primary confirmatory conclusion if any required generation/review is missing."
+  },
+  "gpu_limits": {
+    "jobs": 1,
+    "account": "mit_general",
+    "partition": "mit_normal_gpu",
+    "gres": "gpu:l40s:1",
+    "cpus": 8,
+    "memory": "32G",
+    "wall_minutes": 60,
+    "allocation_gpu_hours_cap": 1.0,
+    "completion_calls": 260,
+    "input_tokens": 194338,
+    "output_tokens_cap": 104000,
+    "runner_deadline_seconds": 3000,
+    "request_timeout_seconds": 120,
+    "automatic_retries": 0,
+    "automatic_requeues": 0,
+    "paid_external_api_calls": 0,
+    "currency_cost": null
+  },
+  "change_control": "Freeze rubric, anchors, assignments, request selection, budget and executable code before generation. Amendments require a new version and documented reason before any new output is inspected. No GPU submission before explicit authorization. A changed freeze invalidates an authorization for the earlier freeze.",
+  "publication": "English research methods, aggregate/per-case numerical results, necessary evidence excerpts, hashes and reproducible code only. Raw operational logs, authorization records, browser state and reviewer working records remain in private run storage. Preserve original records; do not publish internal reasoning transcripts. No upstream changes, PR merge or unapproved history rewrite."
+}

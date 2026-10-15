@@ -14,7 +14,7 @@ import threading
 import time
 import urllib.parse
 from common import (HERE, MODEL, canonical, decode, digest, load_bundle, read_json,
-                    read_jsonl, require, sha, write_json)
+                    read_jsonl, require, sha, write_json, scope_indices)
 
 
 def endpoint(value):
@@ -111,7 +111,7 @@ def plan(bundle, manifest_sha, budget_file, scope, base_url, max_calls, max_inpu
     counts = budget["request_input_tokens"]
     require(set(counts) == {r["request_id"] for r in rows} and
             all(type(n) is int and 0 < n <= 15984 for n in counts.values()), "invalid token counts")
-    selected = schedule(rows, manifest["pilot_indices"] if scope == "pilot" else manifest["unseen_indices"])
+    selected = schedule(rows, scope_indices(manifest, scope))
     totals = {"calls": len(selected), "input_tokens": sum(counts[r["request_id"]] for r in selected),
               "max_output_tokens": sum(r["payload"]["max_tokens"] for r in selected)}
     require(totals["calls"] <= max_calls and totals["input_tokens"] <= max_input and
@@ -220,7 +220,7 @@ if __name__ == "__main__":
     p.add_argument("--bundle", required=True)
     p.add_argument("--manifest-sha256", required=True)
     p.add_argument("--budget", required=True)
-    p.add_argument("--scope", choices=["pilot", "all"], default="pilot")
+    p.add_argument("--scope", choices=["pilot", "all", "confirmatory"], default="pilot")
     p.add_argument("--base-url", default="http://127.0.0.1:18000/v1")
     p.add_argument("--server-marker", help="unique extra served-model alias of the launched Slurm service")
     p.add_argument("--max-calls", type=int, default=20)
