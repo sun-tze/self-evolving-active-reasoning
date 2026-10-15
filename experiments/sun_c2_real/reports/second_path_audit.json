@@ -1,0 +1,1 @@
+{"all_passed":true,"format":"c2_second_path_audit_v1","manifest_sha256":"1bfb5608ba6740f4d6024c00cffb25cc7cca347e8826b452be46a14207dea548","requests_compared_to_raw":280,"reviewer_independence":"Separate verification path, same implementing agent; not independent human/agent sign-off.","scorer_differential_cases":1005}

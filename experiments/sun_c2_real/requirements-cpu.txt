@@ -1,0 +1,6 @@
+# Optional clean CPU preparation environment; do not reinstall these over cluster vLLM.
+numpy==2.4.6
+zstandard==0.25.0
+transformers==5.19.0
+tokenizers==0.23.1
+jinja2==3.1.6

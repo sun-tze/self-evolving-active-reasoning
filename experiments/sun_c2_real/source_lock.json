@@ -1,0 +1,40 @@
+{
+  "format": "c2_source_lock_v1",
+  "base_commit": "e16ccf743e2d27f37b1d4316e3cc2109ce48a32d",
+  "release_url": "https://github.com/Zarreboln/self-evolving-active-reasoning/releases/download/v0.1-experiments-2026-10-11/sp_tthe_pilot_raw.tar.zst",
+  "archive_sha256": "feaf5033f6a93d3f40c149e4b869ee0bc901f849e29030105eee2c2e987f8f3e",
+  "arbench_repo": "https://github.com/tmlr-group/AR-Bench",
+  "arbench_commit": "9971322fe9e4d77cb4d303b7e279ab1d1cb5dba1",
+  "members": {
+    "bare": {
+      "path": "logs/eval_sp100/results/bare.jsonl",
+      "sha256": "2cd2ebc8ec99fe56e19925ee727b95cfe17a0c30a15dcba67189a1c9db78686d"
+    },
+    "first": {
+      "path": "logs/eval_sp100/results/cand_sp_strict1_b10g3r2_b0r1g2.jsonl",
+      "sha256": "302194791d8fcd1e95805e132883cfc766a1c2b9cafbb8dd33346355920d8d8e"
+    },
+    "evaluation_config": {
+      "path": "logs/eval_sp100/config.json",
+      "sha256": "d6bbbe52b8b6aceed86d0a360be55959269552927362608b6d9405c592090b5f"
+    },
+    "evolution_config": {
+      "path": "logs/sp_strict1_b10g3r2/config.json",
+      "sha256": "f2f929e484338e0e45ed92f6578b5ddbd4ac038797b80c167601d7e59580b50e"
+    },
+    "historical_scores": {
+      "path": "logs/eval_sp100/scores.json",
+      "sha256": "4d6170f9cb293ac615dd1c4ca555fb322f1c0d37d872fd30caae5e8d7e3924a7"
+    }
+  },
+  "arbench_files": {
+    "dataset": {
+      "path": "data/sp/test.json",
+      "sha256": "e3c34d58b8bad06d0152fee771f2ee19a01c17dd5ba65c3a6dfb69c02b52f485"
+    },
+    "scorer": {
+      "path": "arbench/utils/utils_sp.py",
+      "sha256": "03c29648f308b697767009504ea3f9dd01009883e96a33c7e7707aea30125785"
+    }
+  }
+}

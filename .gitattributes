@@ -1,0 +1,4 @@
+# Preserve byte-bound synthetic fixtures and reproducible C2 artifacts on Windows.
+experiments/sun_writer_probe/** text eol=lf
+experiments/sun_c2_real/** text eol=lf
+engaging/c2_pilot.sbatch text eol=lf

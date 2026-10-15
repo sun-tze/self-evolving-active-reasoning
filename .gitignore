@@ -23,6 +23,7 @@ meta/cd_evolve/logs/*/*.nohup
 meta/cd_evolve/logs/*/nohup.out
 evoharness_results/
 # ---- scratch / runtime ----
+.c2-local/
 __pycache__/
 *.pyc
 *.log
