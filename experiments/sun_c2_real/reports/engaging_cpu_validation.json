@@ -1,0 +1,22 @@
+{
+  "authorization_granted": false,
+  "cpu_code_commit": "9c18cb762f0de527c5ba2bda50166dbc039dfe64",
+  "cpu_tests_passed": 89,
+  "cpu_tests_skipped": 0,
+  "date": "2026-10-15",
+  "gpu_calls": 0,
+  "gpu_jobs_submitted": 0,
+  "independent_source_projection_comparisons": 280,
+  "manifest_sha256": "1bfb5608ba6740f4d6024c00cffb25cc7cca347e8826b452be46a14207dea548",
+  "sbatch_test_only": {
+    "account": "mit_general",
+    "allocation_time_limit_minutes": 30,
+    "gres": "gpu:l40s:1",
+    "job_submitted": false,
+    "partition": "mit_normal_gpu",
+    "passed": true,
+    "reported_candidate_node": "node3503"
+  },
+  "scorer_differential_cases": 1005,
+  "transport": "Authenticated MIT OnDemand Shell"
+}

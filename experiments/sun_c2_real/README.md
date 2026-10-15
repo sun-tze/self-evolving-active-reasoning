@@ -2,7 +2,7 @@
 
 This additive component adapts the public Experiment 10 release to the C2 design.
 It leaves `experiments/sun_writer_probe/` and its synthetic-only boundary unchanged.
-It prepares **70 unseen cases Ã— four cells = 280 requests**, then selects five
+It prepares **70 unseen cases × four cells = 280 requests**, then selects five
 cases without consulting outcomes for a **20-call pilot**. No new model results
 are included in this branch. Raw data, requests, targets, and runtime products
 stay in the ignored `.c2-local/` directory or an explicitly chosen cluster pool path.
@@ -26,13 +26,13 @@ questioner used temperature 0.7; the new deterministic writer is a deliberate pr
 
 | Quantity | Contrast | Interpretation |
 |---|---|---|
-| Writer effect, bare history | Bâˆ’A | Instruction effect with identical bare observations |
-| Writer effect, first history | Dâˆ’C | Instruction effect with identical first observations |
-| Dialogue effect, plain writer | Câˆ’A | Utility of these two acquired histories for the plain writer |
-| Dialogue effect, evidence writer | Dâˆ’B | Utility for the evidence writer |
-| Marginal writer effect | ((Bâˆ’A)+(Dâˆ’C))/2 | Average over the two fixed histories |
-| Marginal dialogue effect | ((Câˆ’A)+(Dâˆ’B))/2 | Average over the two fixed instructions |
-| Interaction | (Dâˆ’C)âˆ’(Bâˆ’A) | Change in writer effect across the histories |
+| Writer effect, bare history | B−A | Instruction effect with identical bare observations |
+| Writer effect, first history | D−C | Instruction effect with identical first observations |
+| Dialogue effect, plain writer | C−A | Utility of these two acquired histories for the plain writer |
+| Dialogue effect, evidence writer | D−B | Utility for the evidence writer |
+| Marginal writer effect | ((B−A)+(D−C))/2 | Average over the two fixed histories |
+| Marginal dialogue effect | ((C−A)+(D−B))/2 | Average over the two fixed instructions |
+| Interaction | (D−C)−(B−A) | Change in writer effect across the histories |
 
 These are paired descriptive comparisons. Dialogue effects are **not equal-compute
 acquisition effects**. Character F1 measures lexical multiset overlap, not semantic
