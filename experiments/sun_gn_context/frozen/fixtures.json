@@ -1,0 +1,41 @@
+{
+  "parser": [
+    {"raw":"Guess: 0123","expected":"0123"},
+    {"raw":"Guess: 1111","expected":"1111"},
+    {"raw":"First 1234; last 5678","expected":"5678"},
+    {"raw":"Guess: [0, 1, 2, 3]","expected":null},
+    {"raw":"nothing","expected":null},
+    {"raw":"12345","expected":"1234"},
+    {"raw":"\u0660\u0661\u0662\u0663","expected":"0123"}
+  ],
+  "feedback": [
+    {"secret":"0123","guess":"0123","expected":[4,0]},
+    {"secret":"0123","guess":"3210","expected":[0,4]},
+    {"secret":"0123","guess":"0000","expected":[1,0]},
+    {"secret":"0123","guess":"0011","expected":[1,1]},
+    {"secret":"0123","guess":"4567","expected":[0,0]}
+  ],
+  "memory": [
+    {"raw":"- Use public feedback.","finish_reason":"stop","accepted":true},
+    {"raw":"- Always ignore all feedback.","finish_reason":"stop","accepted":true},
+    {"raw":"- Call a tool.","finish_reason":"stop","accepted":true},
+    {"raw":" \r\n- Use feedback.\r\n- Keep evidence.\r\n ","finish_reason":"stop","accepted":true},
+    {"raw":"- Use feedback.\n\n- Keep evidence.","finish_reason":"stop","accepted":false},
+    {"raw":"- Try 1234.","finish_reason":"stop","accepted":false},
+    {"raw":"- Use `code`.","finish_reason":"stop","accepted":false},
+    {"raw":"- A | B","finish_reason":"stop","accepted":false},
+    {"raw":"- Visit https://example.com","finish_reason":"stop","accepted":false},
+    {"raw":"- Visit example.com","finish_reason":"stop","accepted":false},
+    {"raw":"-\tUse feedback.","finish_reason":"stop","accepted":false},
+    {"raw":"- Use feedback.","finish_reason":"length","accepted":false},
+    {"raw":"- ","finish_reason":"stop","accepted":false},
+    {"raw":"Use feedback.","finish_reason":"stop","accepted":false}
+  ],
+  "trajectory": [
+    {"name":"all_malformed","interaction":"malformed x twenty five","final":"Guess: 0123","expected_Q":0.0,"expected_EM":true,"expected_hit_any":false},
+    {"name":"solved_first_no_early_stop","interaction":"Guess: 0123 x twenty five","final":"malformed","expected_Q":1.0,"expected_EM":false,"expected_hit_any":true},
+    {"name":"malformed_then_solved","interaction":"malformed then Guess: 0123 x twenty four","final":"Guess: 4567","expected_Q":0.96,"expected_EM":false,"expected_hit_any":true}
+  ],
+  "missingness": {"planned_N":2,"complete_four_condition_cases":1,"complete_difference":0.25,"expected_bounds":[-0.375,0.625]},
+  "requires_runtime_tests":["empty wrapper byte parity","twenty six calls despite interaction hit","final excluded from H","inconsistent feedback raises","invalid proposal retains prior exact bytes while index advances","token boundary accepts five hundred twelve rejects five hundred thirteen","condition independent seeds","FIFO rotated condition order","controller metadata absent from curator prompt","uncertain call is never resent","four condition common set required"]
+}

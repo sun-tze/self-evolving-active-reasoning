@@ -1,0 +1,11 @@
+{
+  "format": "sun_gn_serving_path_sources_v1",
+  "version": "0.31.0",
+  "scope": "Additional reviewed serving-path files; not a whole-distribution integrity claim",
+  "files": {
+    "vllm/v1/engine/input_processor.py": "d79601e4a053a7bacb0d6a23e273348435e4ab70c6a315dcccb2d428ed57d96b",
+    "vllm/entrypoints/openai/chat_completion/serving.py": "532dadea845c77a5a79011027b9989987c3e32467614e993f439f29c924de002",
+    "vllm/entrypoints/serve/utils/api_utils.py": "ffb5e08c2b6cf6d0402c6ba31d0d05e53eb7e9e8c13b29700e84a4bfada420ba",
+    "vllm/entrypoints/serve/engine/protocol.py": "9d865d7006ed6ede3417f75444f8b5dcd82769165e703b140b45ed639d0c16a4"
+  }
+}

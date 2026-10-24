@@ -1,0 +1,36 @@
+{
+  "format": "sun_gn_effective_sampling_policy_v1_NOT_wire_payload",
+  "generation_config": "vllm",
+  "wire_keys": ["model", "messages", "temperature", "top_p", "max_tokens", "seed"],
+  "supported_adapter_versions": ["0.31.0"],
+  "generation_config_sha256": "3a8f9087e486054c8a4a08dae2e5a3ba62e23da212b5b8c08bc42cb983c3459f",
+  "reviewed_sources": {
+    "vllm/config/model.py": "e33d28deab39c42b1c209116296dcb6e98c6da8b4e42ee0dbca0e8bf098c534c",
+    "vllm/entrypoints/openai/chat_completion/protocol.py": "4bdc71f668e4820d8ae5bae2a153fed0296b430cd6353ace8c0c27cfb982ebc1",
+    "vllm/sampling_params.py": "3c37c655a0a60851e3d96d946eb10d1cbb347dee6cd143f38a7fc18c6f66dd8b"
+  },
+  "common": {
+    "top_k": 0, "min_p": 0.0, "repetition_penalty": 1.0,
+    "presence_penalty": 0.0, "frequency_penalty": 0.0,
+    "n": 1, "min_tokens": 0, "stop": [], "ignore_eos": false,
+    "eos_token_id": 151645, "all_stop_token_ids": [151643, 151645],
+    "logprobs": null, "prompt_logprobs": null, "logprob_token_ids": null,
+    "detokenize": true, "skip_special_tokens": true,
+    "spaces_between_special_tokens": true, "include_stop_str_in_output": false,
+    "structured_outputs": null, "logit_bias": null, "allowed_token_ids": null,
+    "bad_words": [], "thinking_token_budget": null, "extra_args": null,
+    "repetition_detection": null, "trace_decode_token_ids": null, "watermarking": true
+  },
+  "request_defaults": {
+    "use_beam_search": false, "length_penalty": 1.0,
+    "stream": false, "echo": false, "tools": null, "tool_choice": "none",
+    "response_format": null, "reasoning_effort": null,
+    "truncate_prompt_tokens": null, "add_special_tokens": false
+  },
+  "actor": {"temperature": 0.7, "top_p": 0.7, "max_tokens": 128},
+  "curator": {"temperature": 0.0, "top_p": 1.0, "max_tokens": 768},
+  "engine_assertions": {
+    "watermark_config": null, "override_generation_config": {},
+    "custom_logits_processors": [], "speculative_decoding": null, "adapters": []
+  }
+}

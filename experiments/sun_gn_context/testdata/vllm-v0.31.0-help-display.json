@@ -1,0 +1,24 @@
+{
+  "provenance": "Official v0.31.0 format_help method, standard-library argparse with required flags registered; not installed CLI output",
+  "required_flags": [
+    "--attention-backend",
+    "--dtype",
+    "--enable-prefix-caching",
+    "--generation-config",
+    "--gpu-memory-utilization",
+    "--host",
+    "--max-model-len",
+    "--max-num-seqs",
+    "--port",
+    "--revision",
+    "--served-model-name",
+    "--tokenizer",
+    "--tokenizer-revision"
+  ],
+  "abbreviated_help": "usage: vllm serve [model_tag] [options]\n\nLaunch a local OpenAI-compatible API server to serve LLM completions via HTTP.\nDefaults to Qwen/Qwen3-0.6B if no model is specified. Search by using:\n`--help=<ConfigGroup>` to explore options by section (e.g.,\n--help=ModelConfig, --help=Frontend) Use `--help=all` to show all available\nflags at once.\n\nConfig Groups:\n  options ModelConfig Source-derived display fixture, not an installed CLI.\n",
+  "full_help": "usage: vllm serve [model_tag] [options]\n\nLaunch a local OpenAI-compatible API server to serve LLM completions via HTTP.\nDefaults to Qwen/Qwen3-0.6B if no model is specified. Search by using:\n`--help=<ConfigGroup>` to explore options by section (e.g.,\n--help=ModelConfig, --help=Frontend) Use `--help=all` to show all available\nflags at once.\n\noptions:\n  -h, --help            show this help message and exit\n\nModelConfig:\n  Source-derived display fixture, not an installed CLI.\n\n  --attention-backend ATTENTION_BACKEND\n                        Registered required flag for display regression.\n  --dtype DTYPE         Registered required flag for display regression.\n  --enable-prefix-caching ENABLE_PREFIX_CACHING\n                        Registered required flag for display regression.\n  --generation-config GENERATION_CONFIG\n                        Registered required flag for display regression.\n  --gpu-memory-utilization GPU_MEMORY_UTILIZATION\n                        Registered required flag for display regression.\n  --host HOST           Registered required flag for display regression.\n  --max-model-len MAX_MODEL_LEN\n                        Registered required flag for display regression.\n  --max-num-seqs MAX_NUM_SEQS\n                        Registered required flag for display regression.\n  --port PORT           Registered required flag for display regression.\n  --revision REVISION   Registered required flag for display regression.\n  --served-model-name SERVED_MODEL_NAME\n                        Registered required flag for display regression.\n  --tokenizer TOKENIZER\n                        Registered required flag for display regression.\n  --tokenizer-revision TOKENIZER_REVISION\n                        Registered required flag for display regression.\n\nsource-derived fixture\n",
+  "sources": {
+    "vllm-v0.31.0-argparse_utils.py": "fe7abd5c4478091935779b9a9a57f929f8f64cdf51ddf024e198ad5b34ee0b59",
+    "vllm-v0.31.0-serve.py": "c182c88347f1eb3440a816986f1c2025a2ab2a13236cd68b0ad0146250d031ff"
+  }
+}

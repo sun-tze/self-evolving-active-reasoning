@@ -1,0 +1,5 @@
+Each episode has its own secret consisting of four distinct digits; a leading zero is allowed.
+Feedback states how many digits are correct in both value and position, and how many are present in different positions.
+The guesses and feedback in the current episode are the evidence about its secret.
+Earlier episodes do not reveal the current secret.
+Follow the supplied turn and output instructions, and provide the required final guess after the interaction turns.

@@ -1,0 +1,34 @@
+{
+  "baseline_commit": "84e8d210ff868ead99879eb100346ec77e331749",
+  "benchmark_commit": "9971322fe9e4d77cb4d303b7e279ab1d1cb5dba1",
+  "data_hashes": {
+    "data/gn/test.json": "e192e5b2d0e58a62e1b4027ba736368d5dc81b2a8f973080766d5288c9804394",
+    "data/gn/train.json": "e3467c07c1ad85c25f64faaab29c7d66a7685cc90d677386551516afd32c662b"
+  },
+  "files": {
+    "M0.txt": "725f0a736e392ab0a03af5fb60806a19d372afa52ed87401eacb061fce9106af",
+    "fixtures.json": "e9537559b64c8a1a49fcebb436e4f726cd19584206c90db3dc1c35fb14d34a55",
+    "manifest.json": "a0b3b937035f52dbb14dace2879d9e35509e3b227ca0f2b83b16d621da650511",
+    "prompts.json": "61f8a59d94265a1d4d99e76ad582a98fd0281887fd0e4feb44d5d4e5e9321577"
+  },
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "model_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+  "prompt_value_hashes": {
+    "Game_rule": "9df04ef548cde0da51348d72cad15df583d90173ff653a398fa15bf16ac60e6b",
+    "curator": "a9e6c7ab0e94ed0088568272a9a1e1aae40041e861ba32a36a2e0ea7446860bf",
+    "eval_prompt": "30797919027e3001304fe23b1ab5e8a0bfaf5e8adddc8b1da5a6154ba524462c",
+    "final_guess_prompt": "0cf3b657e8584645223ced7351c7a5af3383df5a85fac93d183b9db8644be886",
+    "guess_prompt": "104d9d065665b9f44802e826f6475cea7d8cdbf6b2f9e193a8647bdcf3c72b2e",
+    "header": "296c5494a33571fbc93f72e1cec17dda1bfabf2800a56a12c1bd2464c82b51e6",
+    "propose_template": "d796a3ba1c9512a963e24f655a3a600ea093926578bf9fbdae85f16438641791",
+    "propose_template_with_1_shot_inst": "510278bcb7bb283c9bb02bc36ec39e0408375355b0a2c06616ca6042dfdf29be",
+    "refine_prompt": "dd1ce52478c8c04cda38135be12747d320734d9094e7b0a160733953ef5cc89f"
+  },
+  "source_hashes": {
+    "arbench/reasoner/gn/gn_evaluator.py": "aa6643d004ed7b510452ce9fe581b371112616a6702dfee3a26132759cb221a9",
+    "arbench/reasoner/gn/prompt.py": "5dafd196d5542fad163898fbfecca411fb13b1b30b636ebc0577d38a7bbcc713",
+    "arbench/utils/utils_gn.py": "f57cc0a77615859ea44fad07a0e5b849aa95e6d428963d72d3c49405c20274e7"
+  },
+  "tokenizer_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+  "version": "sun-gn-v1"
+}
