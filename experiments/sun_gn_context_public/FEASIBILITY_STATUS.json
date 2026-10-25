@@ -1,0 +1,117 @@
+{
+  "format": "gn_feasibility_closeout_v1",
+  "status": "FROZEN_CURATOR_FEASIBILITY_FAILURE_CONFIRMED",
+  "current_frozen_run_closed": true,
+  "overall_research_complete": false,
+  "current_review_status": "COMPLETE_ACCEPT_WITH_LIMITS",
+  "publication_authorized_by_this_record": false,
+  "publication_attempted": false,
+  "english_result_summary": "Under fixed model, prompt, sampling and validation rules, the run completed 24 development condition-case episodes across 20 unique cases, with 624 actor requests and two curator canary requests. Both canaries returned normally but contained concrete numeric guesses, violating the prespecified no-digit note requirement. The frozen development gate therefore correctly stopped the run before adaptation. Inference was observed in this run, but no adaptation trajectory, final learned memory or transfer evaluation was produced. The context-adaptation E-minus-S effect remains unmeasured. This closes the current frozen run as a confirmed curator feasibility failure; it does not complete the overall research project or establish that self-curation is generally ineffective.",
+  "observed_stage_one": {
+    "status": "FAILED_AT_DEVELOPMENT_GATE",
+    "unique_development_cases": 20,
+    "completed_condition_case_episodes": 24,
+    "condition_episode_counts": {
+      "B0": 20,
+      "B1": 2,
+      "S": 2,
+      "E": 0
+    },
+    "logged_request_response_pairs": 626,
+    "actor_requests": 624,
+    "curator_canary_requests": 2,
+    "actor_parse_failures": 0,
+    "actor_truncated_outputs": 12,
+    "actor_truncation_rate": 0.019230769230769232,
+    "actor_truncation_stop_threshold": 0.05,
+    "actor_truncation_stop_comparison": "strictly_greater_than",
+    "canaries_accepted": 0,
+    "canaries_rejected": 2,
+    "canary_rejection_reasons": ["digits"],
+    "canary_finish_reasons": ["stop", "stop"],
+    "canaries_discarded": true,
+    "gate_reasons": ["both_canaries_invalid"],
+    "original_protocol_stop_rule_enforced": true,
+    "completed_adaptation_episodes": 0,
+    "memory_updates": 0,
+    "M20_produced": false,
+    "transfer_evaluation_performed": false,
+    "selected_N": null,
+    "stage_one_completed": false
+  },
+  "verification_scope": {
+    "journal_rows_checked": 1905,
+    "complete_journal_hash_chain_checked": true,
+    "unique_request_response_pairs_checked": 626,
+    "actor_messages_seeds_slots_and_public_feedback_reconstructed": true,
+    "both_canary_inputs_match_frozen_construction": true,
+    "digits_rejection_independently_reproduced": true,
+    "independent_tokenization_performed": false,
+    "independent_Q_or_feasible_set_replay_performed": false,
+    "service_usage_is_not_independent_token_verification": true,
+    "inference_observed_for_this_run": true,
+    "general_runtime_or_ABI_reliability_established": false,
+    "shutdown_warnings_retained": true,
+    "shutdown_limit": "The receipt reports no cleanup errors and the managed process group absent; the server log also records forced engine termination and a leaked-semaphore warning. This is not an independent proof of completely clean shutdown."
+  },
+  "research_outcomes": {
+    "development_Q_reported": false,
+    "development_EM_reported": false,
+    "E_minus_S_estimate": null,
+    "transfer_result": null,
+    "adaptation_effect_established": false,
+    "absence_of_M20_must_not_be_described_as_M20_equals_M0": true,
+    "unrun_transfer_must_not_be_reported_as_zero_score": true
+  },
+  "reviewed_allocation_accounting": {
+    "status": "CONFIRMED_WITH_SEPARATE_CONSERVATIVE_RESERVATION",
+    "unit": "single_GPU_allocation_seconds",
+    "formal_charge_rule": "max(parent_elapsed_seconds, ceil(allocation_receipt_elapsed_seconds))",
+    "prior_failed_allocation_charges": 2726,
+    "current_formal_charge": 1596,
+    "formal_cumulative_charge": 4322,
+    "formal_remaining_to_total_cap": 10078,
+    "additional_extern_tail_reservation": 1,
+    "current_conservative_occupancy": 1597,
+    "conservative_cumulative_occupancy": 4323,
+    "conservative_remaining_to_total_cap": 10077,
+    "total_seconds_cap": 14400,
+    "jobs_consumed": 4,
+    "current_job_cap": 5,
+    "nominal_job_slots_remaining": 1,
+    "api_spend_usd": 0,
+    "parallel_steps_are_not_additive_jobs_or_charges": true,
+    "remaining_capacity_is_not_execution_authorization": true,
+    "early_gate_stop_duration_is_not_complete_stage_one_runtime": true
+  },
+  "speaker_notes": [
+    {
+      "topic": "Research question",
+      "text": "The research question is whether a fixed small model can turn its own public Guessing Numbers interactions into reusable strategy notes and then acquire more information on new cases. The intended comparison is evolved notes against fixed initial notes, with the model, sampling and evaluation rules held constant. Development feasibility checks precede the serial adaptation trajectory and frozen transfer evaluation. This run tested that prerequisite; it did not reach the main comparison."
+    },
+    {
+      "topic": "Actual evidence",
+      "text": "We obtained real inference evidence: 624 actor responses from 24 condition-case episodes covering 20 development cases, followed by two curator responses. The recorded requests matched the frozen construction. Both curator outputs returned normally, but included specific numeric guesses instead of complying with the no-digit strategy-note requirement. The prespecified rule required stopping when both canaries were invalid, and the controller did so. No adaptation update, final learned memory or transfer result was produced."
+    },
+    {
+      "topic": "Limits and next hypothesis",
+      "text": "This is a confirmed feasibility failure of the current frozen curator setup, not evidence that self-curation generally fails or that evolved notes are worse than fixed notes. Q and token counts were not independently recomputed, and no transfer effect can be estimated. A possible follow-up hypothesis is that restating the curator task after the transcript improves task adherence; the present data do not establish that causal explanation or repair. Such a development-driven scientific amendment would require a separately reviewed version, budget and genuine release. Remaining capacity does not authorize a retry."
+    }
+  ],
+  "privacy": {
+    "contains_raw_model_outputs": false,
+    "contains_hidden_answers": false,
+    "contains_private_paths_or_operational_identifiers": false,
+    "contains_private_protocol_files_or_journals": false,
+    "contains_coordination_logs": false
+  },
+  "new_actions_authorized_by_this_record": {
+    "CPU_observation": false,
+    "model_request": false,
+    "GPU_job": false,
+    "retry": false,
+    "stage_two": false,
+    "Q_tolerance_change": false,
+    "publication": false
+  }
+}
