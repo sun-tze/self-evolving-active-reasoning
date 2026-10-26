@@ -1,0 +1,8 @@
+{
+  "status": "DIAGNOSTIC_STOPPED_NOT_PASS",
+  "error_type": "ValueError",
+  "error": "Private-case binding differs",
+  "new_model_calls": 0,
+  "instruction": "Do not impute missing fields or publish success; inspect this discrepancy.",
+  "elapsed_seconds": 0.015000000013969839
+}

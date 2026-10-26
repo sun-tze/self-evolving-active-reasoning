@@ -1,0 +1,20 @@
+{
+  "status": "ANONYMOUS_PROPOSAL_PARSING_COUNTS",
+  "scope": "saved complete episodes of the cancelled native depth-1 run; counts only",
+  "saved_episodes": 3,
+  "parser": "native first three 4-digit strings",
+  "counts": {
+    "proposals": 23,
+    "proposals_truncated_at_cap": 18,
+    "proposals_with_asked_guess_in_parsed_slots": 14,
+    "asked_guess_parsed_slots": 34,
+    "proposals_all_parsed_slots_asked": 8,
+    "proposals_first_number_is_asked_guess": 14,
+    "proposals_with_asked_slot_and_later_unasked_numbers": 14,
+    "later_unasked_distinct_digit_numbers_dropped": 269
+  },
+  "limitations": [
+    "A later unasked number is not necessarily an intended proposal.",
+    "No repaired parser was run; no counterfactual trajectory is implied."
+  ]
+}

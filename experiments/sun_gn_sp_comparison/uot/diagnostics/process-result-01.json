@@ -1,0 +1,7 @@
+{
+  "exit": 1,
+  "timed_out": false,
+  "seconds": 0.17199999990407377,
+  "stdout": "{\"status\": \"DIAGNOSTIC_STOPPED_NOT_PASS\", \"elapsed_seconds\": 0.015000000013969839, \"coverage\": null, \"summary\": null}\n",
+  "stderr": ""
+}
