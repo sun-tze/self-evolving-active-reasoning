@@ -1,0 +1,18 @@
+{
+  "GPU_seconds": 0,
+  "elapsed_seconds": 0.18700000003445894,
+  "exit_code": 0,
+  "kind": "synthetic_local_mechanism_checks_only",
+  "models": 0,
+  "run_count": 1,
+  "source_sha256": {
+    "portable_search.py": "377bbfa9a8076a9b74f8b3e7a370cc6b13451337413b5c775a70efa1faa8d602",
+    "protocol.json": "94de264fe3bd2d3b20c16dc3e9c2e76b3c0dc4919185242f9ab33130c81825ff",
+    "question_policy.py": "1adeded261af452190bffc0006dad19f8bf2e8a55bfa034936ac739e8b8d9b47",
+    "selection_policy.py": "9b6cef4c8839dc9aef76f97cfe2d47031fbe6e90b7df22fb5cb485473445669a",
+    "test_portable_search.py": "f20b8ec8f86e0a4c99545cb66bb110835fa606c8d64b117238f6b2165251d749"
+  },
+  "stderr": "test_call_failure_is_not_retried (test_portable_search.PortableSearchTests.test_call_failure_is_not_retried) ... ok\ntest_fixed_controller_skip_cache_and_freeze (test_portable_search.PortableSearchTests.test_fixed_controller_skip_cache_and_freeze) ... ok\ntest_parser_seed_malformed_slot_and_early_stop (test_portable_search.PortableSearchTests.test_parser_seed_malformed_slot_and_early_stop) ... ok\ntest_unresolved_consumes_exactly_twenty_five (test_portable_search.PortableSearchTests.test_unresolved_consumes_exactly_twenty_five) ... ok\n\n----------------------------------------------------------------------\nRan 4 tests in 0.024s\n\nOK\n",
+  "stdout": "",
+  "timeout": false
+}

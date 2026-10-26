@@ -1,0 +1,22 @@
+Exploratory mechanism analysis — aggregate only
+
+200 evaluation cases per arm; five arms. Identification means the recorded candidate set became unique, not necessarily a correct actor guess. No model, remote command, experiment, test or audit was rerun.
+
+Arm | identified/200 | mean capped25 | duplicate/queries | no-reduction/queries | first3 common-E | first4 E0 / E1
+B0 | 178/200 | 10.695 | 145/2139 | 781/2139 | 54/200 | 46/200 / 2/200
+E0 | 199/200 | 7.480 | 8/1496 | 194/1496 | 127/200 | 127/200 / 0/200
+E1 | 200/200 | 7.275 | 0/1455 | 139/1455 | 200/200 | 0/200 / 200/200
+R0 | 177/200 | 10.480 | 152/2096 | 759/2096 | 52/200 | 44/200 / 3/200
+R1 | 180/200 | 10.680 | 126/2136 | 791/2136 | 55/200 | 47/200 / 3/200
+
+Mechanism: E0 and E1 contain seven and nine fixed query strings, without conditional reasoning rules. E1 follows every executed note position through turn8; turn9 matches29/30. E0 follows the entire first4 in127/200. This supports a useful fixed query schedule, not broad learned adaptive reasoning.
+
+Information timing: by turn8, identified counts are B0=100, E0=149, E1=170, R0=108, R1=101. By turn10 they are135,189,195,135,131. E is not uniformly ahead early: mean remaining candidates at turn3 are B0=52.195, E0=63.035, E1=61.805; E0 is also worse at turn4. At turn6 they are4.615,4.005,2.265,4.075,4.235, respectively.
+
+Not entirely capped failures: E0-R0 mean capped difference=-3.000; on176 shared-resolved cases mean paired difference=-1.108. Its full-sample decomposition is -0.975 from shared-resolved speed, -2.105 from E0-only resolutions, +0.080 from R0-only resolutions. E1-R1 difference=-3.405; on180 shared-resolved cases it is -1.733, contributing-1.560 to the full sample, with-1.845 from E1-only resolutions. Shared-resolved subsets are outcome-selected: these are descriptive, not causal estimates.
+
+Formatting/truncation: no missing/non-four-digit parsed guesses and no length-finished responses in any arm. Repeated-digit four-character queries: B0=3,E0=0,E1=0,R0=3,R1=3; these are reported separately, not labelled parser failures.
+
+Reproducibility: for each B0/R0/R1 pair, all200 first request objects, messages, seeds and sampling values have identical canonical JSON bytes, and first generated texts are identical. Full response objects differ due to separate response IDs. Later first text divergences occur in B0-R0=69/200, B0-R1=74/200, R0-R1=80/200; every such first divergence still has identical recorded request objects/seeds. Distinct generated rollouts are not deterministic replicas. This is consistent with runtime nondeterminism; it does not identify batching, GPU or vLLM behavior as the demonstrated cause. Original HTTP byte streams were not captured.
+
+Limits: exploratory post-hoc description; no new ablation, replication or causal mechanism test. Aggregate query rates reflect early stopping. No private labels, identifiers, raw trajectories or per-case responses are included.

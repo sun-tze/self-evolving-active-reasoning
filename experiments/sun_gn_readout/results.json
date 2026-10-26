@@ -1,0 +1,4157 @@
+{
+  "schema": "gn_readout_public_results_v1",
+  "date": "2026-10-26",
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "model_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+  "decoding": {
+    "temperature": 0.7,
+    "top_p": 0.7
+  },
+  "context_evolution": {
+    "N": 100,
+    "conditions": [
+      {
+        "condition": "B0",
+        "n": 100,
+        "Q": 0.886680057620701,
+        "EM_count": 1,
+        "hit_any_count": 2,
+        "singleton_count": 92,
+        "cross_table": {
+          "singleton_False_correct_False": 8,
+          "singleton_False_correct_True": 0,
+          "singleton_True_correct_False": 91,
+          "singleton_True_correct_True": 1
+        },
+        "invalid_final": 3,
+        "invalid_interaction": 0,
+        "truncated_final": 65,
+        "truncated_outputs": 65,
+        "input_tokens": 3059917,
+        "output_tokens": 30757,
+        "actor_requests": 2600
+      },
+      {
+        "condition": "B1",
+        "n": 100,
+        "Q": 0.7667579946598831,
+        "EM_count": 0,
+        "hit_any_count": 1,
+        "singleton_count": 33,
+        "cross_table": {
+          "singleton_False_correct_False": 67,
+          "singleton_False_correct_True": 0,
+          "singleton_True_correct_False": 33,
+          "singleton_True_correct_True": 0
+        },
+        "invalid_final": 32,
+        "invalid_interaction": 0,
+        "truncated_final": 69,
+        "truncated_outputs": 69,
+        "input_tokens": 5428362,
+        "output_tokens": 30436,
+        "actor_requests": 2600
+      },
+      {
+        "condition": "S",
+        "n": 100,
+        "Q": 0.808280298671601,
+        "EM_count": 0,
+        "hit_any_count": 0,
+        "singleton_count": 71,
+        "cross_table": {
+          "singleton_False_correct_False": 29,
+          "singleton_False_correct_True": 0,
+          "singleton_True_correct_False": 71,
+          "singleton_True_correct_True": 0
+        },
+        "invalid_final": 3,
+        "invalid_interaction": 0,
+        "truncated_final": 31,
+        "truncated_outputs": 31,
+        "input_tokens": 3338263,
+        "output_tokens": 25549,
+        "actor_requests": 2600
+      },
+      {
+        "condition": "E",
+        "n": 100,
+        "Q": 0.852756327954247,
+        "EM_count": 0,
+        "hit_any_count": 2,
+        "singleton_count": 70,
+        "cross_table": {
+          "singleton_False_correct_False": 30,
+          "singleton_False_correct_True": 0,
+          "singleton_True_correct_False": 70,
+          "singleton_True_correct_True": 0
+        },
+        "invalid_final": 16,
+        "invalid_interaction": 0,
+        "truncated_final": 74,
+        "truncated_outputs": 74,
+        "input_tokens": 3371899,
+        "output_tokens": 32009,
+        "actor_requests": 2600
+      }
+    ],
+    "primary": {
+      "delta_Q": 0.04447602928264603,
+      "CI95": [
+        0.02023785993810182,
+        0.06873815416340767
+      ],
+      "paired_n": 100,
+      "wins": 66,
+      "losses": 34,
+      "ties": 0,
+      "bootstrap_seed": 62026,
+      "bootstrap_replicates": 10000
+    },
+    "memory": {
+      "attempts": 20,
+      "format_accepted": 19,
+      "actual_change_steps": [
+        2
+      ],
+      "M0_bytes": 466,
+      "M20_bytes": 519
+    },
+    "interpretation": "Single adaptation trajectory; E versus S improves Q, no final-accuracy gain. B0 higher Q descriptively. Curation failure/rejection amendments disclosed; not an unchanged original V7 execution.",
+    "cost": {
+      "S1_gpu_seconds": 570,
+      "S2_gpu_seconds": 789,
+      "S1_actor_requests": 1144,
+      "S1_curator_requests": 24,
+      "S2_actor_requests": 10400,
+      "API_USD": 0
+    }
+  },
+  "limited_feedback": {
+    "N": 50,
+    "conditions": {
+      "R0": {
+        "EM": 0,
+        "consistent": 0,
+        "input_tokens": 106852,
+        "invalid": 0,
+        "output_tokens": 5459,
+        "truncated": 32
+      },
+      "R1": {
+        "EM": 0,
+        "consistent": 0,
+        "input_tokens": 106852,
+        "invalid": 1,
+        "output_tokens": 9992,
+        "truncated": 5
+      },
+      "R2": {
+        "EM": 0,
+        "consistent": 0,
+        "input_tokens": 116552,
+        "invalid": 0,
+        "output_tokens": 400,
+        "truncated": 0
+      },
+      "R3": {
+        "EM": 0,
+        "consistent": 0,
+        "input_tokens": 118502,
+        "invalid": 0,
+        "output_tokens": 400,
+        "truncated": 0
+      }
+    },
+    "primary": {
+      "N": 50,
+      "bootstrap_CI95": [
+        0,
+        0
+      ],
+      "conservative_simultaneous_binomial_CI95": [
+        -0.08390987800799049,
+        0.08390987800799049
+      ],
+      "delta": 0,
+      "losses": 0,
+      "paired_exact_two_sided_p": 1,
+      "sparse_note": "Paired percentile bootstrap can degenerate at the floor; simultaneous exact binomial bounds remain nondegenerate. No null/equivalence inference.",
+      "ties": 50,
+      "wins": 0
+    },
+    "interaction": {
+      "Q": 0.8828220581097369,
+      "hit_any": 0,
+      "singleton": 44
+    },
+    "calls": 1550,
+    "input_tokens": 2093206,
+    "output_tokens": 29630,
+    "reserved_output_tokens": 244480,
+    "GPU_seconds": 295,
+    "audit_sha256": "af33a39713712ea0d2d1229b4124cdc3a333c274bf07310065d1e3717ad8b4a8",
+    "cases": [
+      {
+        "pair": 1,
+        "arms": {
+          "R0": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 128,
+            "truncated": true
+          },
+          "R1": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 123,
+            "truncated": false
+          },
+          "R2": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2330,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          },
+          "R3": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2369,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          }
+        },
+        "singleton": true,
+        "Q": 0.9238433383192557
+      },
+      {
+        "pair": 2,
+        "arms": {
+          "R0": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 128,
+            "truncated": true
+          },
+          "R1": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 280,
+            "truncated": false
+          },
+          "R2": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2330,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          },
+          "R3": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2369,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          }
+        },
+        "singleton": true,
+        "Q": 0.8808409192966031
+      },
+      {
+        "pair": 3,
+        "arms": {
+          "R0": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2153,
+            "invalid": false,
+            "output_tokens": 70,
+            "truncated": false
+          },
+          "R1": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2153,
+            "invalid": false,
+            "output_tokens": 100,
+            "truncated": false
+          },
+          "R2": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2347,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          },
+          "R3": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2386,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          }
+        },
+        "singleton": false,
+        "Q": 0.8506905305038155
+      },
+      {
+        "pair": 4,
+        "arms": {
+          "R0": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 128,
+            "truncated": true
+          },
+          "R1": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 168,
+            "truncated": false
+          },
+          "R2": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2330,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          },
+          "R3": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2369,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          }
+        },
+        "singleton": true,
+        "Q": 0.9254307607312967
+      },
+      {
+        "pair": 5,
+        "arms": {
+          "R0": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 128,
+            "truncated": true
+          },
+          "R1": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 281,
+            "truncated": false
+          },
+          "R2": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2330,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          },
+          "R3": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2369,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          }
+        },
+        "singleton": true,
+        "Q": 0.8848164351818828
+      },
+      {
+        "pair": 6,
+        "arms": {
+          "R0": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 26,
+            "truncated": false
+          },
+          "R1": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 26,
+            "truncated": false
+          },
+          "R2": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2330,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          },
+          "R3": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2369,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          }
+        },
+        "singleton": true,
+        "Q": 0.8614543503167221
+      },
+      {
+        "pair": 7,
+        "arms": {
+          "R0": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 128,
+            "truncated": true
+          },
+          "R1": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 512,
+            "truncated": true
+          },
+          "R2": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2330,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          },
+          "R3": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2369,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          }
+        },
+        "singleton": false,
+        "Q": 0.8372649632776233
+      },
+      {
+        "pair": 8,
+        "arms": {
+          "R0": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          },
+          "R1": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          },
+          "R2": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2330,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          },
+          "R3": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2369,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          }
+        },
+        "singleton": true,
+        "Q": 0.8845753092081073
+      },
+      {
+        "pair": 9,
+        "arms": {
+          "R0": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 128,
+            "truncated": true
+          },
+          "R1": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 512,
+            "truncated": true
+          },
+          "R2": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2330,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          },
+          "R3": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2369,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          }
+        },
+        "singleton": true,
+        "Q": 0.8559424632508604
+      },
+      {
+        "pair": 10,
+        "arms": {
+          "R0": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 128,
+            "truncated": true
+          },
+          "R1": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 364,
+            "truncated": false
+          },
+          "R2": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2330,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          },
+          "R3": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2369,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          }
+        },
+        "singleton": true,
+        "Q": 0.8886952055097264
+      },
+      {
+        "pair": 11,
+        "arms": {
+          "R0": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 106,
+            "truncated": false
+          },
+          "R1": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 115,
+            "truncated": false
+          },
+          "R2": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2330,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          },
+          "R3": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2369,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          }
+        },
+        "singleton": true,
+        "Q": 0.8625761115619904
+      },
+      {
+        "pair": 12,
+        "arms": {
+          "R0": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 128,
+            "truncated": true
+          },
+          "R1": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 117,
+            "truncated": false
+          },
+          "R2": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2330,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          },
+          "R3": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2369,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          }
+        },
+        "singleton": true,
+        "Q": 0.8675629798710651
+      },
+      {
+        "pair": 13,
+        "arms": {
+          "R0": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 119,
+            "truncated": false
+          },
+          "R1": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 119,
+            "truncated": false
+          },
+          "R2": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2330,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          },
+          "R3": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2369,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          }
+        },
+        "singleton": true,
+        "Q": 0.9023413531436304
+      },
+      {
+        "pair": 14,
+        "arms": {
+          "R0": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 128,
+            "truncated": true
+          },
+          "R1": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 192,
+            "truncated": false
+          },
+          "R2": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2330,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          },
+          "R3": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2369,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          }
+        },
+        "singleton": false,
+        "Q": 0.7885290307820905
+      },
+      {
+        "pair": 15,
+        "arms": {
+          "R0": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 60,
+            "truncated": false
+          },
+          "R1": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 296,
+            "truncated": false
+          },
+          "R2": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2330,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          },
+          "R3": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2369,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          }
+        },
+        "singleton": true,
+        "Q": 0.8563312201211067
+      },
+      {
+        "pair": 16,
+        "arms": {
+          "R0": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 128,
+            "truncated": true
+          },
+          "R1": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 373,
+            "truncated": false
+          },
+          "R2": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2330,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          },
+          "R3": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2369,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          }
+        },
+        "singleton": true,
+        "Q": 0.9178792888270372
+      },
+      {
+        "pair": 17,
+        "arms": {
+          "R0": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 128,
+            "truncated": true
+          },
+          "R1": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 177,
+            "truncated": false
+          },
+          "R2": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2330,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          },
+          "R3": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2369,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          }
+        },
+        "singleton": true,
+        "Q": 0.8471919289222961
+      },
+      {
+        "pair": 18,
+        "arms": {
+          "R0": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 106,
+            "truncated": false
+          },
+          "R1": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 106,
+            "truncated": false
+          },
+          "R2": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2330,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          },
+          "R3": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2369,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          }
+        },
+        "singleton": true,
+        "Q": 0.9046211301699647
+      },
+      {
+        "pair": 19,
+        "arms": {
+          "R0": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2141,
+            "invalid": false,
+            "output_tokens": 19,
+            "truncated": false
+          },
+          "R1": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2141,
+            "invalid": false,
+            "output_tokens": 42,
+            "truncated": false
+          },
+          "R2": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2335,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          },
+          "R3": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2374,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          }
+        },
+        "singleton": true,
+        "Q": 0.8704828488608344
+      },
+      {
+        "pair": 20,
+        "arms": {
+          "R0": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 128,
+            "truncated": true
+          },
+          "R1": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 196,
+            "truncated": false
+          },
+          "R2": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2330,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          },
+          "R3": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2369,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          }
+        },
+        "singleton": false,
+        "Q": 0.8253262113502452
+      },
+      {
+        "pair": 21,
+        "arms": {
+          "R0": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 110,
+            "truncated": false
+          },
+          "R1": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 129,
+            "truncated": false
+          },
+          "R2": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2330,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          },
+          "R3": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2369,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          }
+        },
+        "singleton": true,
+        "Q": 0.9213882615337101
+      },
+      {
+        "pair": 22,
+        "arms": {
+          "R0": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 128,
+            "truncated": true
+          },
+          "R1": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 178,
+            "truncated": false
+          },
+          "R2": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2330,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          },
+          "R3": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2369,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          }
+        },
+        "singleton": true,
+        "Q": 0.9024857335599697
+      },
+      {
+        "pair": 23,
+        "arms": {
+          "R0": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 128,
+            "truncated": true
+          },
+          "R1": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 332,
+            "truncated": false
+          },
+          "R2": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2330,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          },
+          "R3": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2369,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          }
+        },
+        "singleton": true,
+        "Q": 0.8954373094211018
+      },
+      {
+        "pair": 24,
+        "arms": {
+          "R0": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 128,
+            "truncated": true
+          },
+          "R1": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 512,
+            "truncated": true
+          },
+          "R2": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2330,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          },
+          "R3": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2369,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          }
+        },
+        "singleton": true,
+        "Q": 0.922481333112046
+      },
+      {
+        "pair": 25,
+        "arms": {
+          "R0": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2166,
+            "invalid": false,
+            "output_tokens": 51,
+            "truncated": false
+          },
+          "R1": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2166,
+            "invalid": false,
+            "output_tokens": 66,
+            "truncated": false
+          },
+          "R2": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2360,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          },
+          "R3": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2399,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          }
+        },
+        "singleton": true,
+        "Q": 0.909585430950179
+      },
+      {
+        "pair": 26,
+        "arms": {
+          "R0": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 128,
+            "truncated": true
+          },
+          "R1": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 186,
+            "truncated": false
+          },
+          "R2": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2330,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          },
+          "R3": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2369,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          }
+        },
+        "singleton": true,
+        "Q": 0.8667461770832343
+      },
+      {
+        "pair": 27,
+        "arms": {
+          "R0": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 128,
+            "truncated": true
+          },
+          "R1": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 116,
+            "truncated": false
+          },
+          "R2": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2330,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          },
+          "R3": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2369,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          }
+        },
+        "singleton": true,
+        "Q": 0.9341527013179245
+      },
+      {
+        "pair": 28,
+        "arms": {
+          "R0": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 72,
+            "truncated": false
+          },
+          "R1": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 72,
+            "truncated": false
+          },
+          "R2": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2330,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          },
+          "R3": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2369,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          }
+        },
+        "singleton": true,
+        "Q": 0.8815641932537683
+      },
+      {
+        "pair": 29,
+        "arms": {
+          "R0": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 128,
+            "truncated": true
+          },
+          "R1": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 158,
+            "truncated": false
+          },
+          "R2": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2330,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          },
+          "R3": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2369,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          }
+        },
+        "singleton": true,
+        "Q": 0.8651323468703567
+      },
+      {
+        "pair": 30,
+        "arms": {
+          "R0": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 128,
+            "truncated": true
+          },
+          "R1": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 199,
+            "truncated": false
+          },
+          "R2": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2330,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          },
+          "R3": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2369,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          }
+        },
+        "singleton": true,
+        "Q": 0.9011708844612621
+      },
+      {
+        "pair": 31,
+        "arms": {
+          "R0": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 128,
+            "truncated": true
+          },
+          "R1": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 113,
+            "truncated": false
+          },
+          "R2": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2330,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          },
+          "R3": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2369,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          }
+        },
+        "singleton": true,
+        "Q": 0.9018748099650237
+      },
+      {
+        "pair": 32,
+        "arms": {
+          "R0": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 102,
+            "truncated": false
+          },
+          "R1": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 121,
+            "truncated": false
+          },
+          "R2": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2330,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          },
+          "R3": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2369,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          }
+        },
+        "singleton": false,
+        "Q": 0.8571873036051431
+      },
+      {
+        "pair": 33,
+        "arms": {
+          "R0": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 128,
+            "truncated": true
+          },
+          "R1": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 321,
+            "truncated": false
+          },
+          "R2": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2330,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          },
+          "R3": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2369,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          }
+        },
+        "singleton": true,
+        "Q": 0.9509665481728221
+      },
+      {
+        "pair": 34,
+        "arms": {
+          "R0": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 98,
+            "truncated": false
+          },
+          "R1": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 98,
+            "truncated": false
+          },
+          "R2": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2330,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          },
+          "R3": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2369,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          }
+        },
+        "singleton": true,
+        "Q": 0.9204204596483015
+      },
+      {
+        "pair": 35,
+        "arms": {
+          "R0": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 128,
+            "truncated": true
+          },
+          "R1": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 512,
+            "truncated": true
+          },
+          "R2": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2330,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          },
+          "R3": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2369,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          }
+        },
+        "singleton": true,
+        "Q": 0.8909587457704305
+      },
+      {
+        "pair": 36,
+        "arms": {
+          "R0": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 128,
+            "truncated": true
+          },
+          "R1": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 313,
+            "truncated": false
+          },
+          "R2": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2330,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          },
+          "R3": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2369,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          }
+        },
+        "singleton": true,
+        "Q": 0.873745339049233
+      },
+      {
+        "pair": 37,
+        "arms": {
+          "R0": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 128,
+            "truncated": true
+          },
+          "R1": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 65,
+            "truncated": false
+          },
+          "R2": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2330,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          },
+          "R3": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2369,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          }
+        },
+        "singleton": true,
+        "Q": 0.8788645885399795
+      },
+      {
+        "pair": 38,
+        "arms": {
+          "R0": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 128,
+            "truncated": true
+          },
+          "R1": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 299,
+            "truncated": false
+          },
+          "R2": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2330,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          },
+          "R3": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2369,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          }
+        },
+        "singleton": true,
+        "Q": 0.8893217339094555
+      },
+      {
+        "pair": 39,
+        "arms": {
+          "R0": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 128,
+            "truncated": true
+          },
+          "R1": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 137,
+            "truncated": false
+          },
+          "R2": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2330,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          },
+          "R3": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2369,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          }
+        },
+        "singleton": true,
+        "Q": 0.8825133540021256
+      },
+      {
+        "pair": 40,
+        "arms": {
+          "R0": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 92,
+            "truncated": false
+          },
+          "R1": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 92,
+            "truncated": false
+          },
+          "R2": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2330,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          },
+          "R3": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2369,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          }
+        },
+        "singleton": true,
+        "Q": 0.9282008546760212
+      },
+      {
+        "pair": 41,
+        "arms": {
+          "R0": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 128,
+            "truncated": true
+          },
+          "R1": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 163,
+            "truncated": false
+          },
+          "R2": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2330,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          },
+          "R3": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2369,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          }
+        },
+        "singleton": true,
+        "Q": 0.8468190222650067
+      },
+      {
+        "pair": 42,
+        "arms": {
+          "R0": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 26,
+            "truncated": false
+          },
+          "R1": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 26,
+            "truncated": false
+          },
+          "R2": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2330,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          },
+          "R3": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2369,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          }
+        },
+        "singleton": true,
+        "Q": 0.9041855063342299
+      },
+      {
+        "pair": 43,
+        "arms": {
+          "R0": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 103,
+            "truncated": false
+          },
+          "R1": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 80,
+            "truncated": false
+          },
+          "R2": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2330,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          },
+          "R3": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2369,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          }
+        },
+        "singleton": true,
+        "Q": 0.8463940880840406
+      },
+      {
+        "pair": 44,
+        "arms": {
+          "R0": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 128,
+            "truncated": true
+          },
+          "R1": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 468,
+            "truncated": false
+          },
+          "R2": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2330,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          },
+          "R3": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2369,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          }
+        },
+        "singleton": true,
+        "Q": 0.8747131409346416
+      },
+      {
+        "pair": 45,
+        "arms": {
+          "R0": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 128,
+            "truncated": true
+          },
+          "R1": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 42,
+            "truncated": false
+          },
+          "R2": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2330,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          },
+          "R3": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2369,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          }
+        },
+        "singleton": true,
+        "Q": 0.8784212745196454
+      },
+      {
+        "pair": 46,
+        "arms": {
+          "R0": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 128,
+            "truncated": true
+          },
+          "R1": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 178,
+            "truncated": false
+          },
+          "R2": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2330,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          },
+          "R3": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2369,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          }
+        },
+        "singleton": true,
+        "Q": 0.8515989243849118
+      },
+      {
+        "pair": 47,
+        "arms": {
+          "R0": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 128,
+            "truncated": true
+          },
+          "R1": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": true,
+            "output_tokens": 512,
+            "truncated": true
+          },
+          "R2": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2330,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          },
+          "R3": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2369,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          }
+        },
+        "singleton": true,
+        "Q": 0.8911274279232393
+      },
+      {
+        "pair": 48,
+        "arms": {
+          "R0": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 74,
+            "truncated": false
+          },
+          "R1": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 73,
+            "truncated": false
+          },
+          "R2": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2330,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          },
+          "R3": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2369,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          }
+        },
+        "singleton": true,
+        "Q": 0.9133308679062773
+      },
+      {
+        "pair": 49,
+        "arms": {
+          "R0": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 121,
+            "truncated": false
+          },
+          "R1": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 124,
+            "truncated": false
+          },
+          "R2": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2330,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          },
+          "R3": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2369,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          }
+        },
+        "singleton": true,
+        "Q": 0.8764095117544339
+      },
+      {
+        "pair": 50,
+        "arms": {
+          "R0": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 128,
+            "truncated": true
+          },
+          "R1": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2136,
+            "invalid": false,
+            "output_tokens": 200,
+            "truncated": false
+          },
+          "R2": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2330,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          },
+          "R3": {
+            "EM": false,
+            "consistent": false,
+            "input_tokens": 2369,
+            "invalid": false,
+            "output_tokens": 8,
+            "truncated": false
+          }
+        },
+        "singleton": false,
+        "Q": 0.847508653272174
+      }
+    ],
+    "interpretation": "Fresh train-derived internal holdout, not official test. R3-minus-R2 primary null; no equivalence or general incapacity claim."
+  },
+  "posthoc_symbolic": {
+    "N": 50,
+    "prospective": false,
+    "correct": 44,
+    "answered": 44,
+    "abstained": 6,
+    "wrong": 0,
+    "model_calls": 0,
+    "GPU_jobs": 0,
+    "elapsed_seconds": 0.7650000000139698,
+    "candidate_count_histogram": {
+      "1": 44,
+      "2": 5,
+      "3": 1
+    },
+    "named_constraint_satisfied": {
+      "R2": 1,
+      "R3": 7
+    },
+    "mean_violated_records": {
+      "draft": 22.66,
+      "R0": 22.48,
+      "R1": 22.489795918367346,
+      "R2": 22.6,
+      "R3": 21.88
+    },
+    "interpretation": "Tool-based offline replay on already observed cases. Abstentions count wrong in overall exact match. Not model learning, not a prospective validation, not a replacement for primary R3-R2."
+  },
+  "prospective_state_readout": {
+    "status": "AUDITED_COMPLETE",
+    "N": 50,
+    "conditions": {
+      "baseline": {
+        "EM": 0,
+        "consistent": 0,
+        "elapsed_seconds": 130.44065999798477,
+        "input_tokens": 106802,
+        "invalid": 1,
+        "multiple_four_digit_spans": 28,
+        "output_tokens": 5489,
+        "parsed_equals_last_listed": 0,
+        "state_JSON_marker_echo": 0,
+        "truncated": 31
+      },
+      "state_assisted": {
+        "EM": 46,
+        "consistent": 49,
+        "elapsed_seconds": 15.00075002759695,
+        "input_tokens": 111837,
+        "invalid": 0,
+        "multiple_four_digit_spans": 2,
+        "output_tokens": 536,
+        "parsed_equals_last_listed": 46,
+        "state_JSON_marker_echo": 2,
+        "truncated": 0
+      }
+    },
+    "primary": {
+      "N": 50,
+      "bootstrap_CI95": [
+        0.84,
+        0.98
+      ],
+      "conservative_simultaneous_binomial_CI95": [
+        0.7064428175695845,
+        0.9820110049814486
+      ],
+      "delta": 0.92,
+      "losses": 0,
+      "paired_exact_two_sided_p": 2.842170943040401e-14,
+      "sparse_note": "Paired percentile bootstrap can degenerate at the floor; simultaneous exact binomial bounds remain nondegenerate. No null/equivalence inference.",
+      "ties": 4,
+      "wins": 46
+    },
+    "interaction": {
+      "Q": 0.8843277840707511,
+      "hit_any": 0,
+      "singleton": 46
+    },
+    "symbolic": {
+      "CPU_seconds": 0.8172227050000003,
+      "abstained": 4,
+      "answered": 46,
+      "correct": 46,
+      "wrong": 0
+    },
+    "candidate_strata": {
+      "above_64_count_only": {
+        "N": 0,
+        "conditions": {
+          "baseline": {
+            "EM": 0,
+            "consistent": 0,
+            "invalid": 0,
+            "parsed_equals_last_listed": 0,
+            "truncated": 0
+          },
+          "state_assisted": {
+            "EM": 0,
+            "consistent": 0,
+            "invalid": 0,
+            "parsed_equals_last_listed": 0,
+            "truncated": 0
+          }
+        }
+      },
+      "singleton": {
+        "N": 46,
+        "conditions": {
+          "baseline": {
+            "EM": 0,
+            "consistent": 0,
+            "invalid": 1,
+            "parsed_equals_last_listed": 0,
+            "truncated": 28
+          },
+          "state_assisted": {
+            "EM": 45,
+            "consistent": 45,
+            "invalid": 0,
+            "parsed_equals_last_listed": 45,
+            "truncated": 0
+          }
+        }
+      },
+      "two_to_64": {
+        "N": 4,
+        "conditions": {
+          "baseline": {
+            "EM": 0,
+            "consistent": 0,
+            "invalid": 0,
+            "parsed_equals_last_listed": 0,
+            "truncated": 3
+          },
+          "state_assisted": {
+            "EM": 1,
+            "consistent": 4,
+            "invalid": 0,
+            "parsed_equals_last_listed": 1,
+            "truncated": 0
+          }
+        }
+      }
+    },
+    "truncation_strata": {
+      "baseline": {
+        "not_truncated": {
+          "EM": 0,
+          "N": 19
+        },
+        "truncated": {
+          "EM": 0,
+          "N": 31
+        }
+      },
+      "state_assisted": {
+        "not_truncated": {
+          "EM": 46,
+          "N": 50
+        },
+        "truncated": {
+          "EM": 0,
+          "N": 0
+        }
+      }
+    },
+    "eligible_pool": 1996,
+    "calls": 1350,
+    "input_tokens": 1641690,
+    "output_tokens": 16027,
+    "reserved_output_tokens": 172800,
+    "GPU_seconds": 218,
+    "audit_sha256": "c29974a3661cc19bbab5372411b4cfc954f7b7e5453ffed748ccdeb01d6f6a98",
+    "protocol_sha256": "06710b7db3820b55e5668069f5c749902294beabf34565126895e8e11e324f2c",
+    "selection_sha256": "9f42eecce3a0b460e4a64b0596b38440304146ec976a87e36689a4ae96c76541",
+    "cases": [
+      {
+        "pair": 1,
+        "Q": 0.8897776255663449,
+        "arms": {
+          "baseline": {
+            "EM": false,
+            "consistent": false,
+            "elapsed_seconds": 3.0330767780542374,
+            "input_tokens": 2136,
+            "invalid": false,
+            "multiple_four_digit_spans": true,
+            "output_tokens": 128,
+            "parsed_equals_last_listed": false,
+            "state_JSON_marker_echo": false,
+            "truncated": true
+          },
+          "state_assisted": {
+            "EM": true,
+            "consistent": true,
+            "elapsed_seconds": 0.2400416899472475,
+            "input_tokens": 2236,
+            "invalid": false,
+            "multiple_four_digit_spans": false,
+            "output_tokens": 8,
+            "parsed_equals_last_listed": true,
+            "state_JSON_marker_echo": false,
+            "truncated": false
+          }
+        },
+        "candidate_count": 1,
+        "hit_any": false,
+        "resolver_cpu_seconds": 0.019964036000000004,
+        "singleton": true,
+        "symbolic_EM": true,
+        "symbolic_answered": true
+      },
+      {
+        "pair": 2,
+        "Q": 0.8606780849561549,
+        "arms": {
+          "baseline": {
+            "EM": false,
+            "consistent": false,
+            "elapsed_seconds": 2.533919470384717,
+            "input_tokens": 2136,
+            "invalid": false,
+            "multiple_four_digit_spans": true,
+            "output_tokens": 108,
+            "parsed_equals_last_listed": false,
+            "state_JSON_marker_echo": false,
+            "truncated": false
+          },
+          "state_assisted": {
+            "EM": true,
+            "consistent": true,
+            "elapsed_seconds": 0.27062279265373945,
+            "input_tokens": 2236,
+            "invalid": false,
+            "multiple_four_digit_spans": false,
+            "output_tokens": 8,
+            "parsed_equals_last_listed": true,
+            "state_JSON_marker_echo": false,
+            "truncated": false
+          }
+        },
+        "candidate_count": 1,
+        "hit_any": false,
+        "resolver_cpu_seconds": 0.01821207200000001,
+        "singleton": true,
+        "symbolic_EM": true,
+        "symbolic_answered": true
+      },
+      {
+        "pair": 3,
+        "Q": 0.8892740990505523,
+        "arms": {
+          "baseline": {
+            "EM": false,
+            "consistent": false,
+            "elapsed_seconds": 2.5302248438820243,
+            "input_tokens": 2136,
+            "invalid": false,
+            "multiple_four_digit_spans": true,
+            "output_tokens": 106,
+            "parsed_equals_last_listed": false,
+            "state_JSON_marker_echo": false,
+            "truncated": false
+          },
+          "state_assisted": {
+            "EM": true,
+            "consistent": true,
+            "elapsed_seconds": 0.2327897921204567,
+            "input_tokens": 2236,
+            "invalid": false,
+            "multiple_four_digit_spans": false,
+            "output_tokens": 8,
+            "parsed_equals_last_listed": true,
+            "state_JSON_marker_echo": false,
+            "truncated": false
+          }
+        },
+        "candidate_count": 1,
+        "hit_any": false,
+        "resolver_cpu_seconds": 0.01728366499999999,
+        "singleton": true,
+        "symbolic_EM": true,
+        "symbolic_answered": true
+      },
+      {
+        "pair": 4,
+        "Q": 0.9509665481728221,
+        "arms": {
+          "baseline": {
+            "EM": false,
+            "consistent": false,
+            "elapsed_seconds": 0.22665591910481453,
+            "input_tokens": 2136,
+            "invalid": false,
+            "multiple_four_digit_spans": false,
+            "output_tokens": 8,
+            "parsed_equals_last_listed": false,
+            "state_JSON_marker_echo": false,
+            "truncated": false
+          },
+          "state_assisted": {
+            "EM": true,
+            "consistent": true,
+            "elapsed_seconds": 0.25254314206540585,
+            "input_tokens": 2236,
+            "invalid": false,
+            "multiple_four_digit_spans": false,
+            "output_tokens": 8,
+            "parsed_equals_last_listed": true,
+            "state_JSON_marker_echo": false,
+            "truncated": false
+          }
+        },
+        "candidate_count": 1,
+        "hit_any": false,
+        "resolver_cpu_seconds": 0.016051292999999994,
+        "singleton": true,
+        "symbolic_EM": true,
+        "symbolic_answered": true
+      },
+      {
+        "pair": 5,
+        "Q": 0.9412098223884788,
+        "arms": {
+          "baseline": {
+            "EM": false,
+            "consistent": false,
+            "elapsed_seconds": 0.6830115141347051,
+            "input_tokens": 2136,
+            "invalid": false,
+            "multiple_four_digit_spans": false,
+            "output_tokens": 26,
+            "parsed_equals_last_listed": false,
+            "state_JSON_marker_echo": false,
+            "truncated": false
+          },
+          "state_assisted": {
+            "EM": true,
+            "consistent": true,
+            "elapsed_seconds": 0.22211487498134375,
+            "input_tokens": 2236,
+            "invalid": false,
+            "multiple_four_digit_spans": false,
+            "output_tokens": 8,
+            "parsed_equals_last_listed": true,
+            "state_JSON_marker_echo": false,
+            "truncated": false
+          }
+        },
+        "candidate_count": 1,
+        "hit_any": false,
+        "resolver_cpu_seconds": 0.014001001999999999,
+        "singleton": true,
+        "symbolic_EM": true,
+        "symbolic_answered": true
+      },
+      {
+        "pair": 6,
+        "Q": 0.8799127222340424,
+        "arms": {
+          "baseline": {
+            "EM": false,
+            "consistent": false,
+            "elapsed_seconds": 1.4070330448448658,
+            "input_tokens": 2136,
+            "invalid": false,
+            "multiple_four_digit_spans": true,
+            "output_tokens": 60,
+            "parsed_equals_last_listed": false,
+            "state_JSON_marker_echo": false,
+            "truncated": false
+          },
+          "state_assisted": {
+            "EM": true,
+            "consistent": true,
+            "elapsed_seconds": 0.25055422727018595,
+            "input_tokens": 2236,
+            "invalid": false,
+            "multiple_four_digit_spans": false,
+            "output_tokens": 8,
+            "parsed_equals_last_listed": true,
+            "state_JSON_marker_echo": false,
+            "truncated": false
+          }
+        },
+        "candidate_count": 1,
+        "hit_any": false,
+        "resolver_cpu_seconds": 0.015319193999999994,
+        "singleton": true,
+        "symbolic_EM": true,
+        "symbolic_answered": true
+      },
+      {
+        "pair": 7,
+        "Q": 0.9412098223884788,
+        "arms": {
+          "baseline": {
+            "EM": false,
+            "consistent": false,
+            "elapsed_seconds": 1.8696680646389723,
+            "input_tokens": 2136,
+            "invalid": false,
+            "multiple_four_digit_spans": true,
+            "output_tokens": 79,
+            "parsed_equals_last_listed": false,
+            "state_JSON_marker_echo": false,
+            "truncated": false
+          },
+          "state_assisted": {
+            "EM": true,
+            "consistent": true,
+            "elapsed_seconds": 0.2338482216000557,
+            "input_tokens": 2236,
+            "invalid": false,
+            "multiple_four_digit_spans": false,
+            "output_tokens": 8,
+            "parsed_equals_last_listed": true,
+            "state_JSON_marker_echo": false,
+            "truncated": false
+          }
+        },
+        "candidate_count": 1,
+        "hit_any": false,
+        "resolver_cpu_seconds": 0.015687255999999997,
+        "singleton": true,
+        "symbolic_EM": true,
+        "symbolic_answered": true
+      },
+      {
+        "pair": 8,
+        "Q": 0.885127946422433,
+        "arms": {
+          "baseline": {
+            "EM": false,
+            "consistent": false,
+            "elapsed_seconds": 1.9294092077761889,
+            "input_tokens": 2136,
+            "invalid": false,
+            "multiple_four_digit_spans": true,
+            "output_tokens": 82,
+            "parsed_equals_last_listed": false,
+            "state_JSON_marker_echo": false,
+            "truncated": false
+          },
+          "state_assisted": {
+            "EM": true,
+            "consistent": true,
+            "elapsed_seconds": 0.2525287549942732,
+            "input_tokens": 2236,
+            "invalid": false,
+            "multiple_four_digit_spans": false,
+            "output_tokens": 8,
+            "parsed_equals_last_listed": true,
+            "state_JSON_marker_echo": false,
+            "truncated": false
+          }
+        },
+        "candidate_count": 1,
+        "hit_any": false,
+        "resolver_cpu_seconds": 0.018444627000000005,
+        "singleton": true,
+        "symbolic_EM": true,
+        "symbolic_answered": true
+      },
+      {
+        "pair": 9,
+        "Q": 0.8236769252197194,
+        "arms": {
+          "baseline": {
+            "EM": false,
+            "consistent": false,
+            "elapsed_seconds": 2.7885225294157863,
+            "input_tokens": 2136,
+            "invalid": false,
+            "multiple_four_digit_spans": true,
+            "output_tokens": 113,
+            "parsed_equals_last_listed": false,
+            "state_JSON_marker_echo": false,
+            "truncated": false
+          },
+          "state_assisted": {
+            "EM": true,
+            "consistent": true,
+            "elapsed_seconds": 0.22272455506026745,
+            "input_tokens": 2236,
+            "invalid": false,
+            "multiple_four_digit_spans": false,
+            "output_tokens": 8,
+            "parsed_equals_last_listed": true,
+            "state_JSON_marker_echo": false,
+            "truncated": false
+          }
+        },
+        "candidate_count": 1,
+        "hit_any": false,
+        "resolver_cpu_seconds": 0.018465530000000008,
+        "singleton": true,
+        "symbolic_EM": true,
+        "symbolic_answered": true
+      },
+      {
+        "pair": 10,
+        "Q": 0.8811437336054668,
+        "arms": {
+          "baseline": {
+            "EM": false,
+            "consistent": false,
+            "elapsed_seconds": 3.0121639082208276,
+            "input_tokens": 2136,
+            "invalid": false,
+            "multiple_four_digit_spans": true,
+            "output_tokens": 126,
+            "parsed_equals_last_listed": false,
+            "state_JSON_marker_echo": false,
+            "truncated": false
+          },
+          "state_assisted": {
+            "EM": true,
+            "consistent": true,
+            "elapsed_seconds": 0.2481686742976308,
+            "input_tokens": 2236,
+            "invalid": false,
+            "multiple_four_digit_spans": false,
+            "output_tokens": 8,
+            "parsed_equals_last_listed": true,
+            "state_JSON_marker_echo": false,
+            "truncated": false
+          }
+        },
+        "candidate_count": 1,
+        "hit_any": false,
+        "resolver_cpu_seconds": 0.017593368999999998,
+        "singleton": true,
+        "symbolic_EM": true,
+        "symbolic_answered": true
+      },
+      {
+        "pair": 11,
+        "Q": 0.8847617705639288,
+        "arms": {
+          "baseline": {
+            "EM": false,
+            "consistent": false,
+            "elapsed_seconds": 2.973826188594103,
+            "input_tokens": 2136,
+            "invalid": false,
+            "multiple_four_digit_spans": true,
+            "output_tokens": 125,
+            "parsed_equals_last_listed": false,
+            "state_JSON_marker_echo": false,
+            "truncated": false
+          },
+          "state_assisted": {
+            "EM": true,
+            "consistent": true,
+            "elapsed_seconds": 0.23469159565865993,
+            "input_tokens": 2236,
+            "invalid": false,
+            "multiple_four_digit_spans": false,
+            "output_tokens": 8,
+            "parsed_equals_last_listed": true,
+            "state_JSON_marker_echo": false,
+            "truncated": false
+          }
+        },
+        "candidate_count": 1,
+        "hit_any": false,
+        "resolver_cpu_seconds": 0.017806529000000015,
+        "singleton": true,
+        "symbolic_EM": true,
+        "symbolic_answered": true
+      },
+      {
+        "pair": 12,
+        "Q": 0.8561539233440736,
+        "arms": {
+          "baseline": {
+            "EM": false,
+            "consistent": false,
+            "elapsed_seconds": 3.0166197661310434,
+            "input_tokens": 2136,
+            "invalid": false,
+            "multiple_four_digit_spans": false,
+            "output_tokens": 128,
+            "parsed_equals_last_listed": false,
+            "state_JSON_marker_echo": false,
+            "truncated": true
+          },
+          "state_assisted": {
+            "EM": true,
+            "consistent": true,
+            "elapsed_seconds": 0.24244014453142881,
+            "input_tokens": 2236,
+            "invalid": false,
+            "multiple_four_digit_spans": false,
+            "output_tokens": 8,
+            "parsed_equals_last_listed": true,
+            "state_JSON_marker_echo": false,
+            "truncated": false
+          }
+        },
+        "candidate_count": 1,
+        "hit_any": false,
+        "resolver_cpu_seconds": 0.018563953999999994,
+        "singleton": true,
+        "symbolic_EM": true,
+        "symbolic_answered": true
+      },
+      {
+        "pair": 13,
+        "Q": 0.8390123709107866,
+        "arms": {
+          "baseline": {
+            "EM": false,
+            "consistent": false,
+            "elapsed_seconds": 3.0015690764412284,
+            "input_tokens": 2136,
+            "invalid": false,
+            "multiple_four_digit_spans": false,
+            "output_tokens": 128,
+            "parsed_equals_last_listed": false,
+            "state_JSON_marker_echo": false,
+            "truncated": true
+          },
+          "state_assisted": {
+            "EM": true,
+            "consistent": true,
+            "elapsed_seconds": 0.23319691698998213,
+            "input_tokens": 2236,
+            "invalid": false,
+            "multiple_four_digit_spans": false,
+            "output_tokens": 8,
+            "parsed_equals_last_listed": true,
+            "state_JSON_marker_echo": false,
+            "truncated": false
+          }
+        },
+        "candidate_count": 1,
+        "hit_any": false,
+        "resolver_cpu_seconds": 0.018147700000000017,
+        "singleton": true,
+        "symbolic_EM": true,
+        "symbolic_answered": true
+      },
+      {
+        "pair": 14,
+        "Q": 0.8684398978078975,
+        "arms": {
+          "baseline": {
+            "EM": false,
+            "consistent": false,
+            "elapsed_seconds": 3.040183470584452,
+            "input_tokens": 2136,
+            "invalid": false,
+            "multiple_four_digit_spans": false,
+            "output_tokens": 128,
+            "parsed_equals_last_listed": false,
+            "state_JSON_marker_echo": false,
+            "truncated": true
+          },
+          "state_assisted": {
+            "EM": true,
+            "consistent": true,
+            "elapsed_seconds": 0.23663639649748802,
+            "input_tokens": 2236,
+            "invalid": false,
+            "multiple_four_digit_spans": false,
+            "output_tokens": 8,
+            "parsed_equals_last_listed": true,
+            "state_JSON_marker_echo": false,
+            "truncated": false
+          }
+        },
+        "candidate_count": 1,
+        "hit_any": false,
+        "resolver_cpu_seconds": 0.01567948700000002,
+        "singleton": true,
+        "symbolic_EM": true,
+        "symbolic_answered": true
+      },
+      {
+        "pair": 15,
+        "Q": 0.9159890521061325,
+        "arms": {
+          "baseline": {
+            "EM": false,
+            "consistent": false,
+            "elapsed_seconds": 3.0310950875282288,
+            "input_tokens": 2136,
+            "invalid": false,
+            "multiple_four_digit_spans": true,
+            "output_tokens": 128,
+            "parsed_equals_last_listed": false,
+            "state_JSON_marker_echo": false,
+            "truncated": true
+          },
+          "state_assisted": {
+            "EM": true,
+            "consistent": true,
+            "elapsed_seconds": 0.24322862271219492,
+            "input_tokens": 2236,
+            "invalid": false,
+            "multiple_four_digit_spans": false,
+            "output_tokens": 8,
+            "parsed_equals_last_listed": true,
+            "state_JSON_marker_echo": false,
+            "truncated": false
+          }
+        },
+        "candidate_count": 1,
+        "hit_any": false,
+        "resolver_cpu_seconds": 0.014459535999999995,
+        "singleton": true,
+        "symbolic_EM": true,
+        "symbolic_answered": true
+      },
+      {
+        "pair": 16,
+        "Q": 0.9010776448224548,
+        "arms": {
+          "baseline": {
+            "EM": false,
+            "consistent": false,
+            "elapsed_seconds": 2.6220530550926924,
+            "input_tokens": 2136,
+            "invalid": false,
+            "multiple_four_digit_spans": false,
+            "output_tokens": 110,
+            "parsed_equals_last_listed": false,
+            "state_JSON_marker_echo": false,
+            "truncated": false
+          },
+          "state_assisted": {
+            "EM": true,
+            "consistent": true,
+            "elapsed_seconds": 0.23216243647038937,
+            "input_tokens": 2236,
+            "invalid": false,
+            "multiple_four_digit_spans": false,
+            "output_tokens": 8,
+            "parsed_equals_last_listed": true,
+            "state_JSON_marker_echo": false,
+            "truncated": false
+          }
+        },
+        "candidate_count": 1,
+        "hit_any": false,
+        "resolver_cpu_seconds": 0.017115884999999997,
+        "singleton": true,
+        "symbolic_EM": true,
+        "symbolic_answered": true
+      },
+      {
+        "pair": 17,
+        "Q": 0.8660649840655512,
+        "arms": {
+          "baseline": {
+            "EM": false,
+            "consistent": false,
+            "elapsed_seconds": 2.654366032220423,
+            "input_tokens": 2136,
+            "invalid": false,
+            "multiple_four_digit_spans": true,
+            "output_tokens": 104,
+            "parsed_equals_last_listed": false,
+            "state_JSON_marker_echo": false,
+            "truncated": false
+          },
+          "state_assisted": {
+            "EM": true,
+            "consistent": true,
+            "elapsed_seconds": 0.24348603934049606,
+            "input_tokens": 2236,
+            "invalid": false,
+            "multiple_four_digit_spans": false,
+            "output_tokens": 8,
+            "parsed_equals_last_listed": true,
+            "state_JSON_marker_echo": false,
+            "truncated": false
+          }
+        },
+        "candidate_count": 1,
+        "hit_any": false,
+        "resolver_cpu_seconds": 0.01745907599999999,
+        "singleton": true,
+        "symbolic_EM": true,
+        "symbolic_answered": true
+      },
+      {
+        "pair": 18,
+        "Q": 0.9073147463784078,
+        "arms": {
+          "baseline": {
+            "EM": false,
+            "consistent": false,
+            "elapsed_seconds": 3.117410742677748,
+            "input_tokens": 2136,
+            "invalid": false,
+            "multiple_four_digit_spans": true,
+            "output_tokens": 128,
+            "parsed_equals_last_listed": false,
+            "state_JSON_marker_echo": false,
+            "truncated": true
+          },
+          "state_assisted": {
+            "EM": true,
+            "consistent": true,
+            "elapsed_seconds": 0.2669177586212754,
+            "input_tokens": 2236,
+            "invalid": false,
+            "multiple_four_digit_spans": false,
+            "output_tokens": 8,
+            "parsed_equals_last_listed": true,
+            "state_JSON_marker_echo": false,
+            "truncated": false
+          }
+        },
+        "candidate_count": 1,
+        "hit_any": false,
+        "resolver_cpu_seconds": 0.016724927,
+        "singleton": true,
+        "symbolic_EM": true,
+        "symbolic_answered": true
+      },
+      {
+        "pair": 19,
+        "Q": 0.9290270725015162,
+        "arms": {
+          "baseline": {
+            "EM": false,
+            "consistent": false,
+            "elapsed_seconds": 3.068725448101759,
+            "input_tokens": 2136,
+            "invalid": false,
+            "multiple_four_digit_spans": true,
+            "output_tokens": 128,
+            "parsed_equals_last_listed": false,
+            "state_JSON_marker_echo": false,
+            "truncated": true
+          },
+          "state_assisted": {
+            "EM": true,
+            "consistent": true,
+            "elapsed_seconds": 0.2300636311993003,
+            "input_tokens": 2236,
+            "invalid": false,
+            "multiple_four_digit_spans": false,
+            "output_tokens": 8,
+            "parsed_equals_last_listed": true,
+            "state_JSON_marker_echo": false,
+            "truncated": false
+          }
+        },
+        "candidate_count": 1,
+        "hit_any": false,
+        "resolver_cpu_seconds": 0.01487429699999998,
+        "singleton": true,
+        "symbolic_EM": true,
+        "symbolic_answered": true
+      },
+      {
+        "pair": 20,
+        "Q": 0.9314141586769189,
+        "arms": {
+          "baseline": {
+            "EM": false,
+            "consistent": false,
+            "elapsed_seconds": 3.0219373209401965,
+            "input_tokens": 2136,
+            "invalid": false,
+            "multiple_four_digit_spans": true,
+            "output_tokens": 128,
+            "parsed_equals_last_listed": false,
+            "state_JSON_marker_echo": false,
+            "truncated": true
+          },
+          "state_assisted": {
+            "EM": true,
+            "consistent": true,
+            "elapsed_seconds": 0.25396646838635206,
+            "input_tokens": 2236,
+            "invalid": false,
+            "multiple_four_digit_spans": false,
+            "output_tokens": 8,
+            "parsed_equals_last_listed": true,
+            "state_JSON_marker_echo": false,
+            "truncated": false
+          }
+        },
+        "candidate_count": 1,
+        "hit_any": false,
+        "resolver_cpu_seconds": 0.013812272000000014,
+        "singleton": true,
+        "symbolic_EM": true,
+        "symbolic_answered": true
+      },
+      {
+        "pair": 21,
+        "Q": 0.884698789842445,
+        "arms": {
+          "baseline": {
+            "EM": false,
+            "consistent": false,
+            "elapsed_seconds": 3.0192680405452847,
+            "input_tokens": 2136,
+            "invalid": true,
+            "multiple_four_digit_spans": false,
+            "output_tokens": 128,
+            "parsed_equals_last_listed": false,
+            "state_JSON_marker_echo": false,
+            "truncated": true
+          },
+          "state_assisted": {
+            "EM": true,
+            "consistent": true,
+            "elapsed_seconds": 0.2347321817651391,
+            "input_tokens": 2236,
+            "invalid": false,
+            "multiple_four_digit_spans": false,
+            "output_tokens": 8,
+            "parsed_equals_last_listed": true,
+            "state_JSON_marker_echo": false,
+            "truncated": false
+          }
+        },
+        "candidate_count": 1,
+        "hit_any": false,
+        "resolver_cpu_seconds": 0.014438319000000033,
+        "singleton": true,
+        "symbolic_EM": true,
+        "symbolic_answered": true
+      },
+      {
+        "pair": 22,
+        "Q": 0.9177629358739948,
+        "arms": {
+          "baseline": {
+            "EM": false,
+            "consistent": false,
+            "elapsed_seconds": 3.0166448820382357,
+            "input_tokens": 2136,
+            "invalid": false,
+            "multiple_four_digit_spans": false,
+            "output_tokens": 128,
+            "parsed_equals_last_listed": false,
+            "state_JSON_marker_echo": false,
+            "truncated": true
+          },
+          "state_assisted": {
+            "EM": true,
+            "consistent": true,
+            "elapsed_seconds": 0.2444560630246997,
+            "input_tokens": 2236,
+            "invalid": false,
+            "multiple_four_digit_spans": false,
+            "output_tokens": 8,
+            "parsed_equals_last_listed": true,
+            "state_JSON_marker_echo": false,
+            "truncated": false
+          }
+        },
+        "candidate_count": 1,
+        "hit_any": false,
+        "resolver_cpu_seconds": 0.014987293000000013,
+        "singleton": true,
+        "symbolic_EM": true,
+        "symbolic_answered": true
+      },
+      {
+        "pair": 23,
+        "Q": 0.9178914916773524,
+        "arms": {
+          "baseline": {
+            "EM": false,
+            "consistent": false,
+            "elapsed_seconds": 3.0233359979465604,
+            "input_tokens": 2136,
+            "invalid": false,
+            "multiple_four_digit_spans": false,
+            "output_tokens": 128,
+            "parsed_equals_last_listed": false,
+            "state_JSON_marker_echo": false,
+            "truncated": true
+          },
+          "state_assisted": {
+            "EM": true,
+            "consistent": true,
+            "elapsed_seconds": 0.23521031253039837,
+            "input_tokens": 2236,
+            "invalid": false,
+            "multiple_four_digit_spans": false,
+            "output_tokens": 8,
+            "parsed_equals_last_listed": true,
+            "state_JSON_marker_echo": false,
+            "truncated": false
+          }
+        },
+        "candidate_count": 1,
+        "hit_any": false,
+        "resolver_cpu_seconds": 0.015038630999999997,
+        "singleton": true,
+        "symbolic_EM": true,
+        "symbolic_answered": true
+      },
+      {
+        "pair": 24,
+        "Q": 0.9177629358739948,
+        "arms": {
+          "baseline": {
+            "EM": false,
+            "consistent": false,
+            "elapsed_seconds": 2.207515417598188,
+            "input_tokens": 2138,
+            "invalid": false,
+            "multiple_four_digit_spans": true,
+            "output_tokens": 94,
+            "parsed_equals_last_listed": false,
+            "state_JSON_marker_echo": false,
+            "truncated": false
+          },
+          "state_assisted": {
+            "EM": true,
+            "consistent": true,
+            "elapsed_seconds": 0.23494240641593933,
+            "input_tokens": 2238,
+            "invalid": false,
+            "multiple_four_digit_spans": false,
+            "output_tokens": 8,
+            "parsed_equals_last_listed": true,
+            "state_JSON_marker_echo": false,
+            "truncated": false
+          }
+        },
+        "candidate_count": 1,
+        "hit_any": false,
+        "resolver_cpu_seconds": 0.014988336999999963,
+        "singleton": true,
+        "symbolic_EM": true,
+        "symbolic_answered": true
+      },
+      {
+        "pair": 25,
+        "Q": 0.8015851546030502,
+        "arms": {
+          "baseline": {
+            "EM": false,
+            "consistent": false,
+            "elapsed_seconds": 3.1518318923190236,
+            "input_tokens": 2136,
+            "invalid": false,
+            "multiple_four_digit_spans": false,
+            "output_tokens": 128,
+            "parsed_equals_last_listed": false,
+            "state_JSON_marker_echo": false,
+            "truncated": true
+          },
+          "state_assisted": {
+            "EM": false,
+            "consistent": true,
+            "elapsed_seconds": 0.2364709172397852,
+            "input_tokens": 2246,
+            "invalid": false,
+            "multiple_four_digit_spans": false,
+            "output_tokens": 8,
+            "parsed_equals_last_listed": true,
+            "state_JSON_marker_echo": false,
+            "truncated": false
+          }
+        },
+        "candidate_count": 3,
+        "hit_any": false,
+        "resolver_cpu_seconds": 0.016655556999999988,
+        "singleton": false,
+        "symbolic_EM": false,
+        "symbolic_answered": false
+      },
+      {
+        "pair": 26,
+        "Q": 0.780975005508252,
+        "arms": {
+          "baseline": {
+            "EM": false,
+            "consistent": false,
+            "elapsed_seconds": 3.0189904337748885,
+            "input_tokens": 2136,
+            "invalid": false,
+            "multiple_four_digit_spans": true,
+            "output_tokens": 128,
+            "parsed_equals_last_listed": false,
+            "state_JSON_marker_echo": false,
+            "truncated": true
+          },
+          "state_assisted": {
+            "EM": true,
+            "consistent": true,
+            "elapsed_seconds": 0.2480574594810605,
+            "input_tokens": 2236,
+            "invalid": false,
+            "multiple_four_digit_spans": false,
+            "output_tokens": 8,
+            "parsed_equals_last_listed": true,
+            "state_JSON_marker_echo": false,
+            "truncated": false
+          }
+        },
+        "candidate_count": 1,
+        "hit_any": false,
+        "resolver_cpu_seconds": 0.018380715000000047,
+        "singleton": true,
+        "symbolic_EM": true,
+        "symbolic_answered": true
+      },
+      {
+        "pair": 27,
+        "Q": 0.9155612058343332,
+        "arms": {
+          "baseline": {
+            "EM": false,
+            "consistent": false,
+            "elapsed_seconds": 3.009252505376935,
+            "input_tokens": 2136,
+            "invalid": false,
+            "multiple_four_digit_spans": false,
+            "output_tokens": 128,
+            "parsed_equals_last_listed": false,
+            "state_JSON_marker_echo": false,
+            "truncated": true
+          },
+          "state_assisted": {
+            "EM": true,
+            "consistent": true,
+            "elapsed_seconds": 0.23482227884232998,
+            "input_tokens": 2236,
+            "invalid": false,
+            "multiple_four_digit_spans": false,
+            "output_tokens": 8,
+            "parsed_equals_last_listed": true,
+            "state_JSON_marker_echo": false,
+            "truncated": false
+          }
+        },
+        "candidate_count": 1,
+        "hit_any": false,
+        "resolver_cpu_seconds": 0.013869631999999965,
+        "singleton": true,
+        "symbolic_EM": true,
+        "symbolic_answered": true
+      },
+      {
+        "pair": 28,
+        "Q": 0.841437310664963,
+        "arms": {
+          "baseline": {
+            "EM": false,
+            "consistent": false,
+            "elapsed_seconds": 3.0600097440183163,
+            "input_tokens": 2136,
+            "invalid": false,
+            "multiple_four_digit_spans": true,
+            "output_tokens": 128,
+            "parsed_equals_last_listed": false,
+            "state_JSON_marker_echo": false,
+            "truncated": true
+          },
+          "state_assisted": {
+            "EM": true,
+            "consistent": true,
+            "elapsed_seconds": 1.6105177029967308,
+            "input_tokens": 2241,
+            "invalid": false,
+            "multiple_four_digit_spans": true,
+            "output_tokens": 68,
+            "parsed_equals_last_listed": false,
+            "state_JSON_marker_echo": true,
+            "truncated": false
+          }
+        },
+        "candidate_count": 2,
+        "hit_any": false,
+        "resolver_cpu_seconds": 0.013369605000000007,
+        "singleton": false,
+        "symbolic_EM": false,
+        "symbolic_answered": false
+      },
+      {
+        "pair": 29,
+        "Q": 0.864224670539728,
+        "arms": {
+          "baseline": {
+            "EM": false,
+            "consistent": false,
+            "elapsed_seconds": 2.9897778118029237,
+            "input_tokens": 2136,
+            "invalid": false,
+            "multiple_four_digit_spans": false,
+            "output_tokens": 128,
+            "parsed_equals_last_listed": false,
+            "state_JSON_marker_echo": false,
+            "truncated": true
+          },
+          "state_assisted": {
+            "EM": false,
+            "consistent": false,
+            "elapsed_seconds": 0.2361253872513771,
+            "input_tokens": 2236,
+            "invalid": false,
+            "multiple_four_digit_spans": false,
+            "output_tokens": 8,
+            "parsed_equals_last_listed": false,
+            "state_JSON_marker_echo": false,
+            "truncated": false
+          }
+        },
+        "candidate_count": 1,
+        "hit_any": false,
+        "resolver_cpu_seconds": 0.014219768000000022,
+        "singleton": true,
+        "symbolic_EM": true,
+        "symbolic_answered": true
+      },
+      {
+        "pair": 30,
+        "Q": 0.8828172500532266,
+        "arms": {
+          "baseline": {
+            "EM": false,
+            "consistent": false,
+            "elapsed_seconds": 2.9960274351760745,
+            "input_tokens": 2136,
+            "invalid": false,
+            "multiple_four_digit_spans": true,
+            "output_tokens": 128,
+            "parsed_equals_last_listed": false,
+            "state_JSON_marker_echo": false,
+            "truncated": true
+          },
+          "state_assisted": {
+            "EM": true,
+            "consistent": true,
+            "elapsed_seconds": 0.22484550718218088,
+            "input_tokens": 2236,
+            "invalid": false,
+            "multiple_four_digit_spans": false,
+            "output_tokens": 8,
+            "parsed_equals_last_listed": true,
+            "state_JSON_marker_echo": false,
+            "truncated": false
+          }
+        },
+        "candidate_count": 1,
+        "hit_any": false,
+        "resolver_cpu_seconds": 0.017863068000000037,
+        "singleton": true,
+        "symbolic_EM": true,
+        "symbolic_answered": true
+      },
+      {
+        "pair": 31,
+        "Q": 0.9387547456029333,
+        "arms": {
+          "baseline": {
+            "EM": false,
+            "consistent": false,
+            "elapsed_seconds": 3.000052874907851,
+            "input_tokens": 2136,
+            "invalid": false,
+            "multiple_four_digit_spans": true,
+            "output_tokens": 128,
+            "parsed_equals_last_listed": false,
+            "state_JSON_marker_echo": false,
+            "truncated": true
+          },
+          "state_assisted": {
+            "EM": true,
+            "consistent": true,
+            "elapsed_seconds": 0.23724100086838007,
+            "input_tokens": 2236,
+            "invalid": false,
+            "multiple_four_digit_spans": false,
+            "output_tokens": 8,
+            "parsed_equals_last_listed": true,
+            "state_JSON_marker_echo": false,
+            "truncated": false
+          }
+        },
+        "candidate_count": 1,
+        "hit_any": false,
+        "resolver_cpu_seconds": 0.013685019999999992,
+        "singleton": true,
+        "symbolic_EM": true,
+        "symbolic_answered": true
+      },
+      {
+        "pair": 32,
+        "Q": 0.7759303866711178,
+        "arms": {
+          "baseline": {
+            "EM": false,
+            "consistent": false,
+            "elapsed_seconds": 3.131234159693122,
+            "input_tokens": 2136,
+            "invalid": false,
+            "multiple_four_digit_spans": false,
+            "output_tokens": 128,
+            "parsed_equals_last_listed": false,
+            "state_JSON_marker_echo": false,
+            "truncated": true
+          },
+          "state_assisted": {
+            "EM": false,
+            "consistent": true,
+            "elapsed_seconds": 1.9649745877832174,
+            "input_tokens": 2251,
+            "invalid": false,
+            "multiple_four_digit_spans": true,
+            "output_tokens": 84,
+            "parsed_equals_last_listed": false,
+            "state_JSON_marker_echo": true,
+            "truncated": false
+          }
+        },
+        "candidate_count": 4,
+        "hit_any": false,
+        "resolver_cpu_seconds": 0.014431197000000007,
+        "singleton": false,
+        "symbolic_EM": false,
+        "symbolic_answered": false
+      },
+      {
+        "pair": 33,
+        "Q": 0.922065689690562,
+        "arms": {
+          "baseline": {
+            "EM": false,
+            "consistent": false,
+            "elapsed_seconds": 3.1453240970149636,
+            "input_tokens": 2136,
+            "invalid": false,
+            "multiple_four_digit_spans": true,
+            "output_tokens": 128,
+            "parsed_equals_last_listed": false,
+            "state_JSON_marker_echo": false,
+            "truncated": true
+          },
+          "state_assisted": {
+            "EM": true,
+            "consistent": true,
+            "elapsed_seconds": 0.23183013126254082,
+            "input_tokens": 2236,
+            "invalid": false,
+            "multiple_four_digit_spans": false,
+            "output_tokens": 8,
+            "parsed_equals_last_listed": true,
+            "state_JSON_marker_echo": false,
+            "truncated": false
+          }
+        },
+        "candidate_count": 1,
+        "hit_any": false,
+        "resolver_cpu_seconds": 0.014451284000000009,
+        "singleton": true,
+        "symbolic_EM": true,
+        "symbolic_answered": true
+      },
+      {
+        "pair": 34,
+        "Q": 0.8373068244089068,
+        "arms": {
+          "baseline": {
+            "EM": false,
+            "consistent": false,
+            "elapsed_seconds": 3.0540389018133283,
+            "input_tokens": 2136,
+            "invalid": false,
+            "multiple_four_digit_spans": false,
+            "output_tokens": 128,
+            "parsed_equals_last_listed": false,
+            "state_JSON_marker_echo": false,
+            "truncated": true
+          },
+          "state_assisted": {
+            "EM": true,
+            "consistent": true,
+            "elapsed_seconds": 0.2492351857945323,
+            "input_tokens": 2236,
+            "invalid": false,
+            "multiple_four_digit_spans": false,
+            "output_tokens": 8,
+            "parsed_equals_last_listed": true,
+            "state_JSON_marker_echo": false,
+            "truncated": false
+          }
+        },
+        "candidate_count": 1,
+        "hit_any": false,
+        "resolver_cpu_seconds": 0.016231090999999975,
+        "singleton": true,
+        "symbolic_EM": true,
+        "symbolic_answered": true
+      },
+      {
+        "pair": 35,
+        "Q": 0.8800700104805347,
+        "arms": {
+          "baseline": {
+            "EM": false,
+            "consistent": false,
+            "elapsed_seconds": 2.3650384917855263,
+            "input_tokens": 2136,
+            "invalid": false,
+            "multiple_four_digit_spans": false,
+            "output_tokens": 99,
+            "parsed_equals_last_listed": false,
+            "state_JSON_marker_echo": false,
+            "truncated": false
+          },
+          "state_assisted": {
+            "EM": true,
+            "consistent": true,
+            "elapsed_seconds": 0.23018100671470165,
+            "input_tokens": 2236,
+            "invalid": false,
+            "multiple_four_digit_spans": false,
+            "output_tokens": 8,
+            "parsed_equals_last_listed": true,
+            "state_JSON_marker_echo": false,
+            "truncated": false
+          }
+        },
+        "candidate_count": 1,
+        "hit_any": false,
+        "resolver_cpu_seconds": 0.018898037000000034,
+        "singleton": true,
+        "symbolic_EM": true,
+        "symbolic_answered": true
+      },
+      {
+        "pair": 36,
+        "Q": 0.8635098672359678,
+        "arms": {
+          "baseline": {
+            "EM": false,
+            "consistent": false,
+            "elapsed_seconds": 2.789601344615221,
+            "input_tokens": 2136,
+            "invalid": false,
+            "multiple_four_digit_spans": true,
+            "output_tokens": 119,
+            "parsed_equals_last_listed": false,
+            "state_JSON_marker_echo": false,
+            "truncated": false
+          },
+          "state_assisted": {
+            "EM": true,
+            "consistent": true,
+            "elapsed_seconds": 0.23193656653165817,
+            "input_tokens": 2236,
+            "invalid": false,
+            "multiple_four_digit_spans": false,
+            "output_tokens": 8,
+            "parsed_equals_last_listed": true,
+            "state_JSON_marker_echo": false,
+            "truncated": false
+          }
+        },
+        "candidate_count": 1,
+        "hit_any": false,
+        "resolver_cpu_seconds": 0.019124111,
+        "singleton": true,
+        "symbolic_EM": true,
+        "symbolic_answered": true
+      },
+      {
+        "pair": 37,
+        "Q": 0.9073376007504403,
+        "arms": {
+          "baseline": {
+            "EM": false,
+            "consistent": false,
+            "elapsed_seconds": 0.6463194135576487,
+            "input_tokens": 2136,
+            "invalid": false,
+            "multiple_four_digit_spans": false,
+            "output_tokens": 26,
+            "parsed_equals_last_listed": false,
+            "state_JSON_marker_echo": false,
+            "truncated": false
+          },
+          "state_assisted": {
+            "EM": true,
+            "consistent": true,
+            "elapsed_seconds": 0.23838705383241177,
+            "input_tokens": 2236,
+            "invalid": false,
+            "multiple_four_digit_spans": false,
+            "output_tokens": 8,
+            "parsed_equals_last_listed": true,
+            "state_JSON_marker_echo": false,
+            "truncated": false
+          }
+        },
+        "candidate_count": 1,
+        "hit_any": false,
+        "resolver_cpu_seconds": 0.01444664000000001,
+        "singleton": true,
+        "symbolic_EM": true,
+        "symbolic_answered": true
+      },
+      {
+        "pair": 38,
+        "Q": 0.8713870078211237,
+        "arms": {
+          "baseline": {
+            "EM": false,
+            "consistent": false,
+            "elapsed_seconds": 3.0033447137102485,
+            "input_tokens": 2136,
+            "invalid": false,
+            "multiple_four_digit_spans": false,
+            "output_tokens": 128,
+            "parsed_equals_last_listed": false,
+            "state_JSON_marker_echo": false,
+            "truncated": true
+          },
+          "state_assisted": {
+            "EM": true,
+            "consistent": true,
+            "elapsed_seconds": 0.222632160410285,
+            "input_tokens": 2236,
+            "invalid": false,
+            "multiple_four_digit_spans": false,
+            "output_tokens": 8,
+            "parsed_equals_last_listed": true,
+            "state_JSON_marker_echo": false,
+            "truncated": false
+          }
+        },
+        "candidate_count": 1,
+        "hit_any": false,
+        "resolver_cpu_seconds": 0.014229339000000008,
+        "singleton": true,
+        "symbolic_EM": true,
+        "symbolic_answered": true
+      },
+      {
+        "pair": 39,
+        "Q": 0.9166155805058616,
+        "arms": {
+          "baseline": {
+            "EM": false,
+            "consistent": false,
+            "elapsed_seconds": 3.033192267641425,
+            "input_tokens": 2136,
+            "invalid": false,
+            "multiple_four_digit_spans": true,
+            "output_tokens": 128,
+            "parsed_equals_last_listed": false,
+            "state_JSON_marker_echo": false,
+            "truncated": true
+          },
+          "state_assisted": {
+            "EM": true,
+            "consistent": true,
+            "elapsed_seconds": 0.24490230344235897,
+            "input_tokens": 2236,
+            "invalid": false,
+            "multiple_four_digit_spans": false,
+            "output_tokens": 8,
+            "parsed_equals_last_listed": true,
+            "state_JSON_marker_echo": false,
+            "truncated": false
+          }
+        },
+        "candidate_count": 1,
+        "hit_any": false,
+        "resolver_cpu_seconds": 0.01714201000000004,
+        "singleton": true,
+        "symbolic_EM": true,
+        "symbolic_answered": true
+      },
+      {
+        "pair": 40,
+        "Q": 0.8051964810633377,
+        "arms": {
+          "baseline": {
+            "EM": false,
+            "consistent": false,
+            "elapsed_seconds": 2.495871198363602,
+            "input_tokens": 2136,
+            "invalid": false,
+            "multiple_four_digit_spans": true,
+            "output_tokens": 102,
+            "parsed_equals_last_listed": false,
+            "state_JSON_marker_echo": false,
+            "truncated": false
+          },
+          "state_assisted": {
+            "EM": false,
+            "consistent": true,
+            "elapsed_seconds": 0.23268162924796343,
+            "input_tokens": 2241,
+            "invalid": false,
+            "multiple_four_digit_spans": false,
+            "output_tokens": 8,
+            "parsed_equals_last_listed": false,
+            "state_JSON_marker_echo": false,
+            "truncated": false
+          }
+        },
+        "candidate_count": 2,
+        "hit_any": false,
+        "resolver_cpu_seconds": 0.01698420500000003,
+        "singleton": false,
+        "symbolic_EM": false,
+        "symbolic_answered": false
+      },
+      {
+        "pair": 41,
+        "Q": 0.890524899541575,
+        "arms": {
+          "baseline": {
+            "EM": false,
+            "consistent": false,
+            "elapsed_seconds": 0.24972464609891176,
+            "input_tokens": 2136,
+            "invalid": false,
+            "multiple_four_digit_spans": false,
+            "output_tokens": 8,
+            "parsed_equals_last_listed": false,
+            "state_JSON_marker_echo": false,
+            "truncated": false
+          },
+          "state_assisted": {
+            "EM": true,
+            "consistent": true,
+            "elapsed_seconds": 0.2398371435701847,
+            "input_tokens": 2236,
+            "invalid": false,
+            "multiple_four_digit_spans": false,
+            "output_tokens": 8,
+            "parsed_equals_last_listed": true,
+            "state_JSON_marker_echo": false,
+            "truncated": false
+          }
+        },
+        "candidate_count": 1,
+        "hit_any": false,
+        "resolver_cpu_seconds": 0.01646110400000006,
+        "singleton": true,
+        "symbolic_EM": true,
+        "symbolic_answered": true
+      },
+      {
+        "pair": 42,
+        "Q": 0.9028833388362386,
+        "arms": {
+          "baseline": {
+            "EM": false,
+            "consistent": false,
+            "elapsed_seconds": 3.161244167946279,
+            "input_tokens": 2136,
+            "invalid": false,
+            "multiple_four_digit_spans": false,
+            "output_tokens": 128,
+            "parsed_equals_last_listed": false,
+            "state_JSON_marker_echo": false,
+            "truncated": true
+          },
+          "state_assisted": {
+            "EM": true,
+            "consistent": true,
+            "elapsed_seconds": 0.2662024153396487,
+            "input_tokens": 2236,
+            "invalid": false,
+            "multiple_four_digit_spans": false,
+            "output_tokens": 8,
+            "parsed_equals_last_listed": true,
+            "state_JSON_marker_echo": false,
+            "truncated": false
+          }
+        },
+        "candidate_count": 1,
+        "hit_any": false,
+        "resolver_cpu_seconds": 0.01711363899999996,
+        "singleton": true,
+        "symbolic_EM": true,
+        "symbolic_answered": true
+      },
+      {
+        "pair": 43,
+        "Q": 0.9105669883065222,
+        "arms": {
+          "baseline": {
+            "EM": false,
+            "consistent": false,
+            "elapsed_seconds": 3.13303473778069,
+            "input_tokens": 2136,
+            "invalid": false,
+            "multiple_four_digit_spans": true,
+            "output_tokens": 128,
+            "parsed_equals_last_listed": false,
+            "state_JSON_marker_echo": false,
+            "truncated": true
+          },
+          "state_assisted": {
+            "EM": true,
+            "consistent": true,
+            "elapsed_seconds": 0.23514187335968018,
+            "input_tokens": 2236,
+            "invalid": false,
+            "multiple_four_digit_spans": false,
+            "output_tokens": 8,
+            "parsed_equals_last_listed": true,
+            "state_JSON_marker_echo": false,
+            "truncated": false
+          }
+        },
+        "candidate_count": 1,
+        "hit_any": false,
+        "resolver_cpu_seconds": 0.016615511000000027,
+        "singleton": true,
+        "symbolic_EM": true,
+        "symbolic_answered": true
+      },
+      {
+        "pair": 44,
+        "Q": 0.92709558024737,
+        "arms": {
+          "baseline": {
+            "EM": false,
+            "consistent": false,
+            "elapsed_seconds": 0.6849953215569258,
+            "input_tokens": 2136,
+            "invalid": false,
+            "multiple_four_digit_spans": false,
+            "output_tokens": 26,
+            "parsed_equals_last_listed": false,
+            "state_JSON_marker_echo": false,
+            "truncated": false
+          },
+          "state_assisted": {
+            "EM": true,
+            "consistent": true,
+            "elapsed_seconds": 0.23398630693554878,
+            "input_tokens": 2236,
+            "invalid": false,
+            "multiple_four_digit_spans": false,
+            "output_tokens": 8,
+            "parsed_equals_last_listed": true,
+            "state_JSON_marker_echo": false,
+            "truncated": false
+          }
+        },
+        "candidate_count": 1,
+        "hit_any": false,
+        "resolver_cpu_seconds": 0.014273014000000028,
+        "singleton": true,
+        "symbolic_EM": true,
+        "symbolic_answered": true
+      },
+      {
+        "pair": 45,
+        "Q": 0.8957523265802807,
+        "arms": {
+          "baseline": {
+            "EM": false,
+            "consistent": false,
+            "elapsed_seconds": 3.062512426637113,
+            "input_tokens": 2136,
+            "invalid": false,
+            "multiple_four_digit_spans": false,
+            "output_tokens": 128,
+            "parsed_equals_last_listed": false,
+            "state_JSON_marker_echo": false,
+            "truncated": true
+          },
+          "state_assisted": {
+            "EM": true,
+            "consistent": true,
+            "elapsed_seconds": 0.23260003048926592,
+            "input_tokens": 2236,
+            "invalid": false,
+            "multiple_four_digit_spans": false,
+            "output_tokens": 8,
+            "parsed_equals_last_listed": true,
+            "state_JSON_marker_echo": false,
+            "truncated": false
+          }
+        },
+        "candidate_count": 1,
+        "hit_any": false,
+        "resolver_cpu_seconds": 0.017979129999999954,
+        "singleton": true,
+        "symbolic_EM": true,
+        "symbolic_answered": true
+      },
+      {
+        "pair": 46,
+        "Q": 0.8755772893895173,
+        "arms": {
+          "baseline": {
+            "EM": false,
+            "consistent": false,
+            "elapsed_seconds": 2.996075861155987,
+            "input_tokens": 2136,
+            "invalid": false,
+            "multiple_four_digit_spans": true,
+            "output_tokens": 128,
+            "parsed_equals_last_listed": false,
+            "state_JSON_marker_echo": false,
+            "truncated": true
+          },
+          "state_assisted": {
+            "EM": true,
+            "consistent": true,
+            "elapsed_seconds": 0.23972159065306187,
+            "input_tokens": 2236,
+            "invalid": false,
+            "multiple_four_digit_spans": false,
+            "output_tokens": 8,
+            "parsed_equals_last_listed": true,
+            "state_JSON_marker_echo": false,
+            "truncated": false
+          }
+        },
+        "candidate_count": 1,
+        "hit_any": false,
+        "resolver_cpu_seconds": 0.018048586000000033,
+        "singleton": true,
+        "symbolic_EM": true,
+        "symbolic_answered": true
+      },
+      {
+        "pair": 47,
+        "Q": 0.8666861878996798,
+        "arms": {
+          "baseline": {
+            "EM": false,
+            "consistent": false,
+            "elapsed_seconds": 2.9792453292757273,
+            "input_tokens": 2136,
+            "invalid": false,
+            "multiple_four_digit_spans": true,
+            "output_tokens": 128,
+            "parsed_equals_last_listed": false,
+            "state_JSON_marker_echo": false,
+            "truncated": true
+          },
+          "state_assisted": {
+            "EM": true,
+            "consistent": true,
+            "elapsed_seconds": 0.22454790771007538,
+            "input_tokens": 2236,
+            "invalid": false,
+            "multiple_four_digit_spans": false,
+            "output_tokens": 8,
+            "parsed_equals_last_listed": true,
+            "state_JSON_marker_echo": false,
+            "truncated": false
+          }
+        },
+        "candidate_count": 1,
+        "hit_any": false,
+        "resolver_cpu_seconds": 0.017667462000000023,
+        "singleton": true,
+        "symbolic_EM": true,
+        "symbolic_answered": true
+      },
+      {
+        "pair": 48,
+        "Q": 0.9010163312736066,
+        "arms": {
+          "baseline": {
+            "EM": false,
+            "consistent": false,
+            "elapsed_seconds": 2.9268372179940343,
+            "input_tokens": 2136,
+            "invalid": false,
+            "multiple_four_digit_spans": true,
+            "output_tokens": 128,
+            "parsed_equals_last_listed": false,
+            "state_JSON_marker_echo": false,
+            "truncated": true
+          },
+          "state_assisted": {
+            "EM": true,
+            "consistent": true,
+            "elapsed_seconds": 0.22995401173830032,
+            "input_tokens": 2236,
+            "invalid": false,
+            "multiple_four_digit_spans": false,
+            "output_tokens": 8,
+            "parsed_equals_last_listed": true,
+            "state_JSON_marker_echo": false,
+            "truncated": false
+          }
+        },
+        "candidate_count": 1,
+        "hit_any": false,
+        "resolver_cpu_seconds": 0.01746431699999995,
+        "singleton": true,
+        "symbolic_EM": true,
+        "symbolic_answered": true
+      },
+      {
+        "pair": 49,
+        "Q": 0.8213023455468932,
+        "arms": {
+          "baseline": {
+            "EM": false,
+            "consistent": false,
+            "elapsed_seconds": 2.8340555438771844,
+            "input_tokens": 2136,
+            "invalid": false,
+            "multiple_four_digit_spans": true,
+            "output_tokens": 128,
+            "parsed_equals_last_listed": false,
+            "state_JSON_marker_echo": false,
+            "truncated": true
+          },
+          "state_assisted": {
+            "EM": true,
+            "consistent": true,
+            "elapsed_seconds": 0.21312153991311789,
+            "input_tokens": 2236,
+            "invalid": false,
+            "multiple_four_digit_spans": false,
+            "output_tokens": 8,
+            "parsed_equals_last_listed": true,
+            "state_JSON_marker_echo": false,
+            "truncated": false
+          }
+        },
+        "candidate_count": 1,
+        "hit_any": false,
+        "resolver_cpu_seconds": 0.017563100000000054,
+        "singleton": true,
+        "symbolic_EM": true,
+        "symbolic_answered": true
+      },
+      {
+        "pair": 50,
+        "Q": 0.9398600200315844,
+        "arms": {
+          "baseline": {
+            "EM": false,
+            "consistent": false,
+            "elapsed_seconds": 2.6947916531935334,
+            "input_tokens": 2136,
+            "invalid": false,
+            "multiple_four_digit_spans": false,
+            "output_tokens": 128,
+            "parsed_equals_last_listed": false,
+            "state_JSON_marker_echo": false,
+            "truncated": true
+          },
+          "state_assisted": {
+            "EM": true,
+            "consistent": true,
+            "elapsed_seconds": 0.21872862987220287,
+            "input_tokens": 2236,
+            "invalid": false,
+            "multiple_four_digit_spans": false,
+            "output_tokens": 8,
+            "parsed_equals_last_listed": true,
+            "state_JSON_marker_echo": false,
+            "truncated": false
+          }
+        },
+        "candidate_count": 1,
+        "hit_any": false,
+        "resolver_cpu_seconds": 0.014937275999999944,
+        "singleton": true,
+        "symbolic_EM": true,
+        "symbolic_answered": true
+      }
+    ],
+    "interpretation": "Prospective answer-supplied/tool-assisted final-readout gain on one new internal sample; no incremental model EM over direct unique-only solver, no learned reasoning/self-evolution claim.",
+    "diagnostic_note": "state_JSON_marker_echo tests substring candidate_count or candidates, not JSON syntax. Both positive outputs mention candidate lists in prose and end with an explicit Guess. Frozen last-four-digit parser retained. parsed_equals_last_listed is an equality diagnostic, not evidence of parser contamination or copying.",
+    "flagged_output_disclosure": [
+      {
+        "pair": 28,
+        "candidate_count": 2,
+        "marker_and_multiple_spans": true,
+        "explicit_final_guess": true,
+        "explicit_matches_frozen_parser": true,
+        "counted_correct": true,
+        "raw_sha256": "b8d7a7fbe8133631a063df1cdac323f724b48baeb23bfd3e63ed7994c6d8e842"
+      },
+      {
+        "pair": 32,
+        "candidate_count": 4,
+        "marker_and_multiple_spans": true,
+        "explicit_final_guess": true,
+        "explicit_matches_frozen_parser": true,
+        "counted_correct": false,
+        "raw_sha256": "f478dd1f68b7ffd5df8658221d920f0d4b83cf6514314c66c70449c84d47d58c"
+      }
+    ],
+    "ambiguous_candidate_counts": [
+      3,
+      2,
+      4,
+      2
+    ],
+    "ambiguous_uniform_choice_expected_correct": 1.5833333333333333
+  },
+  "verification": "Independent reconstruction code was run by the same execution assistant. Research/Claude reviewed reported evidence, not a separate raw-data reproduction."
+}

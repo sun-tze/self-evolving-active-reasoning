@@ -1,0 +1,380 @@
+{
+  "all_work": {
+    "actor_queries": 21310,
+    "curator_calls": 24,
+    "episodes": 2044,
+    "input_tokens": 16321035,
+    "output_tokens": 171481,
+    "reserved_output_tokens": 2739968
+  },
+  "descriptive_amortization": {
+    "E0": {
+      "actor_query_only_break_even_cases": 734,
+      "assumption": "One search plus its entire shared baseline; future case costs stay at observed evaluation averages.",
+      "note": "Actor-query crossover excludes curator queries. Token crossover counts curator and actor usage but treats all tokens equally. Null means no saving at the observed token rate. Neither is a price, FLOP, latency or generalization claim.",
+      "observed_saving_per_case_vs_B0": {
+        "actor_queries": 3.215,
+        "input_tokens": 3521.59,
+        "output_tokens": 25.72,
+        "unweighted_total_tokens": 3547.31
+      },
+      "unweighted_token_count_break_even_cases": 472,
+      "upfront_actor_queries": 2358,
+      "upfront_curator_requests": 6,
+      "upfront_input_tokens": 1654042,
+      "upfront_output_tokens": 19225
+    },
+    "E1": {
+      "actor_query_only_break_even_cases": 536,
+      "assumption": "One search plus its entire shared baseline; future case costs stay at observed evaluation averages.",
+      "note": "Actor-query crossover excludes curator queries. Token crossover counts curator and actor usage but treats all tokens equally. Null means no saving at the observed token rate. Neither is a price, FLOP, latency or generalization claim.",
+      "observed_saving_per_case_vs_B0": {
+        "actor_queries": 3.42,
+        "input_tokens": 3681.235,
+        "output_tokens": 27.36,
+        "unweighted_total_tokens": 3708.5950000000003
+      },
+      "unweighted_token_count_break_even_cases": 332,
+      "upfront_actor_queries": 1833,
+      "upfront_curator_requests": 6,
+      "upfront_input_tokens": 1215953,
+      "upfront_output_tokens": 15022
+    }
+  },
+  "elapsed_seconds": 1.062000000034459,
+  "evaluation": {
+    "actor_queries": 9322,
+    "curator_calls": 0,
+    "episodes": 1000,
+    "input_tokens": 6233185,
+    "output_tokens": 74586,
+    "reserved_output_tokens": 1193216
+  },
+  "evaluation_query_savings": {
+    "E0_vs_B0_per_case": 3.215,
+    "E1_vs_B0_per_case": 3.42
+  },
+  "journal_sha256": "229e196aeed96257a2720bf313aed41c5bf7402df8d7171b61d876eacc07a302",
+  "learning": {
+    "actor_queries": 11988,
+    "curator_calls": 24,
+    "episodes": 1044,
+    "input_tokens": 10087850,
+    "output_tokens": 96895,
+    "reserved_output_tokens": 1546752
+  },
+  "learning_share_of_actor_queries": 0.5625527921163773,
+  "learning_share_of_input_tokens": 0.6180888650750397,
+  "learning_share_of_output_tokens": 0.565048022813023,
+  "limitations": [
+    "Only this study is included; prior sequential research cost is excluded.",
+    "Shared baselines are physically counted once. Equal half allocation is an accounting convention, not additional execution.",
+    "All comparator evaluation is research expenditure; deploying a fixed policy would not execute all five arms.",
+    "Actual calls and provider token usage are reconciled, not independently tokenized.",
+    "Learning and evaluation overlap internally through concurrency; call/token shares cannot allocate GPU wall time.",
+    "Amortization assumes observed averages persist on future cases; no guaranteed payoff or measured deployment benchmark."
+  ],
+  "per_search_learning": {
+    "E0": {
+      "allocated_half_shared_baseline": {
+        "actor_queries": 2107.0,
+        "curator_calls": 6.0,
+        "episodes": 234.0,
+        "input_tokens": 1469507.0,
+        "output_tokens": 17217.0,
+        "reserved_output_tokens": 272768.0
+      },
+      "exclusive_work": {
+        "actor_queries": 1856,
+        "curator_calls": 6,
+        "episodes": 210,
+        "input_tokens": 1284972,
+        "output_tokens": 15209,
+        "reserved_output_tokens": 240640
+      },
+      "standalone_with_full_repetition_baseline": {
+        "actor_queries": 2358,
+        "curator_calls": 6,
+        "episodes": 258,
+        "input_tokens": 1654042,
+        "output_tokens": 19225,
+        "reserved_output_tokens": 304896
+      }
+    },
+    "E1": {
+      "allocated_half_shared_baseline": {
+        "actor_queries": 1562.0,
+        "curator_calls": 6.0,
+        "episodes": 186.0,
+        "input_tokens": 1005675.0,
+        "output_tokens": 12853.5,
+        "reserved_output_tokens": 203008.0
+      },
+      "exclusive_work": {
+        "actor_queries": 1291,
+        "curator_calls": 6,
+        "episodes": 162,
+        "input_tokens": 795397,
+        "output_tokens": 10685,
+        "reserved_output_tokens": 168320
+      },
+      "standalone_with_full_repetition_baseline": {
+        "actor_queries": 1833,
+        "curator_calls": 6,
+        "episodes": 210,
+        "input_tokens": 1215953,
+        "output_tokens": 15022,
+        "reserved_output_tokens": 237696
+      }
+    },
+    "R0": {
+      "allocated_half_shared_baseline": {
+        "actor_queries": 4255.0,
+        "curator_calls": 6.0,
+        "episodes": 312.0,
+        "input_tokens": 3954045.0,
+        "output_tokens": 34182.0,
+        "reserved_output_tokens": 547712.0
+      },
+      "exclusive_work": {
+        "actor_queries": 4004,
+        "curator_calls": 6,
+        "episodes": 288,
+        "input_tokens": 3769510,
+        "output_tokens": 32174,
+        "reserved_output_tokens": 515584
+      },
+      "standalone_with_full_repetition_baseline": {
+        "actor_queries": 4506,
+        "curator_calls": 6,
+        "episodes": 336,
+        "input_tokens": 4138580,
+        "output_tokens": 36190,
+        "reserved_output_tokens": 579840
+      }
+    },
+    "R1": {
+      "allocated_half_shared_baseline": {
+        "actor_queries": 4064.0,
+        "curator_calls": 6.0,
+        "episodes": 312.0,
+        "input_tokens": 3658623.0,
+        "output_tokens": 32642.5,
+        "reserved_output_tokens": 523264.0
+      },
+      "exclusive_work": {
+        "actor_queries": 3793,
+        "curator_calls": 6,
+        "episodes": 288,
+        "input_tokens": 3448345,
+        "output_tokens": 30474,
+        "reserved_output_tokens": 488576
+      },
+      "standalone_with_full_repetition_baseline": {
+        "actor_queries": 4335,
+        "curator_calls": 6,
+        "episodes": 336,
+        "input_tokens": 3868901,
+        "output_tokens": 34811,
+        "reserved_output_tokens": 557952
+      }
+    }
+  },
+  "phase_by_search_or_arm": {
+    "candidate_selection": {
+      "E0": {
+        "actor_queries": 1703,
+        "curator_calls": 0,
+        "episodes": 192,
+        "input_tokens": 1181193,
+        "output_tokens": 13627,
+        "reserved_output_tokens": 217984
+      },
+      "E1": {
+        "actor_queries": 1133,
+        "curator_calls": 0,
+        "episodes": 144,
+        "input_tokens": 684449,
+        "output_tokens": 9064,
+        "reserved_output_tokens": 145024
+      },
+      "R0": {
+        "actor_queries": 4004,
+        "curator_calls": 0,
+        "episodes": 288,
+        "input_tokens": 3767080,
+        "output_tokens": 32046,
+        "reserved_output_tokens": 512512
+      },
+      "R1": {
+        "actor_queries": 3793,
+        "curator_calls": 0,
+        "episodes": 288,
+        "input_tokens": 3445915,
+        "output_tokens": 30361,
+        "reserved_output_tokens": 485504
+      }
+    },
+    "curator_proposals": {
+      "E0": {
+        "actor_queries": 0,
+        "curator_calls": 6,
+        "episodes": 0,
+        "input_tokens": 7034,
+        "output_tokens": 358,
+        "reserved_output_tokens": 3072
+      },
+      "E1": {
+        "actor_queries": 0,
+        "curator_calls": 6,
+        "episodes": 0,
+        "input_tokens": 7245,
+        "output_tokens": 357,
+        "reserved_output_tokens": 3072
+      },
+      "R0": {
+        "actor_queries": 0,
+        "curator_calls": 6,
+        "episodes": 0,
+        "input_tokens": 2430,
+        "output_tokens": 128,
+        "reserved_output_tokens": 3072
+      },
+      "R1": {
+        "actor_queries": 0,
+        "curator_calls": 6,
+        "episodes": 0,
+        "input_tokens": 2430,
+        "output_tokens": 113,
+        "reserved_output_tokens": 3072
+      }
+    },
+    "evaluation": {
+      "B0": {
+        "actor_queries": 2139,
+        "curator_calls": 0,
+        "episodes": 200,
+        "input_tokens": 1545417,
+        "output_tokens": 17112,
+        "reserved_output_tokens": 273792
+      },
+      "E0": {
+        "actor_queries": 1496,
+        "curator_calls": 0,
+        "episodes": 200,
+        "input_tokens": 841099,
+        "output_tokens": 11968,
+        "reserved_output_tokens": 191488
+      },
+      "E1": {
+        "actor_queries": 1455,
+        "curator_calls": 0,
+        "episodes": 200,
+        "input_tokens": 809170,
+        "output_tokens": 11640,
+        "reserved_output_tokens": 186240
+      },
+      "R0": {
+        "actor_queries": 2096,
+        "curator_calls": 0,
+        "episodes": 200,
+        "input_tokens": 1501673,
+        "output_tokens": 16768,
+        "reserved_output_tokens": 268288
+      },
+      "R1": {
+        "actor_queries": 2136,
+        "curator_calls": 0,
+        "episodes": 200,
+        "input_tokens": 1535826,
+        "output_tokens": 17098,
+        "reserved_output_tokens": 273408
+      }
+    },
+    "shared_baseline": {
+      "B0": {
+        "actor_queries": 502,
+        "curator_calls": 0,
+        "episodes": 48,
+        "input_tokens": 369070,
+        "output_tokens": 4016,
+        "reserved_output_tokens": 64256
+      },
+      "B1": {
+        "actor_queries": 542,
+        "curator_calls": 0,
+        "episodes": 48,
+        "input_tokens": 420556,
+        "output_tokens": 4337,
+        "reserved_output_tokens": 69376
+      }
+    },
+    "trace_training": {
+      "E0": {
+        "actor_queries": 153,
+        "curator_calls": 0,
+        "episodes": 18,
+        "input_tokens": 96745,
+        "output_tokens": 1224,
+        "reserved_output_tokens": 19584
+      },
+      "E1": {
+        "actor_queries": 158,
+        "curator_calls": 0,
+        "episodes": 18,
+        "input_tokens": 103703,
+        "output_tokens": 1264,
+        "reserved_output_tokens": 20224
+      }
+    }
+  },
+  "phase_totals": {
+    "candidate_selection": {
+      "actor_queries": 10633,
+      "curator_calls": 0,
+      "episodes": 912,
+      "input_tokens": 9078637,
+      "output_tokens": 85098,
+      "reserved_output_tokens": 1361024
+    },
+    "curator_proposals": {
+      "actor_queries": 0,
+      "curator_calls": 24,
+      "episodes": 0,
+      "input_tokens": 19139,
+      "output_tokens": 956,
+      "reserved_output_tokens": 12288
+    },
+    "evaluation": {
+      "actor_queries": 9322,
+      "curator_calls": 0,
+      "episodes": 1000,
+      "input_tokens": 6233185,
+      "output_tokens": 74586,
+      "reserved_output_tokens": 1193216
+    },
+    "shared_baseline": {
+      "actor_queries": 1044,
+      "curator_calls": 0,
+      "episodes": 96,
+      "input_tokens": 789626,
+      "output_tokens": 8353,
+      "reserved_output_tokens": 133632
+    },
+    "trace_training": {
+      "actor_queries": 311,
+      "curator_calls": 0,
+      "episodes": 36,
+      "input_tokens": 200448,
+      "output_tokens": 2488,
+      "reserved_output_tokens": 39808
+    }
+  },
+  "source_sha256": {
+    "audit": "f14aeabf903bd920b76c9d27b490beb3ebfbc5b4924485a9c661ff2aa10e6b78",
+    "complete": "d8cf970c54e5a1e88581d3a595b19fc6569cc8661b2cd3db99f0a7a38fefe043",
+    "derivation": "4b92b557a90c7070d8bc8317734659e568bba1d5b51f977abb6a3ab47bd53fc9",
+    "published": "b1300cb85d437ada937384e584126d0d2073a6b10b09657fc5fcbc98e94420ec"
+  },
+  "status": "LOCAL_DESCRIPTIVE_ACCOUNTING_RECONCILED"
+}

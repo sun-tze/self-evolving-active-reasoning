@@ -1,0 +1,5848 @@
+{
+  "N": 100,
+  "cases": [
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": 6,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 2466,
+          "invalid": 0,
+          "output_tokens": 48,
+          "queries": 6,
+          "truncated": 0,
+          "valid_queries": 6
+        },
+        "E0": {
+          "first_unique_turn": 15,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 13971,
+          "invalid": 0,
+          "output_tokens": 120,
+          "queries": 15,
+          "truncated": 0,
+          "valid_queries": 15
+        },
+        "E1": {
+          "first_unique_turn": 12,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 9462,
+          "invalid": 0,
+          "output_tokens": 96,
+          "queries": 12,
+          "truncated": 0,
+          "valid_queries": 12
+        },
+        "E2": {
+          "first_unique_turn": 8,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 6048,
+          "invalid": 0,
+          "output_tokens": 64,
+          "queries": 8,
+          "truncated": 0,
+          "valid_queries": 8
+        },
+        "S": {
+          "first_unique_turn": null,
+          "information_bits": 8.714245517666123,
+          "input_tokens": 30421,
+          "invalid": 0,
+          "output_tokens": 213,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        }
+      },
+      "case_index": 0
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": 6,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 2466,
+          "invalid": 0,
+          "output_tokens": 48,
+          "queries": 6,
+          "truncated": 0,
+          "valid_queries": 6
+        },
+        "E0": {
+          "first_unique_turn": 24,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 30648,
+          "invalid": 0,
+          "output_tokens": 192,
+          "queries": 24,
+          "truncated": 0,
+          "valid_queries": 24
+        },
+        "E1": {
+          "first_unique_turn": 12,
+          "information_bits": 12.299208018387278,
+          "input_tokens": 9462,
+          "invalid": 0,
+          "output_tokens": 96,
+          "queries": 12,
+          "truncated": 0,
+          "valid_queries": 12
+        },
+        "E2": {
+          "first_unique_turn": 6,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 4080,
+          "invalid": 0,
+          "output_tokens": 48,
+          "queries": 6,
+          "truncated": 0,
+          "valid_queries": 6
+        },
+        "S": {
+          "first_unique_turn": null,
+          "information_bits": 7.39231742277876,
+          "input_tokens": 30336,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        }
+      },
+      "case_index": 1
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": 9,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 4725,
+          "invalid": 0,
+          "output_tokens": 72,
+          "queries": 9,
+          "truncated": 0,
+          "valid_queries": 9
+        },
+        "E0": {
+          "first_unique_turn": 6,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 3528,
+          "invalid": 0,
+          "output_tokens": 48,
+          "queries": 6,
+          "truncated": 0,
+          "valid_queries": 6
+        },
+        "E1": {
+          "first_unique_turn": 16,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 15068,
+          "invalid": 0,
+          "output_tokens": 128,
+          "queries": 16,
+          "truncated": 0,
+          "valid_queries": 16
+        },
+        "E2": {
+          "first_unique_turn": 7,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 5026,
+          "invalid": 0,
+          "output_tokens": 56,
+          "queries": 7,
+          "truncated": 0,
+          "valid_queries": 7
+        },
+        "S": {
+          "first_unique_turn": null,
+          "information_bits": 7.977279923499917,
+          "input_tokens": 30336,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        }
+      },
+      "case_index": 2
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": null,
+          "information_bits": 11.29920801838728,
+          "input_tokens": 28461,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        },
+        "E0": {
+          "first_unique_turn": 19,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 20613,
+          "invalid": 0,
+          "output_tokens": 152,
+          "queries": 19,
+          "truncated": 0,
+          "valid_queries": 19
+        },
+        "E1": {
+          "first_unique_turn": 11,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 8253,
+          "invalid": 0,
+          "output_tokens": 88,
+          "queries": 11,
+          "truncated": 0,
+          "valid_queries": 11
+        },
+        "E2": {
+          "first_unique_turn": 6,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 4080,
+          "invalid": 0,
+          "output_tokens": 48,
+          "queries": 6,
+          "truncated": 0,
+          "valid_queries": 6
+        },
+        "S": {
+          "first_unique_turn": null,
+          "information_bits": 5.39231742277876,
+          "input_tokens": 30336,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        }
+      },
+      "case_index": 3
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": 5,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 1865,
+          "invalid": 0,
+          "output_tokens": 40,
+          "queries": 5,
+          "truncated": 0,
+          "valid_queries": 5
+        },
+        "E0": {
+          "first_unique_turn": 22,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 26403,
+          "invalid": 0,
+          "output_tokens": 176,
+          "queries": 22,
+          "truncated": 0,
+          "valid_queries": 22
+        },
+        "E1": {
+          "first_unique_turn": 21,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 23808,
+          "invalid": 0,
+          "output_tokens": 168,
+          "queries": 21,
+          "truncated": 0,
+          "valid_queries": 21
+        },
+        "E2": {
+          "first_unique_turn": 9,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 7146,
+          "invalid": 0,
+          "output_tokens": 72,
+          "queries": 9,
+          "truncated": 0,
+          "valid_queries": 9
+        },
+        "S": {
+          "first_unique_turn": null,
+          "information_bits": 7.39231742277876,
+          "input_tokens": 30336,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        }
+      },
+      "case_index": 4
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": 8,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 3896,
+          "invalid": 0,
+          "output_tokens": 64,
+          "queries": 8,
+          "truncated": 0,
+          "valid_queries": 8
+        },
+        "E0": {
+          "first_unique_turn": 6,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 3528,
+          "invalid": 0,
+          "output_tokens": 48,
+          "queries": 6,
+          "truncated": 0,
+          "valid_queries": 6
+        },
+        "E1": {
+          "first_unique_turn": 7,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 4186,
+          "invalid": 0,
+          "output_tokens": 56,
+          "queries": 7,
+          "truncated": 0,
+          "valid_queries": 7
+        },
+        "E2": {
+          "first_unique_turn": 11,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 9573,
+          "invalid": 0,
+          "output_tokens": 88,
+          "queries": 11,
+          "truncated": 0,
+          "valid_queries": 11
+        },
+        "S": {
+          "first_unique_turn": 25,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 30336,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        }
+      },
+      "case_index": 5
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": 11,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 6614,
+          "invalid": 0,
+          "output_tokens": 88,
+          "queries": 11,
+          "truncated": 0,
+          "valid_queries": 11
+        },
+        "E0": {
+          "first_unique_turn": 8,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 5312,
+          "invalid": 0,
+          "output_tokens": 64,
+          "queries": 8,
+          "truncated": 0,
+          "valid_queries": 8
+        },
+        "E1": {
+          "first_unique_turn": 7,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 4186,
+          "invalid": 0,
+          "output_tokens": 56,
+          "queries": 7,
+          "truncated": 0,
+          "valid_queries": 7
+        },
+        "E2": {
+          "first_unique_turn": 8,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 6048,
+          "invalid": 0,
+          "output_tokens": 64,
+          "queries": 8,
+          "truncated": 0,
+          "valid_queries": 8
+        },
+        "S": {
+          "first_unique_turn": null,
+          "information_bits": 7.39231742277876,
+          "input_tokens": 30336,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        }
+      },
+      "case_index": 6
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": 12,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 7674,
+          "invalid": 0,
+          "output_tokens": 96,
+          "queries": 12,
+          "truncated": 0,
+          "valid_queries": 12
+        },
+        "E0": {
+          "first_unique_turn": 6,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 3528,
+          "invalid": 0,
+          "output_tokens": 48,
+          "queries": 6,
+          "truncated": 0,
+          "valid_queries": 6
+        },
+        "E1": {
+          "first_unique_turn": null,
+          "information_bits": 10.714245517666122,
+          "input_tokens": 32186,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        },
+        "E2": {
+          "first_unique_turn": null,
+          "information_bits": 9.491853096329674,
+          "input_tokens": 35186,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        },
+        "S": {
+          "first_unique_turn": null,
+          "information_bits": 5.39231742277876,
+          "input_tokens": 30336,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        }
+      },
+      "case_index": 7
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": null,
+          "information_bits": 11.29920801838728,
+          "input_tokens": 28461,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        },
+        "E0": {
+          "first_unique_turn": null,
+          "information_bits": 11.29920801838728,
+          "input_tokens": 32886,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        },
+        "E1": {
+          "first_unique_turn": 5,
+          "information_bits": 12.299208018387278,
+          "input_tokens": 2610,
+          "invalid": 0,
+          "output_tokens": 40,
+          "queries": 5,
+          "truncated": 0,
+          "valid_queries": 5
+        },
+        "E2": {
+          "first_unique_turn": 8,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 6048,
+          "invalid": 0,
+          "output_tokens": 64,
+          "queries": 8,
+          "truncated": 0,
+          "valid_queries": 8
+        },
+        "S": {
+          "first_unique_turn": null,
+          "information_bits": 5.39231742277876,
+          "input_tokens": 30336,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        }
+      },
+      "case_index": 8
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": null,
+          "information_bits": 11.29920801838728,
+          "input_tokens": 28461,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        },
+        "E0": {
+          "first_unique_turn": 6,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 3528,
+          "invalid": 0,
+          "output_tokens": 48,
+          "queries": 6,
+          "truncated": 0,
+          "valid_queries": 6
+        },
+        "E1": {
+          "first_unique_turn": 9,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 6066,
+          "invalid": 0,
+          "output_tokens": 72,
+          "queries": 9,
+          "truncated": 0,
+          "valid_queries": 9
+        },
+        "E2": {
+          "first_unique_turn": null,
+          "information_bits": 11.29920801838728,
+          "input_tokens": 35186,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        },
+        "S": {
+          "first_unique_turn": 6,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 2916,
+          "invalid": 0,
+          "output_tokens": 48,
+          "queries": 6,
+          "truncated": 0,
+          "valid_queries": 6
+        }
+      },
+      "case_index": 9
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": 7,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 3143,
+          "invalid": 0,
+          "output_tokens": 56,
+          "queries": 7,
+          "truncated": 0,
+          "valid_queries": 7
+        },
+        "E0": {
+          "first_unique_turn": 7,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 4382,
+          "invalid": 0,
+          "output_tokens": 56,
+          "queries": 7,
+          "truncated": 0,
+          "valid_queries": 7
+        },
+        "E1": {
+          "first_unique_turn": 4,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 1936,
+          "invalid": 0,
+          "output_tokens": 32,
+          "queries": 4,
+          "truncated": 0,
+          "valid_queries": 4
+        },
+        "E2": {
+          "first_unique_turn": 9,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 7146,
+          "invalid": 0,
+          "output_tokens": 72,
+          "queries": 9,
+          "truncated": 0,
+          "valid_queries": 9
+        },
+        "S": {
+          "first_unique_turn": null,
+          "information_bits": 9.714245517666123,
+          "input_tokens": 30336,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        }
+      },
+      "case_index": 10
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": 13,
+          "information_bits": 12.299208018387278,
+          "input_tokens": 8811,
+          "invalid": 0,
+          "output_tokens": 104,
+          "queries": 13,
+          "truncated": 0,
+          "valid_queries": 13
+        },
+        "E0": {
+          "first_unique_turn": null,
+          "information_bits": 8.714245517666122,
+          "input_tokens": 32886,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        },
+        "E1": {
+          "first_unique_turn": null,
+          "information_bits": 9.299208018387278,
+          "input_tokens": 32186,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        },
+        "E2": {
+          "first_unique_turn": 10,
+          "information_bits": 12.299208018387278,
+          "input_tokens": 8321,
+          "invalid": 0,
+          "output_tokens": 80,
+          "queries": 10,
+          "truncated": 0,
+          "valid_queries": 10
+        },
+        "S": {
+          "first_unique_turn": null,
+          "information_bits": 9.714245517666123,
+          "input_tokens": 30336,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        }
+      },
+      "case_index": 11
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": 8,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 3896,
+          "invalid": 0,
+          "output_tokens": 64,
+          "queries": 8,
+          "truncated": 0,
+          "valid_queries": 8
+        },
+        "E0": {
+          "first_unique_turn": null,
+          "information_bits": 5.906890595608519,
+          "input_tokens": 32886,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        },
+        "E1": {
+          "first_unique_turn": null,
+          "information_bits": 10.714245517666123,
+          "input_tokens": 32186,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        },
+        "E2": {
+          "first_unique_turn": 6,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 4080,
+          "invalid": 0,
+          "output_tokens": 48,
+          "queries": 6,
+          "truncated": 0,
+          "valid_queries": 6
+        },
+        "S": {
+          "first_unique_turn": null,
+          "information_bits": 7.39231742277876,
+          "input_tokens": 30336,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        }
+      },
+      "case_index": 12
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": 6,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 2466,
+          "invalid": 0,
+          "output_tokens": 48,
+          "queries": 6,
+          "truncated": 0,
+          "valid_queries": 6
+        },
+        "E0": {
+          "first_unique_turn": 7,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 4382,
+          "invalid": 0,
+          "output_tokens": 56,
+          "queries": 7,
+          "truncated": 0,
+          "valid_queries": 7
+        },
+        "E1": {
+          "first_unique_turn": 7,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 4186,
+          "invalid": 0,
+          "output_tokens": 56,
+          "queries": 7,
+          "truncated": 0,
+          "valid_queries": 7
+        },
+        "E2": {
+          "first_unique_turn": null,
+          "information_bits": 10.714245517666123,
+          "input_tokens": 35186,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        },
+        "S": {
+          "first_unique_turn": null,
+          "information_bits": 7.977279923499916,
+          "input_tokens": 30457,
+          "invalid": 0,
+          "output_tokens": 216,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        }
+      },
+      "case_index": 13
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": 7,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 3143,
+          "invalid": 0,
+          "output_tokens": 56,
+          "queries": 7,
+          "truncated": 0,
+          "valid_queries": 7
+        },
+        "E0": {
+          "first_unique_turn": 4,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 2048,
+          "invalid": 0,
+          "output_tokens": 32,
+          "queries": 4,
+          "truncated": 0,
+          "valid_queries": 4
+        },
+        "E1": {
+          "first_unique_turn": 8,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 5088,
+          "invalid": 0,
+          "output_tokens": 64,
+          "queries": 8,
+          "truncated": 0,
+          "valid_queries": 8
+        },
+        "E2": {
+          "first_unique_turn": 7,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 5026,
+          "invalid": 0,
+          "output_tokens": 56,
+          "queries": 7,
+          "truncated": 0,
+          "valid_queries": 7
+        },
+        "S": {
+          "first_unique_turn": null,
+          "information_bits": 9.977279923499916,
+          "input_tokens": 30336,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        }
+      },
+      "case_index": 14
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": 9,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 4725,
+          "invalid": 0,
+          "output_tokens": 72,
+          "queries": 9,
+          "truncated": 0,
+          "valid_queries": 9
+        },
+        "E0": {
+          "first_unique_turn": 9,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 6318,
+          "invalid": 0,
+          "output_tokens": 72,
+          "queries": 9,
+          "truncated": 0,
+          "valid_queries": 9
+        },
+        "E1": {
+          "first_unique_turn": 7,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 4186,
+          "invalid": 0,
+          "output_tokens": 56,
+          "queries": 7,
+          "truncated": 0,
+          "valid_queries": 7
+        },
+        "E2": {
+          "first_unique_turn": 7,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 5026,
+          "invalid": 0,
+          "output_tokens": 56,
+          "queries": 7,
+          "truncated": 0,
+          "valid_queries": 7
+        },
+        "S": {
+          "first_unique_turn": null,
+          "information_bits": 9.714245517666123,
+          "input_tokens": 30336,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        }
+      },
+      "case_index": 15
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": 19,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 17250,
+          "invalid": 0,
+          "output_tokens": 152,
+          "queries": 19,
+          "truncated": 0,
+          "valid_queries": 19
+        },
+        "E0": {
+          "first_unique_turn": 9,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 6318,
+          "invalid": 0,
+          "output_tokens": 72,
+          "queries": 9,
+          "truncated": 0,
+          "valid_queries": 9
+        },
+        "E1": {
+          "first_unique_turn": 11,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 8253,
+          "invalid": 0,
+          "output_tokens": 88,
+          "queries": 11,
+          "truncated": 0,
+          "valid_queries": 11
+        },
+        "E2": {
+          "first_unique_turn": 8,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 6048,
+          "invalid": 0,
+          "output_tokens": 64,
+          "queries": 8,
+          "truncated": 0,
+          "valid_queries": 8
+        },
+        "S": {
+          "first_unique_turn": null,
+          "information_bits": 5.39231742277876,
+          "input_tokens": 30336,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        }
+      },
+      "case_index": 16
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": 10,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 5631,
+          "invalid": 0,
+          "output_tokens": 80,
+          "queries": 10,
+          "truncated": 0,
+          "valid_queries": 10
+        },
+        "E0": {
+          "first_unique_turn": 11,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 8561,
+          "invalid": 0,
+          "output_tokens": 88,
+          "queries": 11,
+          "truncated": 0,
+          "valid_queries": 11
+        },
+        "E1": {
+          "first_unique_turn": null,
+          "information_bits": 11.29920801838728,
+          "input_tokens": 32186,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        },
+        "E2": {
+          "first_unique_turn": 6,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 4080,
+          "invalid": 0,
+          "output_tokens": 48,
+          "queries": 6,
+          "truncated": 0,
+          "valid_queries": 6
+        },
+        "S": {
+          "first_unique_turn": null,
+          "information_bits": 6.39231742277876,
+          "input_tokens": 30336,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        }
+      },
+      "case_index": 17
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": null,
+          "information_bits": 10.29920801838728,
+          "input_tokens": 28461,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        },
+        "E0": {
+          "first_unique_turn": 6,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 3528,
+          "invalid": 0,
+          "output_tokens": 48,
+          "queries": 6,
+          "truncated": 0,
+          "valid_queries": 6
+        },
+        "E1": {
+          "first_unique_turn": 8,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 5088,
+          "invalid": 0,
+          "output_tokens": 64,
+          "queries": 8,
+          "truncated": 0,
+          "valid_queries": 8
+        },
+        "E2": {
+          "first_unique_turn": 9,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 7146,
+          "invalid": 0,
+          "output_tokens": 72,
+          "queries": 9,
+          "truncated": 0,
+          "valid_queries": 9
+        },
+        "S": {
+          "first_unique_turn": null,
+          "information_bits": 5.39231742277876,
+          "input_tokens": 30336,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        }
+      },
+      "case_index": 18
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": 9,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 4725,
+          "invalid": 0,
+          "output_tokens": 72,
+          "queries": 9,
+          "truncated": 0,
+          "valid_queries": 9
+        },
+        "E0": {
+          "first_unique_turn": null,
+          "information_bits": 9.29920801838728,
+          "input_tokens": 32886,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        },
+        "E1": {
+          "first_unique_turn": 13,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 10748,
+          "invalid": 0,
+          "output_tokens": 104,
+          "queries": 13,
+          "truncated": 0,
+          "valid_queries": 13
+        },
+        "E2": {
+          "first_unique_turn": 9,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 7146,
+          "invalid": 0,
+          "output_tokens": 72,
+          "queries": 9,
+          "truncated": 0,
+          "valid_queries": 9
+        },
+        "S": {
+          "first_unique_turn": 12,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 8574,
+          "invalid": 0,
+          "output_tokens": 96,
+          "queries": 12,
+          "truncated": 0,
+          "valid_queries": 12
+        }
+      },
+      "case_index": 19
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": 6,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 2466,
+          "invalid": 0,
+          "output_tokens": 48,
+          "queries": 6,
+          "truncated": 0,
+          "valid_queries": 6
+        },
+        "E0": {
+          "first_unique_turn": 8,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 5312,
+          "invalid": 0,
+          "output_tokens": 64,
+          "queries": 8,
+          "truncated": 0,
+          "valid_queries": 8
+        },
+        "E1": {
+          "first_unique_turn": null,
+          "information_bits": 10.29920801838728,
+          "input_tokens": 32186,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        },
+        "E2": {
+          "first_unique_turn": 10,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 8321,
+          "invalid": 0,
+          "output_tokens": 80,
+          "queries": 10,
+          "truncated": 0,
+          "valid_queries": 10
+        },
+        "S": {
+          "first_unique_turn": null,
+          "information_bits": 7.39231742277876,
+          "input_tokens": 30336,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        }
+      },
+      "case_index": 20
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": 7,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 3143,
+          "invalid": 0,
+          "output_tokens": 56,
+          "queries": 7,
+          "truncated": 0,
+          "valid_queries": 7
+        },
+        "E0": {
+          "first_unique_turn": 6,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 3528,
+          "invalid": 0,
+          "output_tokens": 48,
+          "queries": 6,
+          "truncated": 0,
+          "valid_queries": 6
+        },
+        "E1": {
+          "first_unique_turn": null,
+          "information_bits": 11.29920801838728,
+          "input_tokens": 32186,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        },
+        "E2": {
+          "first_unique_turn": null,
+          "information_bits": 11.29920801838728,
+          "input_tokens": 35186,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        },
+        "S": {
+          "first_unique_turn": null,
+          "information_bits": 7.977279923499917,
+          "input_tokens": 30336,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        }
+      },
+      "case_index": 21
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": 9,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 4725,
+          "invalid": 0,
+          "output_tokens": 72,
+          "queries": 9,
+          "truncated": 0,
+          "valid_queries": 9
+        },
+        "E0": {
+          "first_unique_turn": null,
+          "information_bits": 11.29920801838728,
+          "input_tokens": 32886,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        },
+        "E1": {
+          "first_unique_turn": 20,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 21906,
+          "invalid": 0,
+          "output_tokens": 160,
+          "queries": 20,
+          "truncated": 0,
+          "valid_queries": 20
+        },
+        "E2": {
+          "first_unique_turn": null,
+          "information_bits": 9.977279923499918,
+          "input_tokens": 35186,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        },
+        "S": {
+          "first_unique_turn": null,
+          "information_bits": 5.39231742277876,
+          "input_tokens": 30336,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        }
+      },
+      "case_index": 22
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": 8,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 3896,
+          "invalid": 0,
+          "output_tokens": 64,
+          "queries": 8,
+          "truncated": 0,
+          "valid_queries": 8
+        },
+        "E0": {
+          "first_unique_turn": null,
+          "information_bits": 4.321928094887363,
+          "input_tokens": 32886,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        },
+        "E1": {
+          "first_unique_turn": null,
+          "information_bits": 10.714245517666123,
+          "input_tokens": 32186,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        },
+        "E2": {
+          "first_unique_turn": 15,
+          "information_bits": 12.299208018387278,
+          "input_tokens": 15351,
+          "invalid": 0,
+          "output_tokens": 120,
+          "queries": 15,
+          "truncated": 0,
+          "valid_queries": 15
+        },
+        "S": {
+          "first_unique_turn": null,
+          "information_bits": 7.39231742277876,
+          "input_tokens": 30336,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        }
+      },
+      "case_index": 23
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": 5,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 1865,
+          "invalid": 0,
+          "output_tokens": 40,
+          "queries": 5,
+          "truncated": 0,
+          "valid_queries": 5
+        },
+        "E0": {
+          "first_unique_turn": null,
+          "information_bits": 11.29920801838728,
+          "input_tokens": 32886,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        },
+        "E1": {
+          "first_unique_turn": 6,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 3360,
+          "invalid": 0,
+          "output_tokens": 48,
+          "queries": 6,
+          "truncated": 0,
+          "valid_queries": 6
+        },
+        "E2": {
+          "first_unique_turn": 11,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 9573,
+          "invalid": 0,
+          "output_tokens": 88,
+          "queries": 11,
+          "truncated": 0,
+          "valid_queries": 11
+        },
+        "S": {
+          "first_unique_turn": 5,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 2240,
+          "invalid": 0,
+          "output_tokens": 40,
+          "queries": 5,
+          "truncated": 0,
+          "valid_queries": 5
+        }
+      },
+      "case_index": 24
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": 6,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 2466,
+          "invalid": 0,
+          "output_tokens": 48,
+          "queries": 6,
+          "truncated": 0,
+          "valid_queries": 6
+        },
+        "E0": {
+          "first_unique_turn": 14,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 12503,
+          "invalid": 0,
+          "output_tokens": 112,
+          "queries": 14,
+          "truncated": 0,
+          "valid_queries": 14
+        },
+        "E1": {
+          "first_unique_turn": 14,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 12111,
+          "invalid": 0,
+          "output_tokens": 112,
+          "queries": 14,
+          "truncated": 0,
+          "valid_queries": 14
+        },
+        "E2": {
+          "first_unique_turn": 11,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 9573,
+          "invalid": 0,
+          "output_tokens": 88,
+          "queries": 11,
+          "truncated": 0,
+          "valid_queries": 11
+        },
+        "S": {
+          "first_unique_turn": null,
+          "information_bits": 7.392317422778761,
+          "input_tokens": 30336,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        }
+      },
+      "case_index": 25
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": 7,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 3143,
+          "invalid": 0,
+          "output_tokens": 56,
+          "queries": 7,
+          "truncated": 0,
+          "valid_queries": 7
+        },
+        "E0": {
+          "first_unique_turn": 7,
+          "information_bits": 12.299208018387278,
+          "input_tokens": 4382,
+          "invalid": 0,
+          "output_tokens": 56,
+          "queries": 7,
+          "truncated": 0,
+          "valid_queries": 7
+        },
+        "E1": {
+          "first_unique_turn": 19,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 20081,
+          "invalid": 0,
+          "output_tokens": 152,
+          "queries": 19,
+          "truncated": 0,
+          "valid_queries": 19
+        },
+        "E2": {
+          "first_unique_turn": 22,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 28427,
+          "invalid": 0,
+          "output_tokens": 176,
+          "queries": 22,
+          "truncated": 0,
+          "valid_queries": 22
+        },
+        "S": {
+          "first_unique_turn": null,
+          "information_bits": 5.39231742277876,
+          "input_tokens": 30336,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        }
+      },
+      "case_index": 26
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": 6,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 2466,
+          "invalid": 0,
+          "output_tokens": 48,
+          "queries": 6,
+          "truncated": 0,
+          "valid_queries": 6
+        },
+        "E0": {
+          "first_unique_turn": 6,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 3528,
+          "invalid": 0,
+          "output_tokens": 48,
+          "queries": 6,
+          "truncated": 0,
+          "valid_queries": 6
+        },
+        "E1": {
+          "first_unique_turn": 7,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 4186,
+          "invalid": 0,
+          "output_tokens": 56,
+          "queries": 7,
+          "truncated": 0,
+          "valid_queries": 7
+        },
+        "E2": {
+          "first_unique_turn": 10,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 8321,
+          "invalid": 0,
+          "output_tokens": 80,
+          "queries": 10,
+          "truncated": 0,
+          "valid_queries": 10
+        },
+        "S": {
+          "first_unique_turn": null,
+          "information_bits": 5.39231742277876,
+          "input_tokens": 30336,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        }
+      },
+      "case_index": 27
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": 7,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 3143,
+          "invalid": 0,
+          "output_tokens": 56,
+          "queries": 7,
+          "truncated": 0,
+          "valid_queries": 7
+        },
+        "E0": {
+          "first_unique_turn": 7,
+          "information_bits": 12.299208018387278,
+          "input_tokens": 4382,
+          "invalid": 0,
+          "output_tokens": 56,
+          "queries": 7,
+          "truncated": 0,
+          "valid_queries": 7
+        },
+        "E1": {
+          "first_unique_turn": 10,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 7121,
+          "invalid": 0,
+          "output_tokens": 80,
+          "queries": 10,
+          "truncated": 0,
+          "valid_queries": 10
+        },
+        "E2": {
+          "first_unique_turn": 9,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 7146,
+          "invalid": 0,
+          "output_tokens": 72,
+          "queries": 9,
+          "truncated": 0,
+          "valid_queries": 9
+        },
+        "S": {
+          "first_unique_turn": null,
+          "information_bits": 5.39231742277876,
+          "input_tokens": 30336,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        }
+      },
+      "case_index": 28
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": 5,
+          "information_bits": 12.299208018387278,
+          "input_tokens": 1865,
+          "invalid": 0,
+          "output_tokens": 40,
+          "queries": 5,
+          "truncated": 0,
+          "valid_queries": 5
+        },
+        "E0": {
+          "first_unique_turn": 5,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 2750,
+          "invalid": 0,
+          "output_tokens": 40,
+          "queries": 5,
+          "truncated": 0,
+          "valid_queries": 5
+        },
+        "E1": {
+          "first_unique_turn": 5,
+          "information_bits": 12.299208018387278,
+          "input_tokens": 2610,
+          "invalid": 0,
+          "output_tokens": 40,
+          "queries": 5,
+          "truncated": 0,
+          "valid_queries": 5
+        },
+        "E2": {
+          "first_unique_turn": 6,
+          "information_bits": 12.299208018387278,
+          "input_tokens": 4080,
+          "invalid": 0,
+          "output_tokens": 48,
+          "queries": 6,
+          "truncated": 0,
+          "valid_queries": 6
+        },
+        "S": {
+          "first_unique_turn": null,
+          "information_bits": 7.977279923499916,
+          "input_tokens": 30336,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        }
+      },
+      "case_index": 29
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": 13,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 8811,
+          "invalid": 0,
+          "output_tokens": 104,
+          "queries": 13,
+          "truncated": 0,
+          "valid_queries": 13
+        },
+        "E0": {
+          "first_unique_turn": 13,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 11112,
+          "invalid": 0,
+          "output_tokens": 104,
+          "queries": 13,
+          "truncated": 0,
+          "valid_queries": 13
+        },
+        "E1": {
+          "first_unique_turn": 13,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 10748,
+          "invalid": 0,
+          "output_tokens": 104,
+          "queries": 13,
+          "truncated": 0,
+          "valid_queries": 13
+        },
+        "E2": {
+          "first_unique_turn": 5,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 3210,
+          "invalid": 0,
+          "output_tokens": 40,
+          "queries": 5,
+          "truncated": 0,
+          "valid_queries": 5
+        },
+        "S": {
+          "first_unique_turn": 11,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 7439,
+          "invalid": 0,
+          "output_tokens": 88,
+          "queries": 11,
+          "truncated": 0,
+          "valid_queries": 11
+        }
+      },
+      "case_index": 30
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": 12,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 7674,
+          "invalid": 0,
+          "output_tokens": 96,
+          "queries": 12,
+          "truncated": 0,
+          "valid_queries": 12
+        },
+        "E0": {
+          "first_unique_turn": 18,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 18837,
+          "invalid": 0,
+          "output_tokens": 144,
+          "queries": 18,
+          "truncated": 0,
+          "valid_queries": 18
+        },
+        "E1": {
+          "first_unique_turn": 11,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 8253,
+          "invalid": 0,
+          "output_tokens": 88,
+          "queries": 11,
+          "truncated": 0,
+          "valid_queries": 11
+        },
+        "E2": {
+          "first_unique_turn": 10,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 8321,
+          "invalid": 0,
+          "output_tokens": 80,
+          "queries": 10,
+          "truncated": 0,
+          "valid_queries": 10
+        },
+        "S": {
+          "first_unique_turn": null,
+          "information_bits": 7.392317422778761,
+          "input_tokens": 30336,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        }
+      },
+      "case_index": 31
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": null,
+          "information_bits": 10.29920801838728,
+          "input_tokens": 28461,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        },
+        "E0": {
+          "first_unique_turn": null,
+          "information_bits": 8.714245517666122,
+          "input_tokens": 32886,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        },
+        "E1": {
+          "first_unique_turn": null,
+          "information_bits": 10.29920801838728,
+          "input_tokens": 32186,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        },
+        "E2": {
+          "first_unique_turn": 21,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 26328,
+          "invalid": 0,
+          "output_tokens": 168,
+          "queries": 21,
+          "truncated": 0,
+          "valid_queries": 21
+        },
+        "S": {
+          "first_unique_turn": null,
+          "information_bits": 9.714245517666122,
+          "input_tokens": 30336,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        }
+      },
+      "case_index": 32
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": 5,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 1865,
+          "invalid": 0,
+          "output_tokens": 40,
+          "queries": 5,
+          "truncated": 0,
+          "valid_queries": 5
+        },
+        "E0": {
+          "first_unique_turn": 5,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 2750,
+          "invalid": 0,
+          "output_tokens": 40,
+          "queries": 5,
+          "truncated": 0,
+          "valid_queries": 5
+        },
+        "E1": {
+          "first_unique_turn": 7,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 4186,
+          "invalid": 0,
+          "output_tokens": 56,
+          "queries": 7,
+          "truncated": 0,
+          "valid_queries": 7
+        },
+        "E2": {
+          "first_unique_turn": 6,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 4080,
+          "invalid": 0,
+          "output_tokens": 48,
+          "queries": 6,
+          "truncated": 0,
+          "valid_queries": 6
+        },
+        "S": {
+          "first_unique_turn": null,
+          "information_bits": 7.39231742277876,
+          "input_tokens": 30336,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        }
+      },
+      "case_index": 33
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": 6,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 2466,
+          "invalid": 0,
+          "output_tokens": 48,
+          "queries": 6,
+          "truncated": 0,
+          "valid_queries": 6
+        },
+        "E0": {
+          "first_unique_turn": 11,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 8561,
+          "invalid": 0,
+          "output_tokens": 88,
+          "queries": 11,
+          "truncated": 0,
+          "valid_queries": 11
+        },
+        "E1": {
+          "first_unique_turn": 6,
+          "information_bits": 12.299208018387278,
+          "input_tokens": 3360,
+          "invalid": 0,
+          "output_tokens": 48,
+          "queries": 6,
+          "truncated": 0,
+          "valid_queries": 6
+        },
+        "E2": {
+          "first_unique_turn": 16,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 16988,
+          "invalid": 0,
+          "output_tokens": 128,
+          "queries": 16,
+          "truncated": 0,
+          "valid_queries": 16
+        },
+        "S": {
+          "first_unique_turn": null,
+          "information_bits": 5.39231742277876,
+          "input_tokens": 30336,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        }
+      },
+      "case_index": 34
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": 4,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 1340,
+          "invalid": 0,
+          "output_tokens": 32,
+          "queries": 4,
+          "truncated": 0,
+          "valid_queries": 4
+        },
+        "E0": {
+          "first_unique_turn": 19,
+          "information_bits": 12.299208018387278,
+          "input_tokens": 20613,
+          "invalid": 0,
+          "output_tokens": 152,
+          "queries": 19,
+          "truncated": 0,
+          "valid_queries": 19
+        },
+        "E1": {
+          "first_unique_turn": 6,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 3360,
+          "invalid": 0,
+          "output_tokens": 48,
+          "queries": 6,
+          "truncated": 0,
+          "valid_queries": 6
+        },
+        "E2": {
+          "first_unique_turn": 10,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 8321,
+          "invalid": 0,
+          "output_tokens": 80,
+          "queries": 10,
+          "truncated": 0,
+          "valid_queries": 10
+        },
+        "S": {
+          "first_unique_turn": null,
+          "information_bits": 11.299208018387278,
+          "input_tokens": 30336,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        }
+      },
+      "case_index": 35
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": 6,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 2466,
+          "invalid": 0,
+          "output_tokens": 48,
+          "queries": 6,
+          "truncated": 0,
+          "valid_queries": 6
+        },
+        "E0": {
+          "first_unique_turn": 8,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 5312,
+          "invalid": 0,
+          "output_tokens": 64,
+          "queries": 8,
+          "truncated": 0,
+          "valid_queries": 8
+        },
+        "E1": {
+          "first_unique_turn": 15,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 13551,
+          "invalid": 0,
+          "output_tokens": 120,
+          "queries": 15,
+          "truncated": 0,
+          "valid_queries": 15
+        },
+        "E2": {
+          "first_unique_turn": 11,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 9573,
+          "invalid": 0,
+          "output_tokens": 88,
+          "queries": 11,
+          "truncated": 0,
+          "valid_queries": 11
+        },
+        "S": {
+          "first_unique_turn": null,
+          "information_bits": 11.29920801838728,
+          "input_tokens": 30336,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        }
+      },
+      "case_index": 36
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": 6,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 2466,
+          "invalid": 0,
+          "output_tokens": 48,
+          "queries": 6,
+          "truncated": 0,
+          "valid_queries": 6
+        },
+        "E0": {
+          "first_unique_turn": 16,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 15516,
+          "invalid": 0,
+          "output_tokens": 128,
+          "queries": 16,
+          "truncated": 0,
+          "valid_queries": 16
+        },
+        "E1": {
+          "first_unique_turn": 7,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 4186,
+          "invalid": 0,
+          "output_tokens": 56,
+          "queries": 7,
+          "truncated": 0,
+          "valid_queries": 7
+        },
+        "E2": {
+          "first_unique_turn": 7,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 5026,
+          "invalid": 0,
+          "output_tokens": 56,
+          "queries": 7,
+          "truncated": 0,
+          "valid_queries": 7
+        },
+        "S": {
+          "first_unique_turn": null,
+          "information_bits": 5.39231742277876,
+          "input_tokens": 30336,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        }
+      },
+      "case_index": 37
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": 14,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 10025,
+          "invalid": 0,
+          "output_tokens": 112,
+          "queries": 14,
+          "truncated": 0,
+          "valid_queries": 14
+        },
+        "E0": {
+          "first_unique_turn": 6,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 3528,
+          "invalid": 0,
+          "output_tokens": 48,
+          "queries": 6,
+          "truncated": 0,
+          "valid_queries": 6
+        },
+        "E1": {
+          "first_unique_turn": null,
+          "information_bits": 11.29920801838728,
+          "input_tokens": 32186,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        },
+        "E2": {
+          "first_unique_turn": null,
+          "information_bits": 10.714245517666122,
+          "input_tokens": 35186,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        },
+        "S": {
+          "first_unique_turn": null,
+          "information_bits": 11.29920801838728,
+          "input_tokens": 30336,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        }
+      },
+      "case_index": 38
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": null,
+          "information_bits": 11.29920801838728,
+          "input_tokens": 28461,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        },
+        "E0": {
+          "first_unique_turn": null,
+          "information_bits": 11.29920801838728,
+          "input_tokens": 32886,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        },
+        "E1": {
+          "first_unique_turn": 5,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 2610,
+          "invalid": 0,
+          "output_tokens": 40,
+          "queries": 5,
+          "truncated": 0,
+          "valid_queries": 5
+        },
+        "E2": {
+          "first_unique_turn": 14,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 13791,
+          "invalid": 0,
+          "output_tokens": 112,
+          "queries": 14,
+          "truncated": 0,
+          "valid_queries": 14
+        },
+        "S": {
+          "first_unique_turn": 6,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 2916,
+          "invalid": 0,
+          "output_tokens": 48,
+          "queries": 6,
+          "truncated": 0,
+          "valid_queries": 6
+        }
+      },
+      "case_index": 39
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": 7,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 3143,
+          "invalid": 0,
+          "output_tokens": 56,
+          "queries": 7,
+          "truncated": 0,
+          "valid_queries": 7
+        },
+        "E0": {
+          "first_unique_turn": null,
+          "information_bits": 9.714245517666122,
+          "input_tokens": 32886,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        },
+        "E1": {
+          "first_unique_turn": 8,
+          "information_bits": 12.299208018387278,
+          "input_tokens": 5088,
+          "invalid": 0,
+          "output_tokens": 64,
+          "queries": 8,
+          "truncated": 0,
+          "valid_queries": 8
+        },
+        "E2": {
+          "first_unique_turn": 5,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 3210,
+          "invalid": 0,
+          "output_tokens": 40,
+          "queries": 5,
+          "truncated": 0,
+          "valid_queries": 5
+        },
+        "S": {
+          "first_unique_turn": null,
+          "information_bits": 9.714245517666122,
+          "input_tokens": 30336,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        }
+      },
+      "case_index": 40
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": 7,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 3143,
+          "invalid": 0,
+          "output_tokens": 56,
+          "queries": 7,
+          "truncated": 0,
+          "valid_queries": 7
+        },
+        "E0": {
+          "first_unique_turn": 3,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 1422,
+          "invalid": 0,
+          "output_tokens": 24,
+          "queries": 3,
+          "truncated": 0,
+          "valid_queries": 3
+        },
+        "E1": {
+          "first_unique_turn": 6,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 3360,
+          "invalid": 0,
+          "output_tokens": 48,
+          "queries": 6,
+          "truncated": 0,
+          "valid_queries": 6
+        },
+        "E2": {
+          "first_unique_turn": 8,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 6048,
+          "invalid": 0,
+          "output_tokens": 64,
+          "queries": 8,
+          "truncated": 0,
+          "valid_queries": 8
+        },
+        "S": {
+          "first_unique_turn": 8,
+          "information_bits": 12.299208018387278,
+          "input_tokens": 4496,
+          "invalid": 0,
+          "output_tokens": 64,
+          "queries": 8,
+          "truncated": 0,
+          "valid_queries": 8
+        }
+      },
+      "case_index": 41
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": null,
+          "information_bits": 11.29920801838728,
+          "input_tokens": 28461,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        },
+        "E0": {
+          "first_unique_turn": 24,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 30648,
+          "invalid": 0,
+          "output_tokens": 192,
+          "queries": 24,
+          "truncated": 0,
+          "valid_queries": 24
+        },
+        "E1": {
+          "first_unique_turn": 9,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 6066,
+          "invalid": 0,
+          "output_tokens": 72,
+          "queries": 9,
+          "truncated": 0,
+          "valid_queries": 9
+        },
+        "E2": {
+          "first_unique_turn": 8,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 6048,
+          "invalid": 0,
+          "output_tokens": 64,
+          "queries": 8,
+          "truncated": 0,
+          "valid_queries": 8
+        },
+        "S": {
+          "first_unique_turn": null,
+          "information_bits": 5.39231742277876,
+          "input_tokens": 30336,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        }
+      },
+      "case_index": 42
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": 12,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 7674,
+          "invalid": 0,
+          "output_tokens": 96,
+          "queries": 12,
+          "truncated": 0,
+          "valid_queries": 12
+        },
+        "E0": {
+          "first_unique_turn": 7,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 4382,
+          "invalid": 0,
+          "output_tokens": 56,
+          "queries": 7,
+          "truncated": 0,
+          "valid_queries": 7
+        },
+        "E1": {
+          "first_unique_turn": 11,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 8253,
+          "invalid": 0,
+          "output_tokens": 88,
+          "queries": 11,
+          "truncated": 0,
+          "valid_queries": 11
+        },
+        "E2": {
+          "first_unique_turn": 9,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 7146,
+          "invalid": 0,
+          "output_tokens": 72,
+          "queries": 9,
+          "truncated": 0,
+          "valid_queries": 9
+        },
+        "S": {
+          "first_unique_turn": null,
+          "information_bits": 7.39231742277876,
+          "input_tokens": 30336,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        }
+      },
+      "case_index": 43
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": null,
+          "information_bits": 9.977279923499916,
+          "input_tokens": 28461,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        },
+        "E0": {
+          "first_unique_turn": 8,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 5312,
+          "invalid": 0,
+          "output_tokens": 64,
+          "queries": 8,
+          "truncated": 0,
+          "valid_queries": 8
+        },
+        "E1": {
+          "first_unique_turn": 12,
+          "information_bits": 12.299208018387278,
+          "input_tokens": 9462,
+          "invalid": 0,
+          "output_tokens": 96,
+          "queries": 12,
+          "truncated": 0,
+          "valid_queries": 12
+        },
+        "E2": {
+          "first_unique_turn": 5,
+          "information_bits": 12.299208018387278,
+          "input_tokens": 3210,
+          "invalid": 0,
+          "output_tokens": 40,
+          "queries": 5,
+          "truncated": 0,
+          "valid_queries": 5
+        },
+        "S": {
+          "first_unique_turn": null,
+          "information_bits": 9.714245517666123,
+          "input_tokens": 30336,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        }
+      },
+      "case_index": 44
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": 8,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 3896,
+          "invalid": 0,
+          "output_tokens": 64,
+          "queries": 8,
+          "truncated": 0,
+          "valid_queries": 8
+        },
+        "E0": {
+          "first_unique_turn": 17,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 17138,
+          "invalid": 0,
+          "output_tokens": 136,
+          "queries": 17,
+          "truncated": 0,
+          "valid_queries": 17
+        },
+        "E1": {
+          "first_unique_turn": 5,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 2610,
+          "invalid": 0,
+          "output_tokens": 40,
+          "queries": 5,
+          "truncated": 0,
+          "valid_queries": 5
+        },
+        "E2": {
+          "first_unique_turn": 11,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 9573,
+          "invalid": 0,
+          "output_tokens": 88,
+          "queries": 11,
+          "truncated": 0,
+          "valid_queries": 11
+        },
+        "S": {
+          "first_unique_turn": null,
+          "information_bits": 7.392317422778761,
+          "input_tokens": 30336,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        }
+      },
+      "case_index": 45
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": 11,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 6614,
+          "invalid": 0,
+          "output_tokens": 88,
+          "queries": 11,
+          "truncated": 0,
+          "valid_queries": 11
+        },
+        "E0": {
+          "first_unique_turn": 11,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 8561,
+          "invalid": 0,
+          "output_tokens": 88,
+          "queries": 11,
+          "truncated": 0,
+          "valid_queries": 11
+        },
+        "E1": {
+          "first_unique_turn": null,
+          "information_bits": 11.29920801838728,
+          "input_tokens": 32186,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        },
+        "E2": {
+          "first_unique_turn": 9,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 7146,
+          "invalid": 0,
+          "output_tokens": 72,
+          "queries": 9,
+          "truncated": 0,
+          "valid_queries": 9
+        },
+        "S": {
+          "first_unique_turn": null,
+          "information_bits": 7.39231742277876,
+          "input_tokens": 30336,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        }
+      },
+      "case_index": 46
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": null,
+          "information_bits": 10.714245517666122,
+          "input_tokens": 28461,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        },
+        "E0": {
+          "first_unique_turn": 12,
+          "information_bits": 12.299208018387278,
+          "input_tokens": 9798,
+          "invalid": 0,
+          "output_tokens": 96,
+          "queries": 12,
+          "truncated": 0,
+          "valid_queries": 12
+        },
+        "E1": {
+          "first_unique_turn": null,
+          "information_bits": 10.714245517666122,
+          "input_tokens": 32186,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        },
+        "E2": {
+          "first_unique_turn": 8,
+          "information_bits": 12.299208018387278,
+          "input_tokens": 6048,
+          "invalid": 0,
+          "output_tokens": 64,
+          "queries": 8,
+          "truncated": 0,
+          "valid_queries": 8
+        },
+        "S": {
+          "first_unique_turn": 12,
+          "information_bits": 12.299208018387278,
+          "input_tokens": 8574,
+          "invalid": 0,
+          "output_tokens": 96,
+          "queries": 12,
+          "truncated": 0,
+          "valid_queries": 12
+        }
+      },
+      "case_index": 47
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": 18,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 15651,
+          "invalid": 0,
+          "output_tokens": 144,
+          "queries": 18,
+          "truncated": 0,
+          "valid_queries": 18
+        },
+        "E0": {
+          "first_unique_turn": 11,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 8561,
+          "invalid": 0,
+          "output_tokens": 88,
+          "queries": 11,
+          "truncated": 0,
+          "valid_queries": 11
+        },
+        "E1": {
+          "first_unique_turn": 8,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 5088,
+          "invalid": 0,
+          "output_tokens": 64,
+          "queries": 8,
+          "truncated": 0,
+          "valid_queries": 8
+        },
+        "E2": {
+          "first_unique_turn": 9,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 7146,
+          "invalid": 0,
+          "output_tokens": 72,
+          "queries": 9,
+          "truncated": 0,
+          "valid_queries": 9
+        },
+        "S": {
+          "first_unique_turn": null,
+          "information_bits": 7.39231742277876,
+          "input_tokens": 30336,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        }
+      },
+      "case_index": 48
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": 6,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 2466,
+          "invalid": 0,
+          "output_tokens": 48,
+          "queries": 6,
+          "truncated": 0,
+          "valid_queries": 6
+        },
+        "E0": {
+          "first_unique_turn": 6,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 3528,
+          "invalid": 0,
+          "output_tokens": 48,
+          "queries": 6,
+          "truncated": 0,
+          "valid_queries": 6
+        },
+        "E1": {
+          "first_unique_turn": 9,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 6066,
+          "invalid": 0,
+          "output_tokens": 72,
+          "queries": 9,
+          "truncated": 0,
+          "valid_queries": 9
+        },
+        "E2": {
+          "first_unique_turn": 6,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 4080,
+          "invalid": 0,
+          "output_tokens": 48,
+          "queries": 6,
+          "truncated": 0,
+          "valid_queries": 6
+        },
+        "S": {
+          "first_unique_turn": null,
+          "information_bits": 7.39231742277876,
+          "input_tokens": 30336,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        }
+      },
+      "case_index": 49
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": 9,
+          "information_bits": 12.299208018387278,
+          "input_tokens": 4725,
+          "invalid": 0,
+          "output_tokens": 72,
+          "queries": 9,
+          "truncated": 0,
+          "valid_queries": 9
+        },
+        "E0": {
+          "first_unique_turn": 9,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 6318,
+          "invalid": 0,
+          "output_tokens": 72,
+          "queries": 9,
+          "truncated": 0,
+          "valid_queries": 9
+        },
+        "E1": {
+          "first_unique_turn": null,
+          "information_bits": 11.29920801838728,
+          "input_tokens": 32186,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        },
+        "E2": {
+          "first_unique_turn": 11,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 9573,
+          "invalid": 0,
+          "output_tokens": 88,
+          "queries": 11,
+          "truncated": 0,
+          "valid_queries": 11
+        },
+        "S": {
+          "first_unique_turn": null,
+          "information_bits": 7.39231742277876,
+          "input_tokens": 30336,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        }
+      },
+      "case_index": 50
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": 5,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 1865,
+          "invalid": 0,
+          "output_tokens": 40,
+          "queries": 5,
+          "truncated": 0,
+          "valid_queries": 5
+        },
+        "E0": {
+          "first_unique_turn": 8,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 5312,
+          "invalid": 0,
+          "output_tokens": 64,
+          "queries": 8,
+          "truncated": 0,
+          "valid_queries": 8
+        },
+        "E1": {
+          "first_unique_turn": 9,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 6066,
+          "invalid": 0,
+          "output_tokens": 72,
+          "queries": 9,
+          "truncated": 0,
+          "valid_queries": 9
+        },
+        "E2": {
+          "first_unique_turn": 7,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 5026,
+          "invalid": 0,
+          "output_tokens": 56,
+          "queries": 7,
+          "truncated": 0,
+          "valid_queries": 7
+        },
+        "S": {
+          "first_unique_turn": null,
+          "information_bits": 5.39231742277876,
+          "input_tokens": 30336,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        }
+      },
+      "case_index": 51
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": 9,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 4725,
+          "invalid": 0,
+          "output_tokens": 72,
+          "queries": 9,
+          "truncated": 0,
+          "valid_queries": 9
+        },
+        "E0": {
+          "first_unique_turn": 14,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 12503,
+          "invalid": 0,
+          "output_tokens": 112,
+          "queries": 14,
+          "truncated": 0,
+          "valid_queries": 14
+        },
+        "E1": {
+          "first_unique_turn": 17,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 16662,
+          "invalid": 0,
+          "output_tokens": 136,
+          "queries": 17,
+          "truncated": 0,
+          "valid_queries": 17
+        },
+        "E2": {
+          "first_unique_turn": 8,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 6048,
+          "invalid": 0,
+          "output_tokens": 64,
+          "queries": 8,
+          "truncated": 0,
+          "valid_queries": 8
+        },
+        "S": {
+          "first_unique_turn": null,
+          "information_bits": 7.392317422778761,
+          "input_tokens": 30336,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        }
+      },
+      "case_index": 52
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": 6,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 2466,
+          "invalid": 0,
+          "output_tokens": 48,
+          "queries": 6,
+          "truncated": 0,
+          "valid_queries": 6
+        },
+        "E0": {
+          "first_unique_turn": 8,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 5312,
+          "invalid": 0,
+          "output_tokens": 64,
+          "queries": 8,
+          "truncated": 0,
+          "valid_queries": 8
+        },
+        "E1": {
+          "first_unique_turn": null,
+          "information_bits": 11.29920801838728,
+          "input_tokens": 32186,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        },
+        "E2": {
+          "first_unique_turn": 23,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 30603,
+          "invalid": 0,
+          "output_tokens": 184,
+          "queries": 23,
+          "truncated": 0,
+          "valid_queries": 23
+        },
+        "S": {
+          "first_unique_turn": null,
+          "information_bits": 7.392317422778761,
+          "input_tokens": 30336,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        }
+      },
+      "case_index": 53
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": 3,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 891,
+          "invalid": 0,
+          "output_tokens": 24,
+          "queries": 3,
+          "truncated": 0,
+          "valid_queries": 3
+        },
+        "E0": {
+          "first_unique_turn": 8,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 5312,
+          "invalid": 0,
+          "output_tokens": 64,
+          "queries": 8,
+          "truncated": 0,
+          "valid_queries": 8
+        },
+        "E1": {
+          "first_unique_turn": null,
+          "information_bits": 11.29920801838728,
+          "input_tokens": 32186,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        },
+        "E2": {
+          "first_unique_turn": 8,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 6048,
+          "invalid": 0,
+          "output_tokens": 64,
+          "queries": 8,
+          "truncated": 0,
+          "valid_queries": 8
+        },
+        "S": {
+          "first_unique_turn": 5,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 2240,
+          "invalid": 0,
+          "output_tokens": 40,
+          "queries": 5,
+          "truncated": 0,
+          "valid_queries": 5
+        }
+      },
+      "case_index": 54
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": null,
+          "information_bits": 11.29920801838728,
+          "input_tokens": 28461,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        },
+        "E0": {
+          "first_unique_turn": null,
+          "information_bits": 11.29920801838728,
+          "input_tokens": 32886,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        },
+        "E1": {
+          "first_unique_turn": 11,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 8253,
+          "invalid": 0,
+          "output_tokens": 88,
+          "queries": 11,
+          "truncated": 0,
+          "valid_queries": 11
+        },
+        "E2": {
+          "first_unique_turn": 12,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 10902,
+          "invalid": 0,
+          "output_tokens": 96,
+          "queries": 12,
+          "truncated": 0,
+          "valid_queries": 12
+        },
+        "S": {
+          "first_unique_turn": null,
+          "information_bits": 7.392317422778761,
+          "input_tokens": 30336,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        }
+      },
+      "case_index": 55
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": 5,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 1865,
+          "invalid": 0,
+          "output_tokens": 40,
+          "queries": 5,
+          "truncated": 0,
+          "valid_queries": 5
+        },
+        "E0": {
+          "first_unique_turn": null,
+          "information_bits": 11.29920801838728,
+          "input_tokens": 32886,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        },
+        "E1": {
+          "first_unique_turn": null,
+          "information_bits": 11.29920801838728,
+          "input_tokens": 32186,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        },
+        "E2": {
+          "first_unique_turn": 10,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 8321,
+          "invalid": 0,
+          "output_tokens": 80,
+          "queries": 10,
+          "truncated": 0,
+          "valid_queries": 10
+        },
+        "S": {
+          "first_unique_turn": null,
+          "information_bits": 7.392317422778761,
+          "input_tokens": 30336,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        }
+      },
+      "case_index": 56
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": 7,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 3143,
+          "invalid": 0,
+          "output_tokens": 56,
+          "queries": 7,
+          "truncated": 0,
+          "valid_queries": 7
+        },
+        "E0": {
+          "first_unique_turn": 8,
+          "information_bits": 12.299208018387278,
+          "input_tokens": 5312,
+          "invalid": 0,
+          "output_tokens": 64,
+          "queries": 8,
+          "truncated": 0,
+          "valid_queries": 8
+        },
+        "E1": {
+          "first_unique_turn": 6,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 3360,
+          "invalid": 0,
+          "output_tokens": 48,
+          "queries": 6,
+          "truncated": 0,
+          "valid_queries": 6
+        },
+        "E2": {
+          "first_unique_turn": 9,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 7146,
+          "invalid": 0,
+          "output_tokens": 72,
+          "queries": 9,
+          "truncated": 0,
+          "valid_queries": 9
+        },
+        "S": {
+          "first_unique_turn": null,
+          "information_bits": 5.39231742277876,
+          "input_tokens": 30336,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        }
+      },
+      "case_index": 57
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": null,
+          "information_bits": 11.29920801838728,
+          "input_tokens": 28461,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        },
+        "E0": {
+          "first_unique_turn": 13,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 11112,
+          "invalid": 0,
+          "output_tokens": 104,
+          "queries": 13,
+          "truncated": 0,
+          "valid_queries": 13
+        },
+        "E1": {
+          "first_unique_turn": 12,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 9462,
+          "invalid": 0,
+          "output_tokens": 96,
+          "queries": 12,
+          "truncated": 0,
+          "valid_queries": 12
+        },
+        "E2": {
+          "first_unique_turn": 7,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 5026,
+          "invalid": 0,
+          "output_tokens": 56,
+          "queries": 7,
+          "truncated": 0,
+          "valid_queries": 7
+        },
+        "S": {
+          "first_unique_turn": null,
+          "information_bits": 5.39231742277876,
+          "input_tokens": 30336,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        }
+      },
+      "case_index": 58
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": 7,
+          "information_bits": 12.299208018387278,
+          "input_tokens": 3143,
+          "invalid": 0,
+          "output_tokens": 56,
+          "queries": 7,
+          "truncated": 0,
+          "valid_queries": 7
+        },
+        "E0": {
+          "first_unique_turn": 8,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 5312,
+          "invalid": 0,
+          "output_tokens": 64,
+          "queries": 8,
+          "truncated": 0,
+          "valid_queries": 8
+        },
+        "E1": {
+          "first_unique_turn": 19,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 20081,
+          "invalid": 0,
+          "output_tokens": 152,
+          "queries": 19,
+          "truncated": 0,
+          "valid_queries": 19
+        },
+        "E2": {
+          "first_unique_turn": 13,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 12308,
+          "invalid": 0,
+          "output_tokens": 104,
+          "queries": 13,
+          "truncated": 0,
+          "valid_queries": 13
+        },
+        "S": {
+          "first_unique_turn": null,
+          "information_bits": 7.39231742277876,
+          "input_tokens": 30336,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        }
+      },
+      "case_index": 59
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": 8,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 3896,
+          "invalid": 0,
+          "output_tokens": 64,
+          "queries": 8,
+          "truncated": 0,
+          "valid_queries": 8
+        },
+        "E0": {
+          "first_unique_turn": null,
+          "information_bits": 11.299208018387278,
+          "input_tokens": 32886,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        },
+        "E1": {
+          "first_unique_turn": 7,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 4186,
+          "invalid": 0,
+          "output_tokens": 56,
+          "queries": 7,
+          "truncated": 0,
+          "valid_queries": 7
+        },
+        "E2": {
+          "first_unique_turn": 11,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 9573,
+          "invalid": 0,
+          "output_tokens": 88,
+          "queries": 11,
+          "truncated": 0,
+          "valid_queries": 11
+        },
+        "S": {
+          "first_unique_turn": null,
+          "information_bits": 5.39231742277876,
+          "input_tokens": 30336,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        }
+      },
+      "case_index": 60
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": null,
+          "information_bits": 10.714245517666123,
+          "input_tokens": 28461,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        },
+        "E0": {
+          "first_unique_turn": 6,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 3528,
+          "invalid": 0,
+          "output_tokens": 48,
+          "queries": 6,
+          "truncated": 0,
+          "valid_queries": 6
+        },
+        "E1": {
+          "first_unique_turn": 5,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 2610,
+          "invalid": 0,
+          "output_tokens": 40,
+          "queries": 5,
+          "truncated": 0,
+          "valid_queries": 5
+        },
+        "E2": {
+          "first_unique_turn": 5,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 3210,
+          "invalid": 0,
+          "output_tokens": 40,
+          "queries": 5,
+          "truncated": 0,
+          "valid_queries": 5
+        },
+        "S": {
+          "first_unique_turn": null,
+          "information_bits": 5.392317422778761,
+          "input_tokens": 30336,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        }
+      },
+      "case_index": 61
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": 15,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 11316,
+          "invalid": 0,
+          "output_tokens": 120,
+          "queries": 15,
+          "truncated": 0,
+          "valid_queries": 15
+        },
+        "E0": {
+          "first_unique_turn": null,
+          "information_bits": 6.321928094887363,
+          "input_tokens": 32886,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        },
+        "E1": {
+          "first_unique_turn": null,
+          "information_bits": 8.839776399749983,
+          "input_tokens": 32186,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        },
+        "E2": {
+          "first_unique_turn": null,
+          "information_bits": 11.29920801838728,
+          "input_tokens": 35186,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        },
+        "S": {
+          "first_unique_turn": null,
+          "information_bits": 7.39231742277876,
+          "input_tokens": 30336,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        }
+      },
+      "case_index": 62
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": null,
+          "information_bits": 11.299208018387278,
+          "input_tokens": 28461,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        },
+        "E0": {
+          "first_unique_turn": 6,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 3528,
+          "invalid": 0,
+          "output_tokens": 48,
+          "queries": 6,
+          "truncated": 0,
+          "valid_queries": 6
+        },
+        "E1": {
+          "first_unique_turn": 9,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 6066,
+          "invalid": 0,
+          "output_tokens": 72,
+          "queries": 9,
+          "truncated": 0,
+          "valid_queries": 9
+        },
+        "E2": {
+          "first_unique_turn": 10,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 8321,
+          "invalid": 0,
+          "output_tokens": 80,
+          "queries": 10,
+          "truncated": 0,
+          "valid_queries": 10
+        },
+        "S": {
+          "first_unique_turn": null,
+          "information_bits": 7.39231742277876,
+          "input_tokens": 30336,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        }
+      },
+      "case_index": 63
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": 9,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 4725,
+          "invalid": 0,
+          "output_tokens": 72,
+          "queries": 9,
+          "truncated": 0,
+          "valid_queries": 9
+        },
+        "E0": {
+          "first_unique_turn": null,
+          "information_bits": 11.299208018387278,
+          "input_tokens": 32886,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        },
+        "E1": {
+          "first_unique_turn": null,
+          "information_bits": 7.906890595608519,
+          "input_tokens": 32186,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        },
+        "E2": {
+          "first_unique_turn": 9,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 7146,
+          "invalid": 0,
+          "output_tokens": 72,
+          "queries": 9,
+          "truncated": 0,
+          "valid_queries": 9
+        },
+        "S": {
+          "first_unique_turn": null,
+          "information_bits": 7.39231742277876,
+          "input_tokens": 30336,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        }
+      },
+      "case_index": 64
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": 8,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 3896,
+          "invalid": 0,
+          "output_tokens": 64,
+          "queries": 8,
+          "truncated": 0,
+          "valid_queries": 8
+        },
+        "E0": {
+          "first_unique_turn": null,
+          "information_bits": 11.29920801838728,
+          "input_tokens": 32886,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        },
+        "E1": {
+          "first_unique_turn": 7,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 4186,
+          "invalid": 0,
+          "output_tokens": 56,
+          "queries": 7,
+          "truncated": 0,
+          "valid_queries": 7
+        },
+        "E2": {
+          "first_unique_turn": 7,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 5026,
+          "invalid": 0,
+          "output_tokens": 56,
+          "queries": 7,
+          "truncated": 0,
+          "valid_queries": 7
+        },
+        "S": {
+          "first_unique_turn": null,
+          "information_bits": 7.39231742277876,
+          "input_tokens": 30336,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        }
+      },
+      "case_index": 65
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": 4,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 1340,
+          "invalid": 0,
+          "output_tokens": 32,
+          "queries": 4,
+          "truncated": 0,
+          "valid_queries": 4
+        },
+        "E0": {
+          "first_unique_turn": null,
+          "information_bits": 11.29920801838728,
+          "input_tokens": 32886,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        },
+        "E1": {
+          "first_unique_turn": 18,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 18333,
+          "invalid": 0,
+          "output_tokens": 144,
+          "queries": 18,
+          "truncated": 0,
+          "valid_queries": 18
+        },
+        "E2": {
+          "first_unique_turn": 7,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 5026,
+          "invalid": 0,
+          "output_tokens": 56,
+          "queries": 7,
+          "truncated": 0,
+          "valid_queries": 7
+        },
+        "S": {
+          "first_unique_turn": 8,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 4496,
+          "invalid": 0,
+          "output_tokens": 64,
+          "queries": 8,
+          "truncated": 0,
+          "valid_queries": 8
+        }
+      },
+      "case_index": 66
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": 10,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 5631,
+          "invalid": 0,
+          "output_tokens": 80,
+          "queries": 10,
+          "truncated": 0,
+          "valid_queries": 10
+        },
+        "E0": {
+          "first_unique_turn": 13,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 11112,
+          "invalid": 0,
+          "output_tokens": 104,
+          "queries": 13,
+          "truncated": 0,
+          "valid_queries": 13
+        },
+        "E1": {
+          "first_unique_turn": 10,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 7121,
+          "invalid": 0,
+          "output_tokens": 80,
+          "queries": 10,
+          "truncated": 0,
+          "valid_queries": 10
+        },
+        "E2": {
+          "first_unique_turn": 16,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 16988,
+          "invalid": 0,
+          "output_tokens": 128,
+          "queries": 16,
+          "truncated": 0,
+          "valid_queries": 16
+        },
+        "S": {
+          "first_unique_turn": null,
+          "information_bits": 5.39231742277876,
+          "input_tokens": 30336,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        }
+      },
+      "case_index": 67
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": 6,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 2466,
+          "invalid": 0,
+          "output_tokens": 48,
+          "queries": 6,
+          "truncated": 0,
+          "valid_queries": 6
+        },
+        "E0": {
+          "first_unique_turn": null,
+          "information_bits": 11.29920801838728,
+          "input_tokens": 32886,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        },
+        "E1": {
+          "first_unique_turn": 6,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 3360,
+          "invalid": 0,
+          "output_tokens": 48,
+          "queries": 6,
+          "truncated": 0,
+          "valid_queries": 6
+        },
+        "E2": {
+          "first_unique_turn": 8,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 6048,
+          "invalid": 0,
+          "output_tokens": 64,
+          "queries": 8,
+          "truncated": 0,
+          "valid_queries": 8
+        },
+        "S": {
+          "first_unique_turn": null,
+          "information_bits": 11.29920801838728,
+          "input_tokens": 30336,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        }
+      },
+      "case_index": 68
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": 11,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 6614,
+          "invalid": 0,
+          "output_tokens": 88,
+          "queries": 11,
+          "truncated": 0,
+          "valid_queries": 11
+        },
+        "E0": {
+          "first_unique_turn": 7,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 4382,
+          "invalid": 0,
+          "output_tokens": 56,
+          "queries": 7,
+          "truncated": 0,
+          "valid_queries": 7
+        },
+        "E1": {
+          "first_unique_turn": 8,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 5088,
+          "invalid": 0,
+          "output_tokens": 64,
+          "queries": 8,
+          "truncated": 0,
+          "valid_queries": 8
+        },
+        "E2": {
+          "first_unique_turn": 7,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 5026,
+          "invalid": 0,
+          "output_tokens": 56,
+          "queries": 7,
+          "truncated": 0,
+          "valid_queries": 7
+        },
+        "S": {
+          "first_unique_turn": null,
+          "information_bits": 7.39231742277876,
+          "input_tokens": 30336,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        }
+      },
+      "case_index": 69
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": 8,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 3896,
+          "invalid": 0,
+          "output_tokens": 64,
+          "queries": 8,
+          "truncated": 0,
+          "valid_queries": 8
+        },
+        "E0": {
+          "first_unique_turn": 4,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 2048,
+          "invalid": 0,
+          "output_tokens": 32,
+          "queries": 4,
+          "truncated": 0,
+          "valid_queries": 4
+        },
+        "E1": {
+          "first_unique_turn": 8,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 5088,
+          "invalid": 0,
+          "output_tokens": 64,
+          "queries": 8,
+          "truncated": 0,
+          "valid_queries": 8
+        },
+        "E2": {
+          "first_unique_turn": 11,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 9573,
+          "invalid": 0,
+          "output_tokens": 88,
+          "queries": 11,
+          "truncated": 0,
+          "valid_queries": 11
+        },
+        "S": {
+          "first_unique_turn": null,
+          "information_bits": 7.39231742277876,
+          "input_tokens": 30336,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        }
+      },
+      "case_index": 70
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": 7,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 3143,
+          "invalid": 0,
+          "output_tokens": 56,
+          "queries": 7,
+          "truncated": 0,
+          "valid_queries": 7
+        },
+        "E0": {
+          "first_unique_turn": null,
+          "information_bits": 10.299208018387278,
+          "input_tokens": 32886,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        },
+        "E1": {
+          "first_unique_turn": 9,
+          "information_bits": 12.299208018387278,
+          "input_tokens": 6066,
+          "invalid": 0,
+          "output_tokens": 72,
+          "queries": 9,
+          "truncated": 0,
+          "valid_queries": 9
+        },
+        "E2": {
+          "first_unique_turn": null,
+          "information_bits": 11.29920801838728,
+          "input_tokens": 35186,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        },
+        "S": {
+          "first_unique_turn": null,
+          "information_bits": 5.39231742277876,
+          "input_tokens": 30336,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        }
+      },
+      "case_index": 71
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": 11,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 6614,
+          "invalid": 0,
+          "output_tokens": 88,
+          "queries": 11,
+          "truncated": 0,
+          "valid_queries": 11
+        },
+        "E0": {
+          "first_unique_turn": null,
+          "information_bits": 11.29920801838728,
+          "input_tokens": 32886,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        },
+        "E1": {
+          "first_unique_turn": null,
+          "information_bits": 11.29920801838728,
+          "input_tokens": 32186,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        },
+        "E2": {
+          "first_unique_turn": 8,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 6048,
+          "invalid": 0,
+          "output_tokens": 64,
+          "queries": 8,
+          "truncated": 0,
+          "valid_queries": 8
+        },
+        "S": {
+          "first_unique_turn": null,
+          "information_bits": 5.39231742277876,
+          "input_tokens": 30336,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        }
+      },
+      "case_index": 72
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": 7,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 3143,
+          "invalid": 0,
+          "output_tokens": 56,
+          "queries": 7,
+          "truncated": 0,
+          "valid_queries": 7
+        },
+        "E0": {
+          "first_unique_turn": 4,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 2048,
+          "invalid": 0,
+          "output_tokens": 32,
+          "queries": 4,
+          "truncated": 0,
+          "valid_queries": 4
+        },
+        "E1": {
+          "first_unique_turn": 6,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 3360,
+          "invalid": 0,
+          "output_tokens": 48,
+          "queries": 6,
+          "truncated": 0,
+          "valid_queries": 6
+        },
+        "E2": {
+          "first_unique_turn": null,
+          "information_bits": 11.29920801838728,
+          "input_tokens": 35186,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        },
+        "S": {
+          "first_unique_turn": null,
+          "information_bits": 7.39231742277876,
+          "input_tokens": 30336,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        }
+      },
+      "case_index": 73
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": 7,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 3143,
+          "invalid": 0,
+          "output_tokens": 56,
+          "queries": 7,
+          "truncated": 0,
+          "valid_queries": 7
+        },
+        "E0": {
+          "first_unique_turn": 11,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 8561,
+          "invalid": 0,
+          "output_tokens": 88,
+          "queries": 11,
+          "truncated": 0,
+          "valid_queries": 11
+        },
+        "E1": {
+          "first_unique_turn": null,
+          "information_bits": 9.29920801838728,
+          "input_tokens": 32186,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        },
+        "E2": {
+          "first_unique_turn": 6,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 4080,
+          "invalid": 0,
+          "output_tokens": 48,
+          "queries": 6,
+          "truncated": 0,
+          "valid_queries": 6
+        },
+        "S": {
+          "first_unique_turn": null,
+          "information_bits": 7.39231742277876,
+          "input_tokens": 30336,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        }
+      },
+      "case_index": 74
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": 11,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 6614,
+          "invalid": 0,
+          "output_tokens": 88,
+          "queries": 11,
+          "truncated": 0,
+          "valid_queries": 11
+        },
+        "E0": {
+          "first_unique_turn": 18,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 18837,
+          "invalid": 0,
+          "output_tokens": 144,
+          "queries": 18,
+          "truncated": 0,
+          "valid_queries": 18
+        },
+        "E1": {
+          "first_unique_turn": 14,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 12111,
+          "invalid": 0,
+          "output_tokens": 112,
+          "queries": 14,
+          "truncated": 0,
+          "valid_queries": 14
+        },
+        "E2": {
+          "first_unique_turn": 10,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 8321,
+          "invalid": 0,
+          "output_tokens": 80,
+          "queries": 10,
+          "truncated": 0,
+          "valid_queries": 10
+        },
+        "S": {
+          "first_unique_turn": null,
+          "information_bits": 5.39231742277876,
+          "input_tokens": 30336,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        }
+      },
+      "case_index": 75
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": null,
+          "information_bits": 11.29920801838728,
+          "input_tokens": 28461,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        },
+        "E0": {
+          "first_unique_turn": 23,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 28487,
+          "invalid": 0,
+          "output_tokens": 184,
+          "queries": 23,
+          "truncated": 0,
+          "valid_queries": 23
+        },
+        "E1": {
+          "first_unique_turn": 8,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 5088,
+          "invalid": 0,
+          "output_tokens": 64,
+          "queries": 8,
+          "truncated": 0,
+          "valid_queries": 8
+        },
+        "E2": {
+          "first_unique_turn": null,
+          "information_bits": 11.29920801838728,
+          "input_tokens": 35186,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        },
+        "S": {
+          "first_unique_turn": null,
+          "information_bits": 8.714245517666123,
+          "input_tokens": 30384,
+          "invalid": 0,
+          "output_tokens": 210,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        }
+      },
+      "case_index": 76
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": 14,
+          "information_bits": 12.299208018387278,
+          "input_tokens": 10025,
+          "invalid": 0,
+          "output_tokens": 112,
+          "queries": 14,
+          "truncated": 0,
+          "valid_queries": 14
+        },
+        "E0": {
+          "first_unique_turn": null,
+          "information_bits": 9.714245517666122,
+          "input_tokens": 32886,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        },
+        "E1": {
+          "first_unique_turn": null,
+          "information_bits": 11.29920801838728,
+          "input_tokens": 32186,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        },
+        "E2": {
+          "first_unique_turn": 9,
+          "information_bits": 12.299208018387278,
+          "input_tokens": 7146,
+          "invalid": 0,
+          "output_tokens": 72,
+          "queries": 9,
+          "truncated": 0,
+          "valid_queries": 9
+        },
+        "S": {
+          "first_unique_turn": null,
+          "information_bits": 9.714245517666122,
+          "input_tokens": 30336,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        }
+      },
+      "case_index": 77
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": 13,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 8811,
+          "invalid": 0,
+          "output_tokens": 104,
+          "queries": 13,
+          "truncated": 0,
+          "valid_queries": 13
+        },
+        "E0": {
+          "first_unique_turn": 6,
+          "information_bits": 12.299208018387278,
+          "input_tokens": 3528,
+          "invalid": 0,
+          "output_tokens": 48,
+          "queries": 6,
+          "truncated": 0,
+          "valid_queries": 6
+        },
+        "E1": {
+          "first_unique_turn": null,
+          "information_bits": 11.29920801838728,
+          "input_tokens": 32186,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        },
+        "E2": {
+          "first_unique_turn": 7,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 5026,
+          "invalid": 0,
+          "output_tokens": 56,
+          "queries": 7,
+          "truncated": 0,
+          "valid_queries": 7
+        },
+        "S": {
+          "first_unique_turn": 10,
+          "information_bits": 12.299208018387278,
+          "input_tokens": 6381,
+          "invalid": 0,
+          "output_tokens": 80,
+          "queries": 10,
+          "truncated": 0,
+          "valid_queries": 10
+        }
+      },
+      "case_index": 78
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": 7,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 3143,
+          "invalid": 0,
+          "output_tokens": 56,
+          "queries": 7,
+          "truncated": 0,
+          "valid_queries": 7
+        },
+        "E0": {
+          "first_unique_turn": null,
+          "information_bits": 10.714245517666123,
+          "input_tokens": 32886,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        },
+        "E1": {
+          "first_unique_turn": null,
+          "information_bits": 11.29920801838728,
+          "input_tokens": 32186,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        },
+        "E2": {
+          "first_unique_turn": 6,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 4080,
+          "invalid": 0,
+          "output_tokens": 48,
+          "queries": 6,
+          "truncated": 0,
+          "valid_queries": 6
+        },
+        "S": {
+          "first_unique_turn": 19,
+          "information_bits": 12.299208018387278,
+          "input_tokens": 18675,
+          "invalid": 0,
+          "output_tokens": 152,
+          "queries": 19,
+          "truncated": 0,
+          "valid_queries": 19
+        }
+      },
+      "case_index": 79
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": 5,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 1865,
+          "invalid": 0,
+          "output_tokens": 40,
+          "queries": 5,
+          "truncated": 0,
+          "valid_queries": 5
+        },
+        "E0": {
+          "first_unique_turn": 13,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 11112,
+          "invalid": 0,
+          "output_tokens": 104,
+          "queries": 13,
+          "truncated": 0,
+          "valid_queries": 13
+        },
+        "E1": {
+          "first_unique_turn": 8,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 5088,
+          "invalid": 0,
+          "output_tokens": 64,
+          "queries": 8,
+          "truncated": 0,
+          "valid_queries": 8
+        },
+        "E2": {
+          "first_unique_turn": 7,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 5026,
+          "invalid": 0,
+          "output_tokens": 56,
+          "queries": 7,
+          "truncated": 0,
+          "valid_queries": 7
+        },
+        "S": {
+          "first_unique_turn": null,
+          "information_bits": 7.39231742277876,
+          "input_tokens": 30336,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        }
+      },
+      "case_index": 80
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": 14,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 10025,
+          "invalid": 0,
+          "output_tokens": 112,
+          "queries": 14,
+          "truncated": 0,
+          "valid_queries": 14
+        },
+        "E0": {
+          "first_unique_turn": 5,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 2750,
+          "invalid": 0,
+          "output_tokens": 40,
+          "queries": 5,
+          "truncated": 0,
+          "valid_queries": 5
+        },
+        "E1": {
+          "first_unique_turn": 6,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 3360,
+          "invalid": 0,
+          "output_tokens": 48,
+          "queries": 6,
+          "truncated": 0,
+          "valid_queries": 6
+        },
+        "E2": {
+          "first_unique_turn": 12,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 10902,
+          "invalid": 0,
+          "output_tokens": 96,
+          "queries": 12,
+          "truncated": 0,
+          "valid_queries": 12
+        },
+        "S": {
+          "first_unique_turn": null,
+          "information_bits": 7.392317422778761,
+          "input_tokens": 30336,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        }
+      },
+      "case_index": 81
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": 18,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 15651,
+          "invalid": 0,
+          "output_tokens": 144,
+          "queries": 18,
+          "truncated": 0,
+          "valid_queries": 18
+        },
+        "E0": {
+          "first_unique_turn": null,
+          "information_bits": 11.29920801838728,
+          "input_tokens": 32886,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        },
+        "E1": {
+          "first_unique_turn": null,
+          "information_bits": 10.714245517666123,
+          "input_tokens": 32186,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        },
+        "E2": {
+          "first_unique_turn": 9,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 7146,
+          "invalid": 0,
+          "output_tokens": 72,
+          "queries": 9,
+          "truncated": 0,
+          "valid_queries": 9
+        },
+        "S": {
+          "first_unique_turn": null,
+          "information_bits": 5.39231742277876,
+          "input_tokens": 30336,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        }
+      },
+      "case_index": 82
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": 6,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 2466,
+          "invalid": 0,
+          "output_tokens": 48,
+          "queries": 6,
+          "truncated": 0,
+          "valid_queries": 6
+        },
+        "E0": {
+          "first_unique_turn": 7,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 4382,
+          "invalid": 0,
+          "output_tokens": 56,
+          "queries": 7,
+          "truncated": 0,
+          "valid_queries": 7
+        },
+        "E1": {
+          "first_unique_turn": 6,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 3360,
+          "invalid": 0,
+          "output_tokens": 48,
+          "queries": 6,
+          "truncated": 0,
+          "valid_queries": 6
+        },
+        "E2": {
+          "first_unique_turn": 7,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 5026,
+          "invalid": 0,
+          "output_tokens": 56,
+          "queries": 7,
+          "truncated": 0,
+          "valid_queries": 7
+        },
+        "S": {
+          "first_unique_turn": null,
+          "information_bits": 7.977279923499916,
+          "input_tokens": 30336,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        }
+      },
+      "case_index": 83
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": 6,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 2466,
+          "invalid": 0,
+          "output_tokens": 48,
+          "queries": 6,
+          "truncated": 0,
+          "valid_queries": 6
+        },
+        "E0": {
+          "first_unique_turn": 4,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 2048,
+          "invalid": 0,
+          "output_tokens": 32,
+          "queries": 4,
+          "truncated": 0,
+          "valid_queries": 4
+        },
+        "E1": {
+          "first_unique_turn": 7,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 4186,
+          "invalid": 0,
+          "output_tokens": 56,
+          "queries": 7,
+          "truncated": 0,
+          "valid_queries": 7
+        },
+        "E2": {
+          "first_unique_turn": 5,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 3210,
+          "invalid": 0,
+          "output_tokens": 40,
+          "queries": 5,
+          "truncated": 0,
+          "valid_queries": 5
+        },
+        "S": {
+          "first_unique_turn": null,
+          "information_bits": 11.29920801838728,
+          "input_tokens": 30336,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        }
+      },
+      "case_index": 84
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": 15,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 11316,
+          "invalid": 0,
+          "output_tokens": 120,
+          "queries": 15,
+          "truncated": 0,
+          "valid_queries": 15
+        },
+        "E0": {
+          "first_unique_turn": 14,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 12503,
+          "invalid": 0,
+          "output_tokens": 112,
+          "queries": 14,
+          "truncated": 0,
+          "valid_queries": 14
+        },
+        "E1": {
+          "first_unique_turn": 8,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 5088,
+          "invalid": 0,
+          "output_tokens": 64,
+          "queries": 8,
+          "truncated": 0,
+          "valid_queries": 8
+        },
+        "E2": {
+          "first_unique_turn": 11,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 9573,
+          "invalid": 0,
+          "output_tokens": 88,
+          "queries": 11,
+          "truncated": 0,
+          "valid_queries": 11
+        },
+        "S": {
+          "first_unique_turn": null,
+          "information_bits": 5.39231742277876,
+          "input_tokens": 30336,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        }
+      },
+      "case_index": 85
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": 16,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 12684,
+          "invalid": 0,
+          "output_tokens": 128,
+          "queries": 16,
+          "truncated": 0,
+          "valid_queries": 16
+        },
+        "E0": {
+          "first_unique_turn": 15,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 13971,
+          "invalid": 0,
+          "output_tokens": 120,
+          "queries": 15,
+          "truncated": 0,
+          "valid_queries": 15
+        },
+        "E1": {
+          "first_unique_turn": null,
+          "information_bits": 10.29920801838728,
+          "input_tokens": 32186,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        },
+        "E2": {
+          "first_unique_turn": 7,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 5026,
+          "invalid": 0,
+          "output_tokens": 56,
+          "queries": 7,
+          "truncated": 0,
+          "valid_queries": 7
+        },
+        "S": {
+          "first_unique_turn": null,
+          "information_bits": 7.39231742277876,
+          "input_tokens": 30336,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        }
+      },
+      "case_index": 86
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": 8,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 3896,
+          "invalid": 0,
+          "output_tokens": 64,
+          "queries": 8,
+          "truncated": 0,
+          "valid_queries": 8
+        },
+        "E0": {
+          "first_unique_turn": null,
+          "information_bits": 8.714245517666123,
+          "input_tokens": 32886,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        },
+        "E1": {
+          "first_unique_turn": 7,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 4186,
+          "invalid": 0,
+          "output_tokens": 56,
+          "queries": 7,
+          "truncated": 0,
+          "valid_queries": 7
+        },
+        "E2": {
+          "first_unique_turn": 8,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 6048,
+          "invalid": 0,
+          "output_tokens": 64,
+          "queries": 8,
+          "truncated": 0,
+          "valid_queries": 8
+        },
+        "S": {
+          "first_unique_turn": null,
+          "information_bits": 5.39231742277876,
+          "input_tokens": 30336,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        }
+      },
+      "case_index": 87
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": 5,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 1865,
+          "invalid": 0,
+          "output_tokens": 40,
+          "queries": 5,
+          "truncated": 0,
+          "valid_queries": 5
+        },
+        "E0": {
+          "first_unique_turn": 8,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 5312,
+          "invalid": 0,
+          "output_tokens": 64,
+          "queries": 8,
+          "truncated": 0,
+          "valid_queries": 8
+        },
+        "E1": {
+          "first_unique_turn": 15,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 13551,
+          "invalid": 0,
+          "output_tokens": 120,
+          "queries": 15,
+          "truncated": 0,
+          "valid_queries": 15
+        },
+        "E2": {
+          "first_unique_turn": 14,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 13791,
+          "invalid": 0,
+          "output_tokens": 112,
+          "queries": 14,
+          "truncated": 0,
+          "valid_queries": 14
+        },
+        "S": {
+          "first_unique_turn": null,
+          "information_bits": 7.392317422778761,
+          "input_tokens": 30336,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        }
+      },
+      "case_index": 88
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": 6,
+          "information_bits": 12.299208018387278,
+          "input_tokens": 2466,
+          "invalid": 0,
+          "output_tokens": 48,
+          "queries": 6,
+          "truncated": 0,
+          "valid_queries": 6
+        },
+        "E0": {
+          "first_unique_turn": 19,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 20613,
+          "invalid": 0,
+          "output_tokens": 152,
+          "queries": 19,
+          "truncated": 0,
+          "valid_queries": 19
+        },
+        "E1": {
+          "first_unique_turn": 5,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 2610,
+          "invalid": 0,
+          "output_tokens": 40,
+          "queries": 5,
+          "truncated": 0,
+          "valid_queries": 5
+        },
+        "E2": {
+          "first_unique_turn": 6,
+          "information_bits": 12.299208018387278,
+          "input_tokens": 4080,
+          "invalid": 0,
+          "output_tokens": 48,
+          "queries": 6,
+          "truncated": 0,
+          "valid_queries": 6
+        },
+        "S": {
+          "first_unique_turn": null,
+          "information_bits": 5.39231742277876,
+          "input_tokens": 30336,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        }
+      },
+      "case_index": 89
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": 7,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 3143,
+          "invalid": 0,
+          "output_tokens": 56,
+          "queries": 7,
+          "truncated": 0,
+          "valid_queries": 7
+        },
+        "E0": {
+          "first_unique_turn": 7,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 4382,
+          "invalid": 0,
+          "output_tokens": 56,
+          "queries": 7,
+          "truncated": 0,
+          "valid_queries": 7
+        },
+        "E1": {
+          "first_unique_turn": 16,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 15068,
+          "invalid": 0,
+          "output_tokens": 128,
+          "queries": 16,
+          "truncated": 0,
+          "valid_queries": 16
+        },
+        "E2": {
+          "first_unique_turn": 8,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 6048,
+          "invalid": 0,
+          "output_tokens": 64,
+          "queries": 8,
+          "truncated": 0,
+          "valid_queries": 8
+        },
+        "S": {
+          "first_unique_turn": null,
+          "information_bits": 7.39231742277876,
+          "input_tokens": 30336,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        }
+      },
+      "case_index": 90
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": 5,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 1865,
+          "invalid": 0,
+          "output_tokens": 40,
+          "queries": 5,
+          "truncated": 0,
+          "valid_queries": 5
+        },
+        "E0": {
+          "first_unique_turn": 11,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 8561,
+          "invalid": 0,
+          "output_tokens": 88,
+          "queries": 11,
+          "truncated": 0,
+          "valid_queries": 11
+        },
+        "E1": {
+          "first_unique_turn": 12,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 9462,
+          "invalid": 0,
+          "output_tokens": 96,
+          "queries": 12,
+          "truncated": 0,
+          "valid_queries": 12
+        },
+        "E2": {
+          "first_unique_turn": 5,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 3210,
+          "invalid": 0,
+          "output_tokens": 40,
+          "queries": 5,
+          "truncated": 0,
+          "valid_queries": 5
+        },
+        "S": {
+          "first_unique_turn": null,
+          "information_bits": 7.39231742277876,
+          "input_tokens": 30336,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        }
+      },
+      "case_index": 91
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": null,
+          "information_bits": 9.714245517666123,
+          "input_tokens": 28461,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        },
+        "E0": {
+          "first_unique_turn": null,
+          "information_bits": 11.299208018387278,
+          "input_tokens": 32886,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        },
+        "E1": {
+          "first_unique_turn": 7,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 4186,
+          "invalid": 0,
+          "output_tokens": 56,
+          "queries": 7,
+          "truncated": 0,
+          "valid_queries": 7
+        },
+        "E2": {
+          "first_unique_turn": 6,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 4080,
+          "invalid": 0,
+          "output_tokens": 48,
+          "queries": 6,
+          "truncated": 0,
+          "valid_queries": 6
+        },
+        "S": {
+          "first_unique_turn": null,
+          "information_bits": 9.714245517666122,
+          "input_tokens": 30336,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        }
+      },
+      "case_index": 92
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": 8,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 3896,
+          "invalid": 0,
+          "output_tokens": 64,
+          "queries": 8,
+          "truncated": 0,
+          "valid_queries": 8
+        },
+        "E0": {
+          "first_unique_turn": 20,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 22466,
+          "invalid": 0,
+          "output_tokens": 160,
+          "queries": 20,
+          "truncated": 0,
+          "valid_queries": 20
+        },
+        "E1": {
+          "first_unique_turn": 9,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 6066,
+          "invalid": 0,
+          "output_tokens": 72,
+          "queries": 9,
+          "truncated": 0,
+          "valid_queries": 9
+        },
+        "E2": {
+          "first_unique_turn": 5,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 3210,
+          "invalid": 0,
+          "output_tokens": 40,
+          "queries": 5,
+          "truncated": 0,
+          "valid_queries": 5
+        },
+        "S": {
+          "first_unique_turn": null,
+          "information_bits": 5.39231742277876,
+          "input_tokens": 30336,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        }
+      },
+      "case_index": 93
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": 6,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 2466,
+          "invalid": 0,
+          "output_tokens": 48,
+          "queries": 6,
+          "truncated": 0,
+          "valid_queries": 6
+        },
+        "E0": {
+          "first_unique_turn": null,
+          "information_bits": 11.29920801838728,
+          "input_tokens": 32886,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        },
+        "E1": {
+          "first_unique_turn": 7,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 4186,
+          "invalid": 0,
+          "output_tokens": 56,
+          "queries": 7,
+          "truncated": 0,
+          "valid_queries": 7
+        },
+        "E2": {
+          "first_unique_turn": 9,
+          "information_bits": 12.299208018387278,
+          "input_tokens": 7146,
+          "invalid": 0,
+          "output_tokens": 72,
+          "queries": 9,
+          "truncated": 0,
+          "valid_queries": 9
+        },
+        "S": {
+          "first_unique_turn": null,
+          "information_bits": 5.39231742277876,
+          "input_tokens": 30336,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        }
+      },
+      "case_index": 94
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": 10,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 5631,
+          "invalid": 0,
+          "output_tokens": 80,
+          "queries": 10,
+          "truncated": 0,
+          "valid_queries": 10
+        },
+        "E0": {
+          "first_unique_turn": 5,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 2750,
+          "invalid": 0,
+          "output_tokens": 40,
+          "queries": 5,
+          "truncated": 0,
+          "valid_queries": 5
+        },
+        "E1": {
+          "first_unique_turn": null,
+          "information_bits": 11.299208018387278,
+          "input_tokens": 32186,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        },
+        "E2": {
+          "first_unique_turn": 8,
+          "information_bits": 12.299208018387278,
+          "input_tokens": 6048,
+          "invalid": 0,
+          "output_tokens": 64,
+          "queries": 8,
+          "truncated": 0,
+          "valid_queries": 8
+        },
+        "S": {
+          "first_unique_turn": 13,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 9786,
+          "invalid": 0,
+          "output_tokens": 104,
+          "queries": 13,
+          "truncated": 0,
+          "valid_queries": 13
+        }
+      },
+      "case_index": 95
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": null,
+          "information_bits": 11.29920801838728,
+          "input_tokens": 28461,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        },
+        "E0": {
+          "first_unique_turn": null,
+          "information_bits": 6.906890595608519,
+          "input_tokens": 32886,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        },
+        "E1": {
+          "first_unique_turn": null,
+          "information_bits": 7.906890595608519,
+          "input_tokens": 32186,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        },
+        "E2": {
+          "first_unique_turn": 6,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 4080,
+          "invalid": 0,
+          "output_tokens": 48,
+          "queries": 6,
+          "truncated": 0,
+          "valid_queries": 6
+        },
+        "S": {
+          "first_unique_turn": null,
+          "information_bits": 7.392317422778761,
+          "input_tokens": 30336,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        }
+      },
+      "case_index": 96
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": 9,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 4725,
+          "invalid": 0,
+          "output_tokens": 72,
+          "queries": 9,
+          "truncated": 0,
+          "valid_queries": 9
+        },
+        "E0": {
+          "first_unique_turn": 14,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 12503,
+          "invalid": 0,
+          "output_tokens": 112,
+          "queries": 14,
+          "truncated": 0,
+          "valid_queries": 14
+        },
+        "E1": {
+          "first_unique_turn": 7,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 4186,
+          "invalid": 0,
+          "output_tokens": 56,
+          "queries": 7,
+          "truncated": 0,
+          "valid_queries": 7
+        },
+        "E2": {
+          "first_unique_turn": null,
+          "information_bits": 10.29920801838728,
+          "input_tokens": 35186,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        },
+        "S": {
+          "first_unique_turn": null,
+          "information_bits": 5.39231742277876,
+          "input_tokens": 30336,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        }
+      },
+      "case_index": 97
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": 16,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 12684,
+          "invalid": 0,
+          "output_tokens": 128,
+          "queries": 16,
+          "truncated": 0,
+          "valid_queries": 16
+        },
+        "E0": {
+          "first_unique_turn": null,
+          "information_bits": 9.977279923499916,
+          "input_tokens": 32886,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        },
+        "E1": {
+          "first_unique_turn": null,
+          "information_bits": 10.714245517666122,
+          "input_tokens": 32186,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        },
+        "E2": {
+          "first_unique_turn": null,
+          "information_bits": 11.29920801838728,
+          "input_tokens": 35186,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        },
+        "S": {
+          "first_unique_turn": null,
+          "information_bits": 9.714245517666123,
+          "input_tokens": 30336,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        }
+      },
+      "case_index": 98
+    },
+    {
+      "arms": {
+        "B0": {
+          "first_unique_turn": 8,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 3896,
+          "invalid": 0,
+          "output_tokens": 64,
+          "queries": 8,
+          "truncated": 0,
+          "valid_queries": 8
+        },
+        "E0": {
+          "first_unique_turn": 6,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 3528,
+          "invalid": 0,
+          "output_tokens": 48,
+          "queries": 6,
+          "truncated": 0,
+          "valid_queries": 6
+        },
+        "E1": {
+          "first_unique_turn": 6,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 3360,
+          "invalid": 0,
+          "output_tokens": 48,
+          "queries": 6,
+          "truncated": 0,
+          "valid_queries": 6
+        },
+        "E2": {
+          "first_unique_turn": 6,
+          "information_bits": 12.29920801838728,
+          "input_tokens": 4080,
+          "invalid": 0,
+          "output_tokens": 48,
+          "queries": 6,
+          "truncated": 0,
+          "valid_queries": 6
+        },
+        "S": {
+          "first_unique_turn": null,
+          "information_bits": 7.39231742277876,
+          "input_tokens": 30336,
+          "invalid": 0,
+          "output_tokens": 200,
+          "queries": 25,
+          "truncated": 0,
+          "valid_queries": 25
+        }
+      },
+      "case_index": 99
+    }
+  ],
+  "expected": {
+    "conditions": {
+      "B0": {
+        "actor_calls": 1121,
+        "input_tokens": 861995,
+        "malformed_queries": 0,
+        "malformed_rate": 0.0,
+        "mean_capped25": 11.21,
+        "mean_penalized26": 11.37,
+        "mean_realized_information_bits_per_valid_query": 1.0774701036946273,
+        "mechanism_interpretation": "Descriptive realized log2(before/after) among valid queries; not a causal conditional effect.",
+        "n": 100,
+        "output_tokens": 8968,
+        "resolution_curve": {
+          "1": 0,
+          "10": 63,
+          "11": 68,
+          "12": 71,
+          "13": 74,
+          "14": 77,
+          "15": 79,
+          "16": 81,
+          "17": 81,
+          "18": 83,
+          "19": 84,
+          "2": 0,
+          "20": 84,
+          "21": 84,
+          "22": 84,
+          "23": 84,
+          "24": 84,
+          "25": 84,
+          "3": 1,
+          "4": 3,
+          "5": 12,
+          "6": 28,
+          "7": 42,
+          "8": 52,
+          "9": 60
+        },
+        "resolved": 84,
+        "truncated_outputs": 0,
+        "valid_queries": 1121
+      },
+      "E0": {
+        "actor_calls": 1435,
+        "input_tokens": 1548801,
+        "malformed_queries": 0,
+        "malformed_rate": 0.0,
+        "mean_capped25": 14.35,
+        "mean_penalized26": 14.63,
+        "mean_realized_information_bits_per_valid_query": 0.8113936613567639,
+        "mechanism_interpretation": "Descriptive realized log2(before/after) among valid queries; not a causal conditional effect.",
+        "n": 100,
+        "output_tokens": 11480,
+        "resolution_curve": {
+          "1": 0,
+          "10": 43,
+          "11": 49,
+          "12": 50,
+          "13": 54,
+          "14": 58,
+          "15": 60,
+          "16": 61,
+          "17": 62,
+          "18": 64,
+          "19": 67,
+          "2": 0,
+          "20": 68,
+          "21": 68,
+          "22": 69,
+          "23": 70,
+          "24": 72,
+          "25": 72,
+          "3": 1,
+          "4": 5,
+          "5": 9,
+          "6": 22,
+          "7": 30,
+          "8": 40,
+          "9": 43
+        },
+        "resolved": 72,
+        "truncated_outputs": 0,
+        "valid_queries": 1435
+      },
+      "E1": {
+        "actor_calls": 1367,
+        "input_tokens": 1393720,
+        "malformed_queries": 0,
+        "malformed_rate": 0.0,
+        "mean_capped25": 13.67,
+        "mean_penalized26": 13.94,
+        "mean_realized_information_bits_per_valid_query": 0.8655208195831794,
+        "mechanism_interpretation": "Descriptive realized log2(before/after) among valid queries; not a causal conditional effect.",
+        "n": 100,
+        "output_tokens": 10936,
+        "resolution_curve": {
+          "1": 0,
+          "10": 49,
+          "11": 54,
+          "12": 59,
+          "13": 61,
+          "14": 63,
+          "15": 65,
+          "16": 67,
+          "17": 68,
+          "18": 69,
+          "19": 71,
+          "2": 0,
+          "20": 72,
+          "21": 73,
+          "22": 73,
+          "23": 73,
+          "24": 73,
+          "25": 73,
+          "3": 0,
+          "4": 1,
+          "5": 7,
+          "6": 17,
+          "7": 31,
+          "8": 40,
+          "9": 47
+        },
+        "resolved": 73,
+        "truncated_outputs": 0,
+        "valid_queries": 1367
+      },
+      "E2": {
+        "actor_calls": 1090,
+        "input_tokens": 1089754,
+        "malformed_queries": 0,
+        "malformed_rate": 0.0,
+        "mean_capped25": 10.9,
+        "mean_penalized26": 11.02,
+        "mean_realized_information_bits_per_valid_query": 1.1124968750645328,
+        "mechanism_interpretation": "Descriptive realized log2(before/after) among valid queries; not a causal conditional effect.",
+        "n": 100,
+        "output_tokens": 8720,
+        "resolution_curve": {
+          "1": 0,
+          "10": 68,
+          "11": 77,
+          "12": 79,
+          "13": 80,
+          "14": 82,
+          "15": 83,
+          "16": 85,
+          "17": 85,
+          "18": 85,
+          "19": 85,
+          "2": 0,
+          "20": 85,
+          "21": 86,
+          "22": 87,
+          "23": 88,
+          "24": 88,
+          "25": 88,
+          "3": 0,
+          "4": 0,
+          "5": 7,
+          "6": 20,
+          "7": 33,
+          "8": 47,
+          "9": 60
+        },
+        "resolved": 88,
+        "truncated_outputs": 0,
+        "valid_queries": 1090
+      },
+      "S": {
+        "actor_calls": 2315,
+        "input_tokens": 2748555,
+        "malformed_queries": 0,
+        "malformed_rate": 0.0,
+        "mean_capped25": 23.15,
+        "mean_penalized26": 24.02,
+        "mean_realized_information_bits_per_valid_query": 0.3432426596314977,
+        "mechanism_interpretation": "Descriptive realized log2(before/after) among valid queries; not a causal conditional effect.",
+        "n": 100,
+        "output_tokens": 18559,
+        "resolution_curve": {
+          "1": 0,
+          "10": 7,
+          "11": 8,
+          "12": 10,
+          "13": 11,
+          "14": 11,
+          "15": 11,
+          "16": 11,
+          "17": 11,
+          "18": 11,
+          "19": 12,
+          "2": 0,
+          "20": 12,
+          "21": 12,
+          "22": 12,
+          "23": 12,
+          "24": 12,
+          "25": 13,
+          "3": 0,
+          "4": 0,
+          "5": 2,
+          "6": 4,
+          "7": 4,
+          "8": 6,
+          "9": 6
+        },
+        "resolved": 13,
+        "truncated_outputs": 0,
+        "valid_queries": 2315
+      }
+    },
+    "statistics": {
+      "bootstrap_replicates": 10000,
+      "bootstrap_seed": 62026,
+      "limitation": "Conditional on three realized adaptation chains sharing eighteen training cases; not a training-distribution confidence interval.",
+      "primary": {
+        "CI95": [
+          0.19325000000000023,
+          3.276666666666667
+        ],
+        "losses": 66,
+        "lower_is_better": true,
+        "mean_difference": 1.7633333333333334,
+        "n": 100,
+        "ties": 1,
+        "wins": 33
+      },
+      "resampling_unit": "paired held-out case; all arms and chains remain together",
+      "secondary": {
+        "E0_minus_B0/capped25": {
+          "CI95": [
+            1.25,
+            5.04
+          ],
+          "losses": 51,
+          "lower_is_better": true,
+          "mean_difference": 3.14,
+          "n": 100,
+          "ties": 18,
+          "wins": 31
+        },
+        "E0_minus_B0/penalized26": {
+          "CI95": [
+            1.29,
+            5.25
+          ],
+          "losses": 51,
+          "lower_is_better": true,
+          "mean_difference": 3.26,
+          "n": 100,
+          "ties": 18,
+          "wins": 31
+        },
+        "E1_minus_B0/capped25": {
+          "CI95": [
+            0.42,
+            4.45
+          ],
+          "losses": 56,
+          "lower_is_better": true,
+          "mean_difference": 2.46,
+          "n": 100,
+          "ties": 10,
+          "wins": 34
+        },
+        "E1_minus_B0/penalized26": {
+          "CI95": [
+            0.42975000000000024,
+            4.66
+          ],
+          "losses": 56,
+          "lower_is_better": true,
+          "mean_difference": 2.57,
+          "n": 100,
+          "ties": 10,
+          "wins": 34
+        },
+        "E2_minus_B0/capped25": {
+          "CI95": [
+            -2.1,
+            1.47
+          ],
+          "losses": 46,
+          "lower_is_better": true,
+          "mean_difference": -0.31,
+          "n": 100,
+          "ties": 10,
+          "wins": 44
+        },
+        "E2_minus_B0/penalized26": {
+          "CI95": [
+            -2.22,
+            1.51
+          ],
+          "losses": 46,
+          "lower_is_better": true,
+          "mean_difference": -0.35,
+          "n": 100,
+          "ties": 10,
+          "wins": 44
+        },
+        "mean_E_minus_B0/penalized26": {
+          "CI95": [
+            0.1733333333333334,
+            3.413416666666665
+          ],
+          "losses": 66,
+          "lower_is_better": true,
+          "mean_difference": 1.8266666666666667,
+          "n": 100,
+          "ties": 3,
+          "wins": 31
+        },
+        "mean_E_minus_S/capped25": {
+          "CI95": [
+            -11.576666666666668,
+            -8.723333333333334
+          ],
+          "losses": 8,
+          "lower_is_better": true,
+          "mean_difference": -10.176666666666666,
+          "n": 100,
+          "ties": 2,
+          "wins": 90
+        },
+        "mean_E_minus_S/penalized26": {
+          "CI95": [
+            -12.300083333333333,
+            -9.28325
+          ],
+          "losses": 9,
+          "lower_is_better": true,
+          "mean_difference": -10.823333333333334,
+          "n": 100,
+          "ties": 3,
+          "wins": 88
+        }
+      }
+    }
+  },
+  "schema": "gn-question-efficiency-public-v1"
+}

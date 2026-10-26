@@ -1,0 +1,64 @@
+{
+  "N": 200,
+  "actor_prompts": {
+    "eval_prompt": "\n{same_pos} digits are present in the answer and in the correct positions \n{diff_pos} digits are present in the answer but in the different positions \n",
+    "guess_prompt": "Turn {turn}: Now give me the number you guess in this format, and do not give any other statement:\nGuess: [number]\n",
+    "header": "\n\nStrategy notes\nThese are general notes, not facts about this episode. The game rules and required output format take precedence.\n\n",
+    "propose_template": "Let's play a game of guessing number \nThe game rule is: I have a 4-digit secret number in mind, all digits of the number is unique such that all digits from 0 to 9 can only be present once. For example: 0123 or 9468. You will take turns guessing the number and using feedbacks to progressively reveal the true number. The game will conduct {turn} turns:\nIn the game when a guessing number is proposed, I will return the feedback of two information: \n1. How many digits are present in the answer and in the correct position \n2. How many digits are present in the answer but in the different position from the guessing number \nFor example: 0 digits are present in the answer and in the correct positions, 2 digits are present in the answer but in the different positions \n\nGame start:\n",
+    "refine_prompt": "\nYour output does not follow this format: Guess: [number]\nplease propose a guess number, for example: Guess: 1234\n"
+  },
+  "actor_tokens": 128,
+  "batch_size": 3,
+  "cohort_N": 100,
+  "cohorts": 2,
+  "context_tokens": 8192,
+  "curator_prompt": "You improve a reusable question-selection note for future independent number-guessing games. Each secret has four distinct decimal digits; a leading zero is allowed. Feedback counts correct digits in correct positions and correct digits in different positions. A question may repeat digits. The actor sees only the original game instructions, its strategy note, and the current game guesses and feedback. It never sees candidate lists, candidate counts, recommended guesses, or the monitor. An exact public-feedback monitor starts with every legal secret, stops when only one possibility remains, and otherwise stops after twenty-five questions. Your goal is fewer questions to unique identification without reducing the probability of identification. The summaries report counts before and after each public question, whether identification occurred, and capped query cost; unresolved episodes have capped cost twenty-five. These are training episodes only. Propose one complete challenger to the current note. If episodes are present, derive general query-selection advice from these public training traces, retaining useful advice and correcting unproductive patterns. A separate fixed training-side evaluation will retain a challenger only when measured capped query cost improves without lower identification coverage. You never see those selection cases or their scores. If no episodes are supplied, revise the current note using only rules and the objective; do not invent observed episodes or claim trace evidence. General numerical strategies and opening sequences are allowed. Do not claim that memorized answers to individual training episodes identify future secrets. Return the complete replacement note, not a critique or explanation: one to twelve lines, each starting with '- ', English printable ASCII, at most eight hundred UTF-8 bytes, digits are allowed, no URLs, no backticks or pipes. Do not number the bullets; numerical examples inside bullet rules are allowed. If the previous note should be retained, return exactly KEEP. Only the note or KEEP is permitted.",
+  "curator_tokens": 512,
+  "evaluation_arms": [
+    "B0",
+    "E0",
+    "R0",
+    "E1",
+    "R1"
+  ],
+  "frozen_protocol_sha256": "012e12161da7dcb561e845ee0982630a2fcafbbbbf2aa4323b174774a1fae655",
+  "initial_note": "",
+  "max_parallel_cases": 8,
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "note_bytes": 800,
+  "public_implementation": "Portable sequential mechanism using caller-supplied case identifiers, feedback and model callback. Not an exact private-data rerun; identifier-dependent seeds and serving concurrency may differ. No model backend, tokenizer, network, dataset, installation or deployment controls are included.",
+  "revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+  "selection": {
+    "bank_per_repetition": 48,
+    "baseline": "One actual empty-note48-case vector perrepetition, shared E/R exactly; no separately sampled initial vectors",
+    "cases": "shared E/R within repetition, disjoint between repetitions and training/evaluation",
+    "incumbent": "cached original selection vector; never resampled",
+    "postselection": "all four final policies always evaluated, including empty fallback",
+    "promotion": "integer challenger total capped25 <= incumbent total-48 AND challenger resolved count>=incumbent resolved count",
+    "same_note_recurrence": "A changed candidate equal to any older rejected note is still one new fixed proposal opportunity; it is evaluated once for that round. No resampling of the current incumbent.",
+    "seeds": "common selection tag by repetition; per-case/per-slot, does not ensure identical stochastic behavior",
+    "skip": "invalid/KEEP/byte-identical challenger gets no replacement proposal or selection calls; incumbent retained"
+  },
+  "selection_N": 48,
+  "statistics": {
+    "all_runs_reported": true,
+    "bootstrap_replicates": 20000,
+    "cohort_seeds": [
+      63026,
+      63027
+    ],
+    "descriptive_intervals": "ordinary95,including pooled and individual-run contrasts;not additional confirmatory claims",
+    "limits": "Conditional on two paired E/R search blocks,not broad training-population uncertainty;two cohorts test same frozen policies,not extra learning runs; approximate multiplicity coverage applies to current four contrasts,not the historical sequential research process; pooled coverage rule does not guarantee cohort-specific coverage,which must be shown separately.",
+    "pooled_stratified_seed": 63028,
+    "practical_target_turns": 2,
+    "primary_intervals": "central98.75% paired case-block percentile intervals for4predeclared contrasts;approximate Bonferroni family95",
+    "repeated_benefit": "both cohort Emean-B0 primary upper bounds<0;each E run has negative point delta in each cohort;each cohort meanE-B0<=-2;each E pooled identification coverage>=B0",
+    "stronger_at_least_two_claim": "requires upper bound<-2;point<=-2 alone is only observed target",
+    "trace_value": "both cohort meanE-meanR primary upper bounds<0, in addition to repeated_benefit"
+  },
+  "stop": "first public singleton or25; malformed consumes slot; inconsistent feedback or infrastructure uncertainty halts; no resends; no smallerN or performance-based restart",
+  "temperature": 0.7,
+  "top_p": 0.7,
+  "trajectories": 2,
+  "updates_per_trajectory": 6
+}

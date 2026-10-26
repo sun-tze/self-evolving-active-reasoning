@@ -1,0 +1,47 @@
+{
+  "anonymous_document": {
+    "N": 200,
+    "cases": "Exactly 200 rows in audit order.",
+    "schema": "gn-selected-policy-public-v1"
+  },
+  "arm": {
+    "capped25": "First singleton turn, or 25 when unresolved.",
+    "first_unique_turn": "Integer 1..25 or null.",
+    "invalid": "Integer malformed-output count; consumes query slots.",
+    "queries": "Equals capped25 because stopping is first singleton or 25.",
+    "resolved": "Boolean.",
+    "truncated": "Integer count of length-truncated actor responses."
+  },
+  "case": {
+    "arms": "Exactly B0,E0,R0,E1,R1; all five outcomes belong to the same anonymous case.",
+    "case_index": "Integer 0..199, equal to array position and 100*cohort+index.",
+    "cohort": "Integer 0 or 1.",
+    "index": "Integer 0..99 within cohort."
+  },
+  "excluded": "No original case IDs, labels, notes, guesses, raw responses, paths, job identifiers or deployment controls.",
+  "ordering": "Preserve audit order; do not sort by outcome or release original identifiers.",
+  "results": "results.json: frozen audit statistics, derived arm summaries, aggregate learning counts and resource counts.",
+  "schema": "gn-selected-policy-public-v1",
+  "statistics": {
+    "bootstrap": "Python random.Random(seed); draw N randrange(N) indices per replicate within each cohort. All five arms stay paired. Pooled resampling draws 100 from cohort0 then 100 from cohort1 with one RNG, seed63028. Repeat 20000 times. Linear interpolation at (replicates-1)*q: q=.00625/.99375 primary, .025/.975 descriptive.",
+    "bootstrap_replicates": 20000,
+    "cohort_seeds": [
+      63026,
+      63027
+    ],
+    "contrasts": [
+      "E0-B0",
+      "R0-B0",
+      "E1-B0",
+      "R1-B0",
+      "Emean-B0",
+      "Emean-Rmean"
+    ],
+    "descriptive": "All six contrasts also have 95% intervals; pooled estimates are descriptive only.",
+    "means": "Emean=(E0+E1)/2; Rmean=(R0+R1)/2, within each paired case. Lower differences favor E or the named run.",
+    "pooled_seed": 63028,
+    "primary": "Emean-B0 and Emean-Rmean in each cohort: four 98.75% intervals.",
+    "primary_family": "Approximate current-study four-contrast coverage; not historical family-wide control."
+  },
+  "status": "outcome-independent contract"
+}

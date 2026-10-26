@@ -1,0 +1,37 @@
+{
+  "schema": "gn-question-efficiency-public-v1",
+  "format": "Descriptive contract; this file contains no experimental result rows.",
+  "document": {
+    "schema": "gn-question-efficiency-public-v1",
+    "N": 100,
+    "cases": "Array of exactly 100 cases in original audit evaluation order.",
+    "expected": "Object with statistics and conditions, copied from the independently audited result."
+  },
+  "case": {
+    "case_index": "Integer 0 through 99, equal to this row's array index.",
+    "arms": "Object with exactly B0, S, E0, E1, E2; every arm belongs to this same case."
+  },
+  "arm_fields": {
+    "first_unique_turn": "Integer 1 through 25, or null if unresolved.",
+    "queries": "Actual actor query count; equals first_unique_turn when resolved, otherwise 25.",
+    "invalid": "Number of malformed query outputs, counted as consumed queries.",
+    "truncated": "Number of actor outputs whose finish reason was length.",
+    "valid_queries": "queries minus invalid.",
+    "information_bits": "Sum of realized log2(before/after) over valid queries; descriptive mechanism statistic.",
+    "input_tokens": "Total actor input tokens for this episode.",
+    "output_tokens": "Total actor output tokens for this episode."
+  },
+  "derived": {
+    "resolved": "first_unique_turn is not null.",
+    "capped25": "first_unique_turn when resolved, otherwise 25.",
+    "penalized26": "first_unique_turn when resolved, otherwise the assigned penalty 26.",
+    "primary": "Paired case mean of average(E0,E1,E2) capped25 minus B0 capped25; negative favors adaptation.",
+    "bootstrap": "10000 shared paired-case resamples; Python random.Random(62026), randrange(N) for each of N draws; percentile interpolation. All arms and chains remain paired.",
+    "resolution_curve": "Cumulative number identified by each turn 1 through 25, including all 100 cases."
+  },
+  "ordering": "Never sort by outcome or use original case IDs. Preserve the audit row order in every arm so the seeded bootstrap reproduces exactly.",
+  "excluded": "No original case IDs, labels, guesses, transcripts, paths, job IDs, receipts, or authorization/deployment material. Extra document, case, and arm fields are rejected.",
+  "expected_mapping": "expected.statistics = audit.statistics; expected.conditions = audit.conditions. For index i, each arms[arm] is the eight allowed fields copied from audit.cases[arm][i].",
+  "verify_command": "python verify_results.py anonymous-cases.json",
+  "limits": "Verifies arithmetic and anonymous pairing only. Intervals condition on three realized chains sharing eighteen training cases. Information gain among valid queries is descriptive, not a causal conditional effect."
+}

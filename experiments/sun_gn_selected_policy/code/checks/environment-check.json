@@ -1,0 +1,17 @@
+{
+  "GPU_seconds": 0,
+  "elapsed_seconds": 0.1559999999590218,
+  "exit_code": 0,
+  "kind": "new_public_environment_synthetic_check_only",
+  "models": 0,
+  "prior_four_tests_rerun": false,
+  "run_count": 1,
+  "source_sha256": {
+    "example_environment.py": "0f8a3325930209061a95319f51bbb521cc5a0a01cd3fbe5317101cabce07cb07",
+    "portable_search.py": "377bbfa9a8076a9b74f8b3e7a370cc6b13451337413b5c775a70efa1faa8d602",
+    "question_policy.py": "1adeded261af452190bffc0006dad19f8bf2e8a55bfa034936ac739e8b8d9b47",
+    "test_portable_search.py": "fd0458e8cd655a11fb0e427406b3ef71b671eb7b5c6cdc1d7463548a6efe29c7"
+  },
+  "stderr": "test_new_public_environment_is_disjoint_deterministic_and_exact (test_portable_search.PortableSearchTests.test_new_public_environment_is_disjoint_deterministic_and_exact) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.005s\n\nOK\n",
+  "stdout": ""
+}

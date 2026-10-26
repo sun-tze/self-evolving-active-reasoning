@@ -1,0 +1,121 @@
+{
+  "E2_opening_associations": {
+    "interpretation": "A strongly repeated opening is not evidence of complete conditional-instruction compliance.",
+    "opening_feedback_matches_stated_second_query_condition": 28,
+    "opening_feedback_outside_that_condition": 72,
+    "same_first_four_queries_cases": 94,
+    "same_first_two_queries_cases": 100
+  },
+  "conditions": {
+    "B0": {
+      "episodes": 100,
+      "episodes_with_any_repeat": 12,
+      "first_three_queries": {
+        "all_case_denominator": 100,
+        "episodes_covering_all_ten_digits": 25,
+        "episodes_with_at_least_k_queries": 100,
+        "mean_distinct_digits": 8.39,
+        "mean_unique_guesses": 3
+      },
+      "novel_zero_reduction_queries": 377,
+      "queries": 1121,
+      "repeat_queries": 81,
+      "repeat_rate": 0.07225691347011597,
+      "zero_reduction_queries": 458,
+      "zero_reduction_rate": 0.4085637823371989
+    },
+    "E0": {
+      "episodes": 100,
+      "episodes_with_any_repeat": 24,
+      "first_three_queries": {
+        "all_case_denominator": 100,
+        "episodes_covering_all_ten_digits": 2,
+        "episodes_with_at_least_k_queries": 100,
+        "mean_distinct_digits": 7.36,
+        "mean_unique_guesses": 3
+      },
+      "novel_zero_reduction_queries": 542,
+      "queries": 1435,
+      "repeat_queries": 245,
+      "repeat_rate": 0.17073170731707318,
+      "zero_reduction_queries": 787,
+      "zero_reduction_rate": 0.5484320557491289
+    },
+    "E1": {
+      "episodes": 100,
+      "episodes_with_any_repeat": 20,
+      "first_three_queries": {
+        "all_case_denominator": 100,
+        "episodes_covering_all_ten_digits": 17,
+        "episodes_with_at_least_k_queries": 100,
+        "mean_distinct_digits": 8.37,
+        "mean_unique_guesses": 3
+      },
+      "novel_zero_reduction_queries": 561,
+      "queries": 1367,
+      "repeat_queries": 136,
+      "repeat_rate": 0.09948792977322604,
+      "zero_reduction_queries": 697,
+      "zero_reduction_rate": 0.5098756400877835
+    },
+    "E2": {
+      "episodes": 100,
+      "episodes_with_any_repeat": 8,
+      "first_three_queries": {
+        "all_case_denominator": 100,
+        "episodes_covering_all_ten_digits": 100,
+        "episodes_with_at_least_k_queries": 100,
+        "mean_distinct_digits": 10,
+        "mean_unique_guesses": 3
+      },
+      "novel_zero_reduction_queries": 343,
+      "queries": 1090,
+      "repeat_queries": 56,
+      "repeat_rate": 0.05137614678899083,
+      "zero_reduction_queries": 399,
+      "zero_reduction_rate": 0.3660550458715596
+    },
+    "S": {
+      "episodes": 100,
+      "episodes_with_any_repeat": 79,
+      "first_three_queries": {
+        "all_case_denominator": 100,
+        "episodes_covering_all_ten_digits": 0,
+        "episodes_with_at_least_k_queries": 100,
+        "mean_distinct_digits": 4.33,
+        "mean_unique_guesses": 3
+      },
+      "novel_zero_reduction_queries": 1341,
+      "queries": 2315,
+      "repeat_queries": 413,
+      "repeat_rate": 0.17840172786177105,
+      "zero_reduction_queries": 1754,
+      "zero_reduction_rate": 0.7576673866090713
+    }
+  },
+  "evaluation_cases": 100,
+  "evaluation_episodes": 500,
+  "format_exception": {
+    "affected_episodes": 3,
+    "affected_episodes_unresolved": 3,
+    "arm": "S",
+    "five_digit_outputs": 37,
+    "interpretation": "Zero malformed-parser outputs does not mean strict four-digit raw-format compliance.",
+    "other_arms_overlong_outputs": 0,
+    "overlong_raw_outputs": 38,
+    "parser_behavior": "The original regex finds non-overlapping four-digit spans and selects the last match. Each observed five/six-digit output contains one match, so its first four digits are used.",
+    "primary_impact": "No such outputs occur in B0 or E0/E1/E2; the primary comparison is unaffected by these 38 outputs.",
+    "six_digit_outputs": 1,
+    "zero_reduction_queries": 36
+  },
+  "kind": "posthoc_descriptive_aggregates",
+  "limits": [
+    "Posthoc associations, not causal mechanism estimates.",
+    "Later-query denominators depend on first-singleton stopping; all cases were observed through query three.",
+    "Mean information or repetition rates cannot establish actor beliefs or full instruction compliance.",
+    "No original case identifiers, guesses, labels, raw notes, transcripts or execution paths are included."
+  ],
+  "new_model_calls": 0,
+  "primary_interpretation": "The prespecified equal-weight mean of all three adapted chains costs more queries than B0; no chain is selected as a successful method.",
+  "schema": "gn-question-efficiency-aggregate-mechanisms-v1"
+}

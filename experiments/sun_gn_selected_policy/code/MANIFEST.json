@@ -1,0 +1,14 @@
+{
+  "files": {
+    "checks/environment-check.json": "4a81bae4209ff4a509006f1c3d8ff1f02bb10a5110f5e9cbbb4b478868642475",
+    "checks/synthetic-checks.json": "db6664d59b70d86e6f3bbf186f277ca4d5722e30436def7718919be71ca2f67a",
+    "example_environment.py": "0f8a3325930209061a95319f51bbb521cc5a0a01cd3fbe5317101cabce07cb07",
+    "portable_search.py": "377bbfa9a8076a9b74f8b3e7a370cc6b13451337413b5c775a70efa1faa8d602",
+    "protocol.json": "94de264fe3bd2d3b20c16dc3e9c2e76b3c0dc4919185242f9ab33130c81825ff",
+    "question_policy.py": "1adeded261af452190bffc0006dad19f8bf2e8a55bfa034936ac739e8b8d9b47",
+    "selection_policy.py": "9b6cef4c8839dc9aef76f97cfe2d47031fbe6e90b7df22fb5cb485473445669a",
+    "test_portable_search.py": "fd0458e8cd655a11fb0e427406b3ef71b671eb7b5c6cdc1d7463548a6efe29c7"
+  },
+  "kind": "public_mechanism_source_manifest",
+  "test_evidence": "Four synthetic mechanism tests passed before adding the environment test. Only the one new environment test was then executed; both original receipts and their version-specific source hashes are preserved. No test rerun during publication assembly."
+}

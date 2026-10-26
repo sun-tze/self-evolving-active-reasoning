@@ -1,0 +1,19 @@
+{
+  "description": "Exact new derived text-policy artifacts evaluated in this study. These are proposed query schedules, not case labels or answers.",
+  "policies": {
+    "B0": "",
+    "E0": "- 1234\n- 5678\n- 9012\n- 3490\n- 6789\n- 4390\n- 2879",
+    "E1": "- 1234\n- 5678\n- 9012\n- 3456\n- 7890\n- 1357\n- 2468\n- 0379\n- 1478",
+    "R0": "",
+    "R1": ""
+  },
+  "sha256_utf8_by_arm": {
+    "B0": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "E0": "14e2eea7b43d2f4cfad75665dd37c1b3c740ba33e1af561ed19ed19a34ba1231",
+    "E1": "1d56f8611c3c277d9fac9486c8c6edd44339439ad3eb767f6d90f4fc1c334a2d",
+    "R0": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "R1": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "source_file_sha256": "f7ebf3b6399093facc3a959f266667b505081fe9d4ac20a7c7393229cfe2e6fa",
+  "limits": "Two realized learning blocks; note text has no conditional rules. Do not interpret all digits as private secrets or treat these schedules as generally optimal."
+}
