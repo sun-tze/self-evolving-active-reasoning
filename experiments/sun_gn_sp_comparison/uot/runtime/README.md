@@ -49,6 +49,38 @@ submodule at `9971322f` or `ARBENCH_ROOT`). 11 tests, no model or network:
   and a hung call each halt, drain and account as specified; journal tampering is
   detected; a native mid-run failure leaves no imputed result.
 
+## Throughput probe and feasibility gate (prepared, not run on a GPU)
+
+`replay_throughput.py` replays the cancelled run's own request bodies through the
+boundary and `loopback_transport.py` (stdlib HTTP, `127.0.0.1` only, no proxy,
+redirect or retry). Phase "parallel" sends recorded calls 1–144 over 8 streams;
+phase "serial" sends calls 145–162 on one stream (disjoint, so prefix caching
+cannot carry over). Token counts are the recorded ones and the server's
+`prompt_tokens` must equal them. It reports calls/s, latency, finish reasons and
+how many generated texts equal the recorded text. A halted phase stops the probe
+and yields no gate. `test_replay_throughput.py` (9 tests) covers the transport
+against a local HTTP server (3.2–3.8x calls/s at 4 streams with 50 ms server
+delay), error/redirect/timeout refusal and the gate arithmetic. An offline
+`--fake-latency` dry run on the private recorded journal sent all 162 bodies
+byte-identically, with 8 in flight and both journals verified.
+
+The gate projects a 20-case native run at the measured 8-way rate: the larger of
+total calls / rate and ceil(20/8) waves of the longest case at the measured median
+latency, plus 140 s startup, for two call scenarios (recorded mean 139.3 calls per
+case; 1.5x the recorded maximum, 229.5). It passes if the pessimistic projection
+times 1.25 fits the allocation minus the 240 s request margin. Projections for
+*assumed* speedups over the recorded 9.6 s serial call (not measurements):
+
+| 8-way speedup | recorded mean | pessimistic | passes for 2418 s / 7200 s / 10800 s |
+|---|---|---|---|
+| 4x | 136 min | 223 min | no / no / no |
+| 6x | 92 min | 149 min | no / no / no |
+| 8x | 69 min | 112 min | no / no / yes |
+
+So a complete native 20-case run does not fit the remaining conservative budget at
+any plausible speedup; the probe is only worth running if a larger allocation for
+the full run is acceptable.
+
 ## What this does not show
 
 The fake transport returns identical text whether calls overlap or not. A real
