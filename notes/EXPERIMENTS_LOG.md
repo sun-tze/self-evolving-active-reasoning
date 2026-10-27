@@ -95,6 +95,8 @@ answerer prompt was adapted: same three-way scheme, same two few-shot examples.
 | B7 | 10-26 | see children | Native GN and exploratory SP method-adapter pilots; neither establishes a general method ranking |
 | B7.1 | 10-26 | 5,648.25 s allocation | GN full run failed: 30/30 dev, 97/140 final, 43 missing; descriptive common prefix only |
 | B7.2 | 10-26 | 2,903.56 s active | SP completed: final N=5, character F1 not accuracy; same-family referee qualification UNMET |
+| B7.4 | 10-26 | 4,780 s allocation, cancelled | Native UoT stopped at 3/20; offline diagnosis (9/24 picks re-ask a number, parser and truncation artifacts); bounded concurrent runtime, not run on GPU |
+| B7.5 | 10-27 | CPU only | GN state tracking: random unasked guesses identify all 5,040 secrets within 25 questions yet hit 0.48%; extractor for the 7-arm traces prepared, not yet run |
 
 > **Purpose.** Every experiment must be traceable from **conditions (task, model, regime, signals,
 > budget, split) → script → input → output and log → result**.
@@ -1064,6 +1066,22 @@ Native UoT (depth 1, Qwen2.5-7B-Instruct, 512-token cap, original 20-case order 
 [Diagnostic, aggregates and limits](../experiments/sun_gn_sp_comparison/uot/diagnostics/README.md). These describe recorded states only, not counterfactual success or question savings.
 
 **Runtime.** A replacement boundary runs independent cases in parallel with the native code unchanged: atomic short-lock admission, bounded in-flight calls, fail-closed halt, uncertain-cost accounting and a hash-chained journal. Offline tests give byte-identical serial and 4-way native results on synthetic cases. A replay throughput probe and gate are prepared but not run. At any plausible 8-way speedup a full 20-case native run needs about 69–112 min (recorded mean vs pessimistic), more than the remaining conservative budget. [Runtime, probe and gate](../experiments/sun_gn_sp_comparison/uot/runtime/README.md).
+
+</dd></dl>
+</details>
+
+<details>
+<summary>B7.5 2026-10-27, GN state tracking: information is not scarce, using it is (CPU only)</summary>
+
+<dl><dd>
+
+An exact, model-free reference over all 5,040 secrets, with deterministic seeds and no private data, asks what the native protocol (25 questions, then a final guess) demands. **Uniformly random unasked guesses identify the secret by public feedback after 25 questions for every secret, but hit it in only 24/5,040 games (0.48%).** Drawing a feedback-consistent guess with probability 0.05 / 0.1 / 0.2 raises the hit rate to 65.2% / 88.5% / 98.8%. Always guessing consistently hits every secret, with a mean of 5.3–5.6 guesses depending on the rule. The seven Qwen2.5-7B arms of B7.3 hit the secret in 0–2/20 cases each. Their failure is therefore not a too-small question budget; it is repeated or uninformative questions, unused feedback, or both.
+
+The same per-guess metrics on the three complete UoT cases of B7.4 give 9/26 repeats and 9/23 consistent informed guesses. Feedback identified the secret after turns 7, 9 and 7, and the harness then appended the last candidate. Three cases illustrate the extractor; they support no rate estimate.
+
+`gn_state.py extract` computes consistency, repeat and parse-failure rates, information acquired, and identification versus last-guess correctness for every (phase, checkpoint, arm) of the private 7-arm evidence. It needs CPU only, checks hash bindings and recomputes all feedback, and writes anonymous aggregates. **It has not been run yet**; its interpretations were fixed in advance in the README. [Reference, figure, extractor and limits](../experiments/sun_gn_sp_comparison/mechanism/state-tracking/README.md) · [proposal bullets and baseline coverage](../experiments/sun_gn_sp_comparison/PROPOSAL-BULLETS.md).
+
+This is a mathematical reference, not a model of LLM behavior, and not a counterfactual success estimate. A causal test of the proposed state-representation evolution needs a new, separately budgeted run.
 
 </dd></dl>
 </details>
