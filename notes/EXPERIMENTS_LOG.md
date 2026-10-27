@@ -97,6 +97,7 @@ answerer prompt was adapted: same three-way scheme, same two few-shot examples.
 | B7.2 | 10-26 | 2,903.56 s active | SP completed: final N=5, character F1 not accuracy; same-family referee qualification UNMET |
 | B7.4 | 10-26 | 4,780 s allocation, cancelled | Native UoT stopped at 3/20; offline diagnosis (9/24 picks re-ask a number, parser and truncation artifacts); bounded concurrent runtime, not run on GPU |
 | B7.5 | 10-27 | CPU only | GN state tracking: random unasked guesses identify all 5,040 secrets within 25 questions yet hit 0.48%; extractor for the 7-arm traces prepared, not yet run |
+| B7.6 | 10-27 | CPU only | GN traces measured: feedback determined the secret before the final guess in 101/140 final cases, yet 5 final guesses were right; 0.2–5% of guesses consistent; DC/ACE memories added repeats |
 
 > **Purpose.** Every experiment must be traceable from **conditions (task, model, regime, signals,
 > budget, split) → script → input → output and log → result**.
@@ -1082,6 +1083,24 @@ The same per-guess metrics on the three complete UoT cases of B7.4 give 9/26 rep
 `gn_state.py extract` computes consistency, repeat and parse-failure rates, information acquired, and identification versus last-guess correctness for every (phase, checkpoint, arm) of the private 7-arm evidence. It needs CPU only, checks hash bindings and recomputes all feedback, and writes anonymous aggregates. **It has not been run yet**; its interpretations were fixed in advance in the README. [Reference, figure, extractor and limits](../experiments/sun_gn_sp_comparison/mechanism/state-tracking/README.md) · [proposal bullets and baseline coverage](../experiments/sun_gn_sp_comparison/PROPOSAL-BULLETS.md).
 
 This is a mathematical reference, not a model of LLM behavior, and not a counterfactual success estimate. A causal test of the proposed state-representation evolution needs a new, separately budgeted run.
+
+</dd></dl>
+</details>
+
+<details>
+<summary>B7.6 2026-10-27, GN traces measured: the arms gather the information and do not use it (CPU only)</summary>
+
+<dl><dd>
+
+The B7.5 extractor was run on the private outputs of the GN completion run. Its `result.json` hashes to the combined audit's `combined_result`, and the original run's `result.json` to its `original_result` (audit `PASS_COMBINED_SUFFIX_INTEGRITY`, `4d7f3654…`). Only the completion run was used: all 170 evaluation slots and 12 training episodes, with 0 missing. Every logged feedback was recomputed. The last logged guess agrees with the official success flag in every group, including ToT.
+
+**Final, 7 arms × 20 cases.** Public feedback determined the secret before the final guess in **101/140** cases (median turn 6–15 by arm), yet only **5/140** final guesses were right. **0.2–5.0%** of guesses were consistent with earlier feedback. Repeated guesses were **12.5% (ZeroShot) to 55.3% (ProactiveCoT)**, with DC at 42.1% and ACE at 31.8%.
+
+**Development, the same five cases at updates 0 → 3 → 6.** The final guess was correct 0/5 throughout. Consistent guesses stayed at 0–1%. Repeats rose (DC 6.2 → 43.1%; ACE 23.1 → 10.0 → 34.6%) and determined cases fell (DC 5 → 3, ACE 5 → 2).
+
+Against the interpretations fixed in B7.5: the failure is in using the feedback, not in acquiring it; DC/ACE memories never touched that bottleneck and coincided with more repeated questions. B7.5's inference that the dead guesses were also uninformative is withdrawn. The consistent-guess rate measured here is near random chance, and at that rate the model-free reference predicts the observed hit rate.
+
+All of this is descriptive, with one learning trajectory per method. Hit rates are not counterfactual estimates. [Result, figures and limits](../experiments/sun_gn_sp_comparison/mechanism/state-tracking/README.md#result-on-the-saved-traces-b76).
 
 </dd></dl>
 </details>

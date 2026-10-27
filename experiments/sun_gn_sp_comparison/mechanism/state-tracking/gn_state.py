@@ -99,7 +99,8 @@ def summarize(rows):
             'identified_turn': identified,
             'first_hit_turn': next((r['turn'] for r in parsed if r['hit']), None),
             'last_guess_correct': last_correct,
-            'identified_but_last_wrong': identified is not None and not last_correct}
+            'identified_but_last_wrong': identified is not None and not last_correct,
+            'identified_before_last_guess': identified is not None and identified < len(rows)}
 
 
 def aggregate(summaries):
@@ -123,7 +124,10 @@ def aggregate(summaries):
             'identified_turn_median': statistics.median(turns) if turns else None,
             'hit_any_episodes': sum(s['first_hit_turn'] is not None for s in summaries),
             'last_guess_correct_episodes': sum(s['last_guess_correct'] for s in summaries),
-            'identified_but_last_wrong_episodes': sum(s['identified_but_last_wrong'] for s in summaries)}
+            'identified_but_last_wrong_episodes': sum(s['identified_but_last_wrong'] for s in summaries),
+            'identified_before_last_guess_episodes': sum(s['identified_before_last_guess'] for s in summaries),
+            'identified_before_last_but_last_wrong_episodes': sum(
+                s['identified_before_last_guess'] and not s['last_guess_correct'] for s in summaries)}
 
 
 # ------------------------------------------------------- reference policies
@@ -313,6 +317,7 @@ DEFINITIONS = {
     'bits_after_questions': 'log2(5040 / state size) after the first 25 logged turns (all turns when fewer were logged).',
     'identified': 'The state became a single secret at some logged turn; a measure of information acquired, not of actor belief.',
     'identified_but_last_wrong': 'Identified, but the last logged guess was not the secret (a readout failure for native final-guess scoring).',
+    'identified_before_last_guess': 'Identified at a turn strictly before the last logged guess, so the last guess could have used it; the strict form of the readout-failure count.',
     'missing': 'Slots without a complete episode record; never counted as failures.'}
 
 

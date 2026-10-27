@@ -101,6 +101,7 @@ class Histories(unittest.TestCase):
         self.assertEqual((summary['identified_turn'], summary['first_hit_turn']), (5, 5))
         self.assertTrue(summary['last_guess_correct'])
         self.assertFalse(summary['identified_but_last_wrong'])
+        self.assertFalse(summary['identified_before_last_guess'])
         self.assertAlmostEqual(summary['bits_after_questions'], G.math.log2(5040))
 
     def test_readout_failure_is_counted(self):
@@ -110,6 +111,17 @@ class Histories(unittest.TestCase):
         self.assertIsNotNone(summary['identified_turn'])
         self.assertFalse(summary['last_guess_correct'])
         self.assertTrue(summary['identified_but_last_wrong'])
+        self.assertTrue(summary['identified_before_last_guess'])
+
+    def test_identification_by_the_last_guess_is_not_a_readout_failure(self):
+        rng = random.Random(6)
+        secret, guesses = '5678', []
+        while not guesses or G.history_rows(history(secret, guesses), secret)[-1]['after'] > 1:
+            guesses.append(rng.choice([u for u in G.UNIVERSE if u != secret and u not in guesses]))
+        summary = G.summarize(G.history_rows(history(secret, guesses), secret))
+        self.assertEqual(summary['identified_turn'], len(guesses))
+        self.assertTrue(summary['identified_but_last_wrong'])
+        self.assertFalse(summary['identified_before_last_guess'])
 
     def test_rejects_bad_records(self):
         with self.assertRaises(ValueError):

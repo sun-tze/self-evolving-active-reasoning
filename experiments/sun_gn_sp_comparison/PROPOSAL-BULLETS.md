@@ -11,8 +11,8 @@ Each bullet carries its evidence status:
 - **[run]** On AR-Bench Guess Number, Qwen2.5-7B hits the secret in **0–2 of 20 cases** in every arm. That holds for five prompting/search baselines and for two context-evolution methods, DC and ACE ([gn-complete](gn-complete/README.md)).
 - **[run, team]** The team's earlier GN diagnosis ([briefing.md](../../briefing.md)) found that **88.9–95.7% of Qwen2.5-7B's guesses were already ruled out by its own history** ("dead guesses"). An externally computed belief state lifted the solve rate from **2% to 99%**. Presentation also mattered: dead guesses fell to 19.2% with a short explicit candidate list, against 73.0% with an abstract summary.
 - **[offline]** New here: the 25-question budget is not what limits the models. Even uniformly random unasked guesses gather enough public feedback to identify the secret for **all 5,040 secrets**, yet they hit it only **0.48%** of the time. Making a feedback-consistent guess on just 5% of turns lifts the hit rate to **65%** ([state-tracking reference](mechanism/state-tracking/README.md)).
-  - Read together with the dead-guess rate, this suggests the 7B's dead guesses also carry little information, for example repeats. Being slightly off would not explain the gap.
-  - This is an inference until the [trace extraction](mechanism/state-tracking/README.md#measuring-the-seven-gn-arms-cpu-only-no-model) runs.
+- **[offline, measured on the saved traces]** In 7 arms × 20 final cases, the feedback had determined the secret before the final guess in **101 of 140**. Yet only **5** final guesses were right, and only **0.2–5%** of guesses were consistent with earlier feedback. The models gather the information; they do not use it ([B7.6 result](mechanism/state-tracking/README.md#result-on-the-saved-traces-b76)).
+  - An earlier inference here, that the questions themselves were uninformative, is not supported and has been withdrawn.
 - So the gap between the LLMs and trivial policies lies in **wasting questions and failing to use feedback**. Context can change both: what the model is shown and what it keeps. This is where self-evolution could improve **question efficiency**, not just make final answers more polished.
 - **[run, team log]** On circuit decoding, the team found the same direction: an always-present state panel beats asking the model to maintain state itself (A6). A strict state-only harness, in which the model still writes every query, reaches 99.5/98.5 held out (B3). Our question is whether **context evolution** can learn such a representation, and whether it transfers to GN.
 
@@ -21,7 +21,11 @@ Each bullet carries its evidence status:
 - **DC and ACE do not adapt on GN [run].**
   - Both stay at 0/5 development exact match at updates 0, 3 and 6; final scores are 0/20 (DC) and 1/20 (ACE).
   - Their memories hold strategy prose. Nothing in them maintains the episode's own feedback state, which the reference identifies as the binding constraint.
-  - This last point is an inference. It is checked by the [trace extraction](mechanism/state-tracking/README.md#measuring-the-seven-gn-arms-cpu-only-no-model), which needs CPU only.
+  - **[offline] The traces confirm it, and show more than a flat line.**
+    - On the same five development cases, consistent guesses stay at 0–1% at updates 0, 3 and 6.
+    - Repeated guesses rise: DC from 6% to 43%. Determined cases fall: DC from 5 to 3, ACE from 5 to 2.
+    - In the final split, DC repeats 42% of its guesses, against 13% for ZeroShot.
+    - This is one learning trajectory per method, so it is descriptive.
 - **The SP "gain" is not evidence of better reasoning [run].**
   - DC and ACE raise character F1 from 0.696 to 0.835 and 0.820, but word F1 stays flat (0.311 → 0.309 / 0.320).
   - Their answers are 34–44% longer.
@@ -56,7 +60,7 @@ Each bullet carries its evidence status:
 
   Report all calls, tokens and selection cost. Keep every failed chain.
 - **[proposed] Preconditions before any GPU run:**
-  1. Run the CPU-only extraction on the saved 7-arm traces, to confirm where the arms fail.
+  1. ~~Run the CPU-only extraction on the saved 7-arm traces~~: done in B7.6. The arms fail at using feedback, not at gathering it.
   2. Run the measured throughput probe and feasibility gate in [uot/runtime](uot/runtime/README.md).
 
   A 3-arm × 20-case pilot is about 1,560 actor calls: roughly 4 h serially, or an estimated 30–60 min with 4–8× batching. The batched figure is a projection, not a measurement.
@@ -80,6 +84,8 @@ GN and SP use different models and metrics; never pool them. Character F1 is ove
 
 ## Figures for the slides
 
+- `mechanism/state-tracking/gn-final-arms-state.png`: information versus its use, measured for all 7 arms.
+- `mechanism/state-tracking/gn-dev-state-curves.png`: DC and ACE process metrics across updates 0, 3 and 6.
 - `mechanism/state-tracking/reference-policies.png`: information versus its use, model-free.
 - `gn-complete/gn-development-curves.png` and `gn-complete/gn-final-metrics.png`: the evolution curves and final arms.
 - `sp/figures/sp-character-f1.svg`: SP curves, labelled as overlap scores.
