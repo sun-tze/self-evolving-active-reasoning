@@ -1,0 +1,9 @@
+{
+  "exit_code": 0,
+  "timed_out": false,
+  "seconds": 0.5,
+  "stdout": "",
+  "stderr": "test_50_and_51_sample_boundary_after_candidate_rng_draws (__main__.Depth1Acceptance.test_50_and_51_sample_boundary_after_candidate_rng_draws) ... ok\ntest_all_ties_preserve_proposal_order (__main__.Depth1Acceptance.test_all_ties_preserve_proposal_order) ... ok\ntest_bad_responses_fail_without_redispatch (__main__.Depth1Acceptance.test_bad_responses_fail_without_redispatch) ... ok\ntest_dispatch_exception_is_not_retried (__main__.Depth1Acceptance.test_dispatch_exception_is_not_retried) ... ok\ntest_empty_and_singleton_make_no_dispatch_or_rng_draw (__main__.Depth1Acceptance.test_empty_and_singleton_make_no_dispatch_or_rng_draw) ... ok\ntest_full_5040_answer_space (__main__.Depth1Acceptance.test_full_5040_answer_space) ... ok\ntest_hand_calculated_order_parser_and_duplicate_identity (__main__.Depth1Acceptance.test_hand_calculated_order_parser_and_duplicate_identity) ... ok\ntest_reference_and_implementation_pins (__main__.Depth1Acceptance.test_reference_and_implementation_pins) ... ok\ntest_request_copy_isolation_and_changed_candidate_rejection (__main__.Depth1Acceptance.test_request_copy_isolation_and_changed_candidate_rejection) ... ok\n\n----------------------------------------------------------------------\nRan 9 tests in 0.254s\n\nOK\n",
+  "experiment_model_calls": 0,
+  "GPU_jobs": 0
+}
