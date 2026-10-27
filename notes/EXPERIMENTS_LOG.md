@@ -1045,3 +1045,25 @@ The historical [singleton/query studies in PR 2](https://github.com/Zarreboln/se
 </dd></dl>
 </details>
 
+
+
+<details>
+<summary>B7.4 2026-10-26, native UoT cancelled at 3/20 — offline diagnosis and a bounded concurrent runtime</summary>
+
+<dl><dd>
+
+Native UoT (depth 1, Qwen2.5-7B-Instruct, 512-token cap, original 20-case order and seeds) was cancelled at the owner's request after about 4,780 s with **3/20 cases complete**, 483 call intents and 482 responses. It is not a UoT baseline result, and no 20-case audit was run. Calls were strictly serial (about 9.6 s each) because the model boundary held its lock across the transport.
+
+**Offline diagnosis of the recorded decisions (no model calls).** The first diagnostic stopped on a case-binding check that compared the batch's re-serialized case copy with the raw hash of the package original. The corrected version checks the recorded raw → canonical → copy chain and replays every recorded prompt, reproducing all three saved results exactly. Over 24 complete decisions:
+
+- 9 native picks re-asked an already-asked guess, which carries zero information; in 8 of them all three parsed candidates were repeats.
+- The native parser keeps the first three 4-digit strings. In 14/23 proposals the first number was restated history; those responses contained 269 later unasked numbers that were dropped.
+- 393/457 simulation responses hit the 512-token cap. The model listed at most 29 survivors where exact buckets reached 1,440, so uninformative, concentrated partitions received inflated scores.
+- The three completed cases are official successes only through the harness's automatic singleton; no actor query hit the target.
+
+[Diagnostic, aggregates and limits](../experiments/sun_gn_sp_comparison/uot/diagnostics/README.md). These describe recorded states only, not counterfactual success or question savings.
+
+**Runtime.** A replacement boundary runs independent cases in parallel with the native code unchanged: atomic short-lock admission, bounded in-flight calls, fail-closed halt, uncertain-cost accounting and a hash-chained journal. Offline tests give byte-identical serial and 4-way native results on synthetic cases. A replay throughput probe and gate are prepared but not run. At any plausible 8-way speedup a full 20-case native run needs about 69–112 min (recorded mean vs pessimistic), more than the remaining conservative budget. [Runtime, probe and gate](../experiments/sun_gn_sp_comparison/uot/runtime/README.md).
+
+</dd></dl>
+</details>
