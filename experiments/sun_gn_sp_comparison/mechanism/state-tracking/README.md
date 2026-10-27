@@ -2,6 +2,8 @@
 
 Under the native GN protocol (25 questions, then one final guess), **information is not scarce**. Any sequence of non-repeating guesses gathers enough public feedback to pin down the secret. Uniformly random unasked guesses do this for all 5,040 secrets, but they hit the secret in only 0.48% of games. Choosing a guess that is consistent with the feedback so far on just 5% of turns raises the hit rate to 65%; at 20% it reaches 99%.
 
+This agrees with the team's earlier GN diagnosis in [briefing.md](../../../../briefing.md): 88.9–95.7% of Qwen2.5-7B's guesses were already ruled out by its own history, and an externally computed belief state lifted the solve rate from 2% to 99%. Its consistent-guess and oracle means, 5.47 and 5.33 guesses in [experiments.md](../../../../experiments.md), match the reference below. New here are the identification result for non-repeating questions and the mixture curve.
+
 The seven Qwen2.5-7B arms in [gn-complete](../../gn-complete/README.md) hit the secret in 0–2 of 20 cases each. Their failure therefore cannot come from the question budget being too small. It must come from asking repeated or uninformative questions, from not using the feedback they received, or both. The extraction below separates these two on the saved traces.
 
 ![Model-free reference](reference-policies.svg)
