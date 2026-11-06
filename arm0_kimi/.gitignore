@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+*.partial
+# Credentials, caches, raw traces, and run receipts belong outside this tree.
+.env*
+logs/
+results/
+cache/
