@@ -1,0 +1,17 @@
+Byte copy of the public AR-Bench Guess Number test split.
+
+repository: https://github.com/tmlr-group/AR-Bench.git
+commit: 9971322fe9e4d77cb4d303b7e279ab1d1cb5dba1
+path: data/gn/test.json
+bytes: 800
+secrets: 100
+sha256: e192e5b2d0e58a62e1b4027ba736368d5dc81b2a8f973080766d5288c9804394
+
+This is the held-out test file named in the representation-baseline protocol.
+train.json is not included. Its sha256 is
+e3467c07c1ad85c25f64faaab29c7d66a7685cc90d677386551516afd32c662b
+and the loader rejects that digest.
+
+The AR-Bench submodule remains the canonical checkout when it is present.
+This fixture exists so the checksum and the fixed prefix can be tested
+without initializing that submodule and without a network call.
